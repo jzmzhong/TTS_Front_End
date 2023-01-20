@@ -27,9 +27,9 @@ if __name__ == '__main__':
     train_data, val_data = read_data(args.train_path), read_data(args.valid_path)
     config_file = args.config_path
 
-    preprocess(config_file=config_file,
-               train_data=train_data,
-               val_data=val_data,
-               deduplicate_train_data=True)
+    # preprocess(config_file=config_file,
+    #            train_data=train_data,
+    #            val_data=val_data,
+    #            deduplicate_train_data=True)
 
     train(config_file=config_file)
