@@ -287,6 +287,7 @@ def create_model(model_type: ModelType, config: Dict[str, Any]) -> Model:
     else:
         raise ValueError(f'Unsupported model type: {model_type}. '
                          f'Supported types: {[t.value for t in ModelType]}')
+    print(model)
     return model
 
 

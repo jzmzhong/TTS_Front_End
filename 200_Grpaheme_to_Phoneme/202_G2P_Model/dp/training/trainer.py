@@ -67,6 +67,7 @@ class Trainer:
         data_dir = Path(config['paths']['data_dir'])
 
         device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
+        print("Training on device:", device)
         model = model.to(device)
         model.train()
 

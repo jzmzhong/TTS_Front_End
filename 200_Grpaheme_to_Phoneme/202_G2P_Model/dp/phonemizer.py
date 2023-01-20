@@ -51,7 +51,7 @@ class Phonemizer:
         result = self.phonemise_list(texts=texts, lang=lang,
                                      punctuation=punctuation, expand_acronyms=expand_acronyms)
 
-        phoneme_lists = [''.join(phoneme_list) for phoneme_list in result.phonemes]
+        phoneme_lists = [' '.join(phoneme_list) for phoneme_list in result.phonemes]
 
         if single_input_string:
             return phoneme_lists[0]

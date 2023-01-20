@@ -130,4 +130,4 @@ dmypy.json
 # /dp/checkpoints/
 # /dp/datasets/
 
-*/.DS_Store
+.DS_Store
