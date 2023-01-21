@@ -12,6 +12,7 @@ from dp.preprocessing.text import Preprocessor
 
 class ModelType(Enum):
     TRANSFORMER = 'transformer'
+    TRANSFORMER_TRIMMED = 'transformer_trimmed'
     AUTOREG_TRANSFORMER = 'autoreg_transformer'
 
     def is_autoregressive(self) -> bool:
@@ -124,6 +125,101 @@ class ForwardTransformer(Model):
             layers=config['model']['layers'],
             dropout=config['model']['dropout'],
             heads=config['model']['heads']
+        )
+
+
+class ForwardTransformerTrimmed(Model):
+
+    def __init__(self,
+                 encoder_vocab_size: int,
+                 decoder_vocab_size: int,
+                 d_model=512,
+                 d_fft=1024,
+                 layers=4,
+                 dropout=0.1,
+                 heads=1,
+                 char_repeats=3) -> None:
+        super().__init__()
+
+        self.char_repeats = char_repeats
+        self.d_model = d_model
+
+        self.embedding = nn.Embedding(encoder_vocab_size, d_model)
+        self.pos_encoder_1 = PositionalEncoding(d_model, dropout)
+
+        encoder_layer = TransformerEncoderLayer(d_model=d_model,
+                                                nhead=heads,
+                                                dim_feedforward=d_fft,
+                                                dropout=dropout,
+                                                activation='relu')
+        encoder_norm = LayerNorm(d_model)
+        self.encoder_1 = TransformerEncoder(encoder_layer=encoder_layer,
+                                          num_layers=layers-1,
+                                          norm=encoder_norm)
+        self.pos_encoder_2 = PositionalEncoding(d_model, dropout)
+        self.encoder_2 = TransformerEncoder(encoder_layer=encoder_layer,
+                                          num_layers=1,
+                                          norm=encoder_norm)
+
+        self.fc_out = nn.Linear(d_model, decoder_vocab_size)
+
+    def forward(self,
+                batch: Dict[str, torch.Tensor]) -> torch.Tensor:         # shape: [N, T]
+        """
+        Forward pass of the model on a data batch.
+
+        Args:
+         batch (Dict[str, torch.Tensor]): Input batch entry 'text' (text tensor).
+
+        Returns:
+          Tensor: Predictions.
+        """
+
+        x = batch['text']
+        x = x.transpose(0, 1)        # shape: [T, N]
+        src_pad_mask = _make_len_mask(x).to(x.device)
+        x = self.embedding(x)
+        x = self.pos_encoder_1(x)
+        x = self.encoder_1(x, src_key_padding_mask=src_pad_mask)
+        x = torch.cat((x[:1,:,:], x[1:-1,:,:].repeat_interleave(self.char_repeats, 0), x[-1,:,:]), dim=0)
+        src_pad_mask = torch.cat((src_pad_mask[:,:1], src_pad_mask[:,1:-1].repeat_interleave(self.char_repeats, 1), src_pad_mask[:,-1]), dim=1)
+        x = self.pos_encoder_2(x)
+        x = self.encoder_2(x, src_key_padding_mask=src_pad_mask)
+        x = self.fc_out(x)
+        x = x.transpose(0, 1)
+        return x
+
+    @torch.jit.export
+    def generate(self,
+                 batch: Dict[str, torch.Tensor]) -> Tuple[torch.Tensor, torch.Tensor]:
+        """
+        Inference pass on a batch of tokenized texts.
+
+        Args:
+          batch (Dict[str, torch.Tensor]): Input batch with entry 'text' (text tensor).
+
+        Returns:
+          Tuple: The first element is a Tensor (phoneme tokens) and the second element
+                 is a tensor (phoneme token probabilities).
+        """
+
+        with torch.no_grad():
+            x = self.forward(batch)
+        tokens, logits = get_dedup_tokens(x)
+        return tokens, logits
+
+    @classmethod
+    def from_config(cls, config: dict) -> 'ForwardTransformerTrimmed':
+        preprocessor = Preprocessor.from_config(config)
+        return ForwardTransformerTrimmed(
+            encoder_vocab_size=preprocessor.text_tokenizer.vocab_size,
+            decoder_vocab_size=preprocessor.phoneme_tokenizer.vocab_size,
+            d_model=config['model']['d_model'],
+            d_fft=config['model']['d_fft'],
+            layers=config['model']['layers'],
+            dropout=config['model']['dropout'],
+            heads=config['model']['heads'],
+            char_repeats=config['preprocessing']['char_repeats']
         )
 
 
@@ -282,6 +378,8 @@ def create_model(model_type: ModelType, config: Dict[str, Any]) -> Model:
 
     if model_type is ModelType.TRANSFORMER:
         model = ForwardTransformer.from_config(config)
+    elif model_type is ModelType.TRANSFORMER_TRIMMED:
+        model = ForwardTransformerTrimmed.from_config(config)
     elif model_type is ModelType.AUTOREG_TRANSFORMER:
         model = AutoregressiveTransformer.from_config(config)
     else:

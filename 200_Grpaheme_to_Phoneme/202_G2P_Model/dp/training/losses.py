@@ -35,9 +35,10 @@ class CrossEntropyLoss(torch.nn.Module):
 class CTCLoss(torch.nn.Module):
     """ """
 
-    def __init__(self):
+    def __init__(self, char_repeats: int=1):
         super().__init__()
-        self.criterion  = torch.nn.CTCLoss()
+        self.criterion = torch.nn.CTCLoss()
+        self.char_repeats = char_repeats
 
     def forward(self,
                 pred: torch.Tensor,
@@ -61,5 +62,6 @@ class CTCLoss(torch.nn.Module):
         phonemes = batch['phonemes']
         text_len = batch['text_len']
         phon_len = batch['phonemes_len']
+        text_len = (text_len - 2) * self.char_repeats + 2
         loss = self.criterion(pred, phonemes, text_len, phon_len)
         return loss

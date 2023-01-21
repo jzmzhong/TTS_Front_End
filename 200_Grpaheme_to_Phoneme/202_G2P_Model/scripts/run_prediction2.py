@@ -7,9 +7,9 @@ from tqdm import tqdm
 
 if __name__ == '__main__':
 
-    checkpoint_path = '../checkpoints/V1.0_EnUs_forward_6_512_2_8/model_step_30k.pt'
+    checkpoint_path = '../checkpoints/V1.0_EnUs_forward_6_512_2_8/model_step_40k.pt'
     test_path = "../datasets/3_train_and_eval_data/EnUs/EnUs_dict_exclude_polyphone_test.txt"
-    result_path = "../datasets/5_predictions/EnUs/EnUs_dict_exclude_polyphone_test_predictions_modelV1.0_step30k.txt"
+    result_path = "../datasets/5_predictions/EnUs/EnUs_dict_exclude_polyphone_test_predictions_modelV1.0_step40k.txt"
     LANG = "EnUs"
     DISPLAY_TOKEN2IDX = False
     DEVICE = "cpu"

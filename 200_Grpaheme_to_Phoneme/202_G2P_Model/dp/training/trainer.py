@@ -23,7 +23,7 @@ class Trainer:
 
     """ Performs model training. """
 
-    def __init__(self, checkpoint_dir: Path, loss_type='ctc') -> None:
+    def __init__(self, checkpoint_dir: Path, config: Dict[str, Any], loss_type='ctc') -> None:
         """
         Initializes a Trainer object.
 
@@ -39,6 +39,8 @@ class Trainer:
         self.loss_type = loss_type
         if loss_type == 'ctc':
             self.criterion = CTCLoss()
+        elif loss_type == 'ctc2':
+            self.criterion = CTCLoss(config['preprocessing']['char_repeats'])
         elif loss_type == 'cross_entropy':
             self.criterion = CrossEntropyLoss()
         else:

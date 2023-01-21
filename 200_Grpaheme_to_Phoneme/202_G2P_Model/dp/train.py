@@ -53,7 +53,7 @@ def train(config_file: str,
     checkpoint_dir = Path(config['paths']['checkpoint_dir'])
     logger.info(f'Checkpoints will be stored at {checkpoint_dir.absolute()}')
     loss_type = 'cross_entropy' if model_type.is_autoregressive() else 'ctc'
-    trainer = Trainer(checkpoint_dir=checkpoint_dir, loss_type=loss_type)
+    trainer = Trainer(checkpoint_dir=checkpoint_dir, config=config, loss_type=loss_type)
     trainer.train(model=model,
                   checkpoint=checkpoint,
                   store_phoneme_dict_in_model=config['training']['store_phoneme_dict_in_model'])
