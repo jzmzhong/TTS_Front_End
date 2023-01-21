@@ -17,4 +17,4 @@ with open(OUT_FILE_1, encoding="utf-8", mode="w") as f:
     with open(OUT_FILE_2, encoding="utf-8", mode="w") as f2:
         for word, freq in word_freq.items():
             f.write(word + "\t" + freq + "\r\n")
-            f2.write(word + "\r\n")
+            f2.write("EnUs" + "\t" + word + "\r\n")
