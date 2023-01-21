@@ -39,9 +39,9 @@ def preprocess(config_file: str,
 
     model_type = config['model']['type']
     model_type = ModelType(model_type)
-    if model_type.is_autoregressive() and config['preprocessing']['char_repeats'] > 1:
+    if model_type.require_cross_entropy_loss() and config['preprocessing']['char_repeats'] > 1:
         char_repeats = config['preprocessing']['char_repeats']
-        logger.warning(f'WARNING: You are training autoregressive model with char_repeats={char_repeats}. '
+        logger.warning(f'WARNING: You are training autoregressive model or GBERT with char_repeats={char_repeats}. '
                        f'It is recommended to set char_repeats=1 in the config and preprocess again.')
 
     languages = set(config['preprocessing']['languages'])

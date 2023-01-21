@@ -13,6 +13,7 @@ from dp.model.model import Model
 from dp.model.utils import _trim_util_stop
 from dp.preprocessing.text import Preprocessor
 from dp.training.dataset import new_dataloader
+from dp.training.dataset_pretrain import new_dataloader_pretrain
 from dp.training.decorators import ignore_exception
 from dp.training.losses import CrossEntropyLoss, CTCLoss
 from dp.training.evaluation import evaluate_samples
@@ -30,7 +31,7 @@ class Trainer:
         Args:
           checkpoint_dir (Path): Directory to store the model checkpoints.
           loss_type (str): Type of loss: 'ctc' for forward transformer models
-                           and 'cross_entropy' for autoregressive models.
+                           and 'cross_entropy' for autoregressive models and GBERT.
         """
 
         self.checkpoint_dir = checkpoint_dir
@@ -81,14 +82,32 @@ class Trainer:
         for g in optimizer.param_groups:
             g['lr'] = config['training']['learning_rate']
 
-        train_loader = new_dataloader(dataset_file=data_dir / 'train_dataset.pkl',
-                                      drop_last=True, batch_size=config['training']['batch_size'])
-        val_loader = new_dataloader(dataset_file=data_dir / 'val_dataset.pkl',
-                                    drop_last=False, batch_size=config['training']['batch_size_val'])
-        if store_phoneme_dict_in_model:
-            phoneme_dict = unpickle_binary(data_dir / 'phoneme_dict.pkl')
-            checkpoint['phoneme_dict'] = phoneme_dict
-
+        if config['model']['type'] == "GBERT":
+            train_loader = new_dataloader_pretrain(dataset_file=data_dir / 'train_dataset.pkl',
+                                        drop_last=True, batch_size=config['training']['batch_size'],
+                                        unk_idx=checkpoint['preprocessor'].text_tokenizer.token_to_idx["*"],
+                                        non_special_indices=checkpoint['preprocessor'].text_tokenizer.non_special_indices,
+                                        mask_ratio=config['model']['mask_ratio'],
+                                        mask_UNK=config['model']['mask_UNK'],
+                                        mask_random=config['model']['mask_random'],
+                                        mask_original=config['model']['mask_original'])
+            val_loader = new_dataloader_pretrain(dataset_file=data_dir / 'val_dataset.pkl',
+                                        drop_last=False, batch_size=config['training']['batch_size_val'],
+                                        unk_idx=checkpoint['preprocessor'].text_tokenizer.token_to_idx["*"],
+                                        non_special_indices=checkpoint['preprocessor'].text_tokenizer.non_special_indices,
+                                        mask_ratio="EVALUATE",
+                                        mask_UNK=1.0,
+                                        mask_random=0.0,
+                                        mask_original=0.0)
+        else:
+            train_loader = new_dataloader(dataset_file=data_dir / 'train_dataset.pkl',
+                                        drop_last=True, batch_size=config['training']['batch_size'])
+            val_loader = new_dataloader(dataset_file=data_dir / 'val_dataset.pkl',
+                                        drop_last=False, batch_size=config['training']['batch_size_val'])
+            if store_phoneme_dict_in_model:
+                phoneme_dict = unpickle_binary(data_dir / 'phoneme_dict.pkl')
+                checkpoint['phoneme_dict'] = phoneme_dict
+        # import pdb; pdb.set_trace()
         val_batches = sorted([b for b in val_loader], key=lambda x: -x['text_len'][0])
 
         scheduler = ReduceLROnPlateau(optimizer,
@@ -121,6 +140,17 @@ class Trainer:
                     torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
                     optimizer.step()
                     losses.append(loss.item())
+
+                # randomly re-mask
+                if config['model']['type'] == "GBERT":
+                    train_loader = new_dataloader_pretrain(dataset_file=data_dir / 'train_dataset.pkl',
+                                        drop_last=True, batch_size=config['training']['batch_size'],
+                                        unk_idx=checkpoint['preprocessor'].text_tokenizer.token_to_idx["*"],
+                                        non_special_indices=checkpoint['preprocessor'].text_tokenizer.non_special_indices,
+                                        mask_ratio=config['model']['mask_ratio'],
+                                        mask_UNK=config['model']['mask_UNK'],
+                                        mask_random=config['model']['mask_random'],
+                                        mask_original=config['model']['mask_original'])
 
                 self.writer.add_scalar('Loss/train', loss.item(), global_step=step)
                 self.writer.add_scalar('Params/batch_size', config['training']['batch_size'],

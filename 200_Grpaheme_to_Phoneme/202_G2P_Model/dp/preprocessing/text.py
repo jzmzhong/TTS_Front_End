@@ -80,6 +80,8 @@ class SequenceTokenizer:
         self.pad_index = 0
         self.token_to_idx = {pad_token: self.pad_index}
         self.special_tokens = {pad_token, end_token}
+        self.non_special_tokens = []
+        self.non_special_indices = []
         for lang in languages:
             lang_token = self._make_start_token(lang)
             self.token_to_idx[lang_token] = len(self.token_to_idx)
@@ -88,6 +90,9 @@ class SequenceTokenizer:
         self.end_index = self.token_to_idx[end_token]
         for symbol in symbols:
             self.token_to_idx[symbol] = len(self.token_to_idx)
+            if symbol != "*":
+              self.non_special_tokens.append(symbol)
+              self.non_special_indices.append(len(self.token_to_idx) - 1)
         self.idx_to_token = {i: s for s, i in self.token_to_idx.items()}
         self.vocab_size = len(self.idx_to_token)
 

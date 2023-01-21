@@ -11,15 +11,16 @@ from dp.preprocessing.text import Preprocessor
 
 
 class ModelType(Enum):
+    GBERT = 'GBERT'
     TRANSFORMER = 'transformer'
     TRANSFORMER_TRIMMED = 'transformer_trimmed'
     AUTOREG_TRANSFORMER = 'autoreg_transformer'
 
-    def is_autoregressive(self) -> bool:
+    def require_cross_entropy_loss(self) -> bool:
         """
-        Returns: bool: Whether the model is autoregressive.
+        Returns: bool: Whether the model requires cross entropy loss.
         """
-        return self in {ModelType.AUTOREG_TRANSFORMER}
+        return self in {ModelType.GBERT, ModelType.AUTOREG_TRANSFORMER}
 
 
 class Model(torch.nn.Module, ABC):
@@ -42,6 +43,79 @@ class Model(torch.nn.Module, ABC):
           and the second element  is a tensor (phoneme token probabilities)
         """
         pass
+
+
+class GBERT(Model):
+
+    def __init__(self,
+                 encoder_vocab_size: int,
+                 decoder_vocab_size: int,
+                 d_model=512,
+                 d_fft=2048,
+                 layers=6,
+                 dropout=0.1,
+                 heads=8) -> None:
+        super().__init__()
+
+        self.d_model = d_model
+
+        self.embedding = nn.Embedding(encoder_vocab_size, d_model)
+        self.pos_encoder = PositionalEncoding(d_model, dropout)
+
+        encoder_layer = TransformerEncoderLayer(d_model=d_model,
+                                                nhead=heads,
+                                                dim_feedforward=d_fft,
+                                                dropout=dropout,
+                                                activation='relu')
+        encoder_norm = LayerNorm(d_model)
+        self.encoder = TransformerEncoder(encoder_layer=encoder_layer,
+                                          num_layers=layers,
+                                          norm=encoder_norm)
+
+        self.fc_out = nn.Linear(d_model, decoder_vocab_size)
+
+    def forward(self,
+                batch: Dict[str, torch.Tensor]) -> torch.Tensor:         # shape: [N, T]
+        """
+        Forward pass of the model on a data batch.
+
+        Args:
+         batch (Dict[str, torch.Tensor]): Input batch entry 'text' (text tensor).
+
+        Returns:
+          Tensor: Predictions.
+        """
+
+        x = batch['text']
+        x = x.transpose(0, 1)        # shape: [T, N]
+        src_pad_mask = _make_len_mask(x).to(x.device)
+        x = self.embedding(x)
+        x = self.pos_encoder(x)
+        x = self.encoder(x, src_key_padding_mask=src_pad_mask)
+        x = self.fc_out(x)
+        x = x.transpose(0, 1)
+        return x
+
+    @torch.jit.export
+    def generate(self,
+                 batch: Dict[str, torch.Tensor]) -> Tuple[torch.Tensor, torch.Tensor]:
+        with torch.no_grad():
+            x = self.forward(batch)
+            x = x.softmax(-1)
+        return x
+
+    @classmethod
+    def from_config(cls, config: dict) -> 'GBERT':
+        preprocessor = Preprocessor.from_config(config)
+        return GBERT(
+            encoder_vocab_size=preprocessor.text_tokenizer.vocab_size,
+            decoder_vocab_size=preprocessor.phoneme_tokenizer.vocab_size,
+            d_model=config['model']['d_model'],
+            d_fft=config['model']['d_fft'],
+            layers=config['model']['layers'],
+            dropout=config['model']['dropout'],
+            heads=config['model']['heads']
+        )
 
 
 class ForwardTransformer(Model):
@@ -376,7 +450,9 @@ def create_model(model_type: ModelType, config: Dict[str, Any]) -> Model:
     Returns: Model: Model object.
     """
 
-    if model_type is ModelType.TRANSFORMER:
+    if model_type is ModelType.GBERT:
+        model = GBERT.from_config(config)
+    elif model_type is ModelType.TRANSFORMER:
         model = ForwardTransformer.from_config(config)
     elif model_type is ModelType.TRANSFORMER_TRIMMED:
         model = ForwardTransformerTrimmed.from_config(config)

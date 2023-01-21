@@ -57,3 +57,17 @@ def phoneme_error(predicted: List[Union[str, int]], target: List[Union[str, int]
 
     return d[len(target)][len(predicted)], len(target)
 
+def MLM_error(predicted: List[Union[str, int]], target: List[Union[str, int]]) -> float:
+    """Calculates the error rate of a masked language model.
+
+    Args:
+      predicted: Predicted word.
+      target: Target word.
+      predicted: List[Union[str: int]]: 
+      target: List[Union[str: int]]: 
+
+    Returns:
+      MLM error
+
+    """
+    return phoneme_error(predicted, target)

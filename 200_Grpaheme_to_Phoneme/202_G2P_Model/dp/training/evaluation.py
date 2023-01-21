@@ -1,6 +1,6 @@
 from typing import List, Tuple, Dict, Any
 
-from dp.training.metrics import phoneme_error, word_error
+from dp.training.metrics import phoneme_error, word_error, MLM_error
 
 
 def evaluate_samples(lang_samples: Dict[str, List[Tuple[List[str], List[str], List[str]]]]) -> Dict[str, Any]:
