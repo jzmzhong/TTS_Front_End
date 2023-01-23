@@ -141,17 +141,6 @@ class Trainer:
                     optimizer.step()
                     losses.append(loss.item())
 
-                # randomly re-mask
-                if config['model']['type'] == "GBERT":
-                    train_loader = new_dataloader_pretrain(dataset_file=data_dir / 'train_dataset.pkl',
-                                        drop_last=True, batch_size=config['training']['batch_size'],
-                                        unk_idx=checkpoint['preprocessor'].text_tokenizer.token_to_idx["*"],
-                                        non_special_indices=checkpoint['preprocessor'].text_tokenizer.non_special_indices,
-                                        mask_ratio=config['model']['mask_ratio'],
-                                        mask_UNK=config['model']['mask_UNK'],
-                                        mask_random=config['model']['mask_random'],
-                                        mask_original=config['model']['mask_original'])
-
                 self.writer.add_scalar('Loss/train', loss.item(), global_step=step)
                 self.writer.add_scalar('Params/batch_size', config['training']['batch_size'],
                                        global_step=step)
@@ -161,6 +150,7 @@ class Trainer:
                 if step % config['training']['validate_steps'] == 0:
                     val_loss = self._validate(model, val_batches)
                     self.writer.add_scalar('Loss/val', val_loss, global_step=step)
+                    print('Epoch: {epoch} | Step {step} | Valid Loss: {avg_loss:#.4}')
 
                 if step % config['training']['generate_steps'] == 0:
                     lang_samples = self._generate_samples(model=model,
@@ -171,6 +161,8 @@ class Trainer:
                                           eval_result=eval_result,
                                           n_generate_samples=config['training']['n_generate_samples'],
                                           step=step)
+                    mean_per, mean_wer = eval_result['mean_per'], eval_result['mean_wer']
+                    print("Epoch: {epoch} | Step {step} | Mean PER: {mean_per} | Mean WER: {mean_wer}")
                     if eval_result['mean_per'] is not None and eval_result['mean_per'] < best_per:
                         self._save_model(model=model, optimizer=optimizer, checkpoint=checkpoint,
                                          path=self.checkpoint_dir / f'best_model.pt')
@@ -184,8 +176,20 @@ class Trainer:
                                      path=self.checkpoint_dir / f'model_step_{step}k.pt')
 
             losses = []
+            print('Epoch: {epoch} | Step {step} | Train Loss: {avg_loss:#.4}')
             self._save_model(model=model, optimizer=optimizer, checkpoint=checkpoint,
                              path=self.checkpoint_dir / 'latest_model.pt')
+            # randomly re-mask
+            if config['model']['type'] == "GBERT" and epoch % config['training']['randomly_remask_epochs'] == 0:
+                train_loader = new_dataloader_pretrain(dataset_file=data_dir / 'train_dataset.pkl',
+                                    drop_last=True, batch_size=config['training']['batch_size'],
+                                    unk_idx=checkpoint['preprocessor'].text_tokenizer.token_to_idx["*"],
+                                    non_special_indices=checkpoint['preprocessor'].text_tokenizer.non_special_indices,
+                                    mask_ratio=config['model']['mask_ratio'],
+                                    mask_UNK=config['model']['mask_UNK'],
+                                    mask_random=config['model']['mask_random'],
+                                    mask_original=config['model']['mask_original'])
+
 
     def _validate(self, model: Model, val_batches: List[dict]) -> float:
         device = next(model.parameters()).device

@@ -92,7 +92,7 @@ class GBERT(Model):
         x = self.embedding(x)
         x = self.pos_encoder(x)
         x = self.encoder(x, src_key_padding_mask=src_pad_mask)
-        x = self.fc_out(x)
+        x = self.fc_out(x[:-1,:,:])
         x = x.transpose(0, 1)
         return x
 
