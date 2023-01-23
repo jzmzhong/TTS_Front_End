@@ -1,0 +1,140 @@
+AutoregressiveTransformer(
+  (encoder): Embedding(31, 384)
+  (pos_encoder): PositionalEncoding(
+    (dropout): Dropout(p=0.1, inplace=False)
+  )
+  (decoder): Embedding(72, 384)
+  (pos_decoder): PositionalEncoding(
+    (dropout): Dropout(p=0.1, inplace=False)
+  )
+  (transformer): Transformer(
+    (encoder): TransformerEncoder(
+      (layers): ModuleList(
+        (0): TransformerEncoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): _LinearWithBias(in_features=384, out_features=384, bias=True)
+          )
+          (linear1): Linear(in_features=384, out_features=1536, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=1536, out_features=384, bias=True)
+          (norm1): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+        )
+        (1): TransformerEncoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): _LinearWithBias(in_features=384, out_features=384, bias=True)
+          )
+          (linear1): Linear(in_features=384, out_features=1536, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=1536, out_features=384, bias=True)
+          (norm1): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+        )
+        (2): TransformerEncoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): _LinearWithBias(in_features=384, out_features=384, bias=True)
+          )
+          (linear1): Linear(in_features=384, out_features=1536, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=1536, out_features=384, bias=True)
+          (norm1): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+        )
+        (3): TransformerEncoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): _LinearWithBias(in_features=384, out_features=384, bias=True)
+          )
+          (linear1): Linear(in_features=384, out_features=1536, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=1536, out_features=384, bias=True)
+          (norm1): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+        )
+      )
+      (norm): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+    )
+    (decoder): TransformerDecoder(
+      (layers): ModuleList(
+        (0): TransformerDecoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): _LinearWithBias(in_features=384, out_features=384, bias=True)
+          )
+          (multihead_attn): MultiheadAttention(
+            (out_proj): _LinearWithBias(in_features=384, out_features=384, bias=True)
+          )
+          (linear1): Linear(in_features=384, out_features=1536, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=1536, out_features=384, bias=True)
+          (norm1): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (norm3): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+          (dropout3): Dropout(p=0.1, inplace=False)
+        )
+        (1): TransformerDecoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): _LinearWithBias(in_features=384, out_features=384, bias=True)
+          )
+          (multihead_attn): MultiheadAttention(
+            (out_proj): _LinearWithBias(in_features=384, out_features=384, bias=True)
+          )
+          (linear1): Linear(in_features=384, out_features=1536, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=1536, out_features=384, bias=True)
+          (norm1): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (norm3): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+          (dropout3): Dropout(p=0.1, inplace=False)
+        )
+        (2): TransformerDecoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): _LinearWithBias(in_features=384, out_features=384, bias=True)
+          )
+          (multihead_attn): MultiheadAttention(
+            (out_proj): _LinearWithBias(in_features=384, out_features=384, bias=True)
+          )
+          (linear1): Linear(in_features=384, out_features=1536, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=1536, out_features=384, bias=True)
+          (norm1): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (norm3): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+          (dropout3): Dropout(p=0.1, inplace=False)
+        )
+        (3): TransformerDecoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): _LinearWithBias(in_features=384, out_features=384, bias=True)
+          )
+          (multihead_attn): MultiheadAttention(
+            (out_proj): _LinearWithBias(in_features=384, out_features=384, bias=True)
+          )
+          (linear1): Linear(in_features=384, out_features=1536, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=1536, out_features=384, bias=True)
+          (norm1): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (norm3): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+          (dropout3): Dropout(p=0.1, inplace=False)
+        )
+      )
+      (norm): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+    )
+  )
+  (fc_out): Linear(in_features=384, out_features=72, bias=True)
+)
+Training on device: cuda

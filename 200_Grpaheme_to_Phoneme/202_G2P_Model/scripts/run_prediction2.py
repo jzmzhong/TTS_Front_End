@@ -8,10 +8,10 @@ from tqdm import tqdm
 if __name__ == '__main__':
 
     # checkpoint_path = '../checkpoints/V1.0_EnUs_forward_6_512_2_8/model_step_40k.pt'
-    checkpoint_path = '../checkpoints/V1.1_EnUs_forward_6_512_4_8_lr0.0005/model_step_60k.pt'
+    checkpoint_path = '../checkpoints/V1.1_EnUs_forward_6_512_4_8_lr0.0005/model_step_100k.pt'
     test_path = "../datasets/3_train_and_eval_data/EnUs/EnUs_dict_exclude_polyphone_test.txt"
     # result_path = "../datasets/5_predictions/EnUs/EnUs_dict_exclude_polyphone_test_predictions_modelV1.0_step40k.txt"
-    result_path = "../datasets/5_predictions/EnUs/EnUs_dict_exclude_polyphone_test_predictions_modelV1.1_step60k.txt"
+    result_path = "../datasets/5_predictions/EnUs/EnUs_dict_exclude_polyphone_test_predictions_modelV1.1_step100k.txt"
     LANG = "EnUs"
     DISPLAY_TOKEN2IDX = False
     DEVICE = "cpu"

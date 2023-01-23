@@ -28,9 +28,7 @@ class CrossEntropyLoss(torch.nn.Module):
         """
 
         phonemes = batch['phonemes']
-        # import pdb; pdb.set_trace()
-        # loss = self.criterion(pred.transpose(1, 2), phonemes[:, 1:])
-        loss = self.criterion(pred.transpose(1, 2), phonemes[:, :])
+        loss = self.criterion(pred.transpose(1, 2), phonemes[:, 1:])
         return loss
 
 

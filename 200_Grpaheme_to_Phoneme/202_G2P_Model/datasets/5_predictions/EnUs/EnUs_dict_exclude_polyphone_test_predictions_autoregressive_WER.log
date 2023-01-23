@@ -1,0 +1,45 @@
+autoreg_V1.0_EnUs_4_512_4_8_lr0.0005
+Steps: 156000
+Correct Predictions: 8592
+Wrong Predictions: 3158
+Word Accuracy: 73.12340425531914%
+autoreg_V1.1_EnUs_3_512_4_8_lr0.0005
+Steps: 156000
+Correct Predictions: 8595
+Wrong Predictions: 3155
+Word Accuracy: 73.14893617021276%
+autoreg_V1.2_EnUs_2_512_4_8_lr0.0005
+Steps: 156000
+Correct Predictions: 8559
+Wrong Predictions: 3191
+Word Accuracy: 72.84255319148936%
+autoreg_V1.3_EnUs_4_384_4_6_lr0.0005
+Steps: 156000
+Correct Predictions: 8598
+Wrong Predictions: 3152
+Word Accuracy: 73.17446808510638%
+autoreg_V1.4_EnUs_3_384_4_6_lr0.0005
+Steps: 156000
+Correct Predictions: 8562
+Wrong Predictions: 3188
+Word Accuracy: 72.86808510638298%
+autoreg_V1.5_EnUs_2_384_4_6_lr0.0005
+Steps: 156000
+Correct Predictions: 8484
+Wrong Predictions: 3266
+Word Accuracy: 72.20425531914894%
+autoreg_V1.6_EnUs_4_256_4_4_lr0.0005
+Steps: 156000
+Correct Predictions: 8558
+Wrong Predictions: 3192
+Word Accuracy: 72.8340425531915%
+autoreg_V1.7_EnUs_3_256_4_4_lr0.0005
+Steps: 156000
+Correct Predictions: 8599
+Wrong Predictions: 3151
+Word Accuracy: 73.18297872340426%
+autoreg_V1.8_EnUs_2_256_4_4_lr0.0005
+Steps: 156000
+Correct Predictions: 8574
+Wrong Predictions: 3176
+Word Accuracy: 72.97021276595744%
