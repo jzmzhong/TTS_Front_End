@@ -107,7 +107,7 @@ class Trainer:
             if store_phoneme_dict_in_model:
                 phoneme_dict = unpickle_binary(data_dir / 'phoneme_dict.pkl')
                 checkpoint['phoneme_dict'] = phoneme_dict
-        # import pdb; pdb.set_trace()
+
         val_batches = sorted([b for b in val_loader], key=lambda x: -x['text_len'][0])
 
         scheduler = ReduceLROnPlateau(optimizer,
@@ -150,25 +150,38 @@ class Trainer:
                 if step % config['training']['validate_steps'] == 0:
                     val_loss = self._validate(model, val_batches)
                     self.writer.add_scalar('Loss/val', val_loss, global_step=step)
-                    print('Epoch: {epoch} | Step {step} | Valid Loss: {avg_loss:#.4}')
+                    print(f'Epoch: {epoch} | Step {step} | Valid Loss: {avg_loss:#.4}')
 
                 if step % config['training']['generate_steps'] == 0:
                     lang_samples = self._generate_samples(model=model,
                                                           preprocessor=checkpoint['preprocessor'],
                                                           val_batches=val_batches)
-                    eval_result = evaluate_samples(lang_samples=lang_samples)
+                    if config['model']['type'] == "GBERT":
+                        eval_result = evaluate_samples(lang_samples=lang_samples, flag_pretrain=True)
+                    else:
+                        eval_result = evaluate_samples(lang_samples=lang_samples, flag_pretrain=False)
                     self._write_summaries(lang_samples=lang_samples,
                                           eval_result=eval_result,
                                           n_generate_samples=config['training']['n_generate_samples'],
                                           step=step)
-                    mean_per, mean_wer = eval_result['mean_per'], eval_result['mean_wer']
-                    print("Epoch: {epoch} | Step {step} | Mean PER: {mean_per} | Mean WER: {mean_wer}")
-                    if eval_result['mean_per'] is not None and eval_result['mean_per'] < best_per:
-                        self._save_model(model=model, optimizer=optimizer, checkpoint=checkpoint,
-                                         path=self.checkpoint_dir / f'best_model.pt')
-                        self._save_model(model=model, optimizer=None, checkpoint=checkpoint,
-                                         path=self.checkpoint_dir / f'best_model_no_optim.pt')
-                        scheduler.step(eval_result['mean_per'])
+                    if config['model']['type'] == "GBERT":
+                        mean_mer = eval_result['mean_mer']
+                        print(f'Epoch: {epoch} | Step {step} | Mean Mask Error Rate: {mean_mer}')
+                        if eval_result['mean_mer'] is not None and eval_result['mean_mer'] < best_per:
+                            self._save_model(model=model, optimizer=optimizer, checkpoint=checkpoint,
+                                            path=self.checkpoint_dir / f'best_model.pt')
+                            self._save_model(model=model, optimizer=None, checkpoint=checkpoint,
+                                            path=self.checkpoint_dir / f'best_model_no_optim.pt')
+                            scheduler.step(eval_result['mean_mer'])
+                    else:
+                        mean_per, mean_wer = eval_result['mean_per'], eval_result['mean_wer']
+                        print(f'Epoch: {epoch} | Step {step} | Mean PER: {mean_per} | Mean WER: {mean_wer}')
+                        if eval_result['mean_per'] is not None and eval_result['mean_per'] < best_per:
+                            self._save_model(model=model, optimizer=optimizer, checkpoint=checkpoint,
+                                            path=self.checkpoint_dir / f'best_model.pt')
+                            self._save_model(model=model, optimizer=None, checkpoint=checkpoint,
+                                            path=self.checkpoint_dir / f'best_model_no_optim.pt')
+                            scheduler.step(eval_result['mean_per'])
 
                 if step % config['training']['checkpoint_steps'] == 0:
                     step = step // 1000
@@ -176,7 +189,7 @@ class Trainer:
                                      path=self.checkpoint_dir / f'model_step_{step}k.pt')
 
             losses = []
-            print('Epoch: {epoch} | Step {step} | Train Loss: {avg_loss:#.4}')
+            print(f'Epoch: {epoch} | Step {step} | Train Loss: {avg_loss:#.4}')
             self._save_model(model=model, optimizer=optimizer, checkpoint=checkpoint,
                              path=self.checkpoint_dir / 'latest_model.pt')
             # randomly re-mask
@@ -248,18 +261,25 @@ class Trainer:
                          eval_result: Dict[str, Any],
                          n_generate_samples: int,
                          step: int) -> None:
-
-        self.writer.add_scalar(f'Phoneme_Error_Rate/mean',
+        if "mean_per" not in eval_result:
+            self.writer.add_scalar(f'Mask_Prediction_Error_Rate/mean',
+                               eval_result['mean_mer'], global_step=step)
+        else:
+            self.writer.add_scalar(f'Phoneme_Error_Rate/mean',
                                eval_result['mean_per'], global_step=step)
-        self.writer.add_scalar(f'Word_Error_Rate/mean',
+            self.writer.add_scalar(f'Word_Error_Rate/mean',
                                eval_result['mean_wer'], global_step=step)
 
         for lang in lang_samples.keys():
             result = eval_result[lang]
-            self.writer.add_scalar(f'Phoneme_Error_Rate/{lang}',
-                                   result['per'], global_step=step)
-            self.writer.add_scalar(f'Word_Error_Rate/{lang}',
-                                   result['wer'], global_step=step)
+            if "mean_per" not in result:
+                self.writer.add_scalar(f'Mask_Prediction_Error_Rate/{lang}',
+                               result['mer'], global_step=step)
+            else:
+                self.writer.add_scalar(f'Phoneme_Error_Rate/{lang}',
+                                    result['per'], global_step=step)
+                self.writer.add_scalar(f'Word_Error_Rate/{lang}',
+                                    result['wer'], global_step=step)
 
         for lang, samples in lang_samples.items():
             samples = [(''.join(w), ''.join(p), ''.join(t)) for w, p, t in samples]

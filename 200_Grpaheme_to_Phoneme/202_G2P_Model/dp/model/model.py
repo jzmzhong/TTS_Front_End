@@ -5,6 +5,7 @@ from typing import Tuple, Dict, Any
 import torch
 import torch.nn as nn
 from torch.nn import TransformerEncoderLayer, LayerNorm, TransformerEncoder
+from torch.nn.utils.rnn import pad_sequence
 
 from dp.model.utils import get_dedup_tokens, _make_len_mask, _generate_square_subsequent_mask, PositionalEncoding
 from dp.preprocessing.text import Preprocessor
@@ -101,8 +102,20 @@ class GBERT(Model):
                  batch: Dict[str, torch.Tensor]) -> Tuple[torch.Tensor, torch.Tensor]:
         with torch.no_grad():
             x = self.forward(batch)
-            x = x.softmax(-1)
-        return x
+        
+        logits_batch = x.softmax(-1)
+        out_tokens, out_probs = [], []
+        for i in range(logits_batch.size(0)):
+            logits = logits_batch[i]
+            max_logits, max_indices = torch.max(logits, dim=-1)
+            max_logits = max_logits[max_indices!=0]
+            max_indices = max_indices[max_indices!=0]
+            out_tokens.append(max_indices)
+            out_probs.append(max_logits)
+        out_tokens = pad_sequence(out_tokens, batch_first=True, padding_value=0.).long()
+        out_probs = pad_sequence(out_probs, batch_first=True, padding_value=0.)
+        
+        return out_tokens, out_probs
 
     @classmethod
     def from_config(cls, config: dict) -> 'GBERT':

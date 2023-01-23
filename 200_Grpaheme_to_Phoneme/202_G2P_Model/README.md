@@ -55,7 +55,7 @@ Note: Forward Transformers are used in industrial deployment since they support 
 | forward_V1.4 | 4      | 384       | x%     | x%    | | |
 | forward_V1.5 | 3      | 384       | x%     | x%    | | |
 
-## 2. Grapheme BERT (GBERT)
+## 2. Grapheme BERT ([GBERT](https://github.com/ldong1111/GraphemeBERT))
 
 ### Pretraining 
 
