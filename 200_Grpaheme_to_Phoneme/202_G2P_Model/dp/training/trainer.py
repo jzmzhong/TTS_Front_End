@@ -272,7 +272,7 @@ class Trainer:
 
         for lang in lang_samples.keys():
             result = eval_result[lang]
-            if "mean_per" not in result:
+            if "per" not in result:
                 self.writer.add_scalar(f'Mask_Prediction_Error_Rate/{lang}',
                                result['mer'], global_step=step)
             else:

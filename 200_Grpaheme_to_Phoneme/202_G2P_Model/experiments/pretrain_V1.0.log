@@ -1,0 +1,1199 @@
+GBERT(
+  (embedding): Embedding(32, 512)
+  (pos_encoder): PositionalEncoding(
+    (dropout): Dropout(p=0.1, inplace=False)
+  )
+  (encoder): TransformerEncoder(
+    (layers): ModuleList(
+      (0): TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (out_proj): _LinearWithBias(in_features=512, out_features=512, bias=True)
+        )
+        (linear1): Linear(in_features=512, out_features=2048, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (linear2): Linear(in_features=2048, out_features=512, bias=True)
+        (norm1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (dropout1): Dropout(p=0.1, inplace=False)
+        (dropout2): Dropout(p=0.1, inplace=False)
+      )
+      (1): TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (out_proj): _LinearWithBias(in_features=512, out_features=512, bias=True)
+        )
+        (linear1): Linear(in_features=512, out_features=2048, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (linear2): Linear(in_features=2048, out_features=512, bias=True)
+        (norm1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (dropout1): Dropout(p=0.1, inplace=False)
+        (dropout2): Dropout(p=0.1, inplace=False)
+      )
+      (2): TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (out_proj): _LinearWithBias(in_features=512, out_features=512, bias=True)
+        )
+        (linear1): Linear(in_features=512, out_features=2048, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (linear2): Linear(in_features=2048, out_features=512, bias=True)
+        (norm1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (dropout1): Dropout(p=0.1, inplace=False)
+        (dropout2): Dropout(p=0.1, inplace=False)
+      )
+      (3): TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (out_proj): _LinearWithBias(in_features=512, out_features=512, bias=True)
+        )
+        (linear1): Linear(in_features=512, out_features=2048, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (linear2): Linear(in_features=2048, out_features=512, bias=True)
+        (norm1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (dropout1): Dropout(p=0.1, inplace=False)
+        (dropout2): Dropout(p=0.1, inplace=False)
+      )
+      (4): TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (out_proj): _LinearWithBias(in_features=512, out_features=512, bias=True)
+        )
+        (linear1): Linear(in_features=512, out_features=2048, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (linear2): Linear(in_features=2048, out_features=512, bias=True)
+        (norm1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (dropout1): Dropout(p=0.1, inplace=False)
+        (dropout2): Dropout(p=0.1, inplace=False)
+      )
+      (5): TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (out_proj): _LinearWithBias(in_features=512, out_features=512, bias=True)
+        )
+        (linear1): Linear(in_features=512, out_features=2048, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (linear2): Linear(in_features=2048, out_features=512, bias=True)
+        (norm1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (dropout1): Dropout(p=0.1, inplace=False)
+        (dropout2): Dropout(p=0.1, inplace=False)
+      )
+    )
+    (norm): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  )
+  (fc_out): Linear(in_features=512, out_features=31, bias=True)
+)
+Training on device: cuda
+Epoch: 1 | Step 292 | Train Loss: 2.653
+Epoch: 2 | Step 584 | Train Loss: 1.001
+Epoch: 3 | Step 876 | Train Loss: 0.5413
+Epoch: 4 | Step 1168 | Train Loss: 0.4966
+Epoch: 5 | Step 1460 | Train Loss: 0.4888
+Epoch: 6 | Step 1752 | Train Loss: 0.4722
+Epoch: 7 | Step 2000 | Valid Loss: 0.4755
+Epoch: 7 | Step 2000 | Mean Mask Error Rate: 0.7214435442279858
+Epoch: 7 | Step 2044 | Train Loss: 0.4728
+Epoch: 8 | Step 2336 | Train Loss: 0.4570
+Epoch: 9 | Step 2628 | Train Loss: 0.4677
+Epoch: 10 | Step 2920 | Train Loss: 0.4485
+Epoch: 11 | Step 3212 | Train Loss: 0.4441
+Epoch: 12 | Step 3504 | Train Loss: 0.4574
+Epoch: 13 | Step 3796 | Train Loss: 0.4466
+Epoch: 14 | Step 4000 | Valid Loss: 0.4406
+Epoch: 14 | Step 4000 | Mean Mask Error Rate: 0.6674790796719293
+Epoch: 14 | Step 4088 | Train Loss: 0.4410
+Epoch: 15 | Step 4380 | Train Loss: 0.4301
+Epoch: 16 | Step 4672 | Train Loss: 0.4391
+Epoch: 17 | Step 4964 | Train Loss: 0.4427
+Epoch: 18 | Step 5256 | Train Loss: 0.4296
+Epoch: 19 | Step 5548 | Train Loss: 0.4283
+Epoch: 20 | Step 5840 | Train Loss: 0.4159
+Epoch: 21 | Step 6000 | Valid Loss: 0.4467
+Epoch: 21 | Step 6000 | Mean Mask Error Rate: 0.6184681162554693
+Epoch: 21 | Step 6132 | Train Loss: 0.4387
+Epoch: 22 | Step 6424 | Train Loss: 0.4183
+Epoch: 23 | Step 6716 | Train Loss: 0.4344
+Epoch: 24 | Step 7008 | Train Loss: 0.4122
+Epoch: 25 | Step 7300 | Train Loss: 0.4103
+Epoch: 26 | Step 7592 | Train Loss: 0.4060
+Epoch: 27 | Step 7884 | Train Loss: 0.4055
+Epoch: 28 | Step 8000 | Valid Loss: 0.4002
+Epoch: 28 | Step 8000 | Mean Mask Error Rate: 0.5883228801011495
+Epoch: 28 | Step 8176 | Train Loss: 0.4038
+Epoch: 29 | Step 8468 | Train Loss: 0.4216
+Epoch: 30 | Step 8760 | Train Loss: 0.3978
+Epoch: 31 | Step 9052 | Train Loss: 0.4096
+Epoch: 32 | Step 9344 | Train Loss: 0.4046
+Epoch: 33 | Step 9636 | Train Loss: 0.4112
+Epoch: 34 | Step 9928 | Train Loss: 0.3998
+Epoch: 35 | Step 10000 | Valid Loss: 0.3860
+Epoch: 35 | Step 10000 | Mean Mask Error Rate: 0.5582525079439019
+Epoch: 35 | Step 10220 | Train Loss: 0.4029
+Epoch: 36 | Step 10512 | Train Loss: 0.3976
+Epoch: 37 | Step 10804 | Train Loss: 0.3899
+Epoch: 38 | Step 11096 | Train Loss: 0.3824
+Epoch: 39 | Step 11388 | Train Loss: 0.3840
+Epoch: 40 | Step 11680 | Train Loss: 0.3752
+Epoch: 41 | Step 11972 | Train Loss: 0.3974
+Epoch: 42 | Step 12000 | Valid Loss: 0.3664
+Epoch: 42 | Step 12000 | Mean Mask Error Rate: 0.528236204228984
+Epoch: 42 | Step 12264 | Train Loss: 0.3883
+Epoch: 43 | Step 12556 | Train Loss: 0.3923
+Epoch: 44 | Step 12848 | Train Loss: 0.3863
+Epoch: 45 | Step 13140 | Train Loss: 0.3827
+Epoch: 46 | Step 13432 | Train Loss: 0.3975
+Epoch: 47 | Step 13724 | Train Loss: 0.3811
+Epoch: 48 | Step 14000 | Valid Loss: 0.3668
+Epoch: 48 | Step 14000 | Mean Mask Error Rate: 0.51451113809912
+Epoch: 48 | Step 14016 | Train Loss: 0.3678
+Epoch: 49 | Step 14308 | Train Loss: 0.3625
+Epoch: 50 | Step 14600 | Train Loss: 0.3589
+Epoch: 51 | Step 14892 | Train Loss: 0.3936
+Epoch: 52 | Step 15184 | Train Loss: 0.3826
+Epoch: 53 | Step 15476 | Train Loss: 0.3834
+Epoch: 54 | Step 15768 | Train Loss: 0.3871
+Epoch: 55 | Step 16000 | Valid Loss: 0.3715
+Epoch: 55 | Step 16000 | Mean Mask Error Rate: 0.5082184032341247
+Epoch: 55 | Step 16060 | Train Loss: 0.3719
+Epoch: 56 | Step 16352 | Train Loss: 0.3674
+Epoch: 57 | Step 16644 | Train Loss: 0.3619
+Epoch: 58 | Step 16936 | Train Loss: 0.3575
+Epoch: 59 | Step 17228 | Train Loss: 0.3633
+Epoch: 60 | Step 17520 | Train Loss: 0.3564
+Epoch: 61 | Step 17812 | Train Loss: 0.3884
+Epoch: 62 | Step 18000 | Valid Loss: 0.3803
+Epoch: 62 | Step 18000 | Mean Mask Error Rate: 0.4931624216007586
+Epoch: 62 | Step 18104 | Train Loss: 0.3791
+Epoch: 63 | Step 18396 | Train Loss: 0.3729
+Epoch: 64 | Step 18688 | Train Loss: 0.3666
+Epoch: 65 | Step 18980 | Train Loss: 0.3626
+Epoch: 66 | Step 19272 | Train Loss: 0.3733
+Epoch: 67 | Step 19564 | Train Loss: 0.3610
+Epoch: 68 | Step 19856 | Train Loss: 0.3509
+Epoch: 69 | Step 20000 | Valid Loss: 0.3385
+Epoch: 69 | Step 20000 | Mean Mask Error Rate: 0.4892736528639638
+Epoch: 69 | Step 20148 | Train Loss: 0.3463
+Epoch: 70 | Step 20440 | Train Loss: 0.3425
+Epoch: 71 | Step 20732 | Train Loss: 0.3829
+Epoch: 72 | Step 21024 | Train Loss: 0.3868
+Epoch: 73 | Step 21316 | Train Loss: 0.3750
+Epoch: 74 | Step 21608 | Train Loss: 0.3632
+Epoch: 75 | Step 21900 | Train Loss: 0.3568
+Epoch: 76 | Step 22000 | Valid Loss: 0.3408
+Epoch: 76 | Step 22000 | Mean Mask Error Rate: 0.47923771814536925
+Epoch: 76 | Step 22192 | Train Loss: 0.3518
+Epoch: 77 | Step 22484 | Train Loss: 0.3490
+Epoch: 78 | Step 22776 | Train Loss: 0.3442
+Epoch: 79 | Step 23068 | Train Loss: 0.3457
+Epoch: 80 | Step 23360 | Train Loss: 0.3502
+Epoch: 81 | Step 23652 | Train Loss: 0.3830
+Epoch: 82 | Step 23944 | Train Loss: 0.3695
+Epoch: 83 | Step 24000 | Valid Loss: 0.3713
+Epoch: 83 | Step 24000 | Mean Mask Error Rate: 0.4742135121196493
+Epoch: 83 | Step 24236 | Train Loss: 0.3618
+Epoch: 84 | Step 24528 | Train Loss: 0.3560
+Epoch: 85 | Step 24820 | Train Loss: 0.3588
+Epoch: 86 | Step 25112 | Train Loss: 0.3500
+Epoch: 87 | Step 25404 | Train Loss: 0.3446
+Epoch: 88 | Step 25696 | Train Loss: 0.3415
+Epoch: 89 | Step 25988 | Train Loss: 0.3493
+Epoch: 90 | Step 26000 | Valid Loss: 0.2931
+Epoch: 90 | Step 26000 | Mean Mask Error Rate: 0.47706250311933324
+Epoch: 90 | Step 26280 | Train Loss: 0.3355
+Epoch: 91 | Step 26572 | Train Loss: 0.3788
+Epoch: 92 | Step 26864 | Train Loss: 0.3666
+Epoch: 93 | Step 27156 | Train Loss: 0.3621
+Epoch: 94 | Step 27448 | Train Loss: 0.3630
+Epoch: 95 | Step 27740 | Train Loss: 0.3563
+Epoch: 96 | Step 28000 | Valid Loss: 0.3487
+Epoch: 96 | Step 28000 | Mean Mask Error Rate: 0.46527142358049545
+Epoch: 96 | Step 28032 | Train Loss: 0.3525
+Epoch: 97 | Step 28324 | Train Loss: 0.3433
+Epoch: 98 | Step 28616 | Train Loss: 0.3401
+Epoch: 99 | Step 28908 | Train Loss: 0.3350
+Epoch: 100 | Step 29200 | Train Loss: 0.3442
+Epoch: 101 | Step 29492 | Train Loss: 0.3806
+Epoch: 102 | Step 29784 | Train Loss: 0.3657
+Epoch: 103 | Step 30000 | Valid Loss: 0.3519
+Epoch: 103 | Step 30000 | Mean Mask Error Rate: 0.4602181037781364
+Epoch: 103 | Step 30076 | Train Loss: 0.3573
+Epoch: 104 | Step 30368 | Train Loss: 0.3514
+Epoch: 105 | Step 30660 | Train Loss: 0.3462
+Epoch: 106 | Step 30952 | Train Loss: 0.3584
+Epoch: 107 | Step 31244 | Train Loss: 0.3492
+Epoch: 108 | Step 31536 | Train Loss: 0.3365
+Epoch: 109 | Step 31828 | Train Loss: 0.3334
+Epoch: 110 | Step 32000 | Valid Loss: 0.3278
+Epoch: 110 | Step 32000 | Mean Mask Error Rate: 0.46321682277196424
+Epoch: 110 | Step 32120 | Train Loss: 0.3279
+Epoch: 111 | Step 32412 | Train Loss: 0.3725
+Epoch: 112 | Step 32704 | Train Loss: 0.3595
+Epoch: 113 | Step 32996 | Train Loss: 0.3523
+Epoch: 114 | Step 33288 | Train Loss: 0.3533
+Epoch: 115 | Step 33580 | Train Loss: 0.3567
+Epoch: 116 | Step 33872 | Train Loss: 0.3414
+Epoch: 117 | Step 34000 | Valid Loss: 0.3309
+Epoch: 117 | Step 34000 | Mean Mask Error Rate: 0.4573691127784525
+Epoch: 117 | Step 34164 | Train Loss: 0.3355
+Epoch: 118 | Step 34456 | Train Loss: 0.3300
+Epoch: 119 | Step 34748 | Train Loss: 0.3266
+Epoch: 120 | Step 35040 | Train Loss: 0.3228
+Epoch: 121 | Step 35332 | Train Loss: 0.3871
+Epoch: 122 | Step 35624 | Train Loss: 0.3645
+Epoch: 123 | Step 35916 | Train Loss: 0.3558
+Epoch: 124 | Step 36000 | Valid Loss: 0.3305
+Epoch: 124 | Step 36000 | Mean Mask Error Rate: 0.4536092764810594
+Epoch: 124 | Step 36208 | Train Loss: 0.3489
+Epoch: 125 | Step 36500 | Train Loss: 0.3441
+Epoch: 126 | Step 36792 | Train Loss: 0.3393
+Epoch: 127 | Step 37084 | Train Loss: 0.3371
+Epoch: 128 | Step 37376 | Train Loss: 0.3407
+Epoch: 129 | Step 37668 | Train Loss: 0.3320
+Epoch: 130 | Step 37960 | Train Loss: 0.3235
+Epoch: 131 | Step 38000 | Valid Loss: 0.3717
+Epoch: 131 | Step 38000 | Mean Mask Error Rate: 0.45397527824452244
+Epoch: 131 | Step 38252 | Train Loss: 0.3731
+Epoch: 132 | Step 38544 | Train Loss: 0.3607
+Epoch: 133 | Step 38836 | Train Loss: 0.3539
+Epoch: 134 | Step 39128 | Train Loss: 0.3475
+Epoch: 135 | Step 39420 | Train Loss: 0.3461
+Epoch: 136 | Step 39712 | Train Loss: 0.3540
+Epoch: 137 | Step 40000 | Valid Loss: 0.3408
+Epoch: 137 | Step 40000 | Mean Mask Error Rate: 0.45113876457768387
+Epoch: 137 | Step 40004 | Train Loss: 0.3410
+Epoch: 138 | Step 40296 | Train Loss: 0.3306
+Epoch: 139 | Step 40588 | Train Loss: 0.3253
+Epoch: 140 | Step 40880 | Train Loss: 0.3252
+Epoch: 141 | Step 41172 | Train Loss: 0.3700
+Epoch: 142 | Step 41464 | Train Loss: 0.3579
+Epoch: 143 | Step 41756 | Train Loss: 0.3505
+Epoch: 144 | Step 42000 | Valid Loss: 0.3473
+Epoch: 144 | Step 42000 | Mean Mask Error Rate: 0.4455821923505631
+Epoch: 144 | Step 42048 | Train Loss: 0.3533
+Epoch: 145 | Step 42340 | Train Loss: 0.3421
+Epoch: 146 | Step 42632 | Train Loss: 0.3373
+Epoch: 147 | Step 42924 | Train Loss: 0.3328
+Epoch: 148 | Step 43216 | Train Loss: 0.3343
+Epoch: 149 | Step 43508 | Train Loss: 0.3298
+Epoch: 150 | Step 43800 | Train Loss: 0.3222
+Epoch: 151 | Step 44000 | Valid Loss: 0.3702
+Epoch: 151 | Step 44000 | Mean Mask Error Rate: 0.4473664509474455
+Epoch: 151 | Step 44092 | Train Loss: 0.3675
+Epoch: 152 | Step 44384 | Train Loss: 0.3567
+Epoch: 153 | Step 44676 | Train Loss: 0.3477
+Epoch: 154 | Step 44968 | Train Loss: 0.3564
+Epoch: 155 | Step 45260 | Train Loss: 0.3389
+Epoch: 156 | Step 45552 | Train Loss: 0.3336
+Epoch: 157 | Step 45844 | Train Loss: 0.3288
+Epoch: 158 | Step 46000 | Valid Loss: 0.3277
+Epoch: 158 | Step 46000 | Mean Mask Error Rate: 0.4512302650185496
+Epoch: 158 | Step 46136 | Train Loss: 0.3237
+Epoch: 159 | Step 46428 | Train Loss: 0.3200
+Epoch: 160 | Step 46720 | Train Loss: 0.3157
+Epoch: 161 | Step 47012 | Train Loss: 0.3720
+Epoch: 162 | Step 47304 | Train Loss: 0.3611
+Epoch: 163 | Step 47596 | Train Loss: 0.3595
+Epoch: 164 | Step 47888 | Train Loss: 0.3473
+Epoch: 165 | Step 48000 | Valid Loss: 0.3350
+Epoch: 165 | Step 48000 | Mean Mask Error Rate: 0.44201783426774693
+Epoch: 165 | Step 48180 | Train Loss: 0.3387
+Epoch: 166 | Step 48472 | Train Loss: 0.3333
+Epoch: 167 | Step 48764 | Train Loss: 0.3297
+Epoch: 168 | Step 49056 | Train Loss: 0.3239
+Epoch: 169 | Step 49348 | Train Loss: 0.3198
+Epoch: 170 | Step 49640 | Train Loss: 0.3180
+Epoch: 171 | Step 49932 | Train Loss: 0.3775
+Epoch: 172 | Step 50000 | Valid Loss: 0.3490
+Epoch: 172 | Step 50000 | Mean Mask Error Rate: 0.4428496564574357
+Epoch: 172 | Step 50224 | Train Loss: 0.3618
+Epoch: 173 | Step 50516 | Train Loss: 0.3528
+Epoch: 174 | Step 50808 | Train Loss: 0.3439
+Epoch: 175 | Step 51100 | Train Loss: 0.3376
+Epoch: 176 | Step 51392 | Train Loss: 0.3331
+Epoch: 177 | Step 51684 | Train Loss: 0.3316
+Epoch: 178 | Step 51976 | Train Loss: 0.3268
+Epoch: 179 | Step 52000 | Valid Loss: 0.3195
+Epoch: 179 | Step 52000 | Mean Mask Error Rate: 0.4422632218137051
+Epoch: 179 | Step 52268 | Train Loss: 0.3234
+Epoch: 180 | Step 52560 | Train Loss: 0.3167
+Epoch: 181 | Step 52852 | Train Loss: 0.3708
+Epoch: 182 | Step 53144 | Train Loss: 0.3570
+Epoch: 183 | Step 53436 | Train Loss: 0.3469
+Epoch: 184 | Step 53728 | Train Loss: 0.3407
+Epoch: 185 | Step 54000 | Valid Loss: 0.3357
+Epoch: 185 | Step 54000 | Mean Mask Error Rate: 0.44148962717729456
+Epoch: 185 | Step 54020 | Train Loss: 0.3347
+Epoch: 186 | Step 54312 | Train Loss: 0.3306
+Epoch: 187 | Step 54604 | Train Loss: 0.3327
+Epoch: 188 | Step 54896 | Train Loss: 0.3220
+Epoch: 189 | Step 55188 | Train Loss: 0.3174
+Epoch: 190 | Step 55480 | Train Loss: 0.3138
+Epoch: 191 | Step 55772 | Train Loss: 0.3735
+Epoch: 192 | Step 56000 | Valid Loss: 0.3555
+Epoch: 192 | Step 56000 | Mean Mask Error Rate: 0.43350413415628275
+Epoch: 192 | Step 56064 | Train Loss: 0.3548
+Epoch: 193 | Step 56356 | Train Loss: 0.3470
+Epoch: 194 | Step 56648 | Train Loss: 0.3410
+Epoch: 195 | Step 56940 | Train Loss: 0.3363
+Epoch: 196 | Step 57232 | Train Loss: 0.3362
+Epoch: 197 | Step 57524 | Train Loss: 0.3363
+Epoch: 198 | Step 57816 | Train Loss: 0.3239
+Epoch: 199 | Step 58000 | Valid Loss: 0.3191
+Epoch: 199 | Step 58000 | Mean Mask Error Rate: 0.44148962717729456
+Epoch: 199 | Step 58108 | Train Loss: 0.3180
+Epoch: 200 | Step 58400 | Train Loss: 0.3140
+Epoch: 201 | Step 58692 | Train Loss: 0.3633
+Epoch: 202 | Step 58984 | Train Loss: 0.3536
+Epoch: 203 | Step 59276 | Train Loss: 0.3452
+Epoch: 204 | Step 59568 | Train Loss: 0.3382
+Epoch: 205 | Step 59860 | Train Loss: 0.3356
+Epoch: 206 | Step 60000 | Valid Loss: 0.3248
+Epoch: 206 | Step 60000 | Mean Mask Error Rate: 0.43513450564807266
+Epoch: 206 | Step 60152 | Train Loss: 0.3305
+Epoch: 207 | Step 60444 | Train Loss: 0.3312
+Epoch: 208 | Step 60736 | Train Loss: 0.3204
+Epoch: 209 | Step 61028 | Train Loss: 0.3156
+Epoch: 210 | Step 61320 | Train Loss: 0.3106
+Epoch: 211 | Step 61612 | Train Loss: 0.3691
+Epoch: 212 | Step 61904 | Train Loss: 0.3577
+Epoch: 213 | Step 62000 | Valid Loss: 0.3442
+Epoch: 213 | Step 62000 | Mean Mask Error Rate: 0.42969022941655993
+Epoch: 213 | Step 62196 | Train Loss: 0.3459
+Epoch: 214 | Step 62488 | Train Loss: 0.3393
+Epoch: 215 | Step 62780 | Train Loss: 0.3330
+Epoch: 216 | Step 63072 | Train Loss: 0.3280
+Epoch: 217 | Step 63364 | Train Loss: 0.3267
+Epoch: 218 | Step 63656 | Train Loss: 0.3260
+Epoch: 219 | Step 63948 | Train Loss: 0.3186
+Epoch: 220 | Step 64000 | Valid Loss: 0.2980
+Epoch: 220 | Step 64000 | Mean Mask Error Rate: 0.43638223893260575
+Epoch: 220 | Step 64240 | Train Loss: 0.3141
+Epoch: 221 | Step 64532 | Train Loss: 0.3632
+Epoch: 222 | Step 64824 | Train Loss: 0.3501
+Epoch: 223 | Step 65116 | Train Loss: 0.3425
+Epoch: 224 | Step 65408 | Train Loss: 0.3363
+Epoch: 225 | Step 65700 | Train Loss: 0.3308
+Epoch: 226 | Step 65992 | Train Loss: 0.3257
+Epoch: 227 | Step 66000 | Valid Loss: 0.3297
+Epoch: 227 | Step 66000 | Mean Mask Error Rate: 0.43024755028365136
+Epoch: 227 | Step 66284 | Train Loss: 0.3502
+Epoch: 228 | Step 66576 | Train Loss: 0.3196
+Epoch: 229 | Step 66868 | Train Loss: 0.3140
+Epoch: 230 | Step 67160 | Train Loss: 0.3097
+Epoch: 231 | Step 67452 | Train Loss: 0.3610
+Epoch: 232 | Step 67744 | Train Loss: 0.3492
+Epoch: 233 | Step 68000 | Valid Loss: 0.3383
+Epoch: 233 | Step 68000 | Mean Mask Error Rate: 0.4288292934502321
+Epoch: 233 | Step 68036 | Train Loss: 0.3420
+Epoch: 234 | Step 68328 | Train Loss: 0.3436
+Epoch: 235 | Step 68620 | Train Loss: 0.3364
+Epoch: 236 | Step 68912 | Train Loss: 0.3278
+Epoch: 237 | Step 69204 | Train Loss: 0.3226
+Epoch: 238 | Step 69496 | Train Loss: 0.3171
+Epoch: 239 | Step 69788 | Train Loss: 0.3126
+Epoch: 240 | Step 70000 | Valid Loss: 0.3090
+Epoch: 240 | Step 70000 | Mean Mask Error Rate: 0.4316075795637924
+Epoch: 240 | Step 70080 | Train Loss: 0.3100
+Epoch: 241 | Step 70372 | Train Loss: 0.3600
+Epoch: 242 | Step 70664 | Train Loss: 0.3481
+Epoch: 243 | Step 70956 | Train Loss: 0.3407
+Epoch: 244 | Step 71248 | Train Loss: 0.3385
+Epoch: 245 | Step 71540 | Train Loss: 0.3342
+Epoch: 246 | Step 71832 | Train Loss: 0.3263
+Epoch: 247 | Step 72000 | Valid Loss: 0.3219
+Epoch: 247 | Step 72000 | Mean Mask Error Rate: 0.42895822588963384
+Epoch: 247 | Step 72124 | Train Loss: 0.3208
+Epoch: 248 | Step 72416 | Train Loss: 0.3157
+Epoch: 249 | Step 72708 | Train Loss: 0.3115
+Epoch: 250 | Step 73000 | Train Loss: 0.3074
+Epoch: 251 | Step 73292 | Train Loss: 0.3584
+Epoch: 252 | Step 73584 | Train Loss: 0.3627
+Epoch: 253 | Step 73876 | Train Loss: 0.3420
+Epoch: 254 | Step 74000 | Valid Loss: 0.3170
+Epoch: 254 | Step 74000 | Mean Mask Error Rate: 0.4228776056830092
+Epoch: 254 | Step 74168 | Train Loss: 0.3336
+Epoch: 255 | Step 74460 | Train Loss: 0.3289
+Epoch: 256 | Step 74752 | Train Loss: 0.3243
+Epoch: 257 | Step 75044 | Train Loss: 0.3205
+Epoch: 258 | Step 75336 | Train Loss: 0.3148
+Epoch: 259 | Step 75628 | Train Loss: 0.3095
+Epoch: 260 | Step 75920 | Train Loss: 0.3051
+Epoch: 261 | Step 76000 | Valid Loss: 0.3441
+Epoch: 261 | Step 76000 | Mean Mask Error Rate: 0.4247242509441182
+Epoch: 261 | Step 76212 | Train Loss: 0.3581
+Epoch: 262 | Step 76504 | Train Loss: 0.3452
+Epoch: 263 | Step 76796 | Train Loss: 0.3488
+Epoch: 264 | Step 77088 | Train Loss: 0.3357
+Epoch: 265 | Step 77380 | Train Loss: 0.3279
+Epoch: 266 | Step 77672 | Train Loss: 0.3236
+Epoch: 267 | Step 77964 | Train Loss: 0.3210
+Epoch: 268 | Step 78000 | Valid Loss: 0.3127
+Epoch: 268 | Step 78000 | Mean Mask Error Rate: 0.42825117702839843
+Epoch: 268 | Step 78256 | Train Loss: 0.3140
+Epoch: 269 | Step 78548 | Train Loss: 0.3086
+Epoch: 270 | Step 78840 | Train Loss: 0.3044
+Epoch: 271 | Step 79132 | Train Loss: 0.3590
+Epoch: 272 | Step 79424 | Train Loss: 0.3469
+Epoch: 273 | Step 79716 | Train Loss: 0.3390
+Epoch: 274 | Step 80000 | Valid Loss: 0.3374
+Epoch: 274 | Step 80000 | Mean Mask Error Rate: 0.4260884393352077
+Epoch: 274 | Step 80008 | Train Loss: 0.3389
+Epoch: 275 | Step 80300 | Train Loss: 0.3333
+Epoch: 276 | Step 80592 | Train Loss: 0.3251
+Epoch: 277 | Step 80884 | Train Loss: 0.3195
+Epoch: 278 | Step 81176 | Train Loss: 0.3143
+Epoch: 279 | Step 81468 | Train Loss: 0.3098
+Epoch: 280 | Step 81760 | Train Loss: 0.3088
+Epoch: 281 | Step 82000 | Valid Loss: 0.3605
+Epoch: 281 | Step 82000 | Mean Mask Error Rate: 0.4235638589895024
+Epoch: 281 | Step 82052 | Train Loss: 0.3577
+Epoch: 282 | Step 82344 | Train Loss: 0.3511
+Epoch: 283 | Step 82636 | Train Loss: 0.3432
+Epoch: 284 | Step 82928 | Train Loss: 0.3325
+Epoch: 285 | Step 83220 | Train Loss: 0.3265
+Epoch: 286 | Step 83512 | Train Loss: 0.3213
+Epoch: 287 | Step 83804 | Train Loss: 0.3174
+Epoch: 288 | Step 84000 | Valid Loss: 0.3177
+Epoch: 288 | Step 84000 | Mean Mask Error Rate: 0.42425427140694405
+Epoch: 288 | Step 84096 | Train Loss: 0.3127
+Epoch: 289 | Step 84388 | Train Loss: 0.3079
+Epoch: 290 | Step 84680 | Train Loss: 0.3035
+Epoch: 291 | Step 84972 | Train Loss: 0.3675
+Epoch: 292 | Step 85264 | Train Loss: 0.3492
+Epoch: 293 | Step 85556 | Train Loss: 0.3400
+Epoch: 294 | Step 85848 | Train Loss: 0.3334
+Epoch: 295 | Step 86000 | Valid Loss: 0.3361
+Epoch: 295 | Step 86000 | Mean Mask Error Rate: 0.42334758522018334
+Epoch: 295 | Step 86140 | Train Loss: 0.3282
+Epoch: 296 | Step 86432 | Train Loss: 0.3151
+Epoch: 297 | Step 86724 | Train Loss: 0.3108
+Epoch: 298 | Step 87016 | Train Loss: 0.3069
+Epoch: 299 | Step 87308 | Train Loss: 0.3032
+Epoch: 300 | Step 87600 | Train Loss: 0.2997
+Epoch: 301 | Step 87892 | Train Loss: 0.3502
+Epoch: 302 | Step 88000 | Valid Loss: 0.3397
+Epoch: 302 | Step 88000 | Mean Mask Error Rate: 0.4110865261441714
+Epoch: 302 | Step 88184 | Train Loss: 0.3409
+Epoch: 303 | Step 88476 | Train Loss: 0.3350
+Epoch: 304 | Step 88768 | Train Loss: 0.3300
+Epoch: 305 | Step 89060 | Train Loss: 0.3252
+Epoch: 306 | Step 89352 | Train Loss: 0.3212
+Epoch: 307 | Step 89644 | Train Loss: 0.3172
+Epoch: 308 | Step 89936 | Train Loss: 0.3129
+Epoch: 309 | Step 90000 | Valid Loss: 0.3306
+Epoch: 309 | Step 90000 | Mean Mask Error Rate: 0.41178525678350997
+Epoch: 309 | Step 90228 | Train Loss: 0.3090
+Epoch: 310 | Step 90520 | Train Loss: 0.3063
+Epoch: 311 | Step 90812 | Train Loss: 0.3469
+Epoch: 312 | Step 91104 | Train Loss: 0.3380
+Epoch: 313 | Step 91396 | Train Loss: 0.3322
+Epoch: 314 | Step 91688 | Train Loss: 0.3272
+Epoch: 315 | Step 91980 | Train Loss: 0.3224
+Epoch: 316 | Step 92000 | Valid Loss: 0.2959
+Epoch: 316 | Step 92000 | Mean Mask Error Rate: 0.40759287294747876
+Epoch: 316 | Step 92272 | Train Loss: 0.3191
+Epoch: 317 | Step 92564 | Train Loss: 0.3150
+Epoch: 318 | Step 92856 | Train Loss: 0.3117
+Epoch: 319 | Step 93148 | Train Loss: 0.3063
+Epoch: 320 | Step 93440 | Train Loss: 0.3028
+Epoch: 321 | Step 93732 | Train Loss: 0.3446
+Epoch: 322 | Step 94000 | Valid Loss: 0.3362
+Epoch: 322 | Step 94000 | Mean Mask Error Rate: 0.4050724517127219
+Epoch: 322 | Step 94024 | Train Loss: 0.3358
+Epoch: 323 | Step 94316 | Train Loss: 0.3300
+Epoch: 324 | Step 94608 | Train Loss: 0.3262
+Epoch: 325 | Step 94900 | Train Loss: 0.3207
+Epoch: 326 | Step 95192 | Train Loss: 0.3160
+Epoch: 327 | Step 95484 | Train Loss: 0.3119
+Epoch: 328 | Step 95776 | Train Loss: 0.3079
+Epoch: 329 | Step 96000 | Valid Loss: 0.3059
+Epoch: 329 | Step 96000 | Mean Mask Error Rate: 0.4099718844099885
+Epoch: 329 | Step 96068 | Train Loss: 0.3042
+Epoch: 330 | Step 96360 | Train Loss: 0.3005
+Epoch: 331 | Step 96652 | Train Loss: 0.3475
+Epoch: 332 | Step 96944 | Train Loss: 0.3378
+Epoch: 333 | Step 97236 | Train Loss: 0.3313
+Epoch: 334 | Step 97528 | Train Loss: 0.3262
+Epoch: 335 | Step 97820 | Train Loss: 0.3221
+Epoch: 336 | Step 98000 | Valid Loss: 0.3132
+Epoch: 336 | Step 98000 | Mean Mask Error Rate: 0.4045816766208055
+Epoch: 336 | Step 98112 | Train Loss: 0.3172
+Epoch: 337 | Step 98404 | Train Loss: 0.3137
+Epoch: 338 | Step 98696 | Train Loss: 0.3095
+Epoch: 339 | Step 98988 | Train Loss: 0.3053
+Epoch: 340 | Step 99280 | Train Loss: 0.3015
+Epoch: 341 | Step 99572 | Train Loss: 0.3434
+Epoch: 342 | Step 99864 | Train Loss: 0.3346
+Epoch: 343 | Step 100000 | Valid Loss: 0.3229
+Epoch: 343 | Step 100000 | Mean Mask Error Rate: 0.404361243740538
+Epoch: 343 | Step 100156 | Train Loss: 0.3283
+Epoch: 344 | Step 100448 | Train Loss: 0.3247
+Epoch: 345 | Step 100740 | Train Loss: 0.3189
+Epoch: 346 | Step 101032 | Train Loss: 0.3145
+Epoch: 347 | Step 101324 | Train Loss: 0.3102
+Epoch: 348 | Step 101616 | Train Loss: 0.3062
+Epoch: 349 | Step 101908 | Train Loss: 0.3026
+Epoch: 350 | Step 102000 | Valid Loss: 0.3078
+Epoch: 350 | Step 102000 | Mean Mask Error Rate: 0.4072892578482424
+Epoch: 350 | Step 102200 | Train Loss: 0.2997
+Epoch: 351 | Step 102492 | Train Loss: 0.3438
+Epoch: 352 | Step 102784 | Train Loss: 0.3360
+Epoch: 353 | Step 103076 | Train Loss: 0.3286
+Epoch: 354 | Step 103368 | Train Loss: 0.3235
+Epoch: 355 | Step 103660 | Train Loss: 0.3188
+Epoch: 356 | Step 103952 | Train Loss: 0.3143
+Epoch: 357 | Step 104000 | Valid Loss: 0.3262
+Epoch: 357 | Step 104000 | Mean Mask Error Rate: 0.4024522118152024
+Epoch: 357 | Step 104244 | Train Loss: 0.3102
+Epoch: 358 | Step 104536 | Train Loss: 0.3065
+Epoch: 359 | Step 104828 | Train Loss: 0.3024
+Epoch: 360 | Step 105120 | Train Loss: 0.2987
+Epoch: 361 | Step 105412 | Train Loss: 0.3429
+Epoch: 362 | Step 105704 | Train Loss: 0.3343
+Epoch: 363 | Step 105996 | Train Loss: 0.3282
+Epoch: 364 | Step 106000 | Valid Loss: 0.3973
+Epoch: 364 | Step 106000 | Mean Mask Error Rate: 0.39939110615714785
+Epoch: 364 | Step 106288 | Train Loss: 0.3227
+Epoch: 365 | Step 106580 | Train Loss: 0.3181
+Epoch: 366 | Step 106872 | Train Loss: 0.3163
+Epoch: 367 | Step 107164 | Train Loss: 0.3104
+Epoch: 368 | Step 107456 | Train Loss: 0.3055
+Epoch: 369 | Step 107748 | Train Loss: 0.3015
+Epoch: 370 | Step 108000 | Valid Loss: 0.2975
+Epoch: 370 | Step 108000 | Mean Mask Error Rate: 0.404361243740538
+Epoch: 370 | Step 108040 | Train Loss: 0.2978
+Epoch: 371 | Step 108332 | Train Loss: 0.3412
+Epoch: 372 | Step 108624 | Train Loss: 0.3319
+Epoch: 373 | Step 108916 | Train Loss: 0.3260
+Epoch: 374 | Step 109208 | Train Loss: 0.3227
+Epoch: 375 | Step 109500 | Train Loss: 0.3163
+Epoch: 376 | Step 109792 | Train Loss: 0.3116
+Epoch: 377 | Step 110000 | Valid Loss: 0.3113
+Epoch: 377 | Step 110000 | Mean Mask Error Rate: 0.40196975494518294
+Epoch: 377 | Step 110084 | Train Loss: 0.3077
+Epoch: 378 | Step 110376 | Train Loss: 0.3033
+Epoch: 379 | Step 110668 | Train Loss: 0.2999
+Epoch: 380 | Step 110960 | Train Loss: 0.2958
+Epoch: 381 | Step 111252 | Train Loss: 0.3418
+Epoch: 382 | Step 111544 | Train Loss: 0.3325
+Epoch: 383 | Step 111836 | Train Loss: 0.3267
+Epoch: 384 | Step 112000 | Valid Loss: 0.3143
+Epoch: 384 | Step 112000 | Mean Mask Error Rate: 0.4009965229832471
+Epoch: 384 | Step 112128 | Train Loss: 0.3212
+Epoch: 385 | Step 112420 | Train Loss: 0.3168
+Epoch: 386 | Step 112712 | Train Loss: 0.3128
+Epoch: 387 | Step 113004 | Train Loss: 0.3088
+Epoch: 388 | Step 113296 | Train Loss: 0.3046
+Epoch: 389 | Step 113588 | Train Loss: 0.3001
+Epoch: 390 | Step 113880 | Train Loss: 0.2963
+Epoch: 391 | Step 114000 | Valid Loss: 0.3341
+Epoch: 391 | Step 114000 | Mean Mask Error Rate: 0.40013142790597084
+Epoch: 391 | Step 114172 | Train Loss: 0.3413
+Epoch: 392 | Step 114464 | Train Loss: 0.3329
+Epoch: 393 | Step 114756 | Train Loss: 0.3264
+Epoch: 394 | Step 115048 | Train Loss: 0.3213
+Epoch: 395 | Step 115340 | Train Loss: 0.3167
+Epoch: 396 | Step 115632 | Train Loss: 0.3119
+Epoch: 397 | Step 115924 | Train Loss: 0.3076
+Epoch: 398 | Step 116000 | Valid Loss: 0.3218
+Epoch: 398 | Step 116000 | Mean Mask Error Rate: 0.40191568650285314
+Epoch: 398 | Step 116216 | Train Loss: 0.3042
+Epoch: 399 | Step 116508 | Train Loss: 0.2997
+Epoch: 400 | Step 116800 | Train Loss: 0.2963
+Epoch: 401 | Step 117092 | Train Loss: 0.3404
+Epoch: 402 | Step 117384 | Train Loss: 0.3314
+Epoch: 403 | Step 117676 | Train Loss: 0.3249
+Epoch: 404 | Step 117968 | Train Loss: 0.3197
+Epoch: 405 | Step 118000 | Valid Loss: 0.3106
+Epoch: 405 | Step 118000 | Mean Mask Error Rate: 0.39761932489311086
+Epoch: 405 | Step 118260 | Train Loss: 0.3146
+Epoch: 406 | Step 118552 | Train Loss: 0.3104
+Epoch: 407 | Step 118844 | Train Loss: 0.3062
+Epoch: 408 | Step 119136 | Train Loss: 0.3031
+Epoch: 409 | Step 119428 | Train Loss: 0.2982
+Epoch: 410 | Step 119720 | Train Loss: 0.2940
+Epoch: 411 | Step 120000 | Valid Loss: 0.3422
+Epoch: 411 | Step 120000 | Mean Mask Error Rate: 0.39653379693556706
+Epoch: 411 | Step 120012 | Train Loss: 0.3395
+Epoch: 412 | Step 120304 | Train Loss: 0.3307
+Epoch: 413 | Step 120596 | Train Loss: 0.3252
+Epoch: 414 | Step 120888 | Train Loss: 0.3194
+Epoch: 415 | Step 121180 | Train Loss: 0.3140
+Epoch: 416 | Step 121472 | Train Loss: 0.3097
+Epoch: 417 | Step 121764 | Train Loss: 0.3055
+Epoch: 418 | Step 122000 | Valid Loss: 0.3061
+Epoch: 418 | Step 122000 | Mean Mask Error Rate: 0.40045583855994943
+Epoch: 418 | Step 122056 | Train Loss: 0.3018
+Epoch: 419 | Step 122348 | Train Loss: 0.2978
+Epoch: 420 | Step 122640 | Train Loss: 0.2944
+Epoch: 421 | Step 122932 | Train Loss: 0.3407
+Epoch: 422 | Step 123224 | Train Loss: 0.3317
+Epoch: 423 | Step 123516 | Train Loss: 0.3253
+Epoch: 424 | Step 123808 | Train Loss: 0.3204
+Epoch: 425 | Step 124000 | Valid Loss: 0.3218
+Epoch: 425 | Step 124000 | Mean Mask Error Rate: 0.39726580046249316
+Epoch: 425 | Step 124100 | Train Loss: 0.3160
+Epoch: 426 | Step 124392 | Train Loss: 0.3107
+Epoch: 427 | Step 124684 | Train Loss: 0.3069
+Epoch: 428 | Step 124976 | Train Loss: 0.3025
+Epoch: 429 | Step 125268 | Train Loss: 0.2985
+Epoch: 430 | Step 125560 | Train Loss: 0.2944
+Epoch: 431 | Step 125852 | Train Loss: 0.3388
+Epoch: 432 | Step 126000 | Valid Loss: 0.3325
+Epoch: 432 | Step 126000 | Mean Mask Error Rate: 0.39609709028598045
+Epoch: 432 | Step 126144 | Train Loss: 0.3298
+Epoch: 433 | Step 126436 | Train Loss: 0.3233
+Epoch: 434 | Step 126728 | Train Loss: 0.3180
+Epoch: 435 | Step 127020 | Train Loss: 0.3132
+Epoch: 436 | Step 127312 | Train Loss: 0.3085
+Epoch: 437 | Step 127604 | Train Loss: 0.3044
+Epoch: 438 | Step 127896 | Train Loss: 0.3002
+Epoch: 439 | Step 128000 | Valid Loss: 0.2849
+Epoch: 439 | Step 128000 | Mean Mask Error Rate: 0.3987506030710875
+Epoch: 439 | Step 128188 | Train Loss: 0.2964
+Epoch: 440 | Step 128480 | Train Loss: 0.2922
+Epoch: 441 | Step 128772 | Train Loss: 0.3386
+Epoch: 442 | Step 129064 | Train Loss: 0.3293
+Epoch: 443 | Step 129356 | Train Loss: 0.3231
+Epoch: 444 | Step 129648 | Train Loss: 0.3202
+Epoch: 445 | Step 129940 | Train Loss: 0.3138
+Epoch: 446 | Step 130000 | Valid Loss: 0.3056
+Epoch: 446 | Step 130000 | Mean Mask Error Rate: 0.3973406644595651
+Epoch: 446 | Step 130232 | Train Loss: 0.3086
+Epoch: 447 | Step 130524 | Train Loss: 0.3041
+Epoch: 448 | Step 130816 | Train Loss: 0.2996
+Epoch: 449 | Step 131108 | Train Loss: 0.2960
+Epoch: 450 | Step 131400 | Train Loss: 0.2920
+Epoch: 451 | Step 131692 | Train Loss: 0.3389
+Epoch: 452 | Step 131984 | Train Loss: 0.3288
+Epoch: 453 | Step 132000 | Valid Loss: 0.3520
+Epoch: 453 | Step 132000 | Mean Mask Error Rate: 0.39429619524530435
+Epoch: 453 | Step 132276 | Train Loss: 0.3225
+Epoch: 454 | Step 132568 | Train Loss: 0.3168
+Epoch: 455 | Step 132860 | Train Loss: 0.3118
+Epoch: 456 | Step 133152 | Train Loss: 0.3074
+Epoch: 457 | Step 133444 | Train Loss: 0.3033
+Epoch: 458 | Step 133736 | Train Loss: 0.2990
+Epoch: 459 | Step 134000 | Valid Loss: 0.2991
+Epoch: 459 | Step 134000 | Mean Mask Error Rate: 0.3986091932988404
+Epoch: 459 | Step 134028 | Train Loss: 0.2955
+Epoch: 460 | Step 134320 | Train Loss: 0.2915
+Epoch: 461 | Step 134612 | Train Loss: 0.3382
+Epoch: 462 | Step 134904 | Train Loss: 0.3288
+Epoch: 463 | Step 135196 | Train Loss: 0.3238
+Epoch: 464 | Step 135488 | Train Loss: 0.3177
+Epoch: 465 | Step 135780 | Train Loss: 0.3124
+Epoch: 466 | Step 136000 | Valid Loss: 0.3041
+Epoch: 466 | Step 136000 | Mean Mask Error Rate: 0.39581842985243476
+Epoch: 466 | Step 136072 | Train Loss: 0.3080
+Epoch: 467 | Step 136364 | Train Loss: 0.3040
+Epoch: 468 | Step 136656 | Train Loss: 0.2990
+Epoch: 469 | Step 136948 | Train Loss: 0.2951
+Epoch: 470 | Step 137240 | Train Loss: 0.2916
+Epoch: 471 | Step 137532 | Train Loss: 0.3364
+Epoch: 472 | Step 137824 | Train Loss: 0.3274
+Epoch: 473 | Step 138000 | Valid Loss: 0.3164
+Epoch: 473 | Step 138000 | Mean Mask Error Rate: 0.39271573308489577
+Epoch: 473 | Step 138116 | Train Loss: 0.3208
+Epoch: 474 | Step 138408 | Train Loss: 0.3154
+Epoch: 475 | Step 138700 | Train Loss: 0.3102
+Epoch: 476 | Step 138992 | Train Loss: 0.3058
+Epoch: 477 | Step 139284 | Train Loss: 0.3027
+Epoch: 478 | Step 139576 | Train Loss: 0.2973
+Epoch: 479 | Step 139868 | Train Loss: 0.2932
+Epoch: 480 | Step 140000 | Valid Loss: 0.3027
+Epoch: 480 | Step 140000 | Mean Mask Error Rate: 0.3989294448418706
+Epoch: 480 | Step 140160 | Train Loss: 0.2896
+Epoch: 481 | Step 140452 | Train Loss: 0.3354
+Epoch: 482 | Step 140744 | Train Loss: 0.3262
+Epoch: 483 | Step 141036 | Train Loss: 0.3198
+Epoch: 484 | Step 141328 | Train Loss: 0.3145
+Epoch: 485 | Step 141620 | Train Loss: 0.3095
+Epoch: 486 | Step 141912 | Train Loss: 0.3049
+Epoch: 487 | Step 142000 | Valid Loss: 0.2857
+Epoch: 487 | Step 142000 | Mean Mask Error Rate: 0.3940923988088306
+Epoch: 487 | Step 142204 | Train Loss: 0.3008
+Epoch: 488 | Step 142496 | Train Loss: 0.2965
+Epoch: 489 | Step 142788 | Train Loss: 0.2925
+Epoch: 490 | Step 143080 | Train Loss: 0.2896
+Epoch: 491 | Step 143372 | Train Loss: 0.3370
+Epoch: 492 | Step 143664 | Train Loss: 0.3275
+Epoch: 493 | Step 143956 | Train Loss: 0.3210
+Epoch: 494 | Step 144000 | Valid Loss: 0.3099
+Epoch: 494 | Step 144000 | Mean Mask Error Rate: 0.3936848059358831
+Epoch: 494 | Step 144248 | Train Loss: 0.3155
+Epoch: 495 | Step 144540 | Train Loss: 0.3103
+Epoch: 496 | Step 144832 | Train Loss: 0.3056
+Epoch: 497 | Step 145124 | Train Loss: 0.3015
+Epoch: 498 | Step 145416 | Train Loss: 0.2969
+Epoch: 499 | Step 145708 | Train Loss: 0.2932
+Epoch: 500 | Step 146000 | Valid Loss: 0.2893
+Epoch: 500 | Step 146000 | Mean Mask Error Rate: 0.39813505465071786
+Epoch: 500 | Step 146 | Train Loss: 0.2893
+Epoch: 501 | Step 146292 | Train Loss: 0.3366
+Epoch: 502 | Step 146584 | Train Loss: 0.3278
+Epoch: 503 | Step 146876 | Train Loss: 0.3212
+Epoch: 504 | Step 147168 | Train Loss: 0.3156
+Epoch: 505 | Step 147460 | Train Loss: 0.3104
+Epoch: 506 | Step 147752 | Train Loss: 0.3052
+Epoch: 507 | Step 148000 | Valid Loss: 0.3015
+Epoch: 507 | Step 148000 | Mean Mask Error Rate: 0.39519040409921974
+Epoch: 507 | Step 148044 | Train Loss: 0.3015
+Epoch: 508 | Step 148336 | Train Loss: 0.2971
+Epoch: 509 | Step 148628 | Train Loss: 0.2936
+Epoch: 510 | Step 148920 | Train Loss: 0.2893
+Epoch: 511 | Step 149212 | Train Loss: 0.3360
+Epoch: 512 | Step 149504 | Train Loss: 0.3265
+Epoch: 513 | Step 149796 | Train Loss: 0.3200
+Epoch: 514 | Step 150000 | Valid Loss: 0.3079
+Epoch: 514 | Step 150000 | Mean Mask Error Rate: 0.393139962401637
+Epoch: 514 | Step 150088 | Train Loss: 0.3145
+Epoch: 515 | Step 150380 | Train Loss: 0.3068
+Epoch: 516 | Step 150672 | Train Loss: 0.3032
+Epoch: 517 | Step 150964 | Train Loss: 0.3005
+Epoch: 518 | Step 151256 | Train Loss: 0.2979
+Epoch: 519 | Step 151548 | Train Loss: 0.2953
+Epoch: 520 | Step 151840 | Train Loss: 0.2924
+Epoch: 521 | Step 152000 | Valid Loss: 0.3290
+Epoch: 521 | Step 152000 | Mean Mask Error Rate: 0.38906403367216225
+Epoch: 521 | Step 152132 | Train Loss: 0.3330
+Epoch: 522 | Step 152424 | Train Loss: 0.3269
+Epoch: 523 | Step 152716 | Train Loss: 0.3226
+Epoch: 524 | Step 153008 | Train Loss: 0.3187
+Epoch: 525 | Step 153300 | Train Loss: 0.3151
+Epoch: 526 | Step 153592 | Train Loss: 0.3115
+Epoch: 527 | Step 153884 | Train Loss: 0.3088
+Epoch: 528 | Step 154000 | Valid Loss: 0.3100
+Epoch: 528 | Step 154000 | Mean Mask Error Rate: 0.38884775990284315
+Epoch: 528 | Step 154176 | Train Loss: 0.3054
+Epoch: 529 | Step 154468 | Train Loss: 0.3024
+Epoch: 530 | Step 154760 | Train Loss: 0.2997
+Epoch: 531 | Step 155052 | Train Loss: 0.3301
+Epoch: 532 | Step 155344 | Train Loss: 0.3241
+Epoch: 533 | Step 155636 | Train Loss: 0.3194
+Epoch: 534 | Step 155928 | Train Loss: 0.3158
+Epoch: 535 | Step 156000 | Valid Loss: 0.2954
+Epoch: 535 | Step 156000 | Mean Mask Error Rate: 0.38666422665491024
+Epoch: 535 | Step 156220 | Train Loss: 0.3123
+Epoch: 536 | Step 156512 | Train Loss: 0.3090
+Epoch: 537 | Step 156804 | Train Loss: 0.3059
+Epoch: 538 | Step 157096 | Train Loss: 0.3032
+Epoch: 539 | Step 157388 | Train Loss: 0.2999
+Epoch: 540 | Step 157680 | Train Loss: 0.2971
+Epoch: 541 | Step 157972 | Train Loss: 0.3289
+Epoch: 542 | Step 158000 | Valid Loss: 0.3053
+Epoch: 542 | Step 158000 | Mean Mask Error Rate: 0.3847759902843168
+Epoch: 542 | Step 158264 | Train Loss: 0.3228
+Epoch: 543 | Step 158556 | Train Loss: 0.3184
+Epoch: 544 | Step 158848 | Train Loss: 0.3144
+Epoch: 545 | Step 159140 | Train Loss: 0.3114
+Epoch: 546 | Step 159432 | Train Loss: 0.3075
+Epoch: 547 | Step 159724 | Train Loss: 0.3050
+Epoch: 548 | Step 160000 | Valid Loss: 0.3006
+Epoch: 548 | Step 160000 | Mean Mask Error Rate: 0.38593222312798414
+Epoch: 548 | Step 160016 | Train Loss: 0.3017
+Epoch: 549 | Step 160308 | Train Loss: 0.2989
+Epoch: 550 | Step 160600 | Train Loss: 0.2961
+Epoch: 551 | Step 160892 | Train Loss: 0.3268
+Epoch: 552 | Step 161184 | Train Loss: 0.3208
+Epoch: 553 | Step 161476 | Train Loss: 0.3162
+Epoch: 554 | Step 161768 | Train Loss: 0.3127
+Epoch: 555 | Step 162000 | Valid Loss: 0.3088
+Epoch: 555 | Step 162000 | Mean Mask Error Rate: 0.3840855778668752
+Epoch: 555 | Step 162060 | Train Loss: 0.3085
+Epoch: 556 | Step 162352 | Train Loss: 0.3053
+Epoch: 557 | Step 162644 | Train Loss: 0.3024
+Epoch: 558 | Step 162936 | Train Loss: 0.2994
+Epoch: 559 | Step 163228 | Train Loss: 0.2964
+Epoch: 560 | Step 163520 | Train Loss: 0.2937
+Epoch: 561 | Step 163812 | Train Loss: 0.3283
+Epoch: 562 | Step 164000 | Valid Loss: 0.3250
+Epoch: 562 | Step 164000 | Mean Mask Error Rate: 0.38325375567718645
+Epoch: 562 | Step 164104 | Train Loss: 0.3221
+Epoch: 563 | Step 164396 | Train Loss: 0.3178
+Epoch: 564 | Step 164688 | Train Loss: 0.3140
+Epoch: 565 | Step 164980 | Train Loss: 0.3105
+Epoch: 566 | Step 165272 | Train Loss: 0.3075
+Epoch: 567 | Step 165564 | Train Loss: 0.3041
+Epoch: 568 | Step 165856 | Train Loss: 0.3012
+Epoch: 569 | Step 166000 | Valid Loss: 0.2907
+Epoch: 569 | Step 166000 | Mean Mask Error Rate: 0.3864521119965396
+Epoch: 569 | Step 166148 | Train Loss: 0.2983
+Epoch: 570 | Step 166440 | Train Loss: 0.2956
+Epoch: 571 | Step 166732 | Train Loss: 0.3276
+Epoch: 572 | Step 167024 | Train Loss: 0.3216
+Epoch: 573 | Step 167316 | Train Loss: 0.3170
+Epoch: 574 | Step 167608 | Train Loss: 0.3132
+Epoch: 575 | Step 167900 | Train Loss: 0.3101
+Epoch: 576 | Step 168000 | Valid Loss: 0.2942
+Epoch: 576 | Step 168000 | Mean Mask Error Rate: 0.38324127834434113
+Epoch: 576 | Step 168192 | Train Loss: 0.3066
+Epoch: 577 | Step 168484 | Train Loss: 0.3034
+Epoch: 578 | Step 168776 | Train Loss: 0.3003
+Epoch: 579 | Step 169068 | Train Loss: 0.2975
+Epoch: 580 | Step 169360 | Train Loss: 0.2949
+Epoch: 581 | Step 169652 | Train Loss: 0.3268
+Epoch: 582 | Step 169944 | Train Loss: 0.3208
+Epoch: 583 | Step 170000 | Valid Loss: 0.3306
+Epoch: 583 | Step 170000 | Mean Mask Error Rate: 0.38295014057795007
+Epoch: 583 | Step 170236 | Train Loss: 0.3163
+Epoch: 584 | Step 170528 | Train Loss: 0.3124
+Epoch: 585 | Step 170820 | Train Loss: 0.3086
+Epoch: 586 | Step 171112 | Train Loss: 0.3056
+Epoch: 587 | Step 171404 | Train Loss: 0.3026
+Epoch: 588 | Step 171696 | Train Loss: 0.2993
+Epoch: 589 | Step 171988 | Train Loss: 0.2966
+Epoch: 590 | Step 172000 | Valid Loss: 0.2438
+Epoch: 590 | Step 172000 | Mean Mask Error Rate: 0.38467201251060573
+Epoch: 590 | Step 172280 | Train Loss: 0.2936
+Epoch: 591 | Step 172572 | Train Loss: 0.3255
+Epoch: 592 | Step 172864 | Train Loss: 0.3195
+Epoch: 593 | Step 173156 | Train Loss: 0.3151
+Epoch: 594 | Step 173448 | Train Loss: 0.3112
+Epoch: 595 | Step 173740 | Train Loss: 0.3071
+Epoch: 596 | Step 174000 | Valid Loss: 0.2985
+Epoch: 596 | Step 174000 | Mean Mask Error Rate: 0.38204345439118936
+Epoch: 596 | Step 174032 | Train Loss: 0.3042
+Epoch: 597 | Step 174324 | Train Loss: 0.3011
+Epoch: 598 | Step 174616 | Train Loss: 0.2981
+Epoch: 599 | Step 174908 | Train Loss: 0.2950
+Epoch: 600 | Step 175200 | Train Loss: 0.2921
+Epoch: 601 | Step 175492 | Train Loss: 0.3262
+Epoch: 602 | Step 175784 | Train Loss: 0.3204
+Epoch: 603 | Step 176000 | Valid Loss: 0.3086
+Epoch: 603 | Step 176000 | Mean Mask Error Rate: 0.3803631735680181
+Epoch: 603 | Step 176076 | Train Loss: 0.3159
+Epoch: 604 | Step 176368 | Train Loss: 0.3119
+Epoch: 605 | Step 176660 | Train Loss: 0.3085
+Epoch: 606 | Step 176952 | Train Loss: 0.3049
+Epoch: 607 | Step 177244 | Train Loss: 0.3020
+Epoch: 608 | Step 177536 | Train Loss: 0.2988
+Epoch: 609 | Step 177828 | Train Loss: 0.2960
+Epoch: 610 | Step 178000 | Valid Loss: 0.2947
+Epoch: 610 | Step 178000 | Mean Mask Error Rate: 0.38394000898367964
+Epoch: 610 | Step 178120 | Train Loss: 0.2934
+Epoch: 611 | Step 178412 | Train Loss: 0.3261
+Epoch: 612 | Step 178704 | Train Loss: 0.3202
+Epoch: 613 | Step 178996 | Train Loss: 0.3154
+Epoch: 614 | Step 179288 | Train Loss: 0.3116
+Epoch: 615 | Step 179580 | Train Loss: 0.3078
+Epoch: 616 | Step 179872 | Train Loss: 0.3046
+Epoch: 617 | Step 180000 | Valid Loss: 0.2972
+Epoch: 617 | Step 180000 | Mean Mask Error Rate: 0.3819103628408391
+Epoch: 617 | Step 180164 | Train Loss: 0.3016
+Epoch: 618 | Step 180456 | Train Loss: 0.2985
+Epoch: 619 | Step 180748 | Train Loss: 0.2956
+Epoch: 620 | Step 181040 | Train Loss: 0.2928
+Epoch: 621 | Step 181332 | Train Loss: 0.3251
+Epoch: 622 | Step 181624 | Train Loss: 0.3195
+Epoch: 623 | Step 181916 | Train Loss: 0.3150
+Epoch: 624 | Step 182000 | Valid Loss: 0.2963
+Epoch: 624 | Step 182000 | Mean Mask Error Rate: 0.38056697000449186
+Epoch: 624 | Step 182208 | Train Loss: 0.3112
+Epoch: 625 | Step 182500 | Train Loss: 0.3078
+Epoch: 626 | Step 182792 | Train Loss: 0.3042
+Epoch: 627 | Step 183084 | Train Loss: 0.3011
+Epoch: 628 | Step 183376 | Train Loss: 0.2980
+Epoch: 629 | Step 183668 | Train Loss: 0.2953
+Epoch: 630 | Step 183960 | Train Loss: 0.2922
+Epoch: 631 | Step 184000 | Valid Loss: 0.3233
+Epoch: 631 | Step 184000 | Mean Mask Error Rate: 0.3826382072568168
+Epoch: 631 | Step 184252 | Train Loss: 0.3264
+Epoch: 632 | Step 184544 | Train Loss: 0.3201
+Epoch: 633 | Step 184836 | Train Loss: 0.3157
+Epoch: 634 | Step 185128 | Train Loss: 0.3119
+Epoch: 635 | Step 185420 | Train Loss: 0.3080
+Epoch: 636 | Step 185712 | Train Loss: 0.3047
+Epoch: 637 | Step 186000 | Valid Loss: 0.3017
+Epoch: 637 | Step 186000 | Mean Mask Error Rate: 0.38111181353873796
+Epoch: 637 | Step 186004 | Train Loss: 0.3018
+Epoch: 638 | Step 186296 | Train Loss: 0.2987
+Epoch: 639 | Step 186588 | Train Loss: 0.2959
+Epoch: 640 | Step 186880 | Train Loss: 0.2931
+Epoch: 641 | Step 187172 | Train Loss: 0.3244
+Epoch: 642 | Step 187464 | Train Loss: 0.3180
+Epoch: 643 | Step 187756 | Train Loss: 0.3136
+Epoch: 644 | Step 188000 | Valid Loss: 0.3028
+Epoch: 644 | Step 188000 | Mean Mask Error Rate: 0.3789698714002895
+Epoch: 644 | Step 188048 | Train Loss: 0.3097
+Epoch: 645 | Step 188340 | Train Loss: 0.3062
+Epoch: 646 | Step 188632 | Train Loss: 0.3026
+Epoch: 647 | Step 188924 | Train Loss: 0.2995
+Epoch: 648 | Step 189216 | Train Loss: 0.2965
+Epoch: 649 | Step 189508 | Train Loss: 0.2935
+Epoch: 650 | Step 189800 | Train Loss: 0.2908
+Epoch: 651 | Step 190000 | Valid Loss: 0.3282
+Epoch: 651 | Step 190000 | Mean Mask Error Rate: 0.379668602039628
+Epoch: 651 | Step 190092 | Train Loss: 0.3254
+Epoch: 652 | Step 190384 | Train Loss: 0.3195
+Epoch: 653 | Step 190676 | Train Loss: 0.3152
+Epoch: 654 | Step 190968 | Train Loss: 0.3109
+Epoch: 655 | Step 191260 | Train Loss: 0.3073
+Epoch: 656 | Step 191552 | Train Loss: 0.3037
+Epoch: 657 | Step 191844 | Train Loss: 0.3010
+Epoch: 658 | Step 192000 | Valid Loss: 0.3083
+Epoch: 658 | Step 192000 | Mean Mask Error Rate: 0.3818770899532516
+Epoch: 658 | Step 192136 | Train Loss: 0.2975
+Epoch: 659 | Step 192428 | Train Loss: 0.2952
+Epoch: 660 | Step 192720 | Train Loss: 0.2918
+Epoch: 661 | Step 193012 | Train Loss: 0.3243
+Epoch: 662 | Step 193304 | Train Loss: 0.3185
+Epoch: 663 | Step 193596 | Train Loss: 0.3140
+Epoch: 664 | Step 193888 | Train Loss: 0.3099
+Epoch: 665 | Step 194000 | Valid Loss: 0.3066
+Epoch: 665 | Step 194000 | Mean Mask Error Rate: 0.3790488945083099
+Epoch: 665 | Step 194180 | Train Loss: 0.3061
+Epoch: 666 | Step 194472 | Train Loss: 0.3026
+Epoch: 667 | Step 194764 | Train Loss: 0.2998
+Epoch: 668 | Step 195056 | Train Loss: 0.2964
+Epoch: 669 | Step 195348 | Train Loss: 0.2936
+Epoch: 670 | Step 195640 | Train Loss: 0.2907
+Epoch: 671 | Step 195932 | Train Loss: 0.3247
+Epoch: 672 | Step 196000 | Valid Loss: 0.3071
+Epoch: 672 | Step 196000 | Mean Mask Error Rate: 0.3791819860586601
+Epoch: 672 | Step 196224 | Train Loss: 0.3184
+Epoch: 673 | Step 196516 | Train Loss: 0.3140
+Epoch: 674 | Step 196808 | Train Loss: 0.3101
+Epoch: 675 | Step 197100 | Train Loss: 0.3063
+Epoch: 676 | Step 197392 | Train Loss: 0.3030
+Epoch: 677 | Step 197684 | Train Loss: 0.2999
+Epoch: 678 | Step 197976 | Train Loss: 0.2965
+Epoch: 679 | Step 198000 | Valid Loss: 0.2860
+Epoch: 679 | Step 198000 | Mean Mask Error Rate: 0.3809412899898518
+Epoch: 679 | Step 198268 | Train Loss: 0.2936
+Epoch: 680 | Step 198560 | Train Loss: 0.2907
+Epoch: 681 | Step 198852 | Train Loss: 0.3237
+Epoch: 682 | Step 199144 | Train Loss: 0.3171
+Epoch: 683 | Step 199436 | Train Loss: 0.3127
+Epoch: 684 | Step 199728 | Train Loss: 0.3086
+Epoch: 685 | Step 200000 | Valid Loss: 0.3061
+Epoch: 685 | Step 200000 | Mean Mask Error Rate: 0.3784208687550949
+Epoch: 685 | Step 200020 | Train Loss: 0.3052
+Epoch: 686 | Step 200312 | Train Loss: 0.3018
+Epoch: 687 | Step 200604 | Train Loss: 0.2990
+Epoch: 688 | Step 200896 | Train Loss: 0.2957
+Epoch: 689 | Step 201188 | Train Loss: 0.2926
+Epoch: 690 | Step 201480 | Train Loss: 0.2896
+Epoch: 691 | Step 201772 | Train Loss: 0.3225
+Epoch: 692 | Step 202000 | Valid Loss: 0.3184
+Epoch: 692 | Step 202000 | Mean Mask Error Rate: 0.3773394999084996
+Epoch: 692 | Step 202064 | Train Loss: 0.3164
+Epoch: 693 | Step 202356 | Train Loss: 0.3117
+Epoch: 694 | Step 202648 | Train Loss: 0.3080
+Epoch: 695 | Step 202940 | Train Loss: 0.3042
+Epoch: 696 | Step 203232 | Train Loss: 0.3008
+Epoch: 697 | Step 203524 | Train Loss: 0.2977
+Epoch: 698 | Step 203816 | Train Loss: 0.2946
+Epoch: 699 | Step 204000 | Valid Loss: 0.2954
+Epoch: 699 | Step 204000 | Mean Mask Error Rate: 0.3800304446921426
+Epoch: 699 | Step 204108 | Train Loss: 0.2915
+Epoch: 700 | Step 204400 | Train Loss: 0.2887
+Epoch: 701 | Step 204692 | Train Loss: 0.3227
+Epoch: 702 | Step 204984 | Train Loss: 0.3164
+Epoch: 703 | Step 205276 | Train Loss: 0.3120
+Epoch: 704 | Step 205568 | Train Loss: 0.3078
+Epoch: 705 | Step 205860 | Train Loss: 0.3042
+Epoch: 706 | Step 206000 | Valid Loss: 0.2945
+Epoch: 706 | Step 206000 | Mean Mask Error Rate: 0.37867457452294995
+Epoch: 706 | Step 206152 | Train Loss: 0.3003
+Epoch: 707 | Step 206444 | Train Loss: 0.2975
+Epoch: 708 | Step 206736 | Train Loss: 0.2947
+Epoch: 709 | Step 207028 | Train Loss: 0.2913
+Epoch: 710 | Step 207320 | Train Loss: 0.2886
+Epoch: 711 | Step 207612 | Train Loss: 0.3234
+Epoch: 712 | Step 207904 | Train Loss: 0.3171
+Epoch: 713 | Step 208000 | Valid Loss: 0.3105
+Epoch: 713 | Step 208000 | Mean Mask Error Rate: 0.377343659019448
+Epoch: 713 | Step 208196 | Train Loss: 0.3127
+Epoch: 714 | Step 208488 | Train Loss: 0.3084
+Epoch: 715 | Step 208780 | Train Loss: 0.3046
+Epoch: 716 | Step 209072 | Train Loss: 0.3013
+Epoch: 717 | Step 209364 | Train Loss: 0.2981
+Epoch: 718 | Step 209656 | Train Loss: 0.2951
+Epoch: 719 | Step 209948 | Train Loss: 0.2921
+Epoch: 720 | Step 210000 | Valid Loss: 0.2756
+Epoch: 720 | Step 210000 | Mean Mask Error Rate: 0.3807998802176047
+Epoch: 720 | Step 210240 | Train Loss: 0.2894
+Epoch: 721 | Step 210532 | Train Loss: 0.3218
+Epoch: 722 | Step 210824 | Train Loss: 0.3154
+Epoch: 723 | Step 211116 | Train Loss: 0.3108
+Epoch: 724 | Step 211408 | Train Loss: 0.3070
+Epoch: 725 | Step 211700 | Train Loss: 0.3034
+Epoch: 726 | Step 211992 | Train Loss: 0.2997
+Epoch: 727 | Step 212000 | Valid Loss: 0.3113
+Epoch: 727 | Step 212000 | Mean Mask Error Rate: 0.37960621537540135
+Epoch: 727 | Step 212284 | Train Loss: 0.2964
+Epoch: 728 | Step 212576 | Train Loss: 0.2931
+Epoch: 729 | Step 212868 | Train Loss: 0.2906
+Epoch: 730 | Step 213160 | Train Loss: 0.2873
+Epoch: 731 | Step 213452 | Train Loss: 0.3227
+Epoch: 732 | Step 213744 | Train Loss: 0.3166
+Epoch: 733 | Step 214000 | Valid Loss: 0.3079
+Epoch: 733 | Step 214000 | Mean Mask Error Rate: 0.37798000299455986
+Epoch: 733 | Step 214036 | Train Loss: 0.3120
+Epoch: 734 | Step 214328 | Train Loss: 0.3068
+Epoch: 735 | Step 214620 | Train Loss: 0.3044
+Epoch: 736 | Step 214912 | Train Loss: 0.3021
+Epoch: 737 | Step 215204 | Train Loss: 0.3004
+Epoch: 738 | Step 215496 | Train Loss: 0.2985
+Epoch: 739 | Step 215788 | Train Loss: 0.2967
+Epoch: 740 | Step 216000 | Valid Loss: 0.2955
+Epoch: 740 | Step 216000 | Mean Mask Error Rate: 0.37853732386165134
+Epoch: 740 | Step 216080 | Train Loss: 0.2951
+Epoch: 741 | Step 216372 | Train Loss: 0.3193
+Epoch: 742 | Step 216664 | Train Loss: 0.3153
+Epoch: 743 | Step 216956 | Train Loss: 0.3124
+Epoch: 744 | Step 217248 | Train Loss: 0.3099
+Epoch: 745 | Step 217540 | Train Loss: 0.3074
+Epoch: 746 | Step 217832 | Train Loss: 0.3052
+Epoch: 747 | Step 218000 | Valid Loss: 0.3077
+Epoch: 747 | Step 218000 | Mean Mask Error Rate: 0.3758879701874927
+Epoch: 747 | Step 218124 | Train Loss: 0.3032
+Epoch: 748 | Step 218416 | Train Loss: 0.3009
+Epoch: 749 | Step 218708 | Train Loss: 0.2989
+Epoch: 750 | Step 219000 | Train Loss: 0.2971
+Epoch: 751 | Step 219292 | Train Loss: 0.3189
+Epoch: 752 | Step 219584 | Train Loss: 0.3154
+Epoch: 753 | Step 219876 | Train Loss: 0.3122
+Epoch: 754 | Step 220000 | Valid Loss: 0.2935
+Epoch: 754 | Step 220000 | Mean Mask Error Rate: 0.37370859605050827
+Epoch: 754 | Step 220168 | Train Loss: 0.3097
+Epoch: 755 | Step 220460 | Train Loss: 0.3075
+Epoch: 756 | Step 220752 | Train Loss: 0.3052
+Epoch: 757 | Step 221044 | Train Loss: 0.3031
+Epoch: 758 | Step 221336 | Train Loss: 0.3012
+Epoch: 759 | Step 221628 | Train Loss: 0.2992
+Epoch: 760 | Step 221920 | Train Loss: 0.2973
+Epoch: 761 | Step 222000 | Valid Loss: 0.2938
+Epoch: 761 | Step 222000 | Mean Mask Error Rate: 0.374278394250445
+Epoch: 761 | Step 222212 | Train Loss: 0.3175
+Epoch: 762 | Step 222504 | Train Loss: 0.3137
+Epoch: 763 | Step 222796 | Train Loss: 0.3108
+Epoch: 764 | Step 223088 | Train Loss: 0.3086
+Epoch: 765 | Step 223380 | Train Loss: 0.3059
+Epoch: 766 | Step 223672 | Train Loss: 0.3038
+Epoch: 767 | Step 223964 | Train Loss: 0.3015
+Epoch: 768 | Step 224000 | Valid Loss: 0.3044
+Epoch: 768 | Step 224000 | Mean Mask Error Rate: 0.37419105292052773
+Epoch: 768 | Step 224256 | Train Loss: 0.2997
+Epoch: 769 | Step 224548 | Train Loss: 0.2978
+Epoch: 770 | Step 224840 | Train Loss: 0.2960
+Epoch: 771 | Step 225132 | Train Loss: 0.3164
+Epoch: 772 | Step 225424 | Train Loss: 0.3128
+Epoch: 773 | Step 225716 | Train Loss: 0.3102
+Epoch: 774 | Step 226000 | Valid Loss: 0.3060
+Epoch: 774 | Step 226000 | Mean Mask Error Rate: 0.3728185463075413
+Epoch: 774 | Step 226008 | Train Loss: 0.3075
+Epoch: 775 | Step 226300 | Train Loss: 0.3052
+Epoch: 776 | Step 226592 | Train Loss: 0.3029
+Epoch: 777 | Step 226884 | Train Loss: 0.3009
+Epoch: 778 | Step 227176 | Train Loss: 0.2988
+Epoch: 779 | Step 227468 | Train Loss: 0.2967
+Epoch: 780 | Step 227760 | Train Loss: 0.2950
+Epoch: 781 | Step 228000 | Valid Loss: 0.3217
+Epoch: 781 | Step 228000 | Mean Mask Error Rate: 0.3720574290039761
+Epoch: 781 | Step 228052 | Train Loss: 0.3181
+Epoch: 782 | Step 228344 | Train Loss: 0.3144
+Epoch: 783 | Step 228636 | Train Loss: 0.3115
+Epoch: 784 | Step 228928 | Train Loss: 0.3089
+Epoch: 785 | Step 229220 | Train Loss: 0.3068
+Epoch: 786 | Step 229512 | Train Loss: 0.3046
+Epoch: 787 | Step 229804 | Train Loss: 0.3024
+Epoch: 788 | Step 230000 | Valid Loss: 0.3089
+Epoch: 788 | Step 230000 | Mean Mask Error Rate: 0.3729765925235822
+Epoch: 788 | Step 230096 | Train Loss: 0.3005
+Epoch: 789 | Step 230388 | Train Loss: 0.2984
+Epoch: 790 | Step 230680 | Train Loss: 0.2964
+Epoch: 791 | Step 230972 | Train Loss: 0.3169
+Epoch: 792 | Step 231264 | Train Loss: 0.3132
+Epoch: 793 | Step 231556 | Train Loss: 0.3105
+Epoch: 794 | Step 231848 | Train Loss: 0.3079
+Epoch: 795 | Step 232000 | Valid Loss: 0.3144
+Epoch: 795 | Step 232000 | Mean Mask Error Rate: 0.37164567702008017
+Epoch: 795 | Step 232140 | Train Loss: 0.3056
+Epoch: 796 | Step 232432 | Train Loss: 0.3034
+Epoch: 797 | Step 232724 | Train Loss: 0.3014
+Epoch: 798 | Step 233016 | Train Loss: 0.2995
+Epoch: 799 | Step 233308 | Train Loss: 0.2974
+Epoch: 800 | Step 233600 | Train Loss: 0.2956
+Epoch: 801 | Step 233892 | Train Loss: 0.3178
+Epoch: 802 | Step 234000 | Valid Loss: 0.3127
+Epoch: 802 | Step 234000 | Mean Mask Error Rate: 0.3709926966011745
+Epoch: 802 | Step 234184 | Train Loss: 0.3146
+Epoch: 803 | Step 234476 | Train Loss: 0.3115
+Epoch: 804 | Step 234768 | Train Loss: 0.3088
+Epoch: 805 | Step 235060 | Train Loss: 0.3066
+Epoch: 806 | Step 235352 | Train Loss: 0.3042
+Epoch: 807 | Step 235644 | Train Loss: 0.3022
+Epoch: 808 | Step 235936 | Train Loss: 0.3003
+Epoch: 809 | Step 236000 | Valid Loss: 0.3234
+Epoch: 809 | Step 236000 | Mean Mask Error Rate: 0.3728185463075413
+Epoch: 809 | Step 236228 | Train Loss: 0.2982
+Epoch: 810 | Step 236520 | Train Loss: 0.2965
+Epoch: 811 | Step 236812 | Train Loss: 0.3153
+Epoch: 812 | Step 237104 | Train Loss: 0.3114
+Epoch: 813 | Step 237396 | Train Loss: 0.3086
+Epoch: 814 | Step 237688 | Train Loss: 0.3061
+Epoch: 815 | Step 237980 | Train Loss: 0.3039
+Epoch: 816 | Step 238000 | Valid Loss: 0.2812
+Epoch: 816 | Step 238000 | Mean Mask Error Rate: 0.3711798565938545
+Epoch: 816 | Step 238272 | Train Loss: 0.3017
+Epoch: 817 | Step 238564 | Train Loss: 0.2993
+Epoch: 818 | Step 238856 | Train Loss: 0.2971
+Epoch: 819 | Step 239148 | Train Loss: 0.2956
+Epoch: 820 | Step 239440 | Train Loss: 0.2936
+Epoch: 821 | Step 239732 | Train Loss: 0.3163
+Epoch: 822 | Step 240000 | Valid Loss: 0.3136
+Epoch: 822 | Step 240000 | Mean Mask Error Rate: 0.37076394549901015
+Epoch: 822 | Step 240024 | Train Loss: 0.3126
+Epoch: 823 | Step 240316 | Train Loss: 0.3095
+Epoch: 824 | Step 240608 | Train Loss: 0.3070
+Epoch: 825 | Step 240900 | Train Loss: 0.3048
+Epoch: 826 | Step 241192 | Train Loss: 0.3026
+Epoch: 827 | Step 241484 | Train Loss: 0.3002
+Epoch: 828 | Step 241776 | Train Loss: 0.2982
+Epoch: 829 | Step 242000 | Valid Loss: 0.2987
+Epoch: 829 | Step 242000 | Mean Mask Error Rate: 0.3726688183133973
+Epoch: 829 | Step 242068 | Train Loss: 0.2966
+Epoch: 830 | Step 242360 | Train Loss: 0.2944
+Epoch: 831 | Step 242652 | Train Loss: 0.3151
+Epoch: 832 | Step 242944 | Train Loss: 0.3109
+Epoch: 833 | Step 243236 | Train Loss: 0.3082
+Epoch: 834 | Step 243528 | Train Loss: 0.3057
+Epoch: 835 | Step 243820 | Train Loss: 0.3030
+Epoch: 836 | Step 244000 | Valid Loss: 0.2976
+Epoch: 836 | Step 244000 | Mean Mask Error Rate: 0.3711881748157514
+Epoch: 836 | Step 244112 | Train Loss: 0.3009
+Epoch: 837 | Step 244404 | Train Loss: 0.2989
+Epoch: 838 | Step 244696 | Train Loss: 0.2966
+Epoch: 839 | Step 244988 | Train Loss: 0.2950
+Epoch: 840 | Step 245280 | Train Loss: 0.2931
+Epoch: 841 | Step 245572 | Train Loss: 0.3151
+Epoch: 842 | Step 245864 | Train Loss: 0.3114
+Epoch: 843 | Step 246000 | Valid Loss: 0.3048
+Epoch: 843 | Step 246000 | Mean Mask Error Rate: 0.37038130729175334
+Epoch: 843 | Step 246156 | Train Loss: 0.3085
+Epoch: 844 | Step 246448 | Train Loss: 0.3060
+Epoch: 845 | Step 246740 | Train Loss: 0.3038
+Epoch: 846 | Step 247032 | Train Loss: 0.3013
+Epoch: 847 | Step 247324 | Train Loss: 0.2995
+Epoch: 848 | Step 247616 | Train Loss: 0.2975
+Epoch: 849 | Step 247908 | Train Loss: 0.2954
+Epoch: 850 | Step 248000 | Valid Loss: 0.3054
+Epoch: 850 | Step 248000 | Mean Mask Error Rate: 0.3720907018915637
+Epoch: 850 | Step 248200 | Train Loss: 0.2934
+Epoch: 851 | Step 248492 | Train Loss: 0.3157
+Epoch: 852 | Step 248784 | Train Loss: 0.3119
+Epoch: 853 | Step 249076 | Train Loss: 0.3091
+Epoch: 854 | Step 249368 | Train Loss: 0.3067
+Epoch: 855 | Step 249660 | Train Loss: 0.3041
+Epoch: 856 | Step 249952 | Train Loss: 0.3018
+Epoch: 857 | Step 250000 | Valid Loss: 0.3156
+Epoch: 857 | Step 250000 | Mean Mask Error Rate: 0.3718744281222446
+Epoch: 857 | Step 250244 | Train Loss: 0.2999
+Epoch: 858 | Step 250536 | Train Loss: 0.2978
+Epoch: 859 | Step 250828 | Train Loss: 0.2959
+Epoch: 860 | Step 251120 | Train Loss: 0.2939
+Epoch: 861 | Step 251412 | Train Loss: 0.3160
+Epoch: 862 | Step 251704 | Train Loss: 0.3123
+Epoch: 863 | Step 251996 | Train Loss: 0.3094
+Epoch: 864 | Step 252000 | Valid Loss: 0.3822

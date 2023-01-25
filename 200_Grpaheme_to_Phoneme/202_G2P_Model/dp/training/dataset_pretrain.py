@@ -37,8 +37,9 @@ class PhonemizerDatasetPretrain(Dataset):
                 texts = torch.cat([text] * char_len, dim=-1).reshape(char_len, char_len + 2)
                 mask = torch.cat((torch.zeros(char_len, 1), torch.ones(char_len).diag(), torch.zeros(char_len, 1)), dim=-1)
                 new_texts = texts * (1 - mask) + mask * unk_idx
-                for new_text in new_texts:
-                    new_items.append((language, new_text.long(), phonemes))
+                for i, new_text in enumerate(new_texts):
+                    # new_items.append((language, new_text.long(), phonemes))
+                    new_items.append((language, new_text.long(), phonemes, mask[i]))
             self.items = new_items
         else:
             new_items = []
@@ -46,25 +47,47 @@ class PhonemizerDatasetPretrain(Dataset):
                 text = torch.tensor(text, dtype=torch.long)
                 phonemes = torch.tensor(phonemes, dtype=torch.long)
                 char_len = text.size(0) - 2
+                
+                # denoising the encoder by predicting the entire input instead of just the masked part
+                # mask_rand = torch.rand(char_len)
+                # mask_UNK = torch.lt(mask_rand, torch.ones(char_len) * self.mask_UNK_ratio * self.mask_ratio).int()
+                # mask_random = torch.lt(mask_rand, torch.ones(char_len) * (self.mask_UNK_ratio + self.mask_random_ratio) * self.mask_ratio).int() - mask_UNK
+                # mask_original = torch.lt(mask_rand, torch.ones(char_len) * (self.mask_UNK_ratio + self.mask_random_ratio + self.mask_original_ratio) * self.mask_ratio).int() - mask_UNK - mask_random
+                # new_text = (1 - mask_UNK - mask_random) * text[1:-1] + mask_UNK * unk_idx
+                # rand_token_indices = (torch.rand(char_len) * len(non_special_indices)).trunc().int()
+                # rand_token_indices = torch.tensor([self.non_special_indices[i] for i in rand_token_indices])
+                # new_text += mask_random * rand_token_indices
+                # new_text = torch.cat((text[:1], new_text, text[-1:]), dim=0)
+
+                # avoid denoising the encoder by predicting only the masked part
                 mask_rand = torch.rand(char_len)
-                mask_UNK = torch.lt(mask_rand, torch.ones(char_len) * self.mask_UNK_ratio * self.mask_ratio).int()
-                mask_random = torch.lt(mask_rand, torch.ones(char_len) * (self.mask_UNK_ratio + self.mask_random_ratio) * self.mask_ratio).int() - mask_UNK
-                mask_original = torch.lt(mask_rand, torch.ones(char_len) * (self.mask_UNK_ratio + self.mask_random_ratio + self.mask_original_ratio) * self.mask_ratio).int() - mask_UNK - mask_random
+                mask = torch.lt(mask_rand, torch.ones(char_len) * self.mask_ratio).int()
+                # target - mask other parts with 0
+                new_phonemes = torch.cat((phonemes[:1], phonemes[1:-1] * mask, phonemes[-1:]), dim=0)
+                mask_rand = mask_rand / self.mask_ratio
+                mask_UNK = torch.lt(mask_rand, torch.ones(char_len) * self.mask_UNK_ratio).int() * mask
+                mask_random = torch.lt(mask_rand, torch.ones(char_len) * (self.mask_UNK_ratio + self.mask_random_ratio) ).int() * mask - mask_UNK
+                mask_original = torch.lt(mask_rand, torch.ones(char_len) * (self.mask_UNK_ratio + self.mask_random_ratio + self.mask_original_ratio) ).int() * mask - mask_UNK - mask_random
+                # assert mask_UNK.sum() + mask_random.sum() + mask_original.sum() == mask.sum(), (text, mask)
                 new_text = (1 - mask_UNK - mask_random) * text[1:-1] + mask_UNK * unk_idx
                 rand_token_indices = (torch.rand(char_len) * len(non_special_indices)).trunc().int()
                 rand_token_indices = torch.tensor([self.non_special_indices[i] for i in rand_token_indices])
+                # if mask_random.sum() > 0:
+                #     import pdb; pdb.set_trace()
                 new_text += mask_random * rand_token_indices
                 new_text = torch.cat((text[:1], new_text, text[-1:]), dim=0)
-                new_items.append((language, new_text.long(), phonemes))
+                mask = torch.cat((torch.tensor([1.]), mask, torch.tensor([1.])), dim=0)
+                new_items.append((language, new_text.long(), new_phonemes.long(), mask.long()))
+
             self.items = new_items
 
     def __getitem__(self, index: int) -> Dict[str, torch.Tensor]:
         item = self.items[index]
-        language, text, phonemes = item
+        language, text, phonemes, mask = item
         return {'item_id': index, 'text': text,
                 'phonemes': phonemes, 'language': language,
                 'text_len': text.size(0), 'phonemes_len': phonemes.size(0),
-                'start_index': phonemes[0]}
+                'start_index': phonemes[0], 'mask': mask}
 
     def __len__(self):
         return len(self.items)
@@ -112,9 +135,17 @@ def collate_dataset(batch: List[dict]) -> Dict[str, torch.Tensor]:
     item_ids = torch.tensor(item_ids).long()
     start_index = [b['start_index'] for b in batch]
     start_index = torch.tensor(start_index).long()
-    return {'text': text, 'phonemes': phonemes, 'text_len': text_len,
+    if 'mask' not in batch[0]:
+        return {'text': text, 'phonemes': phonemes, 'text_len': text_len,
             'phonemes_len': phonemes_len, 'item_id': item_ids, 'language': lang,
             'start_index': start_index}
+    else:
+        masks = [b['mask'] for b in batch]
+        masks = pad_sequence(masks, batch_first=True, padding_value=0)
+        # import pdb; pdb.set_trace()
+        return {'text': text, 'phonemes': phonemes, 'text_len': text_len,
+            'phonemes_len': phonemes_len, 'item_id': item_ids, 'language': lang,
+            'start_index': start_index, 'mask': masks}
 
 
 def new_dataloader_pretrain(dataset_file: Path,
@@ -135,7 +166,7 @@ def new_dataloader_pretrain(dataset_file: Path,
                                     mask_UNK=mask_UNK,
                                     mask_random=mask_random,
                                     mask_original=mask_original)
-    phoneme_lens = [len(p) for _, _, p in phonemizer_dataset.items]
+    phoneme_lens = [len(p) for _, _, p, _ in phonemizer_dataset.items]
     if use_binning:
         sampler = BinnedLengthSampler(phoneme_lens=phoneme_lens,
                                       batch_size=batch_size,

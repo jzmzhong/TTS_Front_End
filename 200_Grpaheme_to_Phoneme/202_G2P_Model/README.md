@@ -59,9 +59,9 @@ Note: Forward Transformers are used in industrial deployment since they support 
 
 ### Pretraining 
 
-| Model Name    | Layers | Dimension | Mask Valid Acc. |
-| :------------ | :----- | :-------- | :-------------  |
-| pretrain_V1.0 | 6      | 512       | x%              |
-
+| Model Name    | Layers | Dimension | Mask Valid Acc. | Note                                                    |
+| :------------ | :----- | :-------- | :-------------  | :------------------------------------------------------ |
+| pretrain_V1.0 | 6      | 512       | x%              | Predict entire sequence instead of just the masked part |
+| pretrain_V1.1 | 6      | 512       | x%              | Predict only the masked part                            |
 
 ### Finetuning
