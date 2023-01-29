@@ -1,0 +1,1332 @@
+ForwardTransformer(
+  (embedding): Embedding(31, 512)
+  (pos_encoder): PositionalEncoding(
+    (dropout): Dropout(p=0.1, inplace=False)
+  )
+  (encoder): TransformerEncoder(
+    (layers): ModuleList(
+      (0): TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (out_proj): _LinearWithBias(in_features=512, out_features=512, bias=True)
+        )
+        (linear1): Linear(in_features=512, out_features=2048, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (linear2): Linear(in_features=2048, out_features=512, bias=True)
+        (norm1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (dropout1): Dropout(p=0.1, inplace=False)
+        (dropout2): Dropout(p=0.1, inplace=False)
+      )
+      (1): TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (out_proj): _LinearWithBias(in_features=512, out_features=512, bias=True)
+        )
+        (linear1): Linear(in_features=512, out_features=2048, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (linear2): Linear(in_features=2048, out_features=512, bias=True)
+        (norm1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (dropout1): Dropout(p=0.1, inplace=False)
+        (dropout2): Dropout(p=0.1, inplace=False)
+      )
+      (2): TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (out_proj): _LinearWithBias(in_features=512, out_features=512, bias=True)
+        )
+        (linear1): Linear(in_features=512, out_features=2048, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (linear2): Linear(in_features=2048, out_features=512, bias=True)
+        (norm1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (dropout1): Dropout(p=0.1, inplace=False)
+        (dropout2): Dropout(p=0.1, inplace=False)
+      )
+    )
+    (norm): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  )
+  (fc_out): Linear(in_features=512, out_features=72, bias=True)
+)
+Training on device: cuda
+Epoch: 1 | Step 156 | Train Loss: 6.225
+Epoch: 2 | Step 312 | Train Loss: 1.970
+Epoch: 3 | Step 468 | Train Loss: 1.284
+Epoch: 4 | Step 624 | Train Loss: 1.128
+Epoch: 5 | Step 780 | Train Loss: 1.002
+Epoch: 6 | Step 936 | Train Loss: 0.8870
+Epoch: 7 | Step 1092 | Train Loss: 0.7994
+Epoch: 8 | Step 1248 | Train Loss: 0.7120
+Epoch: 9 | Step 1404 | Train Loss: 0.6412
+Epoch: 10 | Step 1560 | Train Loss: 0.5531
+Epoch: 11 | Step 1716 | Train Loss: 0.4848
+Epoch: 12 | Step 1872 | Train Loss: 0.4224
+Epoch: 13 | Step 2000 | Valid Loss: 0.3845
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 13 | Step 2000 | Mean PER: 0.1490425546291166 | Mean WER: 0.5367659574468086
+Epoch: 13 | Step 2028 | Train Loss: 0.3832
+Epoch: 14 | Step 2184 | Train Loss: 0.3644
+Epoch: 15 | Step 2340 | Train Loss: 0.3445
+Epoch: 16 | Step 2496 | Train Loss: 0.3407
+Epoch: 17 | Step 2652 | Train Loss: 0.3187
+Epoch: 18 | Step 2808 | Train Loss: 0.3078
+Epoch: 19 | Step 2964 | Train Loss: 0.2937
+Epoch: 20 | Step 3120 | Train Loss: 0.2917
+Epoch: 21 | Step 3276 | Train Loss: 0.2788
+Epoch: 22 | Step 3432 | Train Loss: 0.2680
+Epoch: 23 | Step 3588 | Train Loss: 0.2610
+Epoch: 24 | Step 3744 | Train Loss: 0.2552
+Epoch: 25 | Step 3900 | Train Loss: 0.2457
+Epoch: 26 | Step 4000 | Valid Loss: 0.2387
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 26 | Step 4000 | Mean PER: 0.11277179421343532 | Mean WER: 0.44017021276595747
+Epoch: 26 | Step 4056 | Train Loss: 0.2438
+Epoch: 27 | Step 4212 | Train Loss: 0.2356
+Epoch: 28 | Step 4368 | Train Loss: 0.2259
+Epoch: 29 | Step 4524 | Train Loss: 0.2236
+Epoch: 30 | Step 4680 | Train Loss: 0.2158
+Epoch: 31 | Step 4836 | Train Loss: 0.2141
+Epoch: 32 | Step 4992 | Train Loss: 0.2079
+Epoch: 33 | Step 5148 | Train Loss: 0.1989
+Epoch: 34 | Step 5304 | Train Loss: 0.1997
+Epoch: 35 | Step 5460 | Train Loss: 0.1965
+Epoch: 36 | Step 5616 | Train Loss: 0.1887
+Epoch: 37 | Step 5772 | Train Loss: 0.1807
+Epoch: 38 | Step 5928 | Train Loss: 0.1779
+Epoch: 39 | Step 6000 | Valid Loss: 0.1594
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 39 | Step 6000 | Mean PER: 0.09954188570115813 | Mean WER: 0.3955744680851064
+Epoch: 39 | Step 6084 | Train Loss: 0.1683
+Epoch: 40 | Step 6240 | Train Loss: 0.1688
+Epoch: 41 | Step 6396 | Train Loss: 0.1625
+Epoch: 42 | Step 6552 | Train Loss: 0.1587
+Epoch: 43 | Step 6708 | Train Loss: 0.1539
+Epoch: 44 | Step 6864 | Train Loss: 0.1519
+Epoch: 45 | Step 7020 | Train Loss: 0.1455
+Epoch: 46 | Step 7176 | Train Loss: 0.1419
+Epoch: 47 | Step 7332 | Train Loss: 0.1414
+Epoch: 48 | Step 7488 | Train Loss: 0.1381
+Epoch: 49 | Step 7644 | Train Loss: 0.1301
+Epoch: 50 | Step 7800 | Train Loss: 0.1311
+Epoch: 51 | Step 7956 | Train Loss: 0.1268
+Epoch: 52 | Step 8000 | Valid Loss: 0.1125
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 52 | Step 8000 | Mean PER: 0.09170394194516142 | Mean WER: 0.37353191489361703
+Epoch: 52 | Step 8112 | Train Loss: 0.1217
+Epoch: 53 | Step 8268 | Train Loss: 0.1269
+Epoch: 54 | Step 8424 | Train Loss: 0.1188
+Epoch: 55 | Step 8580 | Train Loss: 0.1199
+Epoch: 56 | Step 8736 | Train Loss: 0.1101
+Epoch: 57 | Step 8892 | Train Loss: 0.1121
+Epoch: 58 | Step 9048 | Train Loss: 0.1092
+Epoch: 59 | Step 9204 | Train Loss: 0.1109
+Epoch: 60 | Step 9360 | Train Loss: 0.1025
+Epoch: 61 | Step 9516 | Train Loss: 0.1016
+Epoch: 62 | Step 9672 | Train Loss: 0.1047
+Epoch: 63 | Step 9828 | Train Loss: 0.1035
+Epoch: 64 | Step 9984 | Train Loss: 0.09434
+Epoch: 65 | Step 10000 | Valid Loss: 0.08608
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 65 | Step 10000 | Mean PER: 0.09219043500587845 | Mean WER: 0.3748936170212766
+Epoch: 65 | Step 10140 | Train Loss: 0.1017
+Epoch: 66 | Step 10296 | Train Loss: 0.09290
+Epoch: 67 | Step 10452 | Train Loss: 0.09120
+Epoch: 68 | Step 10608 | Train Loss: 0.08484
+Epoch: 69 | Step 10764 | Train Loss: 0.08711
+Epoch: 70 | Step 10920 | Train Loss: 0.08614
+Epoch: 71 | Step 11076 | Train Loss: 0.07603
+Epoch: 72 | Step 11232 | Train Loss: 0.07966
+Epoch: 73 | Step 11388 | Train Loss: 0.07306
+Epoch: 74 | Step 11544 | Train Loss: 0.07259
+Epoch: 75 | Step 11700 | Train Loss: 0.07741
+Epoch: 76 | Step 11856 | Train Loss: 0.07656
+Epoch: 77 | Step 12000 | Valid Loss: 0.06881
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 77 | Step 12000 | Mean PER: 0.09140664063027878 | Mean WER: 0.3662127659574468
+Epoch: 77 | Step 12012 | Train Loss: 0.07005
+Epoch: 78 | Step 12168 | Train Loss: 0.06986
+Epoch: 79 | Step 12324 | Train Loss: 0.06325
+Epoch: 80 | Step 12480 | Train Loss: 0.06831
+Epoch: 81 | Step 12636 | Train Loss: 0.06396
+Epoch: 82 | Step 12792 | Train Loss: 0.06165
+Epoch: 83 | Step 12948 | Train Loss: 0.06438
+Epoch: 84 | Step 13104 | Train Loss: 0.06266
+Epoch: 85 | Step 13260 | Train Loss: 0.05950
+Epoch: 86 | Step 13416 | Train Loss: 0.05614
+Epoch: 87 | Step 13572 | Train Loss: 0.05654
+Epoch: 88 | Step 13728 | Train Loss: 0.05777
+Epoch: 89 | Step 13884 | Train Loss: 0.05722
+Epoch: 90 | Step 14000 | Valid Loss: 0.04982
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 90 | Step 14000 | Mean PER: 0.08664981959215665 | Mean WER: 0.3527659574468085
+Epoch: 90 | Step 14040 | Train Loss: 0.05177
+Epoch: 91 | Step 14196 | Train Loss: 0.05323
+Epoch: 92 | Step 14352 | Train Loss: 0.05359
+Epoch: 93 | Step 14508 | Train Loss: 0.05232
+Epoch: 94 | Step 14664 | Train Loss: 0.05075
+Epoch: 95 | Step 14820 | Train Loss: 0.05027
+Epoch: 96 | Step 14976 | Train Loss: 0.04979
+Epoch: 97 | Step 15132 | Train Loss: 0.05171
+Epoch: 98 | Step 15288 | Train Loss: 0.04984
+Epoch: 99 | Step 15444 | Train Loss: 0.04861
+Epoch: 100 | Step 15600 | Train Loss: 0.04652
+Epoch: 101 | Step 15756 | Train Loss: 0.04859
+Epoch: 102 | Step 15912 | Train Loss: 0.04303
+Epoch: 103 | Step 16000 | Valid Loss: 0.03936
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 103 | Step 16000 | Mean PER: 0.08450114190732307 | Mean WER: 0.34374468085106386
+Epoch: 103 | Step 16068 | Train Loss: 0.04350
+Epoch: 104 | Step 16224 | Train Loss: 0.04631
+Epoch: 105 | Step 16380 | Train Loss: 0.04758
+Epoch: 106 | Step 16536 | Train Loss: 0.04204
+Epoch: 107 | Step 16692 | Train Loss: 0.04417
+Epoch: 108 | Step 16848 | Train Loss: 0.04187
+Epoch: 109 | Step 17004 | Train Loss: 0.04103
+Epoch: 110 | Step 17160 | Train Loss: 0.04166
+Epoch: 111 | Step 17316 | Train Loss: 0.04314
+Epoch: 112 | Step 17472 | Train Loss: 0.04140
+Epoch: 113 | Step 17628 | Train Loss: 0.04261
+Epoch: 114 | Step 17784 | Train Loss: 0.03907
+Epoch: 115 | Step 17940 | Train Loss: 0.04021
+Epoch: 116 | Step 18000 | Valid Loss: 0.03949
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 116 | Step 18000 | Mean PER: 0.08396059406208192 | Mean WER: 0.3377872340425532
+Epoch: 116 | Step 18096 | Train Loss: 0.03931
+Epoch: 117 | Step 18252 | Train Loss: 0.04057
+Epoch: 118 | Step 18408 | Train Loss: 0.04055
+Epoch: 119 | Step 18564 | Train Loss: 0.03779
+Epoch: 120 | Step 18720 | Train Loss: 0.03754
+Epoch: 121 | Step 18876 | Train Loss: 0.03814
+Epoch: 122 | Step 19032 | Train Loss: 0.03770
+Epoch: 123 | Step 19188 | Train Loss: 0.03699
+Epoch: 124 | Step 19344 | Train Loss: 0.03675
+Epoch: 125 | Step 19500 | Train Loss: 0.03403
+Epoch: 126 | Step 19656 | Train Loss: 0.03429
+Epoch: 127 | Step 19812 | Train Loss: 0.03498
+Epoch: 128 | Step 19968 | Train Loss: 0.03202
+Epoch: 129 | Step 20000 | Valid Loss: 0.03368
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 129 | Step 20000 | Mean PER: 0.08544710063649509 | Mean WER: 0.3436595744680851
+Epoch: 129 | Step 20124 | Train Loss: 0.03685
+Epoch: 130 | Step 20280 | Train Loss: 0.03772
+Epoch: 131 | Step 20436 | Train Loss: 0.03356
+Epoch: 132 | Step 20592 | Train Loss: 0.03312
+Epoch: 133 | Step 20748 | Train Loss: 0.03303
+Epoch: 134 | Step 20904 | Train Loss: 0.03432
+Epoch: 135 | Step 21060 | Train Loss: 0.03518
+Epoch: 136 | Step 21216 | Train Loss: 0.03294
+Epoch: 137 | Step 21372 | Train Loss: 0.03300
+Epoch: 138 | Step 21528 | Train Loss: 0.03064
+Epoch: 139 | Step 21684 | Train Loss: 0.03550
+Epoch: 140 | Step 21840 | Train Loss: 0.03188
+Epoch: 141 | Step 21996 | Train Loss: 0.02964
+Epoch: 142 | Step 22000 | Valid Loss: 0.02321
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 142 | Step 22000 | Mean PER: 0.08351464208975796 | Mean WER: 0.33463829787234045
+Epoch: 142 | Step 22152 | Train Loss: 0.03224
+Epoch: 143 | Step 22308 | Train Loss: 0.02965
+Epoch: 144 | Step 22464 | Train Loss: 0.03006
+Epoch: 145 | Step 22620 | Train Loss: 0.02827
+Epoch: 146 | Step 22776 | Train Loss: 0.03157
+Epoch: 147 | Step 22932 | Train Loss: 0.03299
+Epoch: 148 | Step 23088 | Train Loss: 0.03173
+Epoch: 149 | Step 23244 | Train Loss: 0.02880
+Epoch: 150 | Step 23400 | Train Loss: 0.03128
+Epoch: 151 | Step 23556 | Train Loss: 0.02907
+Epoch: 152 | Step 23712 | Train Loss: 0.02903
+Epoch: 153 | Step 23868 | Train Loss: 0.02915
+Epoch: 154 | Step 24000 | Valid Loss: 0.02811
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 154 | Step 24000 | Mean PER: 0.08196056703468965 | Mean WER: 0.3291063829787234
+Epoch: 154 | Step 24024 | Train Loss: 0.02845
+Epoch: 155 | Step 24180 | Train Loss: 0.02882
+Epoch: 156 | Step 24336 | Train Loss: 0.02891
+Epoch: 157 | Step 24492 | Train Loss: 0.02995
+Epoch: 158 | Step 24648 | Train Loss: 0.02618
+Epoch: 159 | Step 24804 | Train Loss: 0.02875
+Epoch: 160 | Step 24960 | Train Loss: 0.02988
+Epoch: 161 | Step 25116 | Train Loss: 0.02837
+Epoch: 162 | Step 25272 | Train Loss: 0.02706
+Epoch: 163 | Step 25428 | Train Loss: 0.02584
+Epoch: 164 | Step 25584 | Train Loss: 0.02542
+Epoch: 165 | Step 25740 | Train Loss: 0.02583
+Epoch: 166 | Step 25896 | Train Loss: 0.02744
+Epoch: 167 | Step 26000 | Valid Loss: 0.02655
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 167 | Step 26000 | Mean PER: 0.08255516966445492 | Mean WER: 0.3324255319148936
+Epoch: 167 | Step 26052 | Train Loss: 0.02949
+Epoch: 168 | Step 26208 | Train Loss: 0.02573
+Epoch: 169 | Step 26364 | Train Loss: 0.02708
+Epoch: 170 | Step 26520 | Train Loss: 0.02653
+Epoch: 171 | Step 26676 | Train Loss: 0.02582
+Epoch: 172 | Step 26832 | Train Loss: 0.02559
+Epoch: 173 | Step 26988 | Train Loss: 0.02458
+Epoch: 174 | Step 27144 | Train Loss: 0.02689
+Epoch: 175 | Step 27300 | Train Loss: 0.02567
+Epoch: 176 | Step 27456 | Train Loss: 0.02532
+Epoch: 177 | Step 27612 | Train Loss: 0.02754
+Epoch: 178 | Step 27768 | Train Loss: 0.02525
+Epoch: 179 | Step 27924 | Train Loss: 0.02365
+Epoch: 180 | Step 28000 | Valid Loss: 0.02499
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 180 | Step 28000 | Mean PER: 0.08289301206773064 | Mean WER: 0.33285106382978724
+Epoch: 180 | Step 28080 | Train Loss: 0.02615
+Epoch: 181 | Step 28236 | Train Loss: 0.02521
+Epoch: 182 | Step 28392 | Train Loss: 0.02349
+Epoch: 183 | Step 28548 | Train Loss: 0.02397
+Epoch: 184 | Step 28704 | Train Loss: 0.02582
+Epoch: 185 | Step 28860 | Train Loss: 0.02510
+Epoch: 186 | Step 29016 | Train Loss: 0.02431
+Epoch: 187 | Step 29172 | Train Loss: 0.02422
+Epoch: 188 | Step 29328 | Train Loss: 0.02283
+Epoch: 189 | Step 29484 | Train Loss: 0.02267
+Epoch: 190 | Step 29640 | Train Loss: 0.02169
+Epoch: 191 | Step 29796 | Train Loss: 0.02171
+Epoch: 192 | Step 29952 | Train Loss: 0.02403
+Epoch: 193 | Step 30000 | Valid Loss: 0.02262
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 193 | Step 30000 | Mean PER: 0.08439303233827485 | Mean WER: 0.3404255319148936
+Epoch: 193 | Step 30108 | Train Loss: 0.02547
+Epoch: 194 | Step 30264 | Train Loss: 0.02355
+Epoch: 195 | Step 30420 | Train Loss: 0.02342
+Epoch: 196 | Step 30576 | Train Loss: 0.02394
+Epoch: 197 | Step 30732 | Train Loss: 0.02291
+Epoch: 198 | Step 30888 | Train Loss: 0.02232
+Epoch: 199 | Step 31044 | Train Loss: 0.02208
+Epoch: 200 | Step 31200 | Train Loss: 0.02142
+Epoch: 201 | Step 31356 | Train Loss: 0.02231
+Epoch: 202 | Step 31512 | Train Loss: 0.02223
+Epoch: 203 | Step 31668 | Train Loss: 0.02170
+Epoch: 204 | Step 31824 | Train Loss: 0.02301
+Epoch: 205 | Step 31980 | Train Loss: 0.02366
+Epoch: 206 | Step 32000 | Valid Loss: 0.01871
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 206 | Step 32000 | Mean PER: 0.08201462181921378 | Mean WER: 0.32961702127659576
+Epoch: 206 | Step 32136 | Train Loss: 0.02183
+Epoch: 207 | Step 32292 | Train Loss: 0.02083
+Epoch: 208 | Step 32448 | Train Loss: 0.02084
+Epoch: 209 | Step 32604 | Train Loss: 0.02131
+Epoch: 210 | Step 32760 | Train Loss: 0.02144
+Epoch: 211 | Step 32916 | Train Loss: 0.02206
+Epoch: 212 | Step 33072 | Train Loss: 0.02269
+Epoch: 213 | Step 33228 | Train Loss: 0.02212
+Epoch: 214 | Step 33384 | Train Loss: 0.02198
+Epoch: 215 | Step 33540 | Train Loss: 0.02069
+Epoch: 216 | Step 33696 | Train Loss: 0.02107
+Epoch: 217 | Step 33852 | Train Loss: 0.02177
+Epoch: 218 | Step 34000 | Valid Loss: 0.02112
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 218 | Step 34000 | Mean PER: 0.08208219029986892 | Mean WER: 0.32782978723404255
+Epoch: 218 | Step 34008 | Train Loss: 0.02123
+Epoch: 219 | Step 34164 | Train Loss: 0.02038
+Epoch: 220 | Step 34320 | Train Loss: 0.02019
+Epoch: 221 | Step 34476 | Train Loss: 0.02236
+Epoch: 222 | Step 34632 | Train Loss: 0.02200
+Epoch: 223 | Step 34788 | Train Loss: 0.01967
+Epoch: 224 | Step 34944 | Train Loss: 0.01925
+Epoch: 225 | Step 35100 | Train Loss: 0.01938
+Epoch: 226 | Step 35256 | Train Loss: 0.02022
+Epoch: 227 | Step 35412 | Train Loss: 0.01975
+Epoch: 228 | Step 35568 | Train Loss: 0.02022
+Epoch: 229 | Step 35724 | Train Loss: 0.02077
+Epoch: 230 | Step 35880 | Train Loss: 0.02083
+Epoch: 231 | Step 36000 | Valid Loss: 0.01836
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 231 | Step 36000 | Mean PER: 0.0807578480790281 | Mean WER: 0.32357446808510637
+Epoch: 231 | Step 36036 | Train Loss: 0.01949
+Epoch: 232 | Step 36192 | Train Loss: 0.01890
+Epoch: 233 | Step 36348 | Train Loss: 0.01762
+Epoch: 234 | Step 36504 | Train Loss: 0.01971
+Epoch: 235 | Step 36660 | Train Loss: 0.02138
+Epoch: 236 | Step 36816 | Train Loss: 0.01853
+Epoch: 237 | Step 36972 | Train Loss: 0.01906
+Epoch: 238 | Step 37128 | Train Loss: 0.01931
+Epoch: 239 | Step 37284 | Train Loss: 0.01984
+Epoch: 240 | Step 37440 | Train Loss: 0.01937
+Epoch: 241 | Step 37596 | Train Loss: 0.01806
+Epoch: 242 | Step 37752 | Train Loss: 0.01885
+Epoch: 243 | Step 37908 | Train Loss: 0.01797
+Epoch: 244 | Step 38000 | Valid Loss: 0.01929
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 244 | Step 38000 | Mean PER: 0.08231192313409641 | Mean WER: 0.3301276595744681
+Epoch: 244 | Step 38064 | Train Loss: 0.01979
+Epoch: 245 | Step 38220 | Train Loss: 0.01813
+Epoch: 246 | Step 38376 | Train Loss: 0.01880
+Epoch: 247 | Step 38532 | Train Loss: 0.01922
+Epoch: 248 | Step 38688 | Train Loss: 0.01763
+Epoch: 249 | Step 38844 | Train Loss: 0.01703
+Epoch: 250 | Step 39000 | Train Loss: 0.01820
+Epoch: 251 | Step 39156 | Train Loss: 0.01983
+Epoch: 252 | Step 39312 | Train Loss: 0.01844
+Epoch: 253 | Step 39468 | Train Loss: 0.01744
+Epoch: 254 | Step 39624 | Train Loss: 0.01893
+Epoch: 255 | Step 39780 | Train Loss: 0.01859
+Epoch: 256 | Step 39936 | Train Loss: 0.01805
+Epoch: 257 | Step 40000 | Valid Loss: 0.01697
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 257 | Step 40000 | Mean PER: 0.08059568372545575 | Mean WER: 0.32382978723404254
+Epoch: 257 | Step 40092 | Train Loss: 0.01745
+Epoch: 258 | Step 40248 | Train Loss: 0.01795
+Epoch: 259 | Step 40404 | Train Loss: 0.01811
+Epoch: 260 | Step 40560 | Train Loss: 0.01783
+Epoch: 261 | Step 40716 | Train Loss: 0.01741
+Epoch: 262 | Step 40872 | Train Loss: 0.01768
+Epoch: 263 | Step 41028 | Train Loss: 0.01795
+Epoch: 264 | Step 41184 | Train Loss: 0.02067
+Epoch: 265 | Step 41340 | Train Loss: 0.01720
+Epoch: 266 | Step 41496 | Train Loss: 0.01685
+Epoch: 267 | Step 41652 | Train Loss: 0.01646
+Epoch: 268 | Step 41808 | Train Loss: 0.01689
+Epoch: 269 | Step 41964 | Train Loss: 0.01733
+Epoch: 270 | Step 42000 | Valid Loss: 0.01683
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 270 | Step 42000 | Mean PER: 0.08013621805700077 | Mean WER: 0.3214468085106383
+Epoch: 270 | Step 42120 | Train Loss: 0.01640
+Epoch: 271 | Step 42276 | Train Loss: 0.01826
+Epoch: 272 | Step 42432 | Train Loss: 0.01673
+Epoch: 273 | Step 42588 | Train Loss: 0.01711
+Epoch: 274 | Step 42744 | Train Loss: 0.01736
+Epoch: 275 | Step 42900 | Train Loss: 0.01720
+Epoch: 276 | Step 43056 | Train Loss: 0.01648
+Epoch: 277 | Step 43212 | Train Loss: 0.01668
+Epoch: 278 | Step 43368 | Train Loss: 0.01668
+Epoch: 279 | Step 43524 | Train Loss: 0.01607
+Epoch: 280 | Step 43680 | Train Loss: 0.01784
+Epoch: 281 | Step 43836 | Train Loss: 0.01722
+Epoch: 282 | Step 43992 | Train Loss: 0.01663
+Epoch: 283 | Step 44000 | Valid Loss: 0.01134
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 283 | Step 44000 | Mean PER: 0.08029838241057312 | Mean WER: 0.32051063829787235
+Epoch: 283 | Step 44148 | Train Loss: 0.01533
+Epoch: 284 | Step 44304 | Train Loss: 0.01602
+Epoch: 285 | Step 44460 | Train Loss: 0.01655
+Epoch: 286 | Step 44616 | Train Loss: 0.01700
+Epoch: 287 | Step 44772 | Train Loss: 0.01711
+Epoch: 288 | Step 44928 | Train Loss: 0.01666
+Epoch: 289 | Step 45084 | Train Loss: 0.01508
+Epoch: 290 | Step 45240 | Train Loss: 0.01542
+Epoch: 291 | Step 45396 | Train Loss: 0.01698
+Epoch: 292 | Step 45552 | Train Loss: 0.01574
+Epoch: 293 | Step 45708 | Train Loss: 0.01638
+Epoch: 294 | Step 45864 | Train Loss: 0.01867
+Epoch: 295 | Step 46000 | Valid Loss: 0.01543
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 295 | Step 46000 | Mean PER: 0.0796362113001527 | Mean WER: 0.32085106382978723
+Epoch: 295 | Step 46020 | Train Loss: 0.01616
+Epoch: 296 | Step 46176 | Train Loss: 0.01549
+Epoch: 297 | Step 46332 | Train Loss: 0.01420
+Epoch: 298 | Step 46488 | Train Loss: 0.01365
+Epoch: 299 | Step 46644 | Train Loss: 0.01557
+Epoch: 300 | Step 46800 | Train Loss: 0.01665
+Epoch: 301 | Step 46956 | Train Loss: 0.01492
+Epoch: 302 | Step 47112 | Train Loss: 0.01620
+Epoch: 303 | Step 47268 | Train Loss: 0.01575
+Epoch: 304 | Step 47424 | Train Loss: 0.01603
+Epoch: 305 | Step 47580 | Train Loss: 0.01565
+Epoch: 306 | Step 47736 | Train Loss: 0.01489
+Epoch: 307 | Step 47892 | Train Loss: 0.01381
+Epoch: 308 | Step 48000 | Valid Loss: 0.01409
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 308 | Step 48000 | Mean PER: 0.08029838241057312 | Mean WER: 0.32170212765957445
+Epoch: 308 | Step 48048 | Train Loss: 0.01413
+Epoch: 309 | Step 48204 | Train Loss: 0.01510
+Epoch: 310 | Step 48360 | Train Loss: 0.01728
+Epoch: 311 | Step 48516 | Train Loss: 0.01536
+Epoch: 312 | Step 48672 | Train Loss: 0.01606
+Epoch: 313 | Step 48828 | Train Loss: 0.01472
+Epoch: 314 | Step 48984 | Train Loss: 0.01570
+Epoch: 315 | Step 49140 | Train Loss: 0.01369
+Epoch: 316 | Step 49296 | Train Loss: 0.01408
+Epoch: 317 | Step 49452 | Train Loss: 0.01441
+Epoch: 318 | Step 49608 | Train Loss: 0.01351
+Epoch: 319 | Step 49764 | Train Loss: 0.01545
+Epoch: 320 | Step 49920 | Train Loss: 0.01507
+Epoch: 321 | Step 50000 | Valid Loss: 0.01544
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 321 | Step 50000 | Mean PER: 0.07920377302395978 | Mean WER: 0.3171914893617021
+Epoch: 321 | Step 50076 | Train Loss: 0.01505
+Epoch: 322 | Step 50232 | Train Loss: 0.01533
+Epoch: 323 | Step 50388 | Train Loss: 0.01427
+Epoch: 324 | Step 50544 | Train Loss: 0.01440
+Epoch: 325 | Step 50700 | Train Loss: 0.01504
+Epoch: 326 | Step 50856 | Train Loss: 0.01506
+Epoch: 327 | Step 51012 | Train Loss: 0.01425
+Epoch: 328 | Step 51168 | Train Loss: 0.01484
+Epoch: 329 | Step 51324 | Train Loss: 0.01397
+Epoch: 330 | Step 51480 | Train Loss: 0.01509
+Epoch: 331 | Step 51636 | Train Loss: 0.01401
+Epoch: 332 | Step 51792 | Train Loss: 0.01386
+Epoch: 333 | Step 51948 | Train Loss: 0.01363
+Epoch: 334 | Step 52000 | Valid Loss: 0.01377
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 334 | Step 52000 | Mean PER: 0.0800551358802146 | Mean WER: 0.3200851063829787
+Epoch: 334 | Step 52104 | Train Loss: 0.01377
+Epoch: 335 | Step 52260 | Train Loss: 0.01443
+Epoch: 336 | Step 52416 | Train Loss: 0.01451
+Epoch: 337 | Step 52572 | Train Loss: 0.01522
+Epoch: 338 | Step 52728 | Train Loss: 0.01322
+Epoch: 339 | Step 52884 | Train Loss: 0.01273
+Epoch: 340 | Step 53040 | Train Loss: 0.01499
+Epoch: 341 | Step 53196 | Train Loss: 0.01391
+Epoch: 342 | Step 53352 | Train Loss: 0.01379
+Epoch: 343 | Step 53508 | Train Loss: 0.01284
+Epoch: 344 | Step 53664 | Train Loss: 0.01385
+Epoch: 345 | Step 53820 | Train Loss: 0.01275
+Epoch: 346 | Step 53976 | Train Loss: 0.01447
+Epoch: 347 | Step 54000 | Valid Loss: 0.01249
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 347 | Step 54000 | Mean PER: 0.07931188259300802 | Mean WER: 0.3199148936170213
+Epoch: 347 | Step 54132 | Train Loss: 0.01301
+Epoch: 348 | Step 54288 | Train Loss: 0.01321
+Epoch: 349 | Step 54444 | Train Loss: 0.01305
+Epoch: 350 | Step 54600 | Train Loss: 0.01413
+Epoch: 351 | Step 54756 | Train Loss: 0.01390
+Epoch: 352 | Step 54912 | Train Loss: 0.01372
+Epoch: 353 | Step 55068 | Train Loss: 0.01318
+Epoch: 354 | Step 55224 | Train Loss: 0.01417
+Epoch: 355 | Step 55380 | Train Loss: 0.01391
+Epoch: 356 | Step 55536 | Train Loss: 0.01398
+Epoch: 357 | Step 55692 | Train Loss: 0.01180
+Epoch: 358 | Step 55848 | Train Loss: 0.01235
+Epoch: 359 | Step 56000 | Valid Loss: 0.01448
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 359 | Step 56000 | Mean PER: 0.07946053325044933 | Mean WER: 0.3192340425531915
+Epoch: 359 | Step 56004 | Train Loss: 0.01454
+Epoch: 360 | Step 56160 | Train Loss: 0.01382
+Epoch: 361 | Step 56316 | Train Loss: 0.01274
+Epoch: 362 | Step 56472 | Train Loss: 0.01310
+Epoch: 363 | Step 56628 | Train Loss: 0.01325
+Epoch: 364 | Step 56784 | Train Loss: 0.01390
+Epoch: 365 | Step 56940 | Train Loss: 0.01255
+Epoch: 366 | Step 57096 | Train Loss: 0.01301
+Epoch: 367 | Step 57252 | Train Loss: 0.01409
+Epoch: 368 | Step 57408 | Train Loss: 0.01357
+Epoch: 369 | Step 57564 | Train Loss: 0.01266
+Epoch: 370 | Step 57720 | Train Loss: 0.01253
+Epoch: 371 | Step 57876 | Train Loss: 0.01300
+Epoch: 372 | Step 58000 | Valid Loss: 0.01243
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 372 | Step 58000 | Mean PER: 0.07866322517871863 | Mean WER: 0.31761702127659575
+Epoch: 372 | Step 58032 | Train Loss: 0.01228
+Epoch: 373 | Step 58188 | Train Loss: 0.01316
+Epoch: 374 | Step 58344 | Train Loss: 0.01269
+Epoch: 375 | Step 58500 | Train Loss: 0.01235
+Epoch: 376 | Step 58656 | Train Loss: 0.01333
+Epoch: 377 | Step 58812 | Train Loss: 0.01228
+Epoch: 378 | Step 58968 | Train Loss: 0.01262
+Epoch: 379 | Step 59124 | Train Loss: 0.01216
+Epoch: 380 | Step 59280 | Train Loss: 0.01356
+Epoch: 381 | Step 59436 | Train Loss: 0.01341
+Epoch: 382 | Step 59592 | Train Loss: 0.01269
+Epoch: 383 | Step 59748 | Train Loss: 0.01220
+Epoch: 384 | Step 59904 | Train Loss: 0.01240
+Epoch: 385 | Step 60000 | Valid Loss: 0.01159
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 385 | Step 60000 | Mean PER: 0.0789740401897323 | Mean WER: 0.3153191489361702
+Epoch: 385 | Step 60060 | Train Loss: 0.01203
+Epoch: 386 | Step 60216 | Train Loss: 0.01250
+Epoch: 387 | Step 60372 | Train Loss: 0.01428
+Epoch: 388 | Step 60528 | Train Loss: 0.01274
+Epoch: 389 | Step 60684 | Train Loss: 0.01148
+Epoch: 390 | Step 60840 | Train Loss: 0.01301
+Epoch: 391 | Step 60996 | Train Loss: 0.01125
+Epoch: 392 | Step 61152 | Train Loss: 0.01182
+Epoch: 393 | Step 61308 | Train Loss: 0.01221
+Epoch: 394 | Step 61464 | Train Loss: 0.01276
+Epoch: 395 | Step 61620 | Train Loss: 0.01248
+Epoch: 396 | Step 61776 | Train Loss: 0.01205
+Epoch: 397 | Step 61932 | Train Loss: 0.01200
+Epoch: 398 | Step 62000 | Valid Loss: 0.01342
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 398 | Step 62000 | Mean PER: 0.0791226908471736 | Mean WER: 0.31472340425531914
+Epoch: 398 | Step 62088 | Train Loss: 0.01257
+Epoch: 399 | Step 62244 | Train Loss: 0.01169
+Epoch: 400 | Step 62400 | Train Loss: 0.01237
+Epoch: 401 | Step 62556 | Train Loss: 0.01222
+Epoch: 402 | Step 62712 | Train Loss: 0.01215
+Epoch: 403 | Step 62868 | Train Loss: 0.01154
+Epoch: 404 | Step 63024 | Train Loss: 0.01210
+Epoch: 405 | Step 63180 | Train Loss: 0.01276
+Epoch: 406 | Step 63336 | Train Loss: 0.01243
+Epoch: 407 | Step 63492 | Train Loss: 0.01099
+Epoch: 408 | Step 63648 | Train Loss: 0.01107
+Epoch: 409 | Step 63804 | Train Loss: 0.01149
+Epoch: 410 | Step 63960 | Train Loss: 0.01133
+Epoch: 411 | Step 64000 | Valid Loss: 0.01211
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 411 | Step 64000 | Mean PER: 0.07847403343288423 | Mean WER: 0.3160851063829787
+Epoch: 411 | Step 64116 | Train Loss: 0.01150
+Epoch: 412 | Step 64272 | Train Loss: 0.01189
+Epoch: 413 | Step 64428 | Train Loss: 0.01218
+Epoch: 414 | Step 64584 | Train Loss: 0.01177
+Epoch: 415 | Step 64740 | Train Loss: 0.01097
+Epoch: 416 | Step 64896 | Train Loss: 0.01157
+Epoch: 417 | Step 65052 | Train Loss: 0.01097
+Epoch: 418 | Step 65208 | Train Loss: 0.01181
+Epoch: 419 | Step 65364 | Train Loss: 0.01216
+Epoch: 420 | Step 65520 | Train Loss: 0.01249
+Epoch: 421 | Step 65676 | Train Loss: 0.01145
+Epoch: 422 | Step 65832 | Train Loss: 0.01246
+Epoch: 423 | Step 65988 | Train Loss: 0.01130
+Epoch: 424 | Step 66000 | Valid Loss: 0.007438
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 424 | Step 66000 | Mean PER: 0.0793524236814011 | Mean WER: 0.31872340425531914
+Epoch: 424 | Step 66144 | Train Loss: 0.01069
+Epoch: 425 | Step 66300 | Train Loss: 0.01063
+Epoch: 426 | Step 66456 | Train Loss: 0.01089
+Epoch: 427 | Step 66612 | Train Loss: 0.01139
+Epoch: 428 | Step 66768 | Train Loss: 0.01208
+Epoch: 429 | Step 66924 | Train Loss: 0.01132
+Epoch: 430 | Step 67080 | Train Loss: 0.01185
+Epoch: 431 | Step 67236 | Train Loss: 0.01159
+Epoch: 432 | Step 67392 | Train Loss: 0.01213
+Epoch: 433 | Step 67548 | Train Loss: 0.01098
+Epoch: 434 | Step 67704 | Train Loss: 0.01123
+Epoch: 435 | Step 67860 | Train Loss: 0.01038
+Epoch: 436 | Step 68000 | Valid Loss: 0.01088
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 436 | Step 68000 | Mean PER: 0.07941999216205624 | Mean WER: 0.3185531914893617
+Epoch: 436 | Step 68016 | Train Loss: 0.01104
+Epoch: 437 | Step 68172 | Train Loss: 0.01106
+Epoch: 438 | Step 68328 | Train Loss: 0.01119
+Epoch: 439 | Step 68484 | Train Loss: 0.01086
+Epoch: 440 | Step 68640 | Train Loss: 0.01085
+Epoch: 441 | Step 68796 | Train Loss: 0.01002
+Epoch: 442 | Step 68952 | Train Loss: 0.01035
+Epoch: 443 | Step 69108 | Train Loss: 0.01113
+Epoch: 444 | Step 69264 | Train Loss: 0.01214
+Epoch: 445 | Step 69420 | Train Loss: 0.01087
+Epoch: 446 | Step 69576 | Train Loss: 0.01005
+Epoch: 447 | Step 69732 | Train Loss: 0.01081
+Epoch: 448 | Step 69888 | Train Loss: 0.01118
+Epoch: 449 | Step 70000 | Valid Loss: 0.01113
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 449 | Step 70000 | Mean PER: 0.07913620454330464 | Mean WER: 0.31753191489361704
+Epoch: 449 | Step 70044 | Train Loss: 0.01127
+Epoch: 450 | Step 70200 | Train Loss: 0.01124
+Epoch: 451 | Step 70356 | Train Loss: 0.01023
+Epoch: 452 | Step 70512 | Train Loss: 0.01101
+Epoch: 453 | Step 70668 | Train Loss: 0.01094
+Epoch: 454 | Step 70824 | Train Loss: 0.01123
+Epoch: 455 | Step 70980 | Train Loss: 0.01095
+Epoch: 456 | Step 71136 | Train Loss: 0.01013
+Epoch: 457 | Step 71292 | Train Loss: 0.009975
+Epoch: 458 | Step 71448 | Train Loss: 0.01161
+Epoch: 459 | Step 71604 | Train Loss: 0.009855
+Epoch: 460 | Step 71760 | Train Loss: 0.01026
+Epoch: 461 | Step 71916 | Train Loss: 0.01089
+Epoch: 462 | Step 72000 | Valid Loss: 0.01015
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 462 | Step 72000 | Mean PER: 0.078838903228422 | Mean WER: 0.3174468085106383
+Epoch: 462 | Step 72072 | Train Loss: 0.01030
+Epoch: 463 | Step 72228 | Train Loss: 0.01051
+Epoch: 464 | Step 72384 | Train Loss: 0.01091
+Epoch: 465 | Step 72540 | Train Loss: 0.009960
+Epoch: 466 | Step 72696 | Train Loss: 0.01082
+Epoch: 467 | Step 72852 | Train Loss: 0.01004
+Epoch: 468 | Step 73008 | Train Loss: 0.01007
+Epoch: 469 | Step 73164 | Train Loss: 0.01085
+Epoch: 470 | Step 73320 | Train Loss: 0.01068
+Epoch: 471 | Step 73476 | Train Loss: 0.009811
+Epoch: 472 | Step 73632 | Train Loss: 0.01042
+Epoch: 473 | Step 73788 | Train Loss: 0.01117
+Epoch: 474 | Step 73944 | Train Loss: 0.01033
+Epoch: 475 | Step 74000 | Valid Loss: 0.009350
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 475 | Step 74000 | Mean PER: 0.07793348558764307 | Mean WER: 0.31472340425531914
+Epoch: 475 | Step 74100 | Train Loss: 0.01052
+Epoch: 476 | Step 74256 | Train Loss: 0.009908
+Epoch: 477 | Step 74412 | Train Loss: 0.01002
+Epoch: 478 | Step 74568 | Train Loss: 0.009666
+Epoch: 479 | Step 74724 | Train Loss: 0.01100
+Epoch: 480 | Step 74880 | Train Loss: 0.01102
+Epoch: 481 | Step 75036 | Train Loss: 0.01116
+Epoch: 482 | Step 75192 | Train Loss: 0.01029
+Epoch: 483 | Step 75348 | Train Loss: 0.01083
+Epoch: 484 | Step 75504 | Train Loss: 0.01019
+Epoch: 485 | Step 75660 | Train Loss: 0.01017
+Epoch: 486 | Step 75816 | Train Loss: 0.01046
+Epoch: 487 | Step 75972 | Train Loss: 0.009658
+Epoch: 488 | Step 76000 | Valid Loss: 0.01005
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 488 | Step 76000 | Mean PER: 0.07767672536115353 | Mean WER: 0.31574468085106383
+Epoch: 488 | Step 76128 | Train Loss: 0.01008
+Epoch: 489 | Step 76284 | Train Loss: 0.009887
+Epoch: 490 | Step 76440 | Train Loss: 0.009408
+Epoch: 491 | Step 76596 | Train Loss: 0.009648
+Epoch: 492 | Step 76752 | Train Loss: 0.009518
+Epoch: 493 | Step 76908 | Train Loss: 0.009607
+Epoch: 494 | Step 77064 | Train Loss: 0.01069
+Epoch: 495 | Step 77220 | Train Loss: 0.01180
+Epoch: 496 | Step 77376 | Train Loss: 0.009652
+Epoch: 497 | Step 77532 | Train Loss: 0.009158
+Epoch: 498 | Step 77688 | Train Loss: 0.009819
+Epoch: 499 | Step 77844 | Train Loss: 0.009679
+Epoch: 500 | Step 78000 | Valid Loss: 0.009586
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 500 | Step 78000 | Mean PER: 0.07836592386383599 | Mean WER: 0.3149787234042553
+Epoch: 500 | Step 78 | Train Loss: 0.009586
+Epoch: 501 | Step 78156 | Train Loss: 0.009637
+Epoch: 502 | Step 78312 | Train Loss: 0.009260
+Epoch: 503 | Step 78468 | Train Loss: 0.009916
+Epoch: 504 | Step 78624 | Train Loss: 0.01023
+Epoch: 505 | Step 78780 | Train Loss: 0.01112
+Epoch: 506 | Step 78936 | Train Loss: 0.01138
+Epoch: 507 | Step 79092 | Train Loss: 0.009283
+Epoch: 508 | Step 79248 | Train Loss: 0.008901
+Epoch: 509 | Step 79404 | Train Loss: 0.01028
+Epoch: 510 | Step 79560 | Train Loss: 0.009357
+Epoch: 511 | Step 79716 | Train Loss: 0.009019
+Epoch: 512 | Step 79872 | Train Loss: 0.009155
+Epoch: 513 | Step 80000 | Valid Loss: 0.008667
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 513 | Step 80000 | Mean PER: 0.07793348558764307 | Mean WER: 0.3131063829787234
+Epoch: 513 | Step 80028 | Train Loss: 0.008884
+Epoch: 514 | Step 80184 | Train Loss: 0.009723
+Epoch: 515 | Step 80340 | Train Loss: 0.01003
+Epoch: 516 | Step 80496 | Train Loss: 0.009159
+Epoch: 517 | Step 80652 | Train Loss: 0.01038
+Epoch: 518 | Step 80808 | Train Loss: 0.009523
+Epoch: 519 | Step 80964 | Train Loss: 0.008497
+Epoch: 520 | Step 81120 | Train Loss: 0.008826
+Epoch: 521 | Step 81276 | Train Loss: 0.009531
+Epoch: 522 | Step 81432 | Train Loss: 0.009739
+Epoch: 523 | Step 81588 | Train Loss: 0.009712
+Epoch: 524 | Step 81744 | Train Loss: 0.009313
+Epoch: 525 | Step 81900 | Train Loss: 0.009062
+Epoch: 526 | Step 82000 | Valid Loss: 0.009148
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 526 | Step 82000 | Mean PER: 0.0777983486263328 | Mean WER: 0.3126808510638298
+Epoch: 526 | Step 82056 | Train Loss: 0.009296
+Epoch: 527 | Step 82212 | Train Loss: 0.009619
+Epoch: 528 | Step 82368 | Train Loss: 0.009279
+Epoch: 529 | Step 82524 | Train Loss: 0.009568
+Epoch: 530 | Step 82680 | Train Loss: 0.009538
+Epoch: 531 | Step 82836 | Train Loss: 0.01137
+Epoch: 532 | Step 82992 | Train Loss: 0.01026
+Epoch: 533 | Step 83148 | Train Loss: 0.008590
+Epoch: 534 | Step 83304 | Train Loss: 0.008618
+Epoch: 535 | Step 83460 | Train Loss: 0.008149
+Epoch: 536 | Step 83616 | Train Loss: 0.008767
+Epoch: 537 | Step 83772 | Train Loss: 0.01026
+Epoch: 538 | Step 83928 | Train Loss: 0.009482
+Epoch: 539 | Step 84000 | Valid Loss: 0.009246
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 539 | Step 84000 | Mean PER: 0.07862268409032555 | Mean WER: 0.3140425531914894
+Epoch: 539 | Step 84084 | Train Loss: 0.008795
+Epoch: 540 | Step 84240 | Train Loss: 0.008762
+Epoch: 541 | Step 84396 | Train Loss: 0.009091
+Epoch: 542 | Step 84552 | Train Loss: 0.008705
+Epoch: 543 | Step 84708 | Train Loss: 0.009869
+Epoch: 544 | Step 84864 | Train Loss: 0.009684
+Epoch: 545 | Step 85020 | Train Loss: 0.009135
+Epoch: 546 | Step 85176 | Train Loss: 0.009617
+Epoch: 547 | Step 85332 | Train Loss: 0.009101
+Epoch: 548 | Step 85488 | Train Loss: 0.009088
+Epoch: 549 | Step 85644 | Train Loss: 0.008749
+Epoch: 550 | Step 85800 | Train Loss: 0.008281
+Epoch: 551 | Step 85956 | Train Loss: 0.009142
+Epoch: 552 | Step 86000 | Valid Loss: 0.007688
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 552 | Step 86000 | Mean PER: 0.0778524034108569 | Mean WER: 0.3126808510638298
+Epoch: 552 | Step 86112 | Train Loss: 0.009240
+Epoch: 553 | Step 86268 | Train Loss: 0.009357
+Epoch: 554 | Step 86424 | Train Loss: 0.009283
+Epoch: 555 | Step 86580 | Train Loss: 0.009493
+Epoch: 556 | Step 86736 | Train Loss: 0.008698
+Epoch: 557 | Step 86892 | Train Loss: 0.008712
+Epoch: 558 | Step 87048 | Train Loss: 0.008897
+Epoch: 559 | Step 87204 | Train Loss: 0.008617
+Epoch: 560 | Step 87360 | Train Loss: 0.009737
+Epoch: 561 | Step 87516 | Train Loss: 0.009075
+Epoch: 562 | Step 87672 | Train Loss: 0.008969
+Epoch: 563 | Step 87828 | Train Loss: 0.009326
+Epoch: 564 | Step 87984 | Train Loss: 0.009101
+Epoch: 565 | Step 88000 | Valid Loss: 0.009158
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 565 | Step 88000 | Mean PER: 0.07762267057662942 | Mean WER: 0.31063829787234043
+Epoch: 565 | Step 88140 | Train Loss: 0.008333
+Epoch: 566 | Step 88296 | Train Loss: 0.008268
+Epoch: 567 | Step 88452 | Train Loss: 0.008615
+Epoch: 568 | Step 88608 | Train Loss: 0.008585
+Epoch: 569 | Step 88764 | Train Loss: 0.008807
+Epoch: 570 | Step 88920 | Train Loss: 0.008966
+Epoch: 571 | Step 89076 | Train Loss: 0.008812
+Epoch: 572 | Step 89232 | Train Loss: 0.008115
+Epoch: 573 | Step 89388 | Train Loss: 0.008276
+Epoch: 574 | Step 89544 | Train Loss: 0.008398
+Epoch: 575 | Step 89700 | Train Loss: 0.008763
+Epoch: 576 | Step 89856 | Train Loss: 0.009013
+Epoch: 577 | Step 90000 | Valid Loss: 0.009041
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 577 | Step 90000 | Mean PER: 0.0777983486263328 | Mean WER: 0.30927659574468086
+Epoch: 577 | Step 90012 | Train Loss: 0.008901
+Epoch: 578 | Step 90168 | Train Loss: 0.008744
+Epoch: 579 | Step 90324 | Train Loss: 0.007846
+Epoch: 580 | Step 90480 | Train Loss: 0.008021
+Epoch: 581 | Step 90636 | Train Loss: 0.008729
+Epoch: 582 | Step 90792 | Train Loss: 0.009497
+Epoch: 583 | Step 90948 | Train Loss: 0.009080
+Epoch: 584 | Step 91104 | Train Loss: 0.007894
+Epoch: 585 | Step 91260 | Train Loss: 0.008754
+Epoch: 586 | Step 91416 | Train Loss: 0.007755
+Epoch: 587 | Step 91572 | Train Loss: 0.008344
+Epoch: 588 | Step 91728 | Train Loss: 0.008799
+Epoch: 589 | Step 91884 | Train Loss: 0.008178
+Epoch: 590 | Step 92000 | Valid Loss: 0.008202
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 590 | Step 92000 | Mean PER: 0.07860917039419452 | Mean WER: 0.3139574468085106
+Epoch: 590 | Step 92040 | Train Loss: 0.008224
+Epoch: 591 | Step 92196 | Train Loss: 0.008843
+Epoch: 592 | Step 92352 | Train Loss: 0.009044
+Epoch: 593 | Step 92508 | Train Loss: 0.009119
+Epoch: 594 | Step 92664 | Train Loss: 0.008257
+Epoch: 595 | Step 92820 | Train Loss: 0.007662
+Epoch: 596 | Step 92976 | Train Loss: 0.008489
+Epoch: 597 | Step 93132 | Train Loss: 0.007732
+Epoch: 598 | Step 93288 | Train Loss: 0.008022
+Epoch: 599 | Step 93444 | Train Loss: 0.009030
+Epoch: 600 | Step 93600 | Train Loss: 0.008043
+Epoch: 601 | Step 93756 | Train Loss: 0.007801
+Epoch: 602 | Step 93912 | Train Loss: 0.007932
+Epoch: 603 | Step 94000 | Valid Loss: 0.008597
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 603 | Step 94000 | Mean PER: 0.07919025932782875 | Mean WER: 0.3182127659574468
+Epoch: 603 | Step 94068 | Train Loss: 0.009295
+Epoch: 604 | Step 94224 | Train Loss: 0.008315
+Epoch: 605 | Step 94380 | Train Loss: 0.007924
+Epoch: 606 | Step 94536 | Train Loss: 0.007993
+Epoch: 607 | Step 94692 | Train Loss: 0.007867
+Epoch: 608 | Step 94848 | Train Loss: 0.008686
+Epoch: 609 | Step 95004 | Train Loss: 0.009442
+Epoch: 610 | Step 95160 | Train Loss: 0.008739
+Epoch: 611 | Step 95316 | Train Loss: 0.007800
+Epoch: 612 | Step 95472 | Train Loss: 0.008551
+Epoch: 613 | Step 95628 | Train Loss: 0.008061
+Epoch: 614 | Step 95784 | Train Loss: 0.008286
+Epoch: 615 | Step 95940 | Train Loss: 0.007667
+Epoch: 616 | Step 96000 | Valid Loss: 0.008073
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 616 | Step 96000 | Mean PER: 0.07841997864836012 | Mean WER: 0.3123404255319149
+Epoch: 616 | Step 96096 | Train Loss: 0.008195
+Epoch: 617 | Step 96252 | Train Loss: 0.007956
+Epoch: 618 | Step 96408 | Train Loss: 0.007571
+Epoch: 619 | Step 96564 | Train Loss: 0.008343
+Epoch: 620 | Step 96720 | Train Loss: 0.008948
+Epoch: 621 | Step 96876 | Train Loss: 0.008089
+Epoch: 622 | Step 97032 | Train Loss: 0.007406
+Epoch: 623 | Step 97188 | Train Loss: 0.008087
+Epoch: 624 | Step 97344 | Train Loss: 0.008454
+Epoch: 625 | Step 97500 | Train Loss: 0.007450
+Epoch: 626 | Step 97656 | Train Loss: 0.007493
+Epoch: 627 | Step 97812 | Train Loss: 0.007552
+Epoch: 628 | Step 97968 | Train Loss: 0.008377
+Epoch: 629 | Step 98000 | Valid Loss: 0.007408
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 629 | Step 98000 | Mean PER: 0.07801456776442925 | Mean WER: 0.3149787234042553
+Epoch: 629 | Step 98124 | Train Loss: 0.008326
+Epoch: 630 | Step 98280 | Train Loss: 0.008213
+Epoch: 631 | Step 98436 | Train Loss: 0.007746
+Epoch: 632 | Step 98592 | Train Loss: 0.008206
+Epoch: 633 | Step 98748 | Train Loss: 0.008699
+Epoch: 634 | Step 98904 | Train Loss: 0.008447
+Epoch: 635 | Step 99060 | Train Loss: 0.007329
+Epoch: 636 | Step 99216 | Train Loss: 0.007709
+Epoch: 637 | Step 99372 | Train Loss: 0.008343
+Epoch: 638 | Step 99528 | Train Loss: 0.008231
+Epoch: 639 | Step 99684 | Train Loss: 0.008344
+Epoch: 640 | Step 99840 | Train Loss: 0.008881
+Epoch: 641 | Step 99996 | Train Loss: 0.008748
+Epoch: 642 | Step 100000 | Valid Loss: 0.008424
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 642 | Step 100000 | Mean PER: 0.07771726644954662 | Mean WER: 0.3105531914893617
+Epoch: 642 | Step 100152 | Train Loss: 0.005348
+Epoch: 643 | Step 100308 | Train Loss: 0.003639
+Epoch: 644 | Step 100464 | Train Loss: 0.003050
+Epoch: 645 | Step 100620 | Train Loss: 0.002917
+Epoch: 646 | Step 100776 | Train Loss: 0.002462
+Epoch: 647 | Step 100932 | Train Loss: 0.002363
+Epoch: 648 | Step 101088 | Train Loss: 0.002332
+Epoch: 649 | Step 101244 | Train Loss: 0.002427
+Epoch: 650 | Step 101400 | Train Loss: 0.002341
+Epoch: 651 | Step 101556 | Train Loss: 0.002270
+Epoch: 652 | Step 101712 | Train Loss: 0.002550
+Epoch: 653 | Step 101868 | Train Loss: 0.002459
+Epoch: 654 | Step 102000 | Valid Loss: 0.002550
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 654 | Step 102000 | Mean PER: 0.07528480114596144 | Mean WER: 0.3010212765957447
+Epoch: 654 | Step 102024 | Train Loss: 0.002513
+Epoch: 655 | Step 102180 | Train Loss: 0.002689
+Epoch: 656 | Step 102336 | Train Loss: 0.002950
+Epoch: 657 | Step 102492 | Train Loss: 0.002977
+Epoch: 658 | Step 102648 | Train Loss: 0.002892
+Epoch: 659 | Step 102804 | Train Loss: 0.002885
+Epoch: 660 | Step 102960 | Train Loss: 0.002976
+Epoch: 661 | Step 103116 | Train Loss: 0.002686
+Epoch: 662 | Step 103272 | Train Loss: 0.003042
+Epoch: 663 | Step 103428 | Train Loss: 0.002902
+Epoch: 664 | Step 103584 | Train Loss: 0.002843
+Epoch: 665 | Step 103740 | Train Loss: 0.003052
+Epoch: 666 | Step 103896 | Train Loss: 0.002905
+Epoch: 667 | Step 104000 | Valid Loss: 0.002748
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 667 | Step 104000 | Mean PER: 0.0762577872673955 | Mean WER: 0.30553191489361703
+Epoch: 667 | Step 104052 | Train Loss: 0.002897
+Epoch: 668 | Step 104208 | Train Loss: 0.002636
+Epoch: 669 | Step 104364 | Train Loss: 0.002838
+Epoch: 670 | Step 104520 | Train Loss: 0.002650
+Epoch: 671 | Step 104676 | Train Loss: 0.002725
+Epoch: 672 | Step 104832 | Train Loss: 0.002699
+Epoch: 673 | Step 104988 | Train Loss: 0.002641
+Epoch: 674 | Step 105144 | Train Loss: 0.002610
+Epoch: 675 | Step 105300 | Train Loss: 0.002867
+Epoch: 676 | Step 105456 | Train Loss: 0.002961
+Epoch: 677 | Step 105612 | Train Loss: 0.003035
+Epoch: 678 | Step 105768 | Train Loss: 0.002801
+Epoch: 679 | Step 105924 | Train Loss: 0.002627
+Epoch: 680 | Step 106000 | Valid Loss: 0.002761
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 680 | Step 106000 | Mean PER: 0.07581183529507156 | Mean WER: 0.301531914893617
+Epoch: 680 | Step 106080 | Train Loss: 0.003044
+Epoch: 681 | Step 106236 | Train Loss: 0.002696
+Epoch: 682 | Step 106392 | Train Loss: 0.002867
+Epoch: 683 | Step 106548 | Train Loss: 0.003094
+Epoch: 684 | Step 106704 | Train Loss: 0.002687
+Epoch: 685 | Step 106860 | Train Loss: 0.002706
+Epoch: 686 | Step 107016 | Train Loss: 0.002511
+Epoch: 687 | Step 107172 | Train Loss: 0.002613
+Epoch: 688 | Step 107328 | Train Loss: 0.002929
+Epoch: 689 | Step 107484 | Train Loss: 0.003025
+Epoch: 690 | Step 107640 | Train Loss: 0.002614
+Epoch: 691 | Step 107796 | Train Loss: 0.002934
+Epoch: 692 | Step 107952 | Train Loss: 0.003036
+Epoch: 693 | Step 108000 | Valid Loss: 0.002361
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 693 | Step 108000 | Mean PER: 0.07637941053257477 | Mean WER: 0.30451063829787234
+Epoch: 693 | Step 108108 | Train Loss: 0.002595
+Epoch: 694 | Step 108264 | Train Loss: 0.002520
+Epoch: 695 | Step 108420 | Train Loss: 0.002558
+Epoch: 696 | Step 108576 | Train Loss: 0.002562
+Epoch: 697 | Step 108732 | Train Loss: 0.002533
+Epoch: 698 | Step 108888 | Train Loss: 0.002806
+Epoch: 699 | Step 109044 | Train Loss: 0.002865
+Epoch: 700 | Step 109200 | Train Loss: 0.002892
+Epoch: 701 | Step 109356 | Train Loss: 0.002678
+Epoch: 702 | Step 109512 | Train Loss: 0.002519
+Epoch: 703 | Step 109668 | Train Loss: 0.002912
+Epoch: 704 | Step 109824 | Train Loss: 0.002842
+Epoch: 705 | Step 109980 | Train Loss: 0.002501
+Epoch: 706 | Step 110000 | Valid Loss: 0.001944
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 706 | Step 110000 | Mean PER: 0.07631184205191963 | Mean WER: 0.3057872340425532
+Epoch: 706 | Step 110136 | Train Loss: 0.002347
+Epoch: 707 | Step 110292 | Train Loss: 0.002487
+Epoch: 708 | Step 110448 | Train Loss: 0.002687
+Epoch: 709 | Step 110604 | Train Loss: 0.002375
+Epoch: 710 | Step 110760 | Train Loss: 0.002520
+Epoch: 711 | Step 110916 | Train Loss: 0.002722
+Epoch: 712 | Step 111072 | Train Loss: 0.002571
+Epoch: 713 | Step 111228 | Train Loss: 0.002725
+Epoch: 714 | Step 111384 | Train Loss: 0.002744
+Epoch: 715 | Step 111540 | Train Loss: 0.002551
+Epoch: 716 | Step 111696 | Train Loss: 0.002622
+Epoch: 717 | Step 111852 | Train Loss: 0.002500
+Epoch: 718 | Step 112000 | Valid Loss: 0.002541
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 718 | Step 112000 | Mean PER: 0.07643346531709888 | Mean WER: 0.3051063829787234
+Epoch: 718 | Step 112008 | Train Loss: 0.002550
+Epoch: 719 | Step 112164 | Train Loss: 0.002751
+Epoch: 720 | Step 112320 | Train Loss: 0.002627
+Epoch: 721 | Step 112476 | Train Loss: 0.002612
+Epoch: 722 | Step 112632 | Train Loss: 0.002777
+Epoch: 723 | Step 112788 | Train Loss: 0.002673
+Epoch: 724 | Step 112944 | Train Loss: 0.002542
+Epoch: 725 | Step 113100 | Train Loss: 0.002910
+Epoch: 726 | Step 113256 | Train Loss: 0.002941
+Epoch: 727 | Step 113412 | Train Loss: 0.002484
+Epoch: 728 | Step 113568 | Train Loss: 0.002573
+Epoch: 729 | Step 113724 | Train Loss: 0.002455
+Epoch: 730 | Step 113880 | Train Loss: 0.002490
+Epoch: 731 | Step 114000 | Valid Loss: 0.002479
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 731 | Step 114000 | Mean PER: 0.07608210921769214 | Mean WER: 0.3017872340425532
+Epoch: 731 | Step 114036 | Train Loss: 0.002397
+Epoch: 732 | Step 114192 | Train Loss: 0.001908
+Epoch: 733 | Step 114348 | Train Loss: 0.001532
+Epoch: 734 | Step 114504 | Train Loss: 0.001368
+Epoch: 735 | Step 114660 | Train Loss: 0.001294
+Epoch: 736 | Step 114816 | Train Loss: 0.001170
+Epoch: 737 | Step 114972 | Train Loss: 0.001076
+Epoch: 738 | Step 115128 | Train Loss: 0.001077
+Epoch: 739 | Step 115284 | Train Loss: 0.001088
+Epoch: 740 | Step 115440 | Train Loss: 0.001126
+Epoch: 741 | Step 115596 | Train Loss: 0.001038
+Epoch: 742 | Step 115752 | Train Loss: 0.0009843
+Epoch: 743 | Step 115908 | Train Loss: 0.001136
+Epoch: 744 | Step 116000 | Valid Loss: 0.0009987
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 744 | Step 116000 | Mean PER: 0.07466317112393411 | Mean WER: 0.2989787234042553
+Epoch: 744 | Step 116064 | Train Loss: 0.001034
+Epoch: 745 | Step 116220 | Train Loss: 0.0009565
+Epoch: 746 | Step 116376 | Train Loss: 0.001107
+Epoch: 747 | Step 116532 | Train Loss: 0.001024
+Epoch: 748 | Step 116688 | Train Loss: 0.001061
+Epoch: 749 | Step 116844 | Train Loss: 0.001068
+Epoch: 750 | Step 117000 | Train Loss: 0.001042
+Epoch: 751 | Step 117156 | Train Loss: 0.0009431
+Epoch: 752 | Step 117312 | Train Loss: 0.001056
+Epoch: 753 | Step 117468 | Train Loss: 0.001028
+Epoch: 754 | Step 117624 | Train Loss: 0.0009457
+Epoch: 755 | Step 117780 | Train Loss: 0.001171
+Epoch: 756 | Step 117936 | Train Loss: 0.001088
+Epoch: 757 | Step 118000 | Valid Loss: 0.0009475
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 757 | Step 118000 | Mean PER: 0.07466317112393411 | Mean WER: 0.30017021276595746
+Epoch: 757 | Step 118092 | Train Loss: 0.0009496
+Epoch: 758 | Step 118248 | Train Loss: 0.001064
+Epoch: 759 | Step 118404 | Train Loss: 0.001026
+Epoch: 760 | Step 118560 | Train Loss: 0.001025
+Epoch: 761 | Step 118716 | Train Loss: 0.001071
+Epoch: 762 | Step 118872 | Train Loss: 0.001077
+Epoch: 763 | Step 119028 | Train Loss: 0.001080
+Epoch: 764 | Step 119184 | Train Loss: 0.001066
+Epoch: 765 | Step 119340 | Train Loss: 0.001089
+Epoch: 766 | Step 119496 | Train Loss: 0.001026
+Epoch: 767 | Step 119652 | Train Loss: 0.0009429
+Epoch: 768 | Step 119808 | Train Loss: 0.0009415
+Epoch: 769 | Step 119964 | Train Loss: 0.0009971
+Epoch: 770 | Step 120000 | Valid Loss: 0.0009343
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 770 | Step 120000 | Mean PER: 0.07460911633940999 | Mean WER: 0.29846808510638295
+Epoch: 770 | Step 120120 | Train Loss: 0.001022
+Epoch: 771 | Step 120276 | Train Loss: 0.001062
+Epoch: 772 | Step 120432 | Train Loss: 0.0009901
+Epoch: 773 | Step 120588 | Train Loss: 0.001020
+Epoch: 774 | Step 120744 | Train Loss: 0.0008845
+Epoch: 775 | Step 120900 | Train Loss: 0.0009741
+Epoch: 776 | Step 121056 | Train Loss: 0.0009810
+Epoch: 777 | Step 121212 | Train Loss: 0.001009
+Epoch: 778 | Step 121368 | Train Loss: 0.001079
+Epoch: 779 | Step 121524 | Train Loss: 0.001035
+Epoch: 780 | Step 121680 | Train Loss: 0.001013
+Epoch: 781 | Step 121836 | Train Loss: 0.001117
+Epoch: 782 | Step 121992 | Train Loss: 0.001069
+Epoch: 783 | Step 122000 | Valid Loss: 0.0004422
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 783 | Step 122000 | Mean PER: 0.07504155461560291 | Mean WER: 0.3
+Epoch: 783 | Step 122148 | Train Loss: 0.001046
+Epoch: 784 | Step 122304 | Train Loss: 0.001085
+Epoch: 785 | Step 122460 | Train Loss: 0.0009965
+Epoch: 786 | Step 122616 | Train Loss: 0.001014
+Epoch: 787 | Step 122772 | Train Loss: 0.001134
+Epoch: 788 | Step 122928 | Train Loss: 0.0009711
+Epoch: 789 | Step 123084 | Train Loss: 0.001009
+Epoch: 790 | Step 123240 | Train Loss: 0.0009568
+Epoch: 791 | Step 123396 | Train Loss: 0.001037
+Epoch: 792 | Step 123552 | Train Loss: 0.001089
+Epoch: 793 | Step 123708 | Train Loss: 0.0009684
+Epoch: 794 | Step 123864 | Train Loss: 0.0008672
+Epoch: 795 | Step 124000 | Valid Loss: 0.001063
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 795 | Step 124000 | Mean PER: 0.07512263679238909 | Mean WER: 0.3017872340425532
+Epoch: 795 | Step 124020 | Train Loss: 0.001068
+Epoch: 796 | Step 124176 | Train Loss: 0.0009951
+Epoch: 797 | Step 124332 | Train Loss: 0.0009501
+Epoch: 798 | Step 124488 | Train Loss: 0.001075
+Epoch: 799 | Step 124644 | Train Loss: 0.001085
+Epoch: 800 | Step 124800 | Train Loss: 0.001082
+Epoch: 801 | Step 124956 | Train Loss: 0.001024
+Epoch: 802 | Step 125112 | Train Loss: 0.0009935
+Epoch: 803 | Step 125268 | Train Loss: 0.0009390
+Epoch: 804 | Step 125424 | Train Loss: 0.0009889
+Epoch: 805 | Step 125580 | Train Loss: 0.0009085
+Epoch: 806 | Step 125736 | Train Loss: 0.0009693
+Epoch: 807 | Step 125892 | Train Loss: 0.001076
+Epoch: 808 | Step 126000 | Valid Loss: 0.001059
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 808 | Step 126000 | Mean PER: 0.07583886268733361 | Mean WER: 0.3040851063829787
+Epoch: 808 | Step 126048 | Train Loss: 0.0009765
+Epoch: 809 | Step 126204 | Train Loss: 0.001007
+Epoch: 810 | Step 126360 | Train Loss: 0.0008581
+Epoch: 811 | Step 126516 | Train Loss: 0.0008951
+Epoch: 812 | Step 126672 | Train Loss: 0.001023
+Epoch: 813 | Step 126828 | Train Loss: 0.0009789
+Epoch: 814 | Step 126984 | Train Loss: 0.0009038
+Epoch: 815 | Step 127140 | Train Loss: 0.0009429
+Epoch: 816 | Step 127296 | Train Loss: 0.0009036
+Epoch: 817 | Step 127452 | Train Loss: 0.0009473
+Epoch: 818 | Step 127608 | Train Loss: 0.0009898
+Epoch: 819 | Step 127764 | Train Loss: 0.001086
+Epoch: 820 | Step 127920 | Train Loss: 0.001016
+Epoch: 821 | Step 128000 | Valid Loss: 0.0009384
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 821 | Step 128000 | Mean PER: 0.07560912985310612 | Mean WER: 0.3035744680851064
+Epoch: 821 | Step 128076 | Train Loss: 0.0009503
+Epoch: 822 | Step 128232 | Train Loss: 0.0009379
+Epoch: 823 | Step 128388 | Train Loss: 0.0009533
+Epoch: 824 | Step 128544 | Train Loss: 0.0009368
+Epoch: 825 | Step 128700 | Train Loss: 0.0009716
+Epoch: 826 | Step 128856 | Train Loss: 0.0009942
+Epoch: 827 | Step 129012 | Train Loss: 0.0009505
+Epoch: 828 | Step 129168 | Train Loss: 0.0008934
+Epoch: 829 | Step 129324 | Train Loss: 0.0009039
+Epoch: 830 | Step 129480 | Train Loss: 0.0008283
+Epoch: 831 | Step 129636 | Train Loss: 0.001036
+Epoch: 832 | Step 129792 | Train Loss: 0.0008463
+Epoch: 833 | Step 129948 | Train Loss: 0.0009053
+Epoch: 834 | Step 130000 | Valid Loss: 0.0009205
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 834 | Step 130000 | Mean PER: 0.07471722590845822 | Mean WER: 0.30034042553191487
+Epoch: 834 | Step 130104 | Train Loss: 0.0007945
+Epoch: 835 | Step 130260 | Train Loss: 0.0009397
+Epoch: 836 | Step 130416 | Train Loss: 0.001000
+Epoch: 837 | Step 130572 | Train Loss: 0.0009362
+Epoch: 838 | Step 130728 | Train Loss: 0.0009311
+Epoch: 839 | Step 130884 | Train Loss: 0.001017
+Epoch: 840 | Step 131040 | Train Loss: 0.0009396
+Epoch: 841 | Step 131196 | Train Loss: 0.001040
+Epoch: 842 | Step 131352 | Train Loss: 0.0008337
+Epoch: 843 | Step 131508 | Train Loss: 0.0009040
+Epoch: 844 | Step 131664 | Train Loss: 0.0009462
+Epoch: 845 | Step 131820 | Train Loss: 0.0009323
+Epoch: 846 | Step 131976 | Train Loss: 0.0008965
+Epoch: 847 | Step 132000 | Valid Loss: 0.0008730
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 847 | Step 132000 | Mean PER: 0.07533885593048555 | Mean WER: 0.30051063829787233
+Epoch: 847 | Step 132132 | Train Loss: 0.0008093
+Epoch: 848 | Step 132288 | Train Loss: 0.0007603
+Epoch: 849 | Step 132444 | Train Loss: 0.0007965
+Epoch: 850 | Step 132600 | Train Loss: 0.0006869
+Epoch: 851 | Step 132756 | Train Loss: 0.0006670
+Epoch: 852 | Step 132912 | Train Loss: 0.0007258
+Epoch: 853 | Step 133068 | Train Loss: 0.0005256
+Epoch: 854 | Step 133224 | Train Loss: 0.0005622
+Epoch: 855 | Step 133380 | Train Loss: 0.0005416
+Epoch: 856 | Step 133536 | Train Loss: 0.0005672
+Epoch: 857 | Step 133692 | Train Loss: 0.0005628
+Epoch: 858 | Step 133848 | Train Loss: 0.0005669
+Epoch: 859 | Step 134000 | Valid Loss: 0.0005512
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 859 | Step 134000 | Mean PER: 0.0748929039581616 | Mean WER: 0.30034042553191487
+Epoch: 859 | Step 134004 | Train Loss: 0.0005581
+Epoch: 860 | Step 134160 | Train Loss: 0.0004853
+Epoch: 861 | Step 134316 | Train Loss: 0.0005193
+Epoch: 862 | Step 134472 | Train Loss: 0.0004910
+Epoch: 863 | Step 134628 | Train Loss: 0.0004713
+Epoch: 864 | Step 134784 | Train Loss: 0.0005493
+Epoch: 865 | Step 134940 | Train Loss: 0.0004466
+Epoch: 866 | Step 135096 | Train Loss: 0.0004204
+Epoch: 867 | Step 135252 | Train Loss: 0.0004238
+Epoch: 868 | Step 135408 | Train Loss: 0.0005281
+Epoch: 869 | Step 135564 | Train Loss: 0.0003692
+Epoch: 870 | Step 135720 | Train Loss: 0.0004402
+Epoch: 871 | Step 135876 | Train Loss: 0.0005257
+Epoch: 872 | Step 136000 | Valid Loss: 0.0004423
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 872 | Step 136000 | Mean PER: 0.07454154785875484 | Mean WER: 0.2988085106382979
+Epoch: 872 | Step 136032 | Train Loss: 0.0004366
+Epoch: 873 | Step 136188 | Train Loss: 0.0004703
+Epoch: 874 | Step 136344 | Train Loss: 0.0004064
+Epoch: 875 | Step 136500 | Train Loss: 0.0004170
+Epoch: 876 | Step 136656 | Train Loss: 0.0004164
+Epoch: 877 | Step 136812 | Train Loss: 0.0004236
+Epoch: 878 | Step 136968 | Train Loss: 0.0005077
+Epoch: 879 | Step 137124 | Train Loss: 0.0004431
+Epoch: 880 | Step 137280 | Train Loss: 0.0004203
+Epoch: 881 | Step 137436 | Train Loss: 0.0004814
+Epoch: 882 | Step 137592 | Train Loss: 0.0003867
+Epoch: 883 | Step 137748 | Train Loss: 0.0004472
+Epoch: 884 | Step 137904 | Train Loss: 0.0004205
+Epoch: 885 | Step 138000 | Valid Loss: 0.0004786
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 885 | Step 138000 | Mean PER: 0.07471722590845822 | Mean WER: 0.30195744680851067
+Epoch: 885 | Step 138060 | Train Loss: 0.0004727
+Epoch: 886 | Step 138216 | Train Loss: 0.0003981
+Epoch: 887 | Step 138372 | Train Loss: 0.0004578
+Epoch: 888 | Step 138528 | Train Loss: 0.0004213
+Epoch: 889 | Step 138684 | Train Loss: 0.0004049
+Epoch: 890 | Step 138840 | Train Loss: 0.0004783
+Epoch: 891 | Step 138996 | Train Loss: 0.0004051
+Epoch: 892 | Step 139152 | Train Loss: 0.0004481
+Epoch: 893 | Step 139308 | Train Loss: 0.0004623
+Epoch: 894 | Step 139464 | Train Loss: 0.0004976
+Epoch: 895 | Step 139620 | Train Loss: 0.0004151
+Epoch: 896 | Step 139776 | Train Loss: 0.0004343
+Epoch: 897 | Step 139932 | Train Loss: 0.0004724
+Epoch: 898 | Step 140000 | Valid Loss: 0.0003946
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 898 | Step 140000 | Mean PER: 0.07452803416262382 | Mean WER: 0.2989787234042553
+Epoch: 898 | Step 140088 | Train Loss: 0.0003949
+Epoch: 899 | Step 140244 | Train Loss: 0.0003877
+Epoch: 900 | Step 140400 | Train Loss: 0.0004580
+Epoch: 901 | Step 140556 | Train Loss: 0.0004101
+Epoch: 902 | Step 140712 | Train Loss: 0.0005212
+Epoch: 903 | Step 140868 | Train Loss: 0.0005090
+Epoch: 904 | Step 141024 | Train Loss: 0.0003877
+Epoch: 905 | Step 141180 | Train Loss: 0.0003473
+Epoch: 906 | Step 141336 | Train Loss: 0.0004704
+Epoch: 907 | Step 141492 | Train Loss: 0.0004477
+Epoch: 908 | Step 141648 | Train Loss: 0.0003487
+Epoch: 909 | Step 141804 | Train Loss: 0.0004948
+Epoch: 910 | Step 141960 | Train Loss: 0.0004470
+Epoch: 911 | Step 142000 | Valid Loss: 0.0004015
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 911 | Step 142000 | Mean PER: 0.07459560264327897 | Mean WER: 0.30008510638297875
+Epoch: 911 | Step 142116 | Train Loss: 0.0005102
+Epoch: 912 | Step 142272 | Train Loss: 0.0004599
+Epoch: 913 | Step 142428 | Train Loss: 0.0004773
+Epoch: 914 | Step 142584 | Train Loss: 0.0003524
+Epoch: 915 | Step 142740 | Train Loss: 0.0003982
+Epoch: 916 | Step 142896 | Train Loss: 0.0003979
+Epoch: 917 | Step 143052 | Train Loss: 0.0004578
+Epoch: 918 | Step 143208 | Train Loss: 0.0004081
+Epoch: 919 | Step 143364 | Train Loss: 0.0003921
+Epoch: 920 | Step 143520 | Train Loss: 0.0004378
+Epoch: 921 | Step 143676 | Train Loss: 0.0004197
+Epoch: 922 | Step 143832 | Train Loss: 0.0004207
+Epoch: 923 | Step 143988 | Train Loss: 0.0004268
+Epoch: 924 | Step 144000 | Valid Loss: 0.0002255
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 924 | Step 144000 | Mean PER: 0.07432532872065839 | Mean WER: 0.2974468085106383
+Epoch: 924 | Step 144144 | Train Loss: 0.0004244
+Epoch: 925 | Step 144300 | Train Loss: 0.0003364
+Epoch: 926 | Step 144456 | Train Loss: 0.0003520
+Epoch: 927 | Step 144612 | Train Loss: 0.0004006
+Epoch: 928 | Step 144768 | Train Loss: 0.0003746
+Epoch: 929 | Step 144924 | Train Loss: 0.0004067
+Epoch: 930 | Step 145080 | Train Loss: 0.0004067
+Epoch: 931 | Step 145236 | Train Loss: 0.0004639
+Epoch: 932 | Step 145392 | Train Loss: 0.0003649
+Epoch: 933 | Step 145548 | Train Loss: 0.0003708
+Epoch: 934 | Step 145704 | Train Loss: 0.0004067
+Epoch: 935 | Step 145860 | Train Loss: 0.0003324
+Epoch: 936 | Step 146000 | Valid Loss: 0.0003872
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 936 | Step 146000 | Mean PER: 0.07446046568196868 | Mean WER: 0.2988936170212766
+Epoch: 936 | Step 146016 | Train Loss: 0.0003927
+Epoch: 937 | Step 146172 | Train Loss: 0.0003467
+Epoch: 938 | Step 146328 | Train Loss: 0.0004232
+Epoch: 939 | Step 146484 | Train Loss: 0.0004058
+Epoch: 940 | Step 146640 | Train Loss: 0.0003780
+Epoch: 941 | Step 146796 | Train Loss: 0.0003512
+Epoch: 942 | Step 146952 | Train Loss: 0.0004419
+Epoch: 943 | Step 147108 | Train Loss: 0.0004225
+Epoch: 944 | Step 147264 | Train Loss: 0.0003837
+Epoch: 945 | Step 147420 | Train Loss: 0.0003864
+Epoch: 946 | Step 147576 | Train Loss: 0.0004112
+Epoch: 947 | Step 147732 | Train Loss: 0.0003596
+Epoch: 948 | Step 147888 | Train Loss: 0.0004656
+Epoch: 949 | Step 148000 | Valid Loss: 0.0003245
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 949 | Step 148000 | Mean PER: 0.07486587656589953 | Mean WER: 0.3006808510638298
+Epoch: 949 | Step 148044 | Train Loss: 0.0003607
+Epoch: 950 | Step 148200 | Train Loss: 0.0003797
+Epoch: 951 | Step 148356 | Train Loss: 0.0003794
+Epoch: 952 | Step 148512 | Train Loss: 0.0003086
+Epoch: 953 | Step 148668 | Train Loss: 0.0004221
+Epoch: 954 | Step 148824 | Train Loss: 0.0004563
+Epoch: 955 | Step 148980 | Train Loss: 0.0004052
+Epoch: 956 | Step 149136 | Train Loss: 0.0003730
+Epoch: 957 | Step 149292 | Train Loss: 0.0004091
+Epoch: 958 | Step 149448 | Train Loss: 0.0003413
+Epoch: 959 | Step 149604 | Train Loss: 0.0003973
+Epoch: 960 | Step 149760 | Train Loss: 0.0004393
+Epoch: 961 | Step 149916 | Train Loss: 0.0004121
+Epoch: 962 | Step 150000 | Valid Loss: 0.0004274
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 962 | Step 150000 | Mean PER: 0.07469019851619617 | Mean WER: 0.29940425531914894
+Epoch: 962 | Step 150072 | Train Loss: 0.0003939
+Epoch: 963 | Step 150228 | Train Loss: 0.0003132
+Epoch: 964 | Step 150384 | Train Loss: 0.0003674
+Epoch: 965 | Step 150540 | Train Loss: 0.0003596
+Epoch: 966 | Step 150696 | Train Loss: 0.0003576
+Epoch: 967 | Step 150852 | Train Loss: 0.0004094
+Epoch: 968 | Step 151008 | Train Loss: 0.0004603
+Epoch: 969 | Step 151164 | Train Loss: 0.0003319
+Epoch: 970 | Step 151320 | Train Loss: 0.0003546
+Epoch: 971 | Step 151476 | Train Loss: 0.0003253
+Epoch: 972 | Step 151632 | Train Loss: 0.0003709
+Epoch: 973 | Step 151788 | Train Loss: 0.0004053
+Epoch: 974 | Step 151944 | Train Loss: 0.0003905
+Epoch: 975 | Step 152000 | Valid Loss: 0.0003051
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 975 | Step 152000 | Mean PER: 0.07524426005756835 | Mean WER: 0.30034042553191487
+Epoch: 975 | Step 152100 | Train Loss: 0.0003476
+Epoch: 976 | Step 152256 | Train Loss: 0.0004125
+Epoch: 977 | Step 152412 | Train Loss: 0.0003820
+Epoch: 978 | Step 152568 | Train Loss: 0.0003863
+Epoch: 979 | Step 152724 | Train Loss: 0.0004104
+Epoch: 980 | Step 152880 | Train Loss: 0.0003479
+Epoch: 981 | Step 153036 | Train Loss: 0.0003946
+Epoch: 982 | Step 153192 | Train Loss: 0.0003922
+Epoch: 983 | Step 153348 | Train Loss: 0.0003733
+Epoch: 984 | Step 153504 | Train Loss: 0.0003785
+Epoch: 985 | Step 153660 | Train Loss: 0.0003497
+Epoch: 986 | Step 153816 | Train Loss: 0.0003920
+Epoch: 987 | Step 153972 | Train Loss: 0.0003336
+Epoch: 988 | Step 154000 | Valid Loss: 0.0003766
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 988 | Step 154000 | Mean PER: 0.07452803416262382 | Mean WER: 0.29948936170212764
+Epoch: 988 | Step 154128 | Train Loss: 0.0004498
+Epoch: 989 | Step 154284 | Train Loss: 0.0003526
+Epoch: 990 | Step 154440 | Train Loss: 0.0003728
+Epoch: 991 | Step 154596 | Train Loss: 0.0003883
+Epoch: 992 | Step 154752 | Train Loss: 0.0004278
+Epoch: 993 | Step 154908 | Train Loss: 0.0003806
+Epoch: 994 | Step 155064 | Train Loss: 0.0003270
+Epoch: 995 | Step 155220 | Train Loss: 0.0004231
+Epoch: 996 | Step 155376 | Train Loss: 0.0003919
+Epoch: 997 | Step 155532 | Train Loss: 0.0003760
+Epoch: 998 | Step 155688 | Train Loss: 0.0003309
+Epoch: 999 | Step 155844 | Train Loss: 0.0003754
+Epoch: 1000 | Step 156000 | Valid Loss: 0.0003860
+Catched exception in <function Trainer._write_summaries at 0x7fa17830c3a0>:
+Epoch: 1000 | Step 156000 | Mean PER: 0.07477128069298233 | Mean WER: 0.2988936170212766
+Epoch: 1000 | Step 156 | Train Loss: 0.0003860
+ForwardTransformer(
+  (embedding): Embedding(31, 512)
+  (pos_encoder): PositionalEncoding(
+    (dropout): Dropout(p=0.1, inplace=False)
+  )
+  (encoder): TransformerEncoder(
+    (layers): ModuleList(
+      (0): TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (out_proj): _LinearWithBias(in_features=512, out_features=512, bias=True)
+        )
+        (linear1): Linear(in_features=512, out_features=2048, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (linear2): Linear(in_features=2048, out_features=512, bias=True)
+        (norm1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (dropout1): Dropout(p=0.1, inplace=False)
+        (dropout2): Dropout(p=0.1, inplace=False)
+      )
+      (1): TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (out_proj): _LinearWithBias(in_features=512, out_features=512, bias=True)
+        )
+        (linear1): Linear(in_features=512, out_features=2048, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (linear2): Linear(in_features=2048, out_features=512, bias=True)
+        (norm1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (dropout1): Dropout(p=0.1, inplace=False)
+        (dropout2): Dropout(p=0.1, inplace=False)
+      )
+      (2): TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (out_proj): _LinearWithBias(in_features=512, out_features=512, bias=True)
+        )
+        (linear1): Linear(in_features=512, out_features=2048, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (linear2): Linear(in_features=2048, out_features=512, bias=True)
+        (norm1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (dropout1): Dropout(p=0.1, inplace=False)
+        (dropout2): Dropout(p=0.1, inplace=False)
+      )
+    )
+    (norm): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  )
+  (fc_out): Linear(in_features=512, out_features=72, bias=True)
+)
+Training on device: cuda

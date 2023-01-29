@@ -1,0 +1,113 @@
+GBERT(
+  (embedding): Embedding(32, 512)
+  (pos_encoder): PositionalEncoding(
+    (dropout): Dropout(p=0.1, inplace=False)
+  )
+  (encoder): TransformerEncoder(
+    (layers): ModuleList(
+      (0): TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (out_proj): _LinearWithBias(in_features=512, out_features=512, bias=True)
+        )
+        (linear1): Linear(in_features=512, out_features=2048, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (linear2): Linear(in_features=2048, out_features=512, bias=True)
+        (norm1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (dropout1): Dropout(p=0.1, inplace=False)
+        (dropout2): Dropout(p=0.1, inplace=False)
+      )
+      (1): TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (out_proj): _LinearWithBias(in_features=512, out_features=512, bias=True)
+        )
+        (linear1): Linear(in_features=512, out_features=2048, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (linear2): Linear(in_features=2048, out_features=512, bias=True)
+        (norm1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (dropout1): Dropout(p=0.1, inplace=False)
+        (dropout2): Dropout(p=0.1, inplace=False)
+      )
+      (2): TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (out_proj): _LinearWithBias(in_features=512, out_features=512, bias=True)
+        )
+        (linear1): Linear(in_features=512, out_features=2048, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (linear2): Linear(in_features=2048, out_features=512, bias=True)
+        (norm1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (dropout1): Dropout(p=0.1, inplace=False)
+        (dropout2): Dropout(p=0.1, inplace=False)
+      )
+      (3): TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (out_proj): _LinearWithBias(in_features=512, out_features=512, bias=True)
+        )
+        (linear1): Linear(in_features=512, out_features=2048, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (linear2): Linear(in_features=2048, out_features=512, bias=True)
+        (norm1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (dropout1): Dropout(p=0.1, inplace=False)
+        (dropout2): Dropout(p=0.1, inplace=False)
+      )
+      (4): TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (out_proj): _LinearWithBias(in_features=512, out_features=512, bias=True)
+        )
+        (linear1): Linear(in_features=512, out_features=2048, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (linear2): Linear(in_features=2048, out_features=512, bias=True)
+        (norm1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (dropout1): Dropout(p=0.1, inplace=False)
+        (dropout2): Dropout(p=0.1, inplace=False)
+      )
+      (5): TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (out_proj): _LinearWithBias(in_features=512, out_features=512, bias=True)
+        )
+        (linear1): Linear(in_features=512, out_features=2048, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (linear2): Linear(in_features=2048, out_features=512, bias=True)
+        (norm1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (dropout1): Dropout(p=0.1, inplace=False)
+        (dropout2): Dropout(p=0.1, inplace=False)
+      )
+    )
+    (norm): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  )
+  (fc_out): Linear(in_features=512, out_features=31, bias=True)
+)
+Training on device: cuda
+Epoch: 48 | Step 14000 | Valid Loss: 1.138
+Epoch: 48 | Step 14000 | Mean Mask Error Rate: 0.49683075745728594
+Epoch: 48 | Step 14016 | Train Loss: 1.133
+Epoch: 49 | Step 14308 | Train Loss: 1.109
+Epoch: 50 | Step 14600 | Train Loss: 1.082
+Epoch: 51 | Step 14892 | Train Loss: 1.122
+Epoch: 52 | Step 15184 | Train Loss: 1.088
+Epoch: 53 | Step 15476 | Train Loss: 1.064
+Epoch: 54 | Step 15768 | Train Loss: 1.049
+Epoch: 55 | Step 16000 | Valid Loss: 1.044
+Epoch: 55 | Step 16000 | Mean Mask Error Rate: 0.48791778269477115
+Epoch: 55 | Step 16060 | Train Loss: 1.047
+Epoch: 56 | Step 16352 | Train Loss: 1.023
+Epoch: 57 | Step 16644 | Train Loss: 1.011
+Epoch: 58 | Step 16936 | Train Loss: 0.9880
+Epoch: 59 | Step 17228 | Train Loss: 0.9733
+Epoch: 60 | Step 17520 | Train Loss: 0.9640
+Epoch: 61 | Step 17812 | Train Loss: 1.122
+Epoch: 62 | Step 18000 | Valid Loss: 1.075
+Epoch: 62 | Step 18000 | Mean Mask Error Rate: 0.4694014207523
+Epoch: 62 | Step 18104 | Train Loss: 1.077
+Epoch: 63 | Step 18396 | Train Loss: 1.058
+Epoch: 64 | Step 18688 | Train Loss: 1.034
+Epoch: 65 | Step 18980 | Train Loss: 1.020
+Epoch: 66 | Step 19272 | Train Loss: 1.003
+Epoch: 67 | Step 19564 | Train Loss: 0.9958
+Epoch: 68 | Step 19856 | Train Loss: 0.9744
+Epoch: 69 | Step 20000 | Valid Loss: 0.9320

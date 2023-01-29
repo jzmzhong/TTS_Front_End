@@ -30,17 +30,18 @@
 
 Note: Autoregressive Transformers are trained to replicate works in academia. They usually are not used in commercial system since the autoregressive nature means they are slow in inference.
 
-| Model Name   | Layers | Dimension | Valid Acc. | Test Acc. |Flops | MACs |
-| :----------- | :----- | :-------- | :--------  | :-------  | :---- | :--- |
-| autoreg_V1.0 | 4+4    | 512       | 72.45%     | 73.12%    | | |
-| autoreg_V1.1 | 3+3    | 512       | 72.77%     | 73.15%    | | |
-| autoreg_V1.2 | 2+2    | 512       | 72.35%     | 72.84%    | | |
-| autoreg_V1.3 | 4+4    | 384       | 72.55%     | 73.17%    | | |
-| autoreg_V1.4 | 3+3    | 384       | 72.60%     | 72.87%    | | |
-| autoreg_V1.5 | 2+2    | 384       | 72.21%     | 72.20%    | | |
-| autoreg_V1.6 | 4+4    | 256       | 72.16%     | 72.83%    | | |
-| autoreg_V1.7 | 3+3    | 256       | 72.20%     | 73.18%    | | |
-| autoreg_V1.8 | 2+2    | 256       | 71.92%     | 72.97%    | | |
+| Model Name   | Layers | Dimension | Valid Acc. | Test Acc. |Flops | MACs | Note |
+| :----------- | :----- | :-------- | :--------  | :-------  | :---- | :--- | :---- |
+| autoreg_V1.0 | 4+4    | 512       | 72.45%     | 73.12%    | | | |
+| autoreg_V1.1 | 3+3    | 512       | 72.77%     | 73.15%    | | | |
+| autoreg_V1.2 | 2+2    | 512       | 72.35%     | 72.84%    | | | |
+| autoreg_V1.3 | 4+4    | 384       | 72.55%     | 73.17%    | | | |
+| autoreg_V1.4 | 3+3    | 384       | 72.60%     | 72.87%    | | | |
+| autoreg_V1.5 | 2+2    | 384       | 72.21%     | 72.20%    | | | |
+| autoreg_V1.6 | 4+4    | 256       | 72.16%     | 72.83%    | | | |
+| autoreg_V1.7 | 3+3    | 256       | 72.20%     | 73.18%    | | | |
+| autoreg_V1.8 | 2+2    | 256       | 71.92%     | 72.97%    | | | |
+| autoreg_V1.9 | 6+4    | 512       | 72.67%     | x%    | | | For Comparison with 6+4 with Encoder Pretrained by GBERT|
 
 ### Forward Transformer
 
@@ -61,7 +62,14 @@ Note: Forward Transformers are used in industrial deployment since they support 
 
 | Model Name    | Layers | Dimension | Mask Valid Acc. | Note                                                    |
 | :------------ | :----- | :-------- | :-------------  | :------------------------------------------------------ |
-| pretrain_V1.0 | 6      | 512       | x%              | Predict entire sequence instead of just the masked part |
-| pretrain_V1.1 | 6      | 512       | x%              | Predict only the masked part                            |
+| pretrain_V1.0 | 6      | 512       | 63.78%          | Predict entire sequence instead of just the masked part |
+| pretrain_V1.1 | 6      | 512       | 64.99%          | Predict only the masked part                            |
+| pretrain_V1.2 | 4      | 512       | x%          | |
+| pretrain_V1.3 | 3      | 384       | x%          | |
+| pretrain_V1.4 | 2      | 384       | x%          | |
 
 ### Finetuning
+
+| Model Name   | Layers | Dimension | Valid Acc. | Test Acc. |Flops | MACs | Note |
+| :----------- | :----- | :-------- | :--------  | :-------  | :---- | :--- | :---- |
+| autoreg_V2.0 | 6+4    | 512       | x%     | x%    | | | |

@@ -1,33 +1,29 @@
 
 paths:
-  checkpoint_dir: ../checkpoints/pretrain_V1.0_EnUs_forward_6_512_4_8   # Directory to store model checkpoints and tensorboard, will be created if not existing.
-  data_dir: ../datasets/4_packed/pretrain_V1_EnUs_dup1                           # Directory to store processed data, will be created if not existing.
+  checkpoint_dir: ../checkpoints/forward_V1.2_EnUs_3_512_4_8_lr0.0005   # Directory to store model checkpoints and tensorboard, will be created if not existing.
+  data_dir: ../datasets/4_packed/V1_EnUs_dup3                           # Directory to store processed data, will be created if not existing.
 
 preprocessing:
   languages: ['EnUs']    # All languages in the dataset.
 
   # Text (grapheme) and phoneme symbols, either provide a string or list of strings.
   # Symbols in the dataset will be filtered according to these lists!
-  text_symbols: "*abcdefghijklmnopqrstuvwxyz'-"
-  phoneme_symbols: "abcdefghijklmnopqrstuvwxyz'-"
-  char_repeats: 1                # Number of grapheme character repeats to allow for mapping to longer phoneme sequences.
+  text_symbols: "abcdefghijklmnopqrstuvwxyz'-"
+  phoneme_symbols: ["b", "ch", "d", "dh", "f", "g", "hh", "jh", "k", "l", "m", "n", "ng", "p", "r", "s", "sh", "t", "th", "v", "w", "y", "z", "zh", "aa0", "aa1", "aa2", "ae0", "ae1", "ae2", "ah0", "ah1", "ah2", "ao0", "ao1", "ao2", "aw0", "aw1", "aw2", "ay0", "ay1", "ay2", "eh0", "eh1", "eh2", "er0", "er1", "er2", "ey0", "ey1", "ey2", "ih0", "ih1", "ih2", "iy0", "iy1", "iy2", "ow0", "ow1", "ow2", "oy0", "oy1", "oy2", "uh0", "uh1", "uh2", "uw0", "uw1", "uw2"]
+  char_repeats: 3                # Number of grapheme character repeats to allow for mapping to longer phoneme sequences.
                                  # Set to 1 for autoreg_transformer.
   lowercase: true                # Whether to lowercase the grapheme input.
   n_val: 5000                    # Default number of validation data points if no explicit validation data is provided.
 
 
 model:
-  type: 'GBERT'            # Whether to use a forward transformer or autoregressive transformer model.
+  type: 'transformer'            # Whether to use a forward transformer or autoregressive transformer model.
                                  # Choices: ['transformer', 'autoreg_transformer']
   d_model: 512
   d_fft: 2048
-  layers: 6
+  layers: 3
   dropout: 0.1
   heads: 8
-  mask_ratio: 0.2
-  mask_UNK: 0.8
-  mask_random: 0.1
-  mask_original: 0.1
 
 training:
 
@@ -38,10 +34,9 @@ training:
   warmup_steps: 10000                # Linear increase of the lr from zero to the given lr within the given number of steps.
   scheduler_plateau_factor: 0.5      # Factor to multiply learning rate on plateau.
   scheduler_plateau_patience: 5      # Number of text generations with no improvement to tolerate.
-  batch_size: 1024                   # Training batch size.
-  batch_size_val: 1024               # Validation batch size.
-  epochs: 2000                       # Number of epochs to train.
-  randomly_remask_epochs: 10         # Interval of training epochs to randomly remask pretraining data
+  batch_size: 600                    # Training batch size.
+  batch_size_val: 600                # Validation batch size.
+  epochs: 1000                       # Number of epochs to train.
   generate_steps: 2000               # Interval of training steps to generate sample outputs. Also, at this step the phoneme and word
                                      # error rates are calculated for the scheduler.
   validate_steps: 2000               # Interval of training steps to validate the model

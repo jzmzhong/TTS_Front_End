@@ -16,12 +16,13 @@ class ModelType(Enum):
     TRANSFORMER = 'transformer'
     TRANSFORMER_TRIMMED = 'transformer_trimmed'
     AUTOREG_TRANSFORMER = 'autoreg_transformer'
+    AUTOREG_TRANSFORMER_GBERT_FINETUNE = 'autoreg_transformer_GBERT_finetune'
 
     def require_cross_entropy_loss(self) -> bool:
         """
         Returns: bool: Whether the model requires cross entropy loss.
         """
-        return self in {ModelType.GBERT, ModelType.AUTOREG_TRANSFORMER}
+        return self in {ModelType.GBERT, ModelType.AUTOREG_TRANSFORMER, ModelType.AUTOREG_TRANSFORMER_GBERT_FINETUNE}
 
 
 class Model(torch.nn.Module, ABC):
@@ -326,9 +327,9 @@ class AutoregressiveTransformer(Model):
 
         self.end_index = end_index
         self.d_model = d_model
-        self.encoder = nn.Embedding(encoder_vocab_size, d_model)
+        self.encoder_embedding = nn.Embedding(encoder_vocab_size, d_model)
         self.pos_encoder = PositionalEncoding(d_model, dropout)
-        self.decoder = nn.Embedding(decoder_vocab_size, d_model)
+        self.decoder_embedding = nn.Embedding(decoder_vocab_size, d_model)
         self.pos_decoder = PositionalEncoding(d_model, dropout)
         self.transformer = nn.Transformer(d_model=d_model, nhead=heads, num_encoder_layers=encoder_layers,
                                           num_decoder_layers=decoder_layers, dim_feedforward=d_fft,
@@ -358,10 +359,10 @@ class AutoregressiveTransformer(Model):
         src_pad_mask = _make_len_mask(src).to(trg.device)
         trg_pad_mask = _make_len_mask(trg).to(trg.device)
 
-        src = self.encoder(src)
+        src = self.encoder_embedding(src)
         src = self.pos_encoder(src)
 
-        trg = self.decoder(trg)
+        trg = self.decoder_embedding(trg)
         trg = self.pos_decoder(trg)
 
         output = self.transformer(src, trg, src_mask=None, tgt_mask=trg_mask,
@@ -395,7 +396,7 @@ class AutoregressiveTransformer(Model):
         input = input.transpose(0, 1)          # shape: [T, N]
         src_pad_mask = _make_len_mask(input).to(input.device)
         with torch.no_grad():
-            input = self.encoder(input)
+            input = self.encoder_embedding(input)
             input = self.pos_encoder(input)
             input = self.transformer.encoder(input,
                                              src_key_padding_mask=src_pad_mask)
@@ -403,7 +404,7 @@ class AutoregressiveTransformer(Model):
             out_logits = []
             for i in range(max_len):
                 tgt_mask = _generate_square_subsequent_mask(i + 1).to(input.device)
-                output = self.decoder(out_indices)
+                output = self.decoder_embedding(out_indices)
                 output = self.pos_decoder(output)
                 output = self.transformer.decoder(output,
                                                   input,
@@ -439,14 +440,18 @@ class AutoregressiveTransformer(Model):
         """
 
         preprocessor = Preprocessor.from_config(config)
+        if 'encoder_layers' not in config['model']:
+            config['model']['encoder_layers'] = config['model']['layers']
+        if 'decoder_layers' not in config['model']:
+            config['model']['decoder_layers'] = config['model']['layers']
         return AutoregressiveTransformer(
             encoder_vocab_size=preprocessor.text_tokenizer.vocab_size,
             decoder_vocab_size=preprocessor.phoneme_tokenizer.vocab_size,
             end_index=preprocessor.phoneme_tokenizer.end_index,
             d_model=config['model']['d_model'],
             d_fft=config['model']['d_fft'],
-            encoder_layers=config['model']['layers'],
-            decoder_layers=config['model']['layers'],
+            encoder_layers=config['model']['encoder_layers'],
+            decoder_layers=config['model']['decoder_layers'],
             dropout=config['model']['dropout'],
             heads=config['model']['heads']
         )
@@ -469,11 +474,30 @@ def create_model(model_type: ModelType, config: Dict[str, Any]) -> Model:
         model = ForwardTransformer.from_config(config)
     elif model_type is ModelType.TRANSFORMER_TRIMMED:
         model = ForwardTransformerTrimmed.from_config(config)
-    elif model_type is ModelType.AUTOREG_TRANSFORMER:
+    elif model_type in [ModelType.AUTOREG_TRANSFORMER, ModelType.AUTOREG_TRANSFORMER_GBERT_FINETUNE]:
         model = AutoregressiveTransformer.from_config(config)
     else:
         raise ValueError(f'Unsupported model type: {model_type}. '
                          f'Supported types: {[t.value for t in ModelType]}')
+    
+    # Load GBERT to Encoder of G2P Model
+    if model_type in [ModelType.AUTOREG_TRANSFORMER_GBERT_FINETUNE]:
+        GBERT_checkpoint = torch.load(config['paths']['GBERT_path'])
+        print(f"Loading GBERT from: {config['paths']['GBERT_path']}")
+        # import pdb; pdb.set_trace()
+        GBERT_checkpoint_processed = {}
+        for k, v in GBERT_checkpoint['model'].items():
+            if k.startswith("embedding."): # load encoder embedding
+                GBERT_checkpoint_processed["encoder_" + k] = v
+            elif k.startswith("encoder."): # load encoder
+                GBERT_checkpoint_processed["transformer." + k] = v
+            elif k.startswith("fc_out."): # ignore FC in GBERT
+                continue
+            else:
+                GBERT_checkpoint_processed[k] = v
+        model.load_state_dict(GBERT_checkpoint_processed, strict=False)
+        model.eval()
+
     print(model)
     return model
 

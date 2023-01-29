@@ -31,6 +31,11 @@ def train(config_file: str,
         model.train()
         step = checkpoint['step']
         logger.info(f'Loaded model with step: {step}')
+        for key, val in config['paths'].items():
+            val_orig = checkpoint['config']['paths'][key]
+            if val_orig != val:
+                logger.info(f'Overwriting paths param: {key} {val_orig} --> {val}')
+                checkpoint['config']['paths'][key] = val
         for key, val in config['training'].items():
             val_orig = checkpoint['config']['training'][key]
             if val_orig != val:

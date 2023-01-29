@@ -1,0 +1,1322 @@
+Loading GBERT from: ../checkpoints/pretrain_V1.1_EnUs_forward_6_512_4_8_tar_masked/latest_model.pt
+Loading GBERT from: ../checkpoints/pretrain_V1.1_EnUs_forward_6_512_4_8_tar_masked/latest_model.pt
+AutoregressiveTransformer(
+  (encoder_embedding): Embedding(32, 512)
+  (pos_encoder): PositionalEncoding(
+    (dropout): Dropout(p=0.1, inplace=False)
+  )
+  (decoder_embedding): Embedding(72, 512)
+  (pos_decoder): PositionalEncoding(
+    (dropout): Dropout(p=0.1, inplace=False)
+  )
+  (transformer): Transformer(
+    (encoder): TransformerEncoder(
+      (layers): ModuleList(
+        (0): TransformerEncoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): _LinearWithBias(in_features=512, out_features=512, bias=True)
+          )
+          (linear1): Linear(in_features=512, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=512, bias=True)
+          (norm1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+        )
+        (1): TransformerEncoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): _LinearWithBias(in_features=512, out_features=512, bias=True)
+          )
+          (linear1): Linear(in_features=512, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=512, bias=True)
+          (norm1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+        )
+        (2): TransformerEncoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): _LinearWithBias(in_features=512, out_features=512, bias=True)
+          )
+          (linear1): Linear(in_features=512, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=512, bias=True)
+          (norm1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+        )
+        (3): TransformerEncoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): _LinearWithBias(in_features=512, out_features=512, bias=True)
+          )
+          (linear1): Linear(in_features=512, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=512, bias=True)
+          (norm1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+        )
+        (4): TransformerEncoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): _LinearWithBias(in_features=512, out_features=512, bias=True)
+          )
+          (linear1): Linear(in_features=512, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=512, bias=True)
+          (norm1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+        )
+        (5): TransformerEncoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): _LinearWithBias(in_features=512, out_features=512, bias=True)
+          )
+          (linear1): Linear(in_features=512, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=512, bias=True)
+          (norm1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+        )
+      )
+      (norm): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+    )
+    (decoder): TransformerDecoder(
+      (layers): ModuleList(
+        (0): TransformerDecoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): _LinearWithBias(in_features=512, out_features=512, bias=True)
+          )
+          (multihead_attn): MultiheadAttention(
+            (out_proj): _LinearWithBias(in_features=512, out_features=512, bias=True)
+          )
+          (linear1): Linear(in_features=512, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=512, bias=True)
+          (norm1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+          (norm3): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+          (dropout3): Dropout(p=0.1, inplace=False)
+        )
+        (1): TransformerDecoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): _LinearWithBias(in_features=512, out_features=512, bias=True)
+          )
+          (multihead_attn): MultiheadAttention(
+            (out_proj): _LinearWithBias(in_features=512, out_features=512, bias=True)
+          )
+          (linear1): Linear(in_features=512, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=512, bias=True)
+          (norm1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+          (norm3): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+          (dropout3): Dropout(p=0.1, inplace=False)
+        )
+        (2): TransformerDecoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): _LinearWithBias(in_features=512, out_features=512, bias=True)
+          )
+          (multihead_attn): MultiheadAttention(
+            (out_proj): _LinearWithBias(in_features=512, out_features=512, bias=True)
+          )
+          (linear1): Linear(in_features=512, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=512, bias=True)
+          (norm1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+          (norm3): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+          (dropout3): Dropout(p=0.1, inplace=False)
+        )
+        (3): TransformerDecoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): _LinearWithBias(in_features=512, out_features=512, bias=True)
+          )
+          (multihead_attn): MultiheadAttention(
+            (out_proj): _LinearWithBias(in_features=512, out_features=512, bias=True)
+          )
+          (linear1): Linear(in_features=512, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=512, bias=True)
+          (norm1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+          (norm3): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+          (dropout3): Dropout(p=0.1, inplace=False)
+        )
+      )
+      (norm): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+    )
+  )
+  (fc_out): Linear(in_features=512, out_features=72, bias=True)
+)
+Training on device: cuda
+Epoch: 1 | Step 156 | Train Loss: 3.770
+Epoch: 2 | Step 312 | Train Loss: 3.092
+Epoch: 3 | Step 468 | Train Loss: 2.503
+Epoch: 4 | Step 624 | Train Loss: 2.080
+Epoch: 5 | Step 780 | Train Loss: 1.748
+Epoch: 6 | Step 936 | Train Loss: 1.520
+Epoch: 7 | Step 1092 | Train Loss: 1.381
+Epoch: 8 | Step 1248 | Train Loss: 1.245
+Epoch: 9 | Step 1404 | Train Loss: 1.041
+Epoch: 10 | Step 1560 | Train Loss: 0.9076
+Epoch: 11 | Step 1716 | Train Loss: 0.7930
+Epoch: 12 | Step 1872 | Train Loss: 0.6904
+Epoch: 13 | Step 2000 | Valid Loss: 0.5728
+Epoch: 13 | Step 2000 | Mean PER: 0.24027351720969203 | Mean WER: 0.6235744680851064
+Epoch: 13 | Step 2028 | Train Loss: 0.5777
+Epoch: 14 | Step 2184 | Train Loss: 0.5149
+Epoch: 15 | Step 2340 | Train Loss: 0.4532
+Epoch: 16 | Step 2496 | Train Loss: 0.4575
+Epoch: 17 | Step 2652 | Train Loss: 0.3978
+Epoch: 18 | Step 2808 | Train Loss: 0.3737
+Epoch: 19 | Step 2964 | Train Loss: 0.3371
+Epoch: 20 | Step 3120 | Train Loss: 0.3267
+Epoch: 21 | Step 3276 | Train Loss: 0.3070
+Epoch: 22 | Step 3432 | Train Loss: 0.2868
+Epoch: 23 | Step 3588 | Train Loss: 0.2782
+Epoch: 24 | Step 3744 | Train Loss: 0.2681
+Epoch: 25 | Step 3900 | Train Loss: 0.2556
+Epoch: 26 | Step 4000 | Valid Loss: 0.2485
+Epoch: 26 | Step 4000 | Mean PER: 0.1294206678468628 | Mean WER: 0.42051063829787233
+Epoch: 26 | Step 4056 | Train Loss: 0.2696
+Epoch: 27 | Step 4212 | Train Loss: 0.2493
+Epoch: 28 | Step 4368 | Train Loss: 0.2339
+Epoch: 29 | Step 4524 | Train Loss: 0.2281
+Epoch: 30 | Step 4680 | Train Loss: 0.2196
+Epoch: 31 | Step 4836 | Train Loss: 0.2158
+Epoch: 32 | Step 4992 | Train Loss: 0.2102
+Epoch: 33 | Step 5148 | Train Loss: 0.2039
+Epoch: 34 | Step 5304 | Train Loss: 0.2000
+Epoch: 35 | Step 5460 | Train Loss: 0.1971
+Epoch: 36 | Step 5616 | Train Loss: 0.1919
+Epoch: 37 | Step 5772 | Train Loss: 0.1859
+Epoch: 38 | Step 5928 | Train Loss: 0.1822
+Epoch: 39 | Step 6000 | Valid Loss: 0.1742
+Epoch: 39 | Step 6000 | Mean PER: 0.10365004932499088 | Mean WER: 0.3666382978723404
+Epoch: 39 | Step 6084 | Train Loss: 0.1781
+Epoch: 40 | Step 6240 | Train Loss: 0.1784
+Epoch: 41 | Step 6396 | Train Loss: 0.1741
+Epoch: 42 | Step 6552 | Train Loss: 0.1642
+Epoch: 43 | Step 6708 | Train Loss: 0.1588
+Epoch: 44 | Step 6864 | Train Loss: 0.1611
+Epoch: 45 | Step 7020 | Train Loss: 0.1555
+Epoch: 46 | Step 7176 | Train Loss: 0.1525
+Epoch: 47 | Step 7332 | Train Loss: 0.1584
+Epoch: 48 | Step 7488 | Train Loss: 0.1550
+Epoch: 49 | Step 7644 | Train Loss: 0.1455
+Epoch: 50 | Step 7800 | Train Loss: 0.1475
+Epoch: 51 | Step 7956 | Train Loss: 0.1361
+Epoch: 52 | Step 8000 | Valid Loss: 0.1287
+Epoch: 52 | Step 8000 | Mean PER: 0.09466344139785673 | Mean WER: 0.34085106382978725
+Epoch: 52 | Step 8112 | Train Loss: 0.1363
+Epoch: 53 | Step 8268 | Train Loss: 0.1374
+Epoch: 54 | Step 8424 | Train Loss: 0.1318
+Epoch: 55 | Step 8580 | Train Loss: 0.1417
+Epoch: 56 | Step 8736 | Train Loss: 0.1349
+Epoch: 57 | Step 8892 | Train Loss: 0.1294
+Epoch: 58 | Step 9048 | Train Loss: 0.1326
+Epoch: 59 | Step 9204 | Train Loss: 0.1254
+Epoch: 60 | Step 9360 | Train Loss: 0.1184
+Epoch: 61 | Step 9516 | Train Loss: 0.1214
+Epoch: 62 | Step 9672 | Train Loss: 0.1477
+Epoch: 63 | Step 9828 | Train Loss: 0.1274
+Epoch: 64 | Step 9984 | Train Loss: 0.1236
+Epoch: 65 | Step 10000 | Valid Loss: 0.1025
+Epoch: 65 | Step 10000 | Mean PER: 0.09289314720469195 | Mean WER: 0.3363404255319149
+Epoch: 65 | Step 10140 | Train Loss: 0.1257
+Epoch: 66 | Step 10296 | Train Loss: 0.1170
+Epoch: 67 | Step 10452 | Train Loss: 0.1119
+Epoch: 68 | Step 10608 | Train Loss: 0.1088
+Epoch: 69 | Step 10764 | Train Loss: 0.1065
+Epoch: 70 | Step 10920 | Train Loss: 0.1049
+Epoch: 71 | Step 11076 | Train Loss: 0.09663
+Epoch: 72 | Step 11232 | Train Loss: 0.1096
+Epoch: 73 | Step 11388 | Train Loss: 0.1103
+Epoch: 74 | Step 11544 | Train Loss: 0.1088
+Epoch: 75 | Step 11700 | Train Loss: 0.1015
+Epoch: 76 | Step 11856 | Train Loss: 0.09948
+Epoch: 77 | Step 12000 | Valid Loss: 0.09313
+Epoch: 77 | Step 12000 | Mean PER: 0.08944715469127962 | Mean WER: 0.32365957446808513
+Epoch: 77 | Step 12012 | Train Loss: 0.09428
+Epoch: 78 | Step 12168 | Train Loss: 0.09151
+Epoch: 79 | Step 12324 | Train Loss: 0.08658
+Epoch: 80 | Step 12480 | Train Loss: 0.08992
+Epoch: 81 | Step 12636 | Train Loss: 0.08996
+Epoch: 82 | Step 12792 | Train Loss: 0.08827
+Epoch: 83 | Step 12948 | Train Loss: 0.09460
+Epoch: 84 | Step 13104 | Train Loss: 0.07983
+Epoch: 85 | Step 13260 | Train Loss: 0.08239
+Epoch: 86 | Step 13416 | Train Loss: 0.07996
+Epoch: 87 | Step 13572 | Train Loss: 0.07944
+Epoch: 88 | Step 13728 | Train Loss: 0.1086
+Epoch: 89 | Step 13884 | Train Loss: 0.08655
+Epoch: 90 | Step 14000 | Valid Loss: 0.07897
+Epoch: 90 | Step 14000 | Mean PER: 0.08762280571359073 | Mean WER: 0.31582978723404254
+Epoch: 90 | Step 14040 | Train Loss: 0.08295
+Epoch: 91 | Step 14196 | Train Loss: 0.07914
+Epoch: 92 | Step 14352 | Train Loss: 0.08029
+Epoch: 93 | Step 14508 | Train Loss: 0.07331
+Epoch: 94 | Step 14664 | Train Loss: 0.06920
+Epoch: 95 | Step 14820 | Train Loss: 0.07023
+Epoch: 96 | Step 14976 | Train Loss: 0.07010
+Epoch: 97 | Step 15132 | Train Loss: 0.06732
+Epoch: 98 | Step 15288 | Train Loss: 0.06407
+Epoch: 99 | Step 15444 | Train Loss: 0.06927
+Epoch: 100 | Step 15600 | Train Loss: 0.07508
+Epoch: 101 | Step 15756 | Train Loss: 0.07421
+Epoch: 102 | Step 15912 | Train Loss: 0.06618
+Epoch: 103 | Step 16000 | Valid Loss: 0.05934
+Epoch: 103 | Step 16000 | Mean PER: 0.08398762145434398 | Mean WER: 0.30340425531914894
+Epoch: 103 | Step 16068 | Train Loss: 0.06111
+Epoch: 104 | Step 16224 | Train Loss: 0.06193
+Epoch: 105 | Step 16380 | Train Loss: 0.06669
+Epoch: 106 | Step 16536 | Train Loss: 0.06170
+Epoch: 107 | Step 16692 | Train Loss: 0.06265
+Epoch: 108 | Step 16848 | Train Loss: 0.05821
+Epoch: 109 | Step 17004 | Train Loss: 0.05707
+Epoch: 110 | Step 17160 | Train Loss: 0.06224
+Epoch: 111 | Step 17316 | Train Loss: 0.07660
+Epoch: 112 | Step 17472 | Train Loss: 0.06081
+Epoch: 113 | Step 17628 | Train Loss: 0.05823
+Epoch: 114 | Step 17784 | Train Loss: 0.05783
+Epoch: 115 | Step 17940 | Train Loss: 0.05612
+Epoch: 116 | Step 18000 | Valid Loss: 0.05904
+Epoch: 116 | Step 18000 | Mean PER: 0.08186597116177245 | Mean WER: 0.30229787234042554
+Epoch: 116 | Step 18096 | Train Loss: 0.05551
+Epoch: 117 | Step 18252 | Train Loss: 0.05558
+Epoch: 118 | Step 18408 | Train Loss: 0.05808
+Epoch: 119 | Step 18564 | Train Loss: 0.05280
+Epoch: 120 | Step 18720 | Train Loss: 0.05740
+Epoch: 121 | Step 18876 | Train Loss: 0.05932
+Epoch: 122 | Step 19032 | Train Loss: 0.06457
+Epoch: 123 | Step 19188 | Train Loss: 0.05056
+Epoch: 124 | Step 19344 | Train Loss: 0.05307
+Epoch: 125 | Step 19500 | Train Loss: 0.05220
+Epoch: 126 | Step 19656 | Train Loss: 0.04946
+Epoch: 127 | Step 19812 | Train Loss: 0.04903
+Epoch: 128 | Step 19968 | Train Loss: 0.06917
+Epoch: 129 | Step 20000 | Valid Loss: 0.03826
+Epoch: 129 | Step 20000 | Mean PER: 0.08410924471952323 | Mean WER: 0.30434042553191487
+Epoch: 129 | Step 20124 | Train Loss: 0.05323
+Epoch: 130 | Step 20280 | Train Loss: 0.05495
+Epoch: 131 | Step 20436 | Train Loss: 0.05249
+Epoch: 132 | Step 20592 | Train Loss: 0.05637
+Epoch: 133 | Step 20748 | Train Loss: 0.04652
+Epoch: 134 | Step 20904 | Train Loss: 0.04322
+Epoch: 135 | Step 21060 | Train Loss: 0.05001
+Epoch: 136 | Step 21216 | Train Loss: 0.05542
+Epoch: 137 | Step 21372 | Train Loss: 0.05091
+Epoch: 138 | Step 21528 | Train Loss: 0.04397
+Epoch: 139 | Step 21684 | Train Loss: 0.04261
+Epoch: 140 | Step 21840 | Train Loss: 0.04357
+Epoch: 141 | Step 21996 | Train Loss: 0.04326
+Epoch: 142 | Step 22000 | Valid Loss: 0.03785
+Epoch: 142 | Step 22000 | Mean PER: 0.08189299855403451 | Mean WER: 0.30008510638297875
+Epoch: 142 | Step 22152 | Train Loss: 0.04523
+Epoch: 143 | Step 22308 | Train Loss: 0.04643
+Epoch: 144 | Step 22464 | Train Loss: 0.05039
+Epoch: 145 | Step 22620 | Train Loss: 0.04483
+Epoch: 146 | Step 22776 | Train Loss: 0.04533
+Epoch: 147 | Step 22932 | Train Loss: 0.04435
+Epoch: 148 | Step 23088 | Train Loss: 0.04161
+Epoch: 149 | Step 23244 | Train Loss: 0.03994
+Epoch: 150 | Step 23400 | Train Loss: 0.04721
+Epoch: 151 | Step 23556 | Train Loss: 0.04803
+Epoch: 152 | Step 23712 | Train Loss: 0.04300
+Epoch: 153 | Step 23868 | Train Loss: 0.03983
+Epoch: 154 | Step 24000 | Valid Loss: 0.03864
+Epoch: 154 | Step 24000 | Mean PER: 0.08219029986891714 | Mean WER: 0.2999148936170213
+Epoch: 154 | Step 24024 | Train Loss: 0.03880
+Epoch: 155 | Step 24180 | Train Loss: 0.03405
+Epoch: 156 | Step 24336 | Train Loss: 0.03753
+Epoch: 157 | Step 24492 | Train Loss: 0.03966
+Epoch: 158 | Step 24648 | Train Loss: 0.03545
+Epoch: 159 | Step 24804 | Train Loss: 0.03824
+Epoch: 160 | Step 24960 | Train Loss: 0.04530
+Epoch: 161 | Step 25116 | Train Loss: 0.04456
+Epoch: 162 | Step 25272 | Train Loss: 0.05402
+Epoch: 163 | Step 25428 | Train Loss: 0.04986
+Epoch: 164 | Step 25584 | Train Loss: 0.04445
+Epoch: 165 | Step 25740 | Train Loss: 0.04379
+Epoch: 166 | Step 25896 | Train Loss: 0.03487
+Epoch: 167 | Step 26000 | Valid Loss: 0.03146
+Epoch: 167 | Step 26000 | Mean PER: 0.08128488222813822 | Mean WER: 0.30195744680851067
+Epoch: 167 | Step 26052 | Train Loss: 0.03533
+Epoch: 168 | Step 26208 | Train Loss: 0.03728
+Epoch: 169 | Step 26364 | Train Loss: 0.03498
+Epoch: 170 | Step 26520 | Train Loss: 0.03436
+Epoch: 171 | Step 26676 | Train Loss: 0.03737
+Epoch: 172 | Step 26832 | Train Loss: 0.03296
+Epoch: 173 | Step 26988 | Train Loss: 0.04257
+Epoch: 174 | Step 27144 | Train Loss: 0.03970
+Epoch: 175 | Step 27300 | Train Loss: 0.04770
+Epoch: 176 | Step 27456 | Train Loss: 0.04419
+Epoch: 177 | Step 27612 | Train Loss: 0.03608
+Epoch: 178 | Step 27768 | Train Loss: 0.03274
+Epoch: 179 | Step 27924 | Train Loss: 0.03620
+Epoch: 180 | Step 28000 | Valid Loss: 0.03263
+Epoch: 180 | Step 28000 | Mean PER: 0.07828484168704983 | Mean WER: 0.28927659574468084
+Epoch: 180 | Step 28080 | Train Loss: 0.03347
+Epoch: 181 | Step 28236 | Train Loss: 0.03672
+Epoch: 182 | Step 28392 | Train Loss: 0.03621
+Epoch: 183 | Step 28548 | Train Loss: 0.04134
+Epoch: 184 | Step 28704 | Train Loss: 0.03267
+Epoch: 185 | Step 28860 | Train Loss: 0.03253
+Epoch: 186 | Step 29016 | Train Loss: 0.03950
+Epoch: 187 | Step 29172 | Train Loss: 0.03767
+Epoch: 188 | Step 29328 | Train Loss: 0.03674
+Epoch: 189 | Step 29484 | Train Loss: 0.04160
+Epoch: 190 | Step 29640 | Train Loss: 0.03286
+Epoch: 191 | Step 29796 | Train Loss: 0.02987
+Epoch: 192 | Step 29952 | Train Loss: 0.02969
+Epoch: 193 | Step 30000 | Valid Loss: 0.02659
+Epoch: 193 | Step 30000 | Mean PER: 0.08013621805700077 | Mean WER: 0.2968510638297872
+Epoch: 193 | Step 30108 | Train Loss: 0.03335
+Epoch: 194 | Step 30264 | Train Loss: 0.03827
+Epoch: 195 | Step 30420 | Train Loss: 0.03094
+Epoch: 196 | Step 30576 | Train Loss: 0.03361
+Epoch: 197 | Step 30732 | Train Loss: 0.03584
+Epoch: 198 | Step 30888 | Train Loss: 0.03777
+Epoch: 199 | Step 31044 | Train Loss: 0.03332
+Epoch: 200 | Step 31200 | Train Loss: 0.02785
+Epoch: 201 | Step 31356 | Train Loss: 0.02751
+Epoch: 202 | Step 31512 | Train Loss: 0.03411
+Epoch: 203 | Step 31668 | Train Loss: 0.03124
+Epoch: 204 | Step 31824 | Train Loss: 0.02840
+Epoch: 205 | Step 31980 | Train Loss: 0.03210
+Epoch: 206 | Step 32000 | Valid Loss: 0.02803
+Epoch: 206 | Step 32000 | Mean PER: 0.08008216327247665 | Mean WER: 0.29506382978723406
+Epoch: 206 | Step 32136 | Train Loss: 0.04106
+Epoch: 207 | Step 32292 | Train Loss: 0.04757
+Epoch: 208 | Step 32448 | Train Loss: 0.03299
+Epoch: 209 | Step 32604 | Train Loss: 0.02955
+Epoch: 210 | Step 32760 | Train Loss: 0.02856
+Epoch: 211 | Step 32916 | Train Loss: 0.02877
+Epoch: 212 | Step 33072 | Train Loss: 0.02968
+Epoch: 213 | Step 33228 | Train Loss: 0.04039
+Epoch: 214 | Step 33384 | Train Loss: 0.03420
+Epoch: 215 | Step 33540 | Train Loss: 0.03437
+Epoch: 216 | Step 33696 | Train Loss: 0.03042
+Epoch: 217 | Step 33852 | Train Loss: 0.02970
+Epoch: 218 | Step 34000 | Valid Loss: 0.02593
+Epoch: 218 | Step 34000 | Mean PER: 0.07790645819538101 | Mean WER: 0.2913191489361702
+Epoch: 218 | Step 34008 | Train Loss: 0.02611
+Epoch: 219 | Step 34164 | Train Loss: 0.03114
+Epoch: 220 | Step 34320 | Train Loss: 0.02695
+Epoch: 221 | Step 34476 | Train Loss: 0.02840
+Epoch: 222 | Step 34632 | Train Loss: 0.03051
+Epoch: 223 | Step 34788 | Train Loss: 0.02794
+Epoch: 224 | Step 34944 | Train Loss: 0.02695
+Epoch: 225 | Step 35100 | Train Loss: 0.02695
+Epoch: 226 | Step 35256 | Train Loss: 0.03082
+Epoch: 227 | Step 35412 | Train Loss: 0.03136
+Epoch: 228 | Step 35568 | Train Loss: 0.03077
+Epoch: 229 | Step 35724 | Train Loss: 0.03312
+Epoch: 230 | Step 35880 | Train Loss: 0.03207
+Epoch: 231 | Step 36000 | Valid Loss: 0.03126
+Epoch: 231 | Step 36000 | Mean PER: 0.0789740401897323 | Mean WER: 0.2945531914893617
+Epoch: 231 | Step 36036 | Train Loss: 0.03324
+Epoch: 232 | Step 36192 | Train Loss: 0.02854
+Epoch: 233 | Step 36348 | Train Loss: 0.03097
+Epoch: 234 | Step 36504 | Train Loss: 0.03511
+Epoch: 235 | Step 36660 | Train Loss: 0.02659
+Epoch: 236 | Step 36816 | Train Loss: 0.02806
+Epoch: 237 | Step 36972 | Train Loss: 0.03625
+Epoch: 238 | Step 37128 | Train Loss: 0.02887
+Epoch: 239 | Step 37284 | Train Loss: 0.02855
+Epoch: 240 | Step 37440 | Train Loss: 0.02717
+Epoch: 241 | Step 37596 | Train Loss: 0.02540
+Epoch: 242 | Step 37752 | Train Loss: 0.03652
+Epoch: 243 | Step 37908 | Train Loss: 0.02471
+Epoch: 244 | Step 38000 | Valid Loss: 0.02537
+Epoch: 244 | Step 38000 | Mean PER: 0.07900106758199435 | Mean WER: 0.2934468085106383
+Epoch: 244 | Step 38064 | Train Loss: 0.02622
+Epoch: 245 | Step 38220 | Train Loss: 0.02534
+Epoch: 246 | Step 38376 | Train Loss: 0.02650
+Epoch: 247 | Step 38532 | Train Loss: 0.03036
+Epoch: 248 | Step 38688 | Train Loss: 0.03638
+Epoch: 249 | Step 38844 | Train Loss: 0.02671
+Epoch: 250 | Step 39000 | Train Loss: 0.02961
+Epoch: 251 | Step 39156 | Train Loss: 0.02752
+Epoch: 252 | Step 39312 | Train Loss: 0.02818
+Epoch: 253 | Step 39468 | Train Loss: 0.02479
+Epoch: 254 | Step 39624 | Train Loss: 0.02334
+Epoch: 255 | Step 39780 | Train Loss: 0.02402
+Epoch: 256 | Step 39936 | Train Loss: 0.02288
+Epoch: 257 | Step 40000 | Valid Loss: 0.02179
+Epoch: 257 | Step 40000 | Mean PER: 0.07777132123407073 | Mean WER: 0.2905531914893617
+Epoch: 257 | Step 40092 | Train Loss: 0.02342
+Epoch: 258 | Step 40248 | Train Loss: 0.03568
+Epoch: 259 | Step 40404 | Train Loss: 0.03052
+Epoch: 260 | Step 40560 | Train Loss: 0.02690
+Epoch: 261 | Step 40716 | Train Loss: 0.03692
+Epoch: 262 | Step 40872 | Train Loss: 0.04308
+Epoch: 263 | Step 41028 | Train Loss: 0.03309
+Epoch: 264 | Step 41184 | Train Loss: 0.03628
+Epoch: 265 | Step 41340 | Train Loss: 0.02696
+Epoch: 266 | Step 41496 | Train Loss: 0.02900
+Epoch: 267 | Step 41652 | Train Loss: 0.02262
+Epoch: 268 | Step 41808 | Train Loss: 0.02173
+Epoch: 269 | Step 41964 | Train Loss: 0.02290
+Epoch: 270 | Step 42000 | Valid Loss: 0.02743
+Epoch: 270 | Step 42000 | Mean PER: 0.07979837565372505 | Mean WER: 0.2958297872340426
+Epoch: 270 | Step 42120 | Train Loss: 0.02653
+Epoch: 271 | Step 42276 | Train Loss: 0.02948
+Epoch: 272 | Step 42432 | Train Loss: 0.02642
+Epoch: 273 | Step 42588 | Train Loss: 0.02685
+Epoch: 274 | Step 42744 | Train Loss: 0.03707
+Epoch: 275 | Step 42900 | Train Loss: 0.02786
+Epoch: 276 | Step 43056 | Train Loss: 0.02528
+Epoch: 277 | Step 43212 | Train Loss: 0.02669
+Epoch: 278 | Step 43368 | Train Loss: 0.02299
+Epoch: 279 | Step 43524 | Train Loss: 0.02082
+Epoch: 280 | Step 43680 | Train Loss: 0.03795
+Epoch: 281 | Step 43836 | Train Loss: 0.03199
+Epoch: 282 | Step 43992 | Train Loss: 0.02361
+Epoch: 283 | Step 44000 | Valid Loss: 0.01591
+Epoch: 283 | Step 44000 | Mean PER: 0.07789294449925 | Mean WER: 0.29106382978723405
+Epoch: 283 | Step 44148 | Train Loss: 0.02116
+Epoch: 284 | Step 44304 | Train Loss: 0.02167
+Epoch: 285 | Step 44460 | Train Loss: 0.02125
+Epoch: 286 | Step 44616 | Train Loss: 0.02472
+Epoch: 287 | Step 44772 | Train Loss: 0.02388
+Epoch: 288 | Step 44928 | Train Loss: 0.02339
+Epoch: 289 | Step 45084 | Train Loss: 0.02214
+Epoch: 290 | Step 45240 | Train Loss: 0.02659
+Epoch: 291 | Step 45396 | Train Loss: 0.02834
+Epoch: 292 | Step 45552 | Train Loss: 0.02336
+Epoch: 293 | Step 45708 | Train Loss: 0.02192
+Epoch: 294 | Step 45864 | Train Loss: 0.02669
+Epoch: 295 | Step 46000 | Valid Loss: 0.02745
+Epoch: 295 | Step 46000 | Mean PER: 0.0782307869025257 | Mean WER: 0.28995744680851065
+Epoch: 295 | Step 46020 | Train Loss: 0.02826
+Epoch: 296 | Step 46176 | Train Loss: 0.02688
+Epoch: 297 | Step 46332 | Train Loss: 0.02595
+Epoch: 298 | Step 46488 | Train Loss: 0.02287
+Epoch: 299 | Step 46644 | Train Loss: 0.02147
+Epoch: 300 | Step 46800 | Train Loss: 0.02049
+Epoch: 301 | Step 46956 | Train Loss: 0.02073
+Epoch: 302 | Step 47112 | Train Loss: 0.02450
+Epoch: 303 | Step 47268 | Train Loss: 0.04909
+Epoch: 304 | Step 47424 | Train Loss: 0.02428
+Epoch: 305 | Step 47580 | Train Loss: 0.02393
+Epoch: 306 | Step 47736 | Train Loss: 0.02723
+Epoch: 307 | Step 47892 | Train Loss: 0.02289
+Epoch: 308 | Step 48000 | Valid Loss: 0.02688
+Epoch: 308 | Step 48000 | Mean PER: 0.07890647170907715 | Mean WER: 0.29225531914893615
+Epoch: 308 | Step 48048 | Train Loss: 0.02562
+Epoch: 309 | Step 48204 | Train Loss: 0.02318
+Epoch: 310 | Step 48360 | Train Loss: 0.02393
+Epoch: 311 | Step 48516 | Train Loss: 0.02096
+Epoch: 312 | Step 48672 | Train Loss: 0.01934
+Epoch: 313 | Step 48828 | Train Loss: 0.02429
+Epoch: 314 | Step 48984 | Train Loss: 0.02515
+Epoch: 315 | Step 49140 | Train Loss: 0.02216
+Epoch: 316 | Step 49296 | Train Loss: 0.02748
+Epoch: 317 | Step 49452 | Train Loss: 0.02347
+Epoch: 318 | Step 49608 | Train Loss: 0.02061
+Epoch: 319 | Step 49764 | Train Loss: 0.02674
+Epoch: 320 | Step 49920 | Train Loss: 0.02153
+Epoch: 321 | Step 50000 | Valid Loss: 0.01978
+Epoch: 321 | Step 50000 | Mean PER: 0.07717671860430546 | Mean WER: 0.2897021276595745
+Epoch: 321 | Step 50076 | Train Loss: 0.02125
+Epoch: 322 | Step 50232 | Train Loss: 0.02117
+Epoch: 323 | Step 50388 | Train Loss: 0.02188
+Epoch: 324 | Step 50544 | Train Loss: 0.02145
+Epoch: 325 | Step 50700 | Train Loss: 0.02285
+Epoch: 326 | Step 50856 | Train Loss: 0.02191
+Epoch: 327 | Step 51012 | Train Loss: 0.02740
+Epoch: 328 | Step 51168 | Train Loss: 0.02685
+Epoch: 329 | Step 51324 | Train Loss: 0.02408
+Epoch: 330 | Step 51480 | Train Loss: 0.02337
+Epoch: 331 | Step 51636 | Train Loss: 0.02023
+Epoch: 332 | Step 51792 | Train Loss: 0.02010
+Epoch: 333 | Step 51948 | Train Loss: 0.01746
+Epoch: 334 | Step 52000 | Valid Loss: 0.01586
+Epoch: 334 | Step 52000 | Mean PER: 0.07747401991918809 | Mean WER: 0.2876595744680851
+Epoch: 334 | Step 52104 | Train Loss: 0.02012
+Epoch: 335 | Step 52260 | Train Loss: 0.02404
+Epoch: 336 | Step 52416 | Train Loss: 0.02050
+Epoch: 337 | Step 52572 | Train Loss: 0.02164
+Epoch: 338 | Step 52728 | Train Loss: 0.03528
+Epoch: 339 | Step 52884 | Train Loss: 0.02480
+Epoch: 340 | Step 53040 | Train Loss: 0.02745
+Epoch: 341 | Step 53196 | Train Loss: 0.02414
+Epoch: 342 | Step 53352 | Train Loss: 0.02332
+Epoch: 343 | Step 53508 | Train Loss: 0.02154
+Epoch: 344 | Step 53664 | Train Loss: 0.01797
+Epoch: 345 | Step 53820 | Train Loss: 0.01993
+Epoch: 346 | Step 53976 | Train Loss: 0.02217
+Epoch: 347 | Step 54000 | Valid Loss: 0.01936
+Epoch: 347 | Step 54000 | Mean PER: 0.07821727320639468 | Mean WER: 0.28927659574468084
+Epoch: 347 | Step 54132 | Train Loss: 0.01859
+Epoch: 348 | Step 54288 | Train Loss: 0.02618
+Epoch: 349 | Step 54444 | Train Loss: 0.02090
+Epoch: 350 | Step 54600 | Train Loss: 0.02137
+Epoch: 351 | Step 54756 | Train Loss: 0.02267
+Epoch: 352 | Step 54912 | Train Loss: 0.01926
+Epoch: 353 | Step 55068 | Train Loss: 0.02259
+Epoch: 354 | Step 55224 | Train Loss: 0.02077
+Epoch: 355 | Step 55380 | Train Loss: 0.02384
+Epoch: 356 | Step 55536 | Train Loss: 0.02324
+Epoch: 357 | Step 55692 | Train Loss: 0.02139
+Epoch: 358 | Step 55848 | Train Loss: 0.01960
+Epoch: 359 | Step 56000 | Valid Loss: 0.01891
+Epoch: 359 | Step 56000 | Mean PER: 0.07723077338882958 | Mean WER: 0.2887659574468085
+Epoch: 359 | Step 56004 | Train Loss: 0.01915
+Epoch: 360 | Step 56160 | Train Loss: 0.01884
+Epoch: 361 | Step 56316 | Train Loss: 0.02137
+Epoch: 362 | Step 56472 | Train Loss: 0.02291
+Epoch: 363 | Step 56628 | Train Loss: 0.02081
+Epoch: 364 | Step 56784 | Train Loss: 0.02062
+Epoch: 365 | Step 56940 | Train Loss: 0.01929
+Epoch: 366 | Step 57096 | Train Loss: 0.01949
+Epoch: 367 | Step 57252 | Train Loss: 0.02095
+Epoch: 368 | Step 57408 | Train Loss: 0.02484
+Epoch: 369 | Step 57564 | Train Loss: 0.01867
+Epoch: 370 | Step 57720 | Train Loss: 0.01771
+Epoch: 371 | Step 57876 | Train Loss: 0.03314
+Epoch: 372 | Step 58000 | Valid Loss: 0.02381
+Epoch: 372 | Step 58000 | Mean PER: 0.07764969796889147 | Mean WER: 0.28697872340425534
+Epoch: 372 | Step 58032 | Train Loss: 0.02327
+Epoch: 373 | Step 58188 | Train Loss: 0.02002
+Epoch: 374 | Step 58344 | Train Loss: 0.02784
+Epoch: 375 | Step 58500 | Train Loss: 0.02533
+Epoch: 376 | Step 58656 | Train Loss: 0.02148
+Epoch: 377 | Step 58812 | Train Loss: 0.01730
+Epoch: 378 | Step 58968 | Train Loss: 0.01802
+Epoch: 379 | Step 59124 | Train Loss: 0.02112
+Epoch: 380 | Step 59280 | Train Loss: 0.02449
+Epoch: 381 | Step 59436 | Train Loss: 0.01979
+Epoch: 382 | Step 59592 | Train Loss: 0.02166
+Epoch: 383 | Step 59748 | Train Loss: 0.02050
+Epoch: 384 | Step 59904 | Train Loss: 0.01789
+Epoch: 385 | Step 60000 | Valid Loss: 0.01866
+Epoch: 385 | Step 60000 | Mean PER: 0.07790645819538101 | Mean WER: 0.28425531914893615
+Epoch: 385 | Step 60060 | Train Loss: 0.01818
+Epoch: 386 | Step 60216 | Train Loss: 0.02070
+Epoch: 387 | Step 60372 | Train Loss: 0.01964
+Epoch: 388 | Step 60528 | Train Loss: 0.01786
+Epoch: 389 | Step 60684 | Train Loss: 0.01836
+Epoch: 390 | Step 60840 | Train Loss: 0.02111
+Epoch: 391 | Step 60996 | Train Loss: 0.01597
+Epoch: 392 | Step 61152 | Train Loss: 0.01750
+Epoch: 393 | Step 61308 | Train Loss: 0.01664
+Epoch: 394 | Step 61464 | Train Loss: 0.02016
+Epoch: 395 | Step 61620 | Train Loss: 0.02677
+Epoch: 396 | Step 61776 | Train Loss: 0.02283
+Epoch: 397 | Step 61932 | Train Loss: 0.01872
+Epoch: 398 | Step 62000 | Valid Loss: 0.02452
+Epoch: 398 | Step 62000 | Mean PER: 0.07728482817335369 | Mean WER: 0.2868936170212766
+Epoch: 398 | Step 62088 | Train Loss: 0.01809
+Epoch: 399 | Step 62244 | Train Loss: 0.01002
+Epoch: 400 | Step 62400 | Train Loss: 0.008715
+Epoch: 401 | Step 62556 | Train Loss: 0.007529
+Epoch: 402 | Step 62712 | Train Loss: 0.006746
+Epoch: 403 | Step 62868 | Train Loss: 0.006991
+Epoch: 404 | Step 63024 | Train Loss: 0.006825
+Epoch: 405 | Step 63180 | Train Loss: 0.006804
+Epoch: 406 | Step 63336 | Train Loss: 0.007777
+Epoch: 407 | Step 63492 | Train Loss: 0.007136
+Epoch: 408 | Step 63648 | Train Loss: 0.007566
+Epoch: 409 | Step 63804 | Train Loss: 0.007238
+Epoch: 410 | Step 63960 | Train Loss: 0.006814
+Epoch: 411 | Step 64000 | Valid Loss: 0.007028
+Epoch: 411 | Step 64000 | Mean PER: 0.07477128069298233 | Mean WER: 0.27914893617021275
+Epoch: 411 | Step 64116 | Train Loss: 0.006566
+Epoch: 412 | Step 64272 | Train Loss: 0.007921
+Epoch: 413 | Step 64428 | Train Loss: 0.006764
+Epoch: 414 | Step 64584 | Train Loss: 0.006898
+Epoch: 415 | Step 64740 | Train Loss: 0.007066
+Epoch: 416 | Step 64896 | Train Loss: 0.006802
+Epoch: 417 | Step 65052 | Train Loss: 0.007765
+Epoch: 418 | Step 65208 | Train Loss: 0.007424
+Epoch: 419 | Step 65364 | Train Loss: 0.008375
+Epoch: 420 | Step 65520 | Train Loss: 0.007093
+Epoch: 421 | Step 65676 | Train Loss: 0.007175
+Epoch: 422 | Step 65832 | Train Loss: 0.007127
+Epoch: 423 | Step 65988 | Train Loss: 0.006603
+Epoch: 424 | Step 66000 | Valid Loss: 0.004335
+Epoch: 424 | Step 66000 | Mean PER: 0.07566318463763023 | Mean WER: 0.2817021276595745
+Epoch: 424 | Step 66144 | Train Loss: 0.006628
+Epoch: 425 | Step 66300 | Train Loss: 0.007449
+Epoch: 426 | Step 66456 | Train Loss: 0.006634
+Epoch: 427 | Step 66612 | Train Loss: 0.006715
+Epoch: 428 | Step 66768 | Train Loss: 0.007416
+Epoch: 429 | Step 66924 | Train Loss: 0.007965
+Epoch: 430 | Step 67080 | Train Loss: 0.008207
+Epoch: 431 | Step 67236 | Train Loss: 0.006975
+Epoch: 432 | Step 67392 | Train Loss: 0.006865
+Epoch: 433 | Step 67548 | Train Loss: 0.007169
+Epoch: 434 | Step 67704 | Train Loss: 0.008609
+Epoch: 435 | Step 67860 | Train Loss: 0.007086
+Epoch: 436 | Step 68000 | Valid Loss: 0.006487
+Epoch: 436 | Step 68000 | Mean PER: 0.07566318463763023 | Mean WER: 0.2822127659574468
+Epoch: 436 | Step 68016 | Train Loss: 0.006526
+Epoch: 437 | Step 68172 | Train Loss: 0.007583
+Epoch: 438 | Step 68328 | Train Loss: 0.006861
+Epoch: 439 | Step 68484 | Train Loss: 0.006415
+Epoch: 440 | Step 68640 | Train Loss: 0.007390
+Epoch: 441 | Step 68796 | Train Loss: 0.009571
+Epoch: 442 | Step 68952 | Train Loss: 0.006444
+Epoch: 443 | Step 69108 | Train Loss: 0.006069
+Epoch: 444 | Step 69264 | Train Loss: 0.006305
+Epoch: 445 | Step 69420 | Train Loss: 0.007781
+Epoch: 446 | Step 69576 | Train Loss: 0.006533
+Epoch: 447 | Step 69732 | Train Loss: 0.006191
+Epoch: 448 | Step 69888 | Train Loss: 0.006155
+Epoch: 449 | Step 70000 | Valid Loss: 0.005980
+Epoch: 449 | Step 70000 | Mean PER: 0.07614967769834728 | Mean WER: 0.2845106382978723
+Epoch: 449 | Step 70044 | Train Loss: 0.006176
+Epoch: 450 | Step 70200 | Train Loss: 0.006153
+Epoch: 451 | Step 70356 | Train Loss: 0.005614
+Epoch: 452 | Step 70512 | Train Loss: 0.006496
+Epoch: 453 | Step 70668 | Train Loss: 0.008698
+Epoch: 454 | Step 70824 | Train Loss: 0.008196
+Epoch: 455 | Step 70980 | Train Loss: 0.006650
+Epoch: 456 | Step 71136 | Train Loss: 0.006568
+Epoch: 457 | Step 71292 | Train Loss: 0.006037
+Epoch: 458 | Step 71448 | Train Loss: 0.006447
+Epoch: 459 | Step 71604 | Train Loss: 0.005776
+Epoch: 460 | Step 71760 | Train Loss: 0.006289
+Epoch: 461 | Step 71916 | Train Loss: 0.006562
+Epoch: 462 | Step 72000 | Valid Loss: 0.007493
+Epoch: 462 | Step 72000 | Mean PER: 0.07486587656589953 | Mean WER: 0.2782978723404255
+Epoch: 462 | Step 72072 | Train Loss: 0.007080
+Epoch: 463 | Step 72228 | Train Loss: 0.006698
+Epoch: 464 | Step 72384 | Train Loss: 0.005860
+Epoch: 465 | Step 72540 | Train Loss: 0.006036
+Epoch: 466 | Step 72696 | Train Loss: 0.006167
+Epoch: 467 | Step 72852 | Train Loss: 0.006278
+Epoch: 468 | Step 73008 | Train Loss: 0.008256
+Epoch: 469 | Step 73164 | Train Loss: 0.005975
+Epoch: 470 | Step 73320 | Train Loss: 0.005771
+Epoch: 471 | Step 73476 | Train Loss: 0.005863
+Epoch: 472 | Step 73632 | Train Loss: 0.005946
+Epoch: 473 | Step 73788 | Train Loss: 0.006670
+Epoch: 474 | Step 73944 | Train Loss: 0.006350
+Epoch: 475 | Step 74000 | Valid Loss: 0.004950
+Epoch: 475 | Step 74000 | Mean PER: 0.07532534223435451 | Mean WER: 0.28280851063829787
+Epoch: 475 | Step 74100 | Train Loss: 0.006204
+Epoch: 476 | Step 74256 | Train Loss: 0.007180
+Epoch: 477 | Step 74412 | Train Loss: 0.006786
+Epoch: 478 | Step 74568 | Train Loss: 0.006464
+Epoch: 479 | Step 74724 | Train Loss: 0.007501
+Epoch: 480 | Step 74880 | Train Loss: 0.005850
+Epoch: 481 | Step 75036 | Train Loss: 0.005535
+Epoch: 482 | Step 75192 | Train Loss: 0.005878
+Epoch: 483 | Step 75348 | Train Loss: 0.005897
+Epoch: 484 | Step 75504 | Train Loss: 0.005714
+Epoch: 485 | Step 75660 | Train Loss: 0.006114
+Epoch: 486 | Step 75816 | Train Loss: 0.006102
+Epoch: 487 | Step 75972 | Train Loss: 0.005926
+Epoch: 488 | Step 76000 | Valid Loss: 0.006230
+Epoch: 488 | Step 76000 | Mean PER: 0.07519020527304424 | Mean WER: 0.2825531914893617
+Epoch: 488 | Step 76128 | Train Loss: 0.005182
+Epoch: 489 | Step 76284 | Train Loss: 0.003832
+Epoch: 490 | Step 76440 | Train Loss: 0.003394
+Epoch: 491 | Step 76596 | Train Loss: 0.003714
+Epoch: 492 | Step 76752 | Train Loss: 0.003087
+Epoch: 493 | Step 76908 | Train Loss: 0.002954
+Epoch: 494 | Step 77064 | Train Loss: 0.002809
+Epoch: 495 | Step 77220 | Train Loss: 0.002950
+Epoch: 496 | Step 77376 | Train Loss: 0.002796
+Epoch: 497 | Step 77532 | Train Loss: 0.002680
+Epoch: 498 | Step 77688 | Train Loss: 0.002856
+Epoch: 499 | Step 77844 | Train Loss: 0.002744
+Epoch: 500 | Step 78000 | Valid Loss: 0.002798
+Epoch: 500 | Step 78000 | Mean PER: 0.07381180826767929 | Mean WER: 0.2767659574468085
+Epoch: 500 | Step 78 | Train Loss: 0.002798
+Epoch: 501 | Step 78156 | Train Loss: 0.002737
+Epoch: 502 | Step 78312 | Train Loss: 0.002559
+Epoch: 503 | Step 78468 | Train Loss: 0.002551
+Epoch: 504 | Step 78624 | Train Loss: 0.002776
+Epoch: 505 | Step 78780 | Train Loss: 0.002727
+Epoch: 506 | Step 78936 | Train Loss: 0.002779
+Epoch: 507 | Step 79092 | Train Loss: 0.002956
+Epoch: 508 | Step 79248 | Train Loss: 0.002703
+Epoch: 509 | Step 79404 | Train Loss: 0.002764
+Epoch: 510 | Step 79560 | Train Loss: 0.002666
+Epoch: 511 | Step 79716 | Train Loss: 0.002844
+Epoch: 512 | Step 79872 | Train Loss: 0.002671
+Epoch: 513 | Step 80000 | Valid Loss: 0.002673
+Epoch: 513 | Step 80000 | Mean PER: 0.0744739793780997 | Mean WER: 0.2782127659574468
+Epoch: 513 | Step 80028 | Train Loss: 0.002621
+Epoch: 514 | Step 80184 | Train Loss: 0.002710
+Epoch: 515 | Step 80340 | Train Loss: 0.002708
+Epoch: 516 | Step 80496 | Train Loss: 0.002601
+Epoch: 517 | Step 80652 | Train Loss: 0.002651
+Epoch: 518 | Step 80808 | Train Loss: 0.002623
+Epoch: 519 | Step 80964 | Train Loss: 0.002860
+Epoch: 520 | Step 81120 | Train Loss: 0.002909
+Epoch: 521 | Step 81276 | Train Loss: 0.002705
+Epoch: 522 | Step 81432 | Train Loss: 0.002499
+Epoch: 523 | Step 81588 | Train Loss: 0.002737
+Epoch: 524 | Step 81744 | Train Loss: 0.008998
+Epoch: 525 | Step 81900 | Train Loss: 0.003182
+Epoch: 526 | Step 82000 | Valid Loss: 0.002657
+Epoch: 526 | Step 82000 | Mean PER: 0.07458208894714793 | Mean WER: 0.27982978723404256
+Epoch: 526 | Step 82056 | Train Loss: 0.002513
+Epoch: 527 | Step 82212 | Train Loss: 0.002472
+Epoch: 528 | Step 82368 | Train Loss: 0.002510
+Epoch: 529 | Step 82524 | Train Loss: 0.002480
+Epoch: 530 | Step 82680 | Train Loss: 0.002520
+Epoch: 531 | Step 82836 | Train Loss: 0.003519
+Epoch: 532 | Step 82992 | Train Loss: 0.002777
+Epoch: 533 | Step 83148 | Train Loss: 0.002561
+Epoch: 534 | Step 83304 | Train Loss: 0.002631
+Epoch: 535 | Step 83460 | Train Loss: 0.002634
+Epoch: 536 | Step 83616 | Train Loss: 0.002561
+Epoch: 537 | Step 83772 | Train Loss: 0.002789
+Epoch: 538 | Step 83928 | Train Loss: 0.002644
+Epoch: 539 | Step 84000 | Valid Loss: 0.002953
+Epoch: 539 | Step 84000 | Mean PER: 0.07446046568196868 | Mean WER: 0.2782127659574468
+Epoch: 539 | Step 84084 | Train Loss: 0.002607
+Epoch: 540 | Step 84240 | Train Loss: 0.002552
+Epoch: 541 | Step 84396 | Train Loss: 0.002333
+Epoch: 542 | Step 84552 | Train Loss: 0.002452
+Epoch: 543 | Step 84708 | Train Loss: 0.002263
+Epoch: 544 | Step 84864 | Train Loss: 0.002384
+Epoch: 545 | Step 85020 | Train Loss: 0.002517
+Epoch: 546 | Step 85176 | Train Loss: 0.002292
+Epoch: 547 | Step 85332 | Train Loss: 0.002249
+Epoch: 548 | Step 85488 | Train Loss: 0.002433
+Epoch: 549 | Step 85644 | Train Loss: 0.002811
+Epoch: 550 | Step 85800 | Train Loss: 0.002256
+Epoch: 551 | Step 85956 | Train Loss: 0.002419
+Epoch: 552 | Step 86000 | Valid Loss: 0.002209
+Epoch: 552 | Step 86000 | Mean PER: 0.07440641089744456 | Mean WER: 0.27880851063829787
+Epoch: 552 | Step 86112 | Train Loss: 0.002526
+Epoch: 553 | Step 86268 | Train Loss: 0.002224
+Epoch: 554 | Step 86424 | Train Loss: 0.002588
+Epoch: 555 | Step 86580 | Train Loss: 0.002577
+Epoch: 556 | Step 86736 | Train Loss: 0.002616
+Epoch: 557 | Step 86892 | Train Loss: 0.002482
+Epoch: 558 | Step 87048 | Train Loss: 0.002721
+Epoch: 559 | Step 87204 | Train Loss: 0.002493
+Epoch: 560 | Step 87360 | Train Loss: 0.002289
+Epoch: 561 | Step 87516 | Train Loss: 0.002328
+Epoch: 562 | Step 87672 | Train Loss: 0.002501
+Epoch: 563 | Step 87828 | Train Loss: 0.002420
+Epoch: 564 | Step 87984 | Train Loss: 0.002218
+Epoch: 565 | Step 88000 | Valid Loss: 0.003302
+Epoch: 565 | Step 88000 | Mean PER: 0.07432532872065839 | Mean WER: 0.27804255319148935
+Epoch: 565 | Step 88140 | Train Loss: 0.002525
+Epoch: 566 | Step 88296 | Train Loss: 0.002437
+Epoch: 567 | Step 88452 | Train Loss: 0.002290
+Epoch: 568 | Step 88608 | Train Loss: 0.002451
+Epoch: 569 | Step 88764 | Train Loss: 0.002449
+Epoch: 570 | Step 88920 | Train Loss: 0.002392
+Epoch: 571 | Step 89076 | Train Loss: 0.002381
+Epoch: 572 | Step 89232 | Train Loss: 0.002306
+Epoch: 573 | Step 89388 | Train Loss: 0.002413
+Epoch: 574 | Step 89544 | Train Loss: 0.002471
+Epoch: 575 | Step 89700 | Train Loss: 0.002294
+Epoch: 576 | Step 89856 | Train Loss: 0.002367
+Epoch: 577 | Step 90000 | Valid Loss: 0.002397
+Epoch: 577 | Step 90000 | Mean PER: 0.07387937674833443 | Mean WER: 0.2771914893617021
+Epoch: 577 | Step 90012 | Train Loss: 0.002371
+Epoch: 578 | Step 90168 | Train Loss: 0.002009
+Epoch: 579 | Step 90324 | Train Loss: 0.001782
+Epoch: 580 | Step 90480 | Train Loss: 0.001717
+Epoch: 581 | Step 90636 | Train Loss: 0.001556
+Epoch: 582 | Step 90792 | Train Loss: 0.001572
+Epoch: 583 | Step 90948 | Train Loss: 0.001685
+Epoch: 584 | Step 91104 | Train Loss: 0.001598
+Epoch: 585 | Step 91260 | Train Loss: 0.001516
+Epoch: 586 | Step 91416 | Train Loss: 0.001592
+Epoch: 587 | Step 91572 | Train Loss: 0.001387
+Epoch: 588 | Step 91728 | Train Loss: 0.001398
+Epoch: 589 | Step 91884 | Train Loss: 0.001626
+Epoch: 590 | Step 92000 | Valid Loss: 0.001599
+Epoch: 590 | Step 92000 | Mean PER: 0.07436586980905148 | Mean WER: 0.276
+Epoch: 590 | Step 92040 | Train Loss: 0.001534
+Epoch: 591 | Step 92196 | Train Loss: 0.001435
+Epoch: 592 | Step 92352 | Train Loss: 0.001474
+Epoch: 593 | Step 92508 | Train Loss: 0.001380
+Epoch: 594 | Step 92664 | Train Loss: 0.001399
+Epoch: 595 | Step 92820 | Train Loss: 0.001449
+Epoch: 596 | Step 92976 | Train Loss: 0.001389
+Epoch: 597 | Step 93132 | Train Loss: 0.001324
+Epoch: 598 | Step 93288 | Train Loss: 0.001410
+Epoch: 599 | Step 93444 | Train Loss: 0.001407
+Epoch: 600 | Step 93600 | Train Loss: 0.001425
+Epoch: 601 | Step 93756 | Train Loss: 0.001454
+Epoch: 602 | Step 93912 | Train Loss: 0.001442
+Epoch: 603 | Step 94000 | Valid Loss: 0.001369
+Epoch: 603 | Step 94000 | Mean PER: 0.07350099325666563 | Mean WER: 0.2742127659574468
+Epoch: 603 | Step 94068 | Train Loss: 0.001429
+Epoch: 604 | Step 94224 | Train Loss: 0.001296
+Epoch: 605 | Step 94380 | Train Loss: 0.001435
+Epoch: 606 | Step 94536 | Train Loss: 0.001298
+Epoch: 607 | Step 94692 | Train Loss: 0.001443
+Epoch: 608 | Step 94848 | Train Loss: 0.001318
+Epoch: 609 | Step 95004 | Train Loss: 0.001338
+Epoch: 610 | Step 95160 | Train Loss: 0.001297
+Epoch: 611 | Step 95316 | Train Loss: 0.001464
+Epoch: 612 | Step 95472 | Train Loss: 0.001240
+Epoch: 613 | Step 95628 | Train Loss: 0.001380
+Epoch: 614 | Step 95784 | Train Loss: 0.001281
+Epoch: 615 | Step 95940 | Train Loss: 0.001281
+Epoch: 616 | Step 96000 | Valid Loss: 0.001458
+Epoch: 616 | Step 96000 | Mean PER: 0.07377126717928621 | Mean WER: 0.2766808510638298
+Epoch: 616 | Step 96096 | Train Loss: 0.001343
+Epoch: 617 | Step 96252 | Train Loss: 0.001187
+Epoch: 618 | Step 96408 | Train Loss: 0.001458
+Epoch: 619 | Step 96564 | Train Loss: 0.001269
+Epoch: 620 | Step 96720 | Train Loss: 0.001355
+Epoch: 621 | Step 96876 | Train Loss: 0.001231
+Epoch: 622 | Step 97032 | Train Loss: 0.001544
+Epoch: 623 | Step 97188 | Train Loss: 0.001258
+Epoch: 624 | Step 97344 | Train Loss: 0.001244
+Epoch: 625 | Step 97500 | Train Loss: 0.001270
+Epoch: 626 | Step 97656 | Train Loss: 0.001186
+Epoch: 627 | Step 97812 | Train Loss: 0.001202
+Epoch: 628 | Step 97968 | Train Loss: 0.001115
+Epoch: 629 | Step 98000 | Valid Loss: 0.001138
+Epoch: 629 | Step 98000 | Mean PER: 0.07341991107987945 | Mean WER: 0.27617021276595743
+Epoch: 629 | Step 98124 | Train Loss: 0.001164
+Epoch: 630 | Step 98280 | Train Loss: 0.001150
+Epoch: 631 | Step 98436 | Train Loss: 0.001272
+Epoch: 632 | Step 98592 | Train Loss: 0.001187
+Epoch: 633 | Step 98748 | Train Loss: 0.001177
+Epoch: 634 | Step 98904 | Train Loss: 0.001183
+Epoch: 635 | Step 99060 | Train Loss: 0.001246
+Epoch: 636 | Step 99216 | Train Loss: 0.001150
+Epoch: 637 | Step 99372 | Train Loss: 0.001189
+Epoch: 638 | Step 99528 | Train Loss: 0.001212
+Epoch: 639 | Step 99684 | Train Loss: 0.001118
+Epoch: 640 | Step 99840 | Train Loss: 0.001316
+Epoch: 641 | Step 99996 | Train Loss: 0.001112
+Epoch: 642 | Step 100000 | Valid Loss: 0.0009723
+Epoch: 642 | Step 100000 | Mean PER: 0.0740010000135137 | Mean WER: 0.27685106382978725
+Epoch: 642 | Step 100152 | Train Loss: 0.001257
+Epoch: 643 | Step 100308 | Train Loss: 0.001201
+Epoch: 644 | Step 100464 | Train Loss: 0.001277
+Epoch: 645 | Step 100620 | Train Loss: 0.001350
+Epoch: 646 | Step 100776 | Train Loss: 0.001152
+Epoch: 647 | Step 100932 | Train Loss: 0.001122
+Epoch: 648 | Step 101088 | Train Loss: 0.001168
+Epoch: 649 | Step 101244 | Train Loss: 0.001240
+Epoch: 650 | Step 101400 | Train Loss: 0.001092
+Epoch: 651 | Step 101556 | Train Loss: 0.001173
+Epoch: 652 | Step 101712 | Train Loss: 0.001145
+Epoch: 653 | Step 101868 | Train Loss: 0.001047
+Epoch: 654 | Step 102000 | Valid Loss: 0.001180
+Epoch: 654 | Step 102000 | Mean PER: 0.07424424654387221 | Mean WER: 0.2774468085106383
+Epoch: 654 | Step 102024 | Train Loss: 0.001180
+Epoch: 655 | Step 102180 | Train Loss: 0.001152
+Epoch: 656 | Step 102336 | Train Loss: 0.001136
+Epoch: 657 | Step 102492 | Train Loss: 0.001194
+Epoch: 658 | Step 102648 | Train Loss: 0.0009870
+Epoch: 659 | Step 102804 | Train Loss: 0.001017
+Epoch: 660 | Step 102960 | Train Loss: 0.001180
+Epoch: 661 | Step 103116 | Train Loss: 0.001239
+Epoch: 662 | Step 103272 | Train Loss: 0.001133
+Epoch: 663 | Step 103428 | Train Loss: 0.001230
+Epoch: 664 | Step 103584 | Train Loss: 0.001129
+Epoch: 665 | Step 103740 | Train Loss: 0.001172
+Epoch: 666 | Step 103896 | Train Loss: 0.001062
+Epoch: 667 | Step 104000 | Valid Loss: 0.001075
+Epoch: 667 | Step 104000 | Mean PER: 0.07433884241678941 | Mean WER: 0.27727659574468083
+Epoch: 667 | Step 104052 | Train Loss: 0.001145
+Epoch: 668 | Step 104208 | Train Loss: 0.001042
+Epoch: 669 | Step 104364 | Train Loss: 0.001074
+Epoch: 670 | Step 104520 | Train Loss: 0.001032
+Epoch: 671 | Step 104676 | Train Loss: 0.0009777
+Epoch: 672 | Step 104832 | Train Loss: 0.0009766
+Epoch: 673 | Step 104988 | Train Loss: 0.001092
+Epoch: 674 | Step 105144 | Train Loss: 0.001077
+Epoch: 675 | Step 105300 | Train Loss: 0.001042
+Epoch: 676 | Step 105456 | Train Loss: 0.001228
+Epoch: 677 | Step 105612 | Train Loss: 0.001081
+Epoch: 678 | Step 105768 | Train Loss: 0.001135
+Epoch: 679 | Step 105924 | Train Loss: 0.001115
+Epoch: 680 | Step 106000 | Valid Loss: 0.0009146
+Epoch: 680 | Step 106000 | Mean PER: 0.07482533547750646 | Mean WER: 0.27702127659574466
+Epoch: 680 | Step 106080 | Train Loss: 0.001037
+Epoch: 681 | Step 106236 | Train Loss: 0.001005
+Epoch: 682 | Step 106392 | Train Loss: 0.001221
+Epoch: 683 | Step 106548 | Train Loss: 0.001185
+Epoch: 684 | Step 106704 | Train Loss: 0.001147
+Epoch: 685 | Step 106860 | Train Loss: 0.001094
+Epoch: 686 | Step 107016 | Train Loss: 0.001098
+Epoch: 687 | Step 107172 | Train Loss: 0.001211
+Epoch: 688 | Step 107328 | Train Loss: 0.001223
+Epoch: 689 | Step 107484 | Train Loss: 0.0009593
+Epoch: 690 | Step 107640 | Train Loss: 0.001024
+Epoch: 691 | Step 107796 | Train Loss: 0.001065
+Epoch: 692 | Step 107952 | Train Loss: 0.001231
+Epoch: 693 | Step 108000 | Valid Loss: 0.001114
+Epoch: 693 | Step 108000 | Mean PER: 0.07363613021797592 | Mean WER: 0.276
+Epoch: 693 | Step 108108 | Train Loss: 0.001204
+Epoch: 694 | Step 108264 | Train Loss: 0.001031
+Epoch: 695 | Step 108420 | Train Loss: 0.001044
+Epoch: 696 | Step 108576 | Train Loss: 0.001064
+Epoch: 697 | Step 108732 | Train Loss: 0.001076
+Epoch: 698 | Step 108888 | Train Loss: 0.0009906
+Epoch: 699 | Step 109044 | Train Loss: 0.001175
+Epoch: 700 | Step 109200 | Train Loss: 0.001084
+Epoch: 701 | Step 109356 | Train Loss: 0.001017
+Epoch: 702 | Step 109512 | Train Loss: 0.001131
+Epoch: 703 | Step 109668 | Train Loss: 0.001079
+Epoch: 704 | Step 109824 | Train Loss: 0.001035
+Epoch: 705 | Step 109980 | Train Loss: 0.001069
+Epoch: 706 | Step 110000 | Valid Loss: 0.0005724
+Epoch: 706 | Step 110000 | Mean PER: 0.07435235611292045 | Mean WER: 0.2746382978723404
+Epoch: 706 | Step 110136 | Train Loss: 0.0009081
+Epoch: 707 | Step 110292 | Train Loss: 0.0009489
+Epoch: 708 | Step 110448 | Train Loss: 0.001001
+Epoch: 709 | Step 110604 | Train Loss: 0.0008719
+Epoch: 710 | Step 110760 | Train Loss: 0.0009877
+Epoch: 711 | Step 110916 | Train Loss: 0.0009081
+Epoch: 712 | Step 111072 | Train Loss: 0.0008966
+Epoch: 713 | Step 111228 | Train Loss: 0.0009503
+Epoch: 714 | Step 111384 | Train Loss: 0.0007796
+Epoch: 715 | Step 111540 | Train Loss: 0.0007672
+Epoch: 716 | Step 111696 | Train Loss: 0.0008070
+Epoch: 717 | Step 111852 | Train Loss: 0.0009478
+Epoch: 718 | Step 112000 | Valid Loss: 0.0008234
+Epoch: 718 | Step 112000 | Mean PER: 0.07385234935607238 | Mean WER: 0.2746382978723404
+Epoch: 718 | Step 112008 | Train Loss: 0.0008264
+Epoch: 719 | Step 112164 | Train Loss: 0.0008061
+Epoch: 720 | Step 112320 | Train Loss: 0.0009334
+Epoch: 721 | Step 112476 | Train Loss: 0.0007856
+Epoch: 722 | Step 112632 | Train Loss: 0.0008088
+Epoch: 723 | Step 112788 | Train Loss: 0.0008760
+Epoch: 724 | Step 112944 | Train Loss: 0.0008879
+Epoch: 725 | Step 113100 | Train Loss: 0.0007394
+Epoch: 726 | Step 113256 | Train Loss: 0.0007472
+Epoch: 727 | Step 113412 | Train Loss: 0.0006929
+Epoch: 728 | Step 113568 | Train Loss: 0.0007983
+Epoch: 729 | Step 113724 | Train Loss: 0.0007429
+Epoch: 730 | Step 113880 | Train Loss: 0.0008055
+Epoch: 731 | Step 114000 | Valid Loss: 0.0006714
+Epoch: 731 | Step 114000 | Mean PER: 0.07401451370964472 | Mean WER: 0.274468085106383
+Epoch: 731 | Step 114036 | Train Loss: 0.0006741
+Epoch: 732 | Step 114192 | Train Loss: 0.0008933
+Epoch: 733 | Step 114348 | Train Loss: 0.0007004
+Epoch: 734 | Step 114504 | Train Loss: 0.0007901
+Epoch: 735 | Step 114660 | Train Loss: 0.0007288
+Epoch: 736 | Step 114816 | Train Loss: 0.0006970
+Epoch: 737 | Step 114972 | Train Loss: 0.0008453
+Epoch: 738 | Step 115128 | Train Loss: 0.0007236
+Epoch: 739 | Step 115284 | Train Loss: 0.0008008
+Epoch: 740 | Step 115440 | Train Loss: 0.0007688
+Epoch: 741 | Step 115596 | Train Loss: 0.0007374
+Epoch: 742 | Step 115752 | Train Loss: 0.0006552
+Epoch: 743 | Step 115908 | Train Loss: 0.0007603
+Epoch: 744 | Step 116000 | Valid Loss: 0.0007890
+Epoch: 744 | Step 116000 | Mean PER: 0.07386586305220341 | Mean WER: 0.2752340425531915
+Epoch: 744 | Step 116064 | Train Loss: 0.0008030
+Epoch: 745 | Step 116220 | Train Loss: 0.0006734
+Epoch: 746 | Step 116376 | Train Loss: 0.0006774
+Epoch: 747 | Step 116532 | Train Loss: 0.0006973
+Epoch: 748 | Step 116688 | Train Loss: 0.0006965
+Epoch: 749 | Step 116844 | Train Loss: 0.0007849
+Epoch: 750 | Step 117000 | Train Loss: 0.0007251
+Epoch: 751 | Step 117156 | Train Loss: 0.0007624
+Epoch: 752 | Step 117312 | Train Loss: 0.0006920
+Epoch: 753 | Step 117468 | Train Loss: 0.0007565
+Epoch: 754 | Step 117624 | Train Loss: 0.0006570
+Epoch: 755 | Step 117780 | Train Loss: 0.0007534
+Epoch: 756 | Step 117936 | Train Loss: 0.0007262
+Epoch: 757 | Step 118000 | Valid Loss: 0.0006256
+Epoch: 757 | Step 118000 | Mean PER: 0.07413613697482399 | Mean WER: 0.27617021276595743
+Epoch: 757 | Step 118092 | Train Loss: 0.0006788
+Epoch: 758 | Step 118248 | Train Loss: 0.0006434
+Epoch: 759 | Step 118404 | Train Loss: 0.0006993
+Epoch: 760 | Step 118560 | Train Loss: 0.0006336
+Epoch: 761 | Step 118716 | Train Loss: 0.0006227
+Epoch: 762 | Step 118872 | Train Loss: 0.0007277
+Epoch: 763 | Step 119028 | Train Loss: 0.0007566
+Epoch: 764 | Step 119184 | Train Loss: 0.0007296
+Epoch: 765 | Step 119340 | Train Loss: 0.0006371
+Epoch: 766 | Step 119496 | Train Loss: 0.0006786
+Epoch: 767 | Step 119652 | Train Loss: 0.0005971
+Epoch: 768 | Step 119808 | Train Loss: 0.0006926
+Epoch: 769 | Step 119964 | Train Loss: 0.0006424
+Epoch: 770 | Step 120000 | Valid Loss: 0.0006581
+Epoch: 770 | Step 120000 | Mean PER: 0.07464965742780308 | Mean WER: 0.2777872340425532
+Epoch: 770 | Step 120120 | Train Loss: 0.0006692
+Epoch: 771 | Step 120276 | Train Loss: 0.0006723
+Epoch: 772 | Step 120432 | Train Loss: 0.0007056
+Epoch: 773 | Step 120588 | Train Loss: 0.0006310
+Epoch: 774 | Step 120744 | Train Loss: 0.0006611
+Epoch: 775 | Step 120900 | Train Loss: 0.0006808
+Epoch: 776 | Step 121056 | Train Loss: 0.0006552
+Epoch: 777 | Step 121212 | Train Loss: 0.0007729
+Epoch: 778 | Step 121368 | Train Loss: 0.0007045
+Epoch: 779 | Step 121524 | Train Loss: 0.0006609
+Epoch: 780 | Step 121680 | Train Loss: 0.0005905
+Epoch: 781 | Step 121836 | Train Loss: 0.0007586
+Epoch: 782 | Step 121992 | Train Loss: 0.0005823
+Epoch: 783 | Step 122000 | Valid Loss: 0.0003842
+Epoch: 783 | Step 122000 | Mean PER: 0.07396045892512061 | Mean WER: 0.27702127659574466
+Epoch: 783 | Step 122148 | Train Loss: 0.0006540
+Epoch: 784 | Step 122304 | Train Loss: 0.0005939
+Epoch: 785 | Step 122460 | Train Loss: 0.0006109
+Epoch: 786 | Step 122616 | Train Loss: 0.0005979
+Epoch: 787 | Step 122772 | Train Loss: 0.0006602
+Epoch: 788 | Step 122928 | Train Loss: 0.0005967
+Epoch: 789 | Step 123084 | Train Loss: 0.0006193
+Epoch: 790 | Step 123240 | Train Loss: 0.0006212
+Epoch: 791 | Step 123396 | Train Loss: 0.0005802
+Epoch: 792 | Step 123552 | Train Loss: 0.0005993
+Epoch: 793 | Step 123708 | Train Loss: 0.0005882
+Epoch: 794 | Step 123864 | Train Loss: 0.0005697
+Epoch: 795 | Step 124000 | Valid Loss: 0.0005917
+Epoch: 795 | Step 124000 | Mean PER: 0.07381180826767929 | Mean WER: 0.27582978723404256
+Epoch: 795 | Step 124020 | Train Loss: 0.0005786
+Epoch: 796 | Step 124176 | Train Loss: 0.0005733
+Epoch: 797 | Step 124332 | Train Loss: 0.0005916
+Epoch: 798 | Step 124488 | Train Loss: 0.0005649
+Epoch: 799 | Step 124644 | Train Loss: 0.0005717
+Epoch: 800 | Step 124800 | Train Loss: 0.0005641
+Epoch: 801 | Step 124956 | Train Loss: 0.0006792
+Epoch: 802 | Step 125112 | Train Loss: 0.0005107
+Epoch: 803 | Step 125268 | Train Loss: 0.0006385
+Epoch: 804 | Step 125424 | Train Loss: 0.0004925
+Epoch: 805 | Step 125580 | Train Loss: 0.0006127
+Epoch: 806 | Step 125736 | Train Loss: 0.0004924
+Epoch: 807 | Step 125892 | Train Loss: 0.0006266
+Epoch: 808 | Step 126000 | Valid Loss: 0.0004876
+Epoch: 808 | Step 126000 | Mean PER: 0.07370369869863107 | Mean WER: 0.2755744680851064
+Epoch: 808 | Step 126048 | Train Loss: 0.0005154
+Epoch: 809 | Step 126204 | Train Loss: 0.0005253
+Epoch: 810 | Step 126360 | Train Loss: 0.0005933
+Epoch: 811 | Step 126516 | Train Loss: 0.0005680
+Epoch: 812 | Step 126672 | Train Loss: 0.0005042
+Epoch: 813 | Step 126828 | Train Loss: 0.0005747
+Epoch: 814 | Step 126984 | Train Loss: 0.0005374
+Epoch: 815 | Step 127140 | Train Loss: 0.0004923
+Epoch: 816 | Step 127296 | Train Loss: 0.0005519
+Epoch: 817 | Step 127452 | Train Loss: 0.0005040
+Epoch: 818 | Step 127608 | Train Loss: 0.0004800
+Epoch: 819 | Step 127764 | Train Loss: 0.0004889
+Epoch: 820 | Step 127920 | Train Loss: 0.0005237
+Epoch: 821 | Step 128000 | Valid Loss: 0.0005213
+Epoch: 821 | Step 128000 | Mean PER: 0.07343342477601049 | Mean WER: 0.2745531914893617
+Epoch: 821 | Step 128076 | Train Loss: 0.0004902
+Epoch: 822 | Step 128232 | Train Loss: 0.0005618
+Epoch: 823 | Step 128388 | Train Loss: 0.0005240
+Epoch: 824 | Step 128544 | Train Loss: 0.0004638
+Epoch: 825 | Step 128700 | Train Loss: 0.0004818
+Epoch: 826 | Step 128856 | Train Loss: 0.0004361
+Epoch: 827 | Step 129012 | Train Loss: 0.0005594
+Epoch: 828 | Step 129168 | Train Loss: 0.0005700
+Epoch: 829 | Step 129324 | Train Loss: 0.0005085
+Epoch: 830 | Step 129480 | Train Loss: 0.0006368
+Epoch: 831 | Step 129636 | Train Loss: 0.0004549
+Epoch: 832 | Step 129792 | Train Loss: 0.0005928
+Epoch: 833 | Step 129948 | Train Loss: 0.0005015
+Epoch: 834 | Step 130000 | Valid Loss: 0.0005093
+Epoch: 834 | Step 130000 | Mean PER: 0.07359558912958283 | Mean WER: 0.27514893617021274
+Epoch: 834 | Step 130104 | Train Loss: 0.0004668
+Epoch: 835 | Step 130260 | Train Loss: 0.0005289
+Epoch: 836 | Step 130416 | Train Loss: 0.0005380
+Epoch: 837 | Step 130572 | Train Loss: 0.0005039
+Epoch: 838 | Step 130728 | Train Loss: 0.0004632
+Epoch: 839 | Step 130884 | Train Loss: 0.0005016
+Epoch: 840 | Step 131040 | Train Loss: 0.0005455
+Epoch: 841 | Step 131196 | Train Loss: 0.0004753
+Epoch: 842 | Step 131352 | Train Loss: 0.0004308
+Epoch: 843 | Step 131508 | Train Loss: 0.0005582
+Epoch: 844 | Step 131664 | Train Loss: 0.0005504
+Epoch: 845 | Step 131820 | Train Loss: 0.0004321
+Epoch: 846 | Step 131976 | Train Loss: 0.0004555
+Epoch: 847 | Step 132000 | Valid Loss: 0.0002935
+Epoch: 847 | Step 132000 | Mean PER: 0.07347396586440358 | Mean WER: 0.2745531914893617
+Epoch: 847 | Step 132132 | Train Loss: 0.0005681
+Epoch: 848 | Step 132288 | Train Loss: 0.0004925
+Epoch: 849 | Step 132444 | Train Loss: 0.0004657
+Epoch: 850 | Step 132600 | Train Loss: 0.0005081
+Epoch: 851 | Step 132756 | Train Loss: 0.0005531
+Epoch: 852 | Step 132912 | Train Loss: 0.0004795
+Epoch: 853 | Step 133068 | Train Loss: 0.0004306
+Epoch: 854 | Step 133224 | Train Loss: 0.0004593
+Epoch: 855 | Step 133380 | Train Loss: 0.0004766
+Epoch: 856 | Step 133536 | Train Loss: 0.0004897
+Epoch: 857 | Step 133692 | Train Loss: 0.0004583
+Epoch: 858 | Step 133848 | Train Loss: 0.0005923
+Epoch: 859 | Step 134000 | Valid Loss: 0.0004184
+Epoch: 859 | Step 134000 | Mean PER: 0.07333882890309329 | Mean WER: 0.27395744680851064
+Epoch: 859 | Step 134004 | Train Loss: 0.0004192
+Epoch: 860 | Step 134160 | Train Loss: 0.0005291
+Epoch: 861 | Step 134316 | Train Loss: 0.0004937
+Epoch: 862 | Step 134472 | Train Loss: 0.0004647
+Epoch: 863 | Step 134628 | Train Loss: 0.0004878
+Epoch: 864 | Step 134784 | Train Loss: 0.0004671
+Epoch: 865 | Step 134940 | Train Loss: 0.0005286
+Epoch: 866 | Step 135096 | Train Loss: 0.0004869
+Epoch: 867 | Step 135252 | Train Loss: 0.0004550
+Epoch: 868 | Step 135408 | Train Loss: 0.0004554
+Epoch: 869 | Step 135564 | Train Loss: 0.0005226
+Epoch: 870 | Step 135720 | Train Loss: 0.0004557
+Epoch: 871 | Step 135876 | Train Loss: 0.0004507
+Epoch: 872 | Step 136000 | Valid Loss: 0.0004199
+Epoch: 872 | Step 136000 | Mean PER: 0.07387937674833443 | Mean WER: 0.27514893617021274
+Epoch: 872 | Step 136032 | Train Loss: 0.0004620
+Epoch: 873 | Step 136188 | Train Loss: 0.0004631
+Epoch: 874 | Step 136344 | Train Loss: 0.0004870
+Epoch: 875 | Step 136500 | Train Loss: 0.0005003
+Epoch: 876 | Step 136656 | Train Loss: 0.0003923
+Epoch: 877 | Step 136812 | Train Loss: 0.0004586
+Epoch: 878 | Step 136968 | Train Loss: 0.0004982
+Epoch: 879 | Step 137124 | Train Loss: 0.0004615
+Epoch: 880 | Step 137280 | Train Loss: 0.0005486
+Epoch: 881 | Step 137436 | Train Loss: 0.0005125
+Epoch: 882 | Step 137592 | Train Loss: 0.0004364
+Epoch: 883 | Step 137748 | Train Loss: 0.0004662
+Epoch: 884 | Step 137904 | Train Loss: 0.0005494
+Epoch: 885 | Step 138000 | Valid Loss: 0.0004462
+Epoch: 885 | Step 138000 | Mean PER: 0.0734874795605346 | Mean WER: 0.2752340425531915
+Epoch: 885 | Step 138060 | Train Loss: 0.0004550
+Epoch: 886 | Step 138216 | Train Loss: 0.0004035
+Epoch: 887 | Step 138372 | Train Loss: 0.0004361
+Epoch: 888 | Step 138528 | Train Loss: 0.0004925
+Epoch: 889 | Step 138684 | Train Loss: 0.0004862
+Epoch: 890 | Step 138840 | Train Loss: 0.0004146
+Epoch: 891 | Step 138996 | Train Loss: 0.0004623
+Epoch: 892 | Step 139152 | Train Loss: 0.0004840
+Epoch: 893 | Step 139308 | Train Loss: 0.0004134
+Epoch: 894 | Step 139464 | Train Loss: 0.0005927
+Epoch: 895 | Step 139620 | Train Loss: 0.0004854
+Epoch: 896 | Step 139776 | Train Loss: 0.0004847
+Epoch: 897 | Step 139932 | Train Loss: 0.0005088
+Epoch: 898 | Step 140000 | Valid Loss: 0.0004359
+Epoch: 898 | Step 140000 | Mean PER: 0.07364964391410694 | Mean WER: 0.27472340425531916
+Epoch: 898 | Step 140088 | Train Loss: 0.0004241
+Epoch: 899 | Step 140244 | Train Loss: 0.0004438
+Epoch: 900 | Step 140400 | Train Loss: 0.0004297
+Epoch: 901 | Step 140556 | Train Loss: 0.0004494
+Epoch: 902 | Step 140712 | Train Loss: 0.0005188
+Epoch: 903 | Step 140868 | Train Loss: 0.0004644
+Epoch: 904 | Step 141024 | Train Loss: 0.0004246
+Epoch: 905 | Step 141180 | Train Loss: 0.0004613
+Epoch: 906 | Step 141336 | Train Loss: 0.0004856
+Epoch: 907 | Step 141492 | Train Loss: 0.0004876
+Epoch: 908 | Step 141648 | Train Loss: 0.0004385
+Epoch: 909 | Step 141804 | Train Loss: 0.0004981
+Epoch: 910 | Step 141960 | Train Loss: 0.0005522
+Epoch: 911 | Step 142000 | Valid Loss: 0.0004476
+Epoch: 911 | Step 142000 | Mean PER: 0.07344693847214151 | Mean WER: 0.273531914893617
+Epoch: 911 | Step 142116 | Train Loss: 0.0004635
+Epoch: 912 | Step 142272 | Train Loss: 0.0005503
+Epoch: 913 | Step 142428 | Train Loss: 0.0004083
+Epoch: 914 | Step 142584 | Train Loss: 0.0005065
+Epoch: 915 | Step 142740 | Train Loss: 0.0004072
+Epoch: 916 | Step 142896 | Train Loss: 0.0004583
+Epoch: 917 | Step 143052 | Train Loss: 0.0004628
+Epoch: 918 | Step 143208 | Train Loss: 0.0004919
+Epoch: 919 | Step 143364 | Train Loss: 0.0003990
+Epoch: 920 | Step 143520 | Train Loss: 0.0004330
+Epoch: 921 | Step 143676 | Train Loss: 0.0004500
+Epoch: 922 | Step 143832 | Train Loss: 0.0004660
+Epoch: 923 | Step 143988 | Train Loss: 0.0004059
+Epoch: 924 | Step 144000 | Valid Loss: 0.0002625
+Epoch: 924 | Step 144000 | Mean PER: 0.07382532196381032 | Mean WER: 0.2756595744680851
+Epoch: 924 | Step 144144 | Train Loss: 0.0003954
+Epoch: 925 | Step 144300 | Train Loss: 0.0005184
+Epoch: 926 | Step 144456 | Train Loss: 0.0004180
+Epoch: 927 | Step 144612 | Train Loss: 0.0004077
+Epoch: 928 | Step 144768 | Train Loss: 0.0003931
+Epoch: 929 | Step 144924 | Train Loss: 0.0004932
+Epoch: 930 | Step 145080 | Train Loss: 0.0004554
+Epoch: 931 | Step 145236 | Train Loss: 0.0004142
+Epoch: 932 | Step 145392 | Train Loss: 0.0004452
+Epoch: 933 | Step 145548 | Train Loss: 0.0004560
+Epoch: 934 | Step 145704 | Train Loss: 0.0004385
+Epoch: 935 | Step 145860 | Train Loss: 0.0003675
+Epoch: 936 | Step 146000 | Valid Loss: 0.0003544
+Epoch: 936 | Step 146000 | Mean PER: 0.07443343828970662 | Mean WER: 0.2764255319148936
+Epoch: 936 | Step 146016 | Train Loss: 0.0003735
+Epoch: 937 | Step 146172 | Train Loss: 0.0004795
+Epoch: 938 | Step 146328 | Train Loss: 0.0004867
+Epoch: 939 | Step 146484 | Train Loss: 0.0004482
+Epoch: 940 | Step 146640 | Train Loss: 0.0004445
+Epoch: 941 | Step 146796 | Train Loss: 0.0004589
+Epoch: 942 | Step 146952 | Train Loss: 0.0004294
+Epoch: 943 | Step 147108 | Train Loss: 0.0004044
+Epoch: 944 | Step 147264 | Train Loss: 0.0004873
+Epoch: 945 | Step 147420 | Train Loss: 0.0004844
+Epoch: 946 | Step 147576 | Train Loss: 0.0004294
+Epoch: 947 | Step 147732 | Train Loss: 0.0003680
+Epoch: 948 | Step 147888 | Train Loss: 0.0004454
+Epoch: 949 | Step 148000 | Valid Loss: 0.0003896
+Epoch: 949 | Step 148000 | Mean PER: 0.073676671306369 | Mean WER: 0.27480851063829786
+Epoch: 949 | Step 148044 | Train Loss: 0.0004161
+Epoch: 950 | Step 148200 | Train Loss: 0.0004033
+Epoch: 951 | Step 148356 | Train Loss: 0.0004480
+Epoch: 952 | Step 148512 | Train Loss: 0.0003931
+Epoch: 953 | Step 148668 | Train Loss: 0.0003883
+Epoch: 954 | Step 148824 | Train Loss: 0.0003622
+Epoch: 955 | Step 148980 | Train Loss: 0.0004284
+Epoch: 956 | Step 149136 | Train Loss: 0.0004299
+Epoch: 957 | Step 149292 | Train Loss: 0.0004038
+Epoch: 958 | Step 149448 | Train Loss: 0.0004258
+Epoch: 959 | Step 149604 | Train Loss: 0.0003266
+Epoch: 960 | Step 149760 | Train Loss: 0.0004040
+Epoch: 961 | Step 149916 | Train Loss: 0.0004712
+Epoch: 962 | Step 150000 | Valid Loss: 0.0003459
+Epoch: 962 | Step 150000 | Mean PER: 0.07344693847214151 | Mean WER: 0.2743829787234043
+Epoch: 962 | Step 150072 | Train Loss: 0.0003796
+Epoch: 963 | Step 150228 | Train Loss: 0.0004502
+Epoch: 964 | Step 150384 | Train Loss: 0.0004021
+Epoch: 965 | Step 150540 | Train Loss: 0.0003370
+Epoch: 966 | Step 150696 | Train Loss: 0.0004149
+Epoch: 967 | Step 150852 | Train Loss: 0.0004426
+Epoch: 968 | Step 151008 | Train Loss: 0.0004762
+Epoch: 969 | Step 151164 | Train Loss: 0.0004385
+Epoch: 970 | Step 151320 | Train Loss: 0.0003842
+Epoch: 971 | Step 151476 | Train Loss: 0.0004166
+Epoch: 972 | Step 151632 | Train Loss: 0.0003844
+Epoch: 973 | Step 151788 | Train Loss: 0.0004027
+Epoch: 974 | Step 151944 | Train Loss: 0.0004599
+Epoch: 975 | Step 152000 | Valid Loss: 0.0004762
+Epoch: 975 | Step 152000 | Mean PER: 0.07387937674833443 | Mean WER: 0.2756595744680851
+Epoch: 975 | Step 152100 | Train Loss: 0.0004011
+Epoch: 976 | Step 152256 | Train Loss: 0.0003487
+Epoch: 977 | Step 152412 | Train Loss: 0.0004751
+Epoch: 978 | Step 152568 | Train Loss: 0.0003982
+Epoch: 979 | Step 152724 | Train Loss: 0.0003696
+Epoch: 980 | Step 152880 | Train Loss: 0.0004553
+Epoch: 981 | Step 153036 | Train Loss: 0.0003793
+Epoch: 982 | Step 153192 | Train Loss: 0.0004264
+Epoch: 983 | Step 153348 | Train Loss: 0.0004215
+Epoch: 984 | Step 153504 | Train Loss: 0.0003896
+Epoch: 985 | Step 153660 | Train Loss: 0.0004075
+Epoch: 986 | Step 153816 | Train Loss: 0.0003674
+Epoch: 987 | Step 153972 | Train Loss: 0.0004587
+Epoch: 988 | Step 154000 | Valid Loss: 0.0003406
+Epoch: 988 | Step 154000 | Mean PER: 0.07373072609089312 | Mean WER: 0.27480851063829786
+Epoch: 988 | Step 154128 | Train Loss: 0.0004118
+Epoch: 989 | Step 154284 | Train Loss: 0.0004220
+Epoch: 990 | Step 154440 | Train Loss: 0.0004175
+Epoch: 991 | Step 154596 | Train Loss: 0.0003975
+Epoch: 992 | Step 154752 | Train Loss: 0.0003448
+Epoch: 993 | Step 154908 | Train Loss: 0.0003857
+Epoch: 994 | Step 155064 | Train Loss: 0.0003642
+Epoch: 995 | Step 155220 | Train Loss: 0.0004313
+Epoch: 996 | Step 155376 | Train Loss: 0.0004199
+Epoch: 997 | Step 155532 | Train Loss: 0.0004087
+Epoch: 998 | Step 155688 | Train Loss: 0.0004324
+Epoch: 999 | Step 155844 | Train Loss: 0.0004154
+Epoch: 1000 | Step 156000 | Valid Loss: 0.0003689
+Epoch: 1000 | Step 156000 | Mean PER: 0.07405505479803781 | Mean WER: 0.276
+Epoch: 1000 | Step 156 | Train Loss: 0.0003689

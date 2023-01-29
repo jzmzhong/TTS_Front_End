@@ -48,7 +48,7 @@ class PhonemizerDatasetPretrain(Dataset):
                 phonemes = torch.tensor(phonemes, dtype=torch.long)
                 char_len = text.size(0) - 2
                 
-                # denoising the encoder by predicting the entire input instead of just the masked part
+                # # denoising the encoder by predicting the entire input instead of just the masked part
                 # mask_rand = torch.rand(char_len)
                 # mask_UNK = torch.lt(mask_rand, torch.ones(char_len) * self.mask_UNK_ratio * self.mask_ratio).int()
                 # mask_random = torch.lt(mask_rand, torch.ones(char_len) * (self.mask_UNK_ratio + self.mask_random_ratio) * self.mask_ratio).int() - mask_UNK
@@ -58,6 +58,7 @@ class PhonemizerDatasetPretrain(Dataset):
                 # rand_token_indices = torch.tensor([self.non_special_indices[i] for i in rand_token_indices])
                 # new_text += mask_random * rand_token_indices
                 # new_text = torch.cat((text[:1], new_text, text[-1:]), dim=0)
+                # new_items.append((language, new_text.long(), phonemes.long(), mask_rand.long()))
 
                 # avoid denoising the encoder by predicting only the masked part
                 mask_rand = torch.rand(char_len)

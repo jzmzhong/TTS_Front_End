@@ -1,6 +1,6 @@
 
 paths:
-  checkpoint_dir: ../checkpoints/pretrain_V1.0_EnUs_forward_6_512_4_8   # Directory to store model checkpoints and tensorboard, will be created if not existing.
+  checkpoint_dir: ../checkpoints/pretrain_V1.2_EnUs_forward_4_512_4_8_tar_masked   # Directory to store model checkpoints and tensorboard, will be created if not existing.
   data_dir: ../datasets/4_packed/pretrain_V1_EnUs_dup1                           # Directory to store processed data, will be created if not existing.
 
 preprocessing:
@@ -21,7 +21,7 @@ model:
                                  # Choices: ['transformer', 'autoreg_transformer']
   d_model: 512
   d_fft: 2048
-  layers: 6
+  layers: 4
   dropout: 0.1
   heads: 8
   mask_ratio: 0.2
