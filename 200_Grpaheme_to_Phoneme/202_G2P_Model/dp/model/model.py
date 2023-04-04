@@ -269,8 +269,8 @@ class ForwardTransformerTrimmed(Model):
         x = self.embedding(x)
         x = self.pos_encoder_1(x)
         x = self.encoder_1(x, src_key_padding_mask=src_pad_mask)
-        x = torch.cat((x[:1,:,:], x[1:-1,:,:].repeat_interleave(self.char_repeats, 0), x[-1,:,:]), dim=0)
-        src_pad_mask = torch.cat((src_pad_mask[:,:1], src_pad_mask[:,1:-1].repeat_interleave(self.char_repeats, 1), src_pad_mask[:,-1]), dim=1)
+        x = torch.cat((x[:1,:,:], x[1:-1,:,:].repeat_interleave(self.char_repeats, 0), x[-1:,:,:]), dim=0)
+        src_pad_mask = torch.cat((src_pad_mask[:,:1], src_pad_mask[:,1:-1].repeat_interleave(self.char_repeats, 1), src_pad_mask[:,-1:]), dim=1)
         x = self.pos_encoder_2(x)
         x = self.encoder_2(x, src_key_padding_mask=src_pad_mask)
         x = self.fc_out(x)
@@ -307,7 +307,7 @@ class ForwardTransformerTrimmed(Model):
             layers=config['model']['layers'],
             dropout=config['model']['dropout'],
             heads=config['model']['heads'],
-            char_repeats=config['preprocessing']['char_repeats']
+            char_repeats=config['model']['char_repeats']
         )
 
 

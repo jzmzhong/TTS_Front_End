@@ -39,13 +39,15 @@ class Trainer:
         self.writer = SummaryWriter(log_dir=str(self.checkpoint_dir / 'logs'))
         self.loss_type = loss_type
         if loss_type == 'ctc':
-            self.criterion = CTCLoss()
-        elif loss_type == 'ctc2':
-            self.criterion = CTCLoss(config['preprocessing']['char_repeats'])
+            if 'char_repeats' in config['model']:
+                self.criterion = CTCLoss(config['model']['char_repeats'])
+            else:
+                self.criterion = CTCLoss()
         elif loss_type == 'cross_entropy':
             self.criterion = CrossEntropyLoss()
         else:
             raise ValueError(f'Loss not supported: {loss_type}')
+        print(self.criterion)
 
     def train(self,
               model: Model,
