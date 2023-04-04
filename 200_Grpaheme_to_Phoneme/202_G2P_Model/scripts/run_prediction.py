@@ -20,10 +20,24 @@ if __name__ == '__main__':
     # result_paths = ["../datasets/5_predictions/EnUs/EnUs_dict_exclude_polyphone_valid_predictions_{}.txt".format(model_name) for model_name in model_names]
     # log_path = "../datasets/5_predictions/EnUs/EnUs_dict_exclude_polyphone_valid_predictions_autoregressive_WER.log"
     
-    model_names = ["forward_trimmed_EnUs_random92k_layer3_dim384_ffn2_head6"]
-    checkpoints_paths = ["../checkpoints/forward_trimmed_EnUs_random92k_layer3_dim384_ffn2_head6/model_step_152k.pt"]
+    model_names = ["pretrain", "finetune_0.2", "finetune_0.1", "scratch_0.2"]
+    checkpoints_paths = ["../checkpoints/forward_trimmed_EnUs_pretrain_random92k_layer3_dim384_ffn2_head6/model_step_126k.pt", \
+                        "../checkpoints/forward_trimmed_EnUs_finetune_sortbyfreq18k_layer3_dim384_ffn2_head6/model_step_212k.pt", \
+                        "../checkpoints/forward_trimmed_EnUs_finetune_sortbyfreq9k_layer3_dim384_ffn2_head6/model_step_134k.pt", \
+                        "../checkpoints/forward_trimmed_EnUs_scratch_sortbyfreq18k_layer3_dim384_ffn2_head6/model_step_192k.pt"]
+    
     test_path = "../datasets/3_train_and_eval_data/EnUs_sort_by_freq/EnUs_dict_exclude_polyphone_sort_by_freq_test.txt"
-    result_paths = ["../datasets/5_predictions/EnUs_sort_by_freq/EnUs_dict_exclude_polyphone_sort_by_freq_test_predictions_3_384_152k.txt"]
+    result_paths = ["../datasets/5_predictions/EnUs_sort_by_freq/EnUs_dict_exclude_polyphone_sort_by_freq_test_predictions_{}.txt".format(model_name) for model_name in model_names]
+
+    # test_path = "../datasets/3_train_and_eval_data/EnUs_sort_by_freq/EnUs_dict_exclude_polyphone_sort_by_freq_finetune_0.1_valid.txt"
+    # result_paths = ["../datasets/5_predictions/EnUs_sort_by_freq/EnUs_dict_exclude_polyphone_sort_by_freq_0.1_valid_predictions_{}.txt".format(model_name) for model_name in model_names]
+    
+    # test_path = "../datasets/3_train_and_eval_data/EnUs_sort_by_freq/EnUs_dict_exclude_polyphone_sort_by_freq_finetune_0.2_valid.txt"
+    # result_paths = ["../datasets/5_predictions/EnUs_sort_by_freq/EnUs_dict_exclude_polyphone_sort_by_freq_0.2_valid_predictions_{}.txt".format(model_name) for model_name in model_names]
+    
+    # test_path = "../datasets/3_train_and_eval_data/EnUs_sort_by_freq/EnUs_dict_exclude_polyphone_random_valid.txt"
+    # result_paths = ["../datasets/5_predictions/EnUs_sort_by_freq/EnUs_dict_exclude_polyphone_random_valid_predictions_{}.txt".format(model_name) for model_name in model_names]
+
     log_path = "../datasets/5_predictions/EnUs_sort_by_freq/temp.log"
     
     LANG = "EnUs"
@@ -31,7 +45,8 @@ if __name__ == '__main__':
     DEVICE = "cuda"
 
     f_log = open(log_path, encoding="utf-8", mode="a")
-    
+    f_log.write(test_path + "\r\n")
+
     for model_name, checkpoint_path, result_path in zip(model_names, checkpoints_paths, result_paths):
         
         f_log.write(model_name + "\r\n")

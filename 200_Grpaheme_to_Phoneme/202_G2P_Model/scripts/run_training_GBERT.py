@@ -28,9 +28,9 @@ if __name__ == '__main__':
     config_file = args.config_path
     restore_path = args.restore_path
 
-    preprocess(config_file=config_file,
-               train_data=train_data,
-               val_data=val_data,
-               deduplicate_train_data=True)
+    # preprocess(config_file=config_file,
+    #            train_data=train_data,
+    #            val_data=val_data,
+    #            deduplicate_train_data=True)
 
     train(config_file=config_file, checkpoint_file=restore_path)

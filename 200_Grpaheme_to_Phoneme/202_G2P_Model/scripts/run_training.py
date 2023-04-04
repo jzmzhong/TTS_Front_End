@@ -1,6 +1,7 @@
 import os
 import argparse
 import sys
+sys.path.append("../../")
 sys.path.append("../")
 from dp.preprocess import preprocess
 from dp.train import train
