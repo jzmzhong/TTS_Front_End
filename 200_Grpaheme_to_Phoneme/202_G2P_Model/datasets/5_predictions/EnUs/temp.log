@@ -1,0 +1,26 @@
+../datasets/3_train_and_eval_data/EnUs/EnUs_dict_exclude_polyphone_test.txt
+pretrain
+../datasets/3_train_and_eval_data/EnUs/EnUs_dict_exclude_polyphone_test.txt
+baseline
+../datasets/3_train_and_eval_data/EnUs/EnUs_dict_exclude_polyphone_test.txt
+baseline
+Steps: 188000
+Correct Predictions: 8240
+Wrong Predictions: 3510
+Word Accuracy: 70.12765957446808%
+trimmed
+Steps: 206000
+Correct Predictions: 8256
+Wrong Predictions: 3494
+Word Accuracy: 70.26382978723404%
+../datasets/3_train_and_eval_data/EnUs/EnUs_dict_exclude_polyphone_valid.txt
+baseline
+Steps: 188000
+Correct Predictions: 8197
+Wrong Predictions: 3553
+Word Accuracy: 69.76170212765958%
+trimmed
+Steps: 206000
+Correct Predictions: 8250
+Wrong Predictions: 3500
+Word Accuracy: 70.2127659574468%

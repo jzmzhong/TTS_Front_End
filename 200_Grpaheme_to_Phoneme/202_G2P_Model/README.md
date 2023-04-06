@@ -60,7 +60,7 @@ Note: Forward Transformers are used in industrial deployment since they support 
 
 | Model Name                    | Mask Valid Acc. | Note |
 | :---------------------------- | :-------------  | :--- |
-| EnUs_layer6_dim512_ffn4_head8 | 61.38%          | |
+| EnUs_layer6_dim512_ffn4_head8 | 64.74%          | |
 
 
 ### Finetuning
@@ -79,6 +79,20 @@ Same as Experiment 1.
 ### Motivation
 
 In industrial deployment, forward transformer with faster parrellel inference is preferred. However, there is still room for model trimming, especially to deal with the long-sequence input. To repeat the input characters by three times before all encoder layers is unnecessary and would make inference for longer words in particular slow.
+
+### Model Architecture
+
+<center>
+
+![Baseline Forward Transformer](./assets/forward_transformer.png)
+
+Baseline Forward Transformer
+
+![Trimmed Forward Transformer](./assets/forward_transformer_trimmed.png)
+
+Trimmed Forward Transformer
+
+</center>
 
 ### Scripts & Configs
 
@@ -108,9 +122,12 @@ Trimmed:
 
 ### Results
 
-| Stage        | Valid Acc. | Test Acc. | Note   |
-| :----------- | :--------- | :-------  | :----- |
-
+| Model          | Valid Acc. | Test Acc. | Note   |
+| :------------- | :--------- | :-------  | :----- |
+| Small_Baseline | 71.32%     | %    | |
+| Small_Trimmed  | %     | %    | |
+| Tiny_Baseline  | 69.76%     | 70.13%    | |
+| Tiny_Trimmed   | 70.21%     | 70.26%    | |
 
 ## 4. Finetuning Low-freq Words for OOVs
 
