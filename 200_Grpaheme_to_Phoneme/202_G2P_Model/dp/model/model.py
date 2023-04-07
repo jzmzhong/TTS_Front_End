@@ -15,6 +15,7 @@ class ModelType(Enum):
     GBERT = 'GBERT'
     TRANSFORMER = 'transformer'
     TRANSFORMER_TRIMMED = 'transformer_trimmed'
+    TRANSFORMER_ALIGNED = 'transformer_aligned'
     AUTOREG_TRANSFORMER = 'autoreg_transformer'
     AUTOREG_TRANSFORMER_GBERT_FINETUNE = 'autoreg_transformer_GBERT_finetune'
 
@@ -22,7 +23,7 @@ class ModelType(Enum):
         """
         Returns: bool: Whether the model requires cross entropy loss.
         """
-        return self in {ModelType.GBERT, ModelType.AUTOREG_TRANSFORMER, ModelType.AUTOREG_TRANSFORMER_GBERT_FINETUNE}
+        return self in {ModelType.GBERT, ModelType.AUTOREG_TRANSFORMER, ModelType.AUTOREG_TRANSFORMER_GBERT_FINETUNE, ModelType.TRANSFORMER_ALIGNED}
 
 
 class Model(torch.nn.Module, ABC):
@@ -311,6 +312,101 @@ class ForwardTransformerTrimmed(Model):
         )
 
 
+class ForwardTransformerAligned(Model):
+
+    def __init__(self,
+                 encoder_vocab_size: int,
+                 decoder_vocab_size: int,
+                 d_model=512,
+                 d_fft=1024,
+                 layers=4,
+                 dropout=0.1,
+                 heads=1) -> None:
+        super().__init__()
+
+        self.d_model = d_model
+
+        self.embedding = nn.Embedding(encoder_vocab_size, d_model)
+        self.pos_encoder = PositionalEncoding(d_model, dropout)
+
+        encoder_layer = TransformerEncoderLayer(d_model=d_model,
+                                                nhead=heads,
+                                                dim_feedforward=d_fft,
+                                                dropout=dropout,
+                                                activation='relu')
+        encoder_norm = LayerNorm(d_model)
+        self.encoder = TransformerEncoder(encoder_layer=encoder_layer,
+                                          num_layers=layers,
+                                          norm=encoder_norm)
+
+        self.fc_out = nn.Linear(d_model, decoder_vocab_size)
+
+    def forward(self,
+                batch: Dict[str, torch.Tensor]) -> torch.Tensor:         # shape: [N, T]
+        """
+        Forward pass of the model on a data batch.
+
+        Args:
+         batch (Dict[str, torch.Tensor]): Input batch entry 'text' (text tensor).
+
+        Returns:
+          Tensor: Predictions.
+        """
+
+        x = batch['text']
+        x = x.transpose(0, 1)        # shape: [T, N]
+        src_pad_mask = _make_len_mask(x).to(x.device)
+        x = self.embedding(x)
+        x = self.pos_encoder(x)
+        x = self.encoder(x, src_key_padding_mask=src_pad_mask)
+        x = self.fc_out(x[:-1,:,:])
+        x = x.transpose(0, 1)
+        return x
+
+    @torch.jit.export
+    def generate(self,
+                 batch: Dict[str, torch.Tensor]) -> Tuple[torch.Tensor, torch.Tensor]:
+        """
+        Inference pass on a batch of tokenized texts.
+
+        Args:
+          batch (Dict[str, torch.Tensor]): Input batch with entry 'text' (text tensor).
+
+        Returns:
+          Tuple: The first element is a Tensor (phoneme tokens) and the second element
+                 is a tensor (phoneme token probabilities).
+        """
+
+        with torch.no_grad():
+            x = self.forward(batch)
+            # x = x[-1:, :, :]
+        logits_batch = x.softmax(-1)
+        out_tokens, out_probs = [], []
+        for i in range(logits_batch.size(0)):
+            logits = logits_batch[i]
+            max_logits, max_indices = torch.max(logits, dim=-1)
+            max_logits = max_logits[max_indices!=0]
+            max_indices = max_indices[max_indices!=0]
+            out_tokens.append(max_indices)
+            out_probs.append(max_logits)
+        tokens = pad_sequence(out_tokens, batch_first=True, padding_value=0.).long()
+        logits = pad_sequence(out_probs, batch_first=True, padding_value=0.)
+        return tokens, logits
+
+    @classmethod
+    def from_config(cls, config: dict) -> 'ForwardTransformer':
+        preprocessor = Preprocessor.from_config(config)
+        return ForwardTransformerAligned(
+            encoder_vocab_size=preprocessor.text_tokenizer.vocab_size,
+            decoder_vocab_size=preprocessor.phoneme_tokenizer.vocab_size,
+            d_model=config['model']['d_model'],
+            d_fft=config['model']['d_fft'],
+            layers=config['model']['layers'],
+            dropout=config['model']['dropout'],
+            heads=config['model']['heads']
+        )
+
+
 class AutoregressiveTransformer(Model):
 
     def __init__(self,
@@ -474,6 +570,8 @@ def create_model(model_type: ModelType, config: Dict[str, Any]) -> Model:
         model = ForwardTransformer.from_config(config)
     elif model_type is ModelType.TRANSFORMER_TRIMMED:
         model = ForwardTransformerTrimmed.from_config(config)
+    elif model_type is ModelType.TRANSFORMER_ALIGNED:
+        model = ForwardTransformerAligned.from_config(config)
     elif model_type in [ModelType.AUTOREG_TRANSFORMER, ModelType.AUTOREG_TRANSFORMER_GBERT_FINETUNE]:
         model = AutoregressiveTransformer.from_config(config)
     else:

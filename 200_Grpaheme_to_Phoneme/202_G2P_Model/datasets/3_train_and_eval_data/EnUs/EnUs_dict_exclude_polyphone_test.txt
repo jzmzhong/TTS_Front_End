@@ -10281,7 +10281,7 @@ EnUs harmonics hh aa0 r m aa1 n ih0 k s
 EnUs remiss r iy0 m ih1 s
 EnUs hieroglyph hh ay2 r ow0 g l ih1 f
 EnUs enlarger ih0 n l aa1 r g er0
-EnUs aalburg ae1 l b er0 g # place, dutch
+EnUs aalburg ae1 l b er0 g
 EnUs meath m iy1 th
 EnUs clampitt k l ah0 m p ih1 t
 EnUs boas b ow1 ah0 z
@@ -10922,7 +10922,7 @@ EnUs terpstra t eh1 r p s t r aa2
 EnUs emera eh0 m eh1 r ah0
 EnUs wedgeworth w eh1 jh w er2 th
 EnUs vipperman v ih1 p er0 m ah0 n
-EnUs aalto aa1 l t ow2 # name, finnish
+EnUs aalto aa1 l t ow2
 EnUs cowboys k aw1 b oy2 z
 EnUs bearable b eh1 r ah0 b ah0 l
 EnUs stolze s t ow1 l z

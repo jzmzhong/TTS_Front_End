@@ -1,7 +1,7 @@
 
 paths:
   checkpoint_dir: ../../checkpoints/3_forward_trimmed/forward_trimmed_EnUs_random106k_layer4_dim512_ffn4_head8  # Directory to store model checkpoints and tensorboard, will be created if not existing.
-  data_dir: ../../datasets/4_packed/G2P_V1_EnUs_dup3                                                            # Directory to store processed data, will be created if not existing.
+  data_dir: ../../datasets/4_packed/G2P_V1_EnUs_dup1                                                            # Directory to store processed data, will be created if not existing.
 
 preprocessing:
   languages: ['EnUs']    # All languages in the dataset.

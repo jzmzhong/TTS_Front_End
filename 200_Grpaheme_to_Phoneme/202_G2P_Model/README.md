@@ -60,7 +60,7 @@ Note: Forward Transformers are used in industrial deployment since they support 
 
 | Model Name                    | Mask Valid Acc. | Note |
 | :---------------------------- | :-------------  | :--- |
-| EnUs_layer6_dim512_ffn4_head8 | 64.74%          | |
+| EnUs_layer6_dim512_ffn4_head8 | 64.87%          | 570k steps |
 
 
 ### Finetuning
@@ -202,3 +202,24 @@ The finetuning strategy can also be used to address the disparity among datasets
 
 ## 5. Explicit Alignment
 
+## 5.1 Hard Alignment for Training Data
+
+### Scripts & Configs
+* Data Alignment Mapping:
+    ```bash
+    ./datasets/alignment_scripts/EnUs_G2P_mappings.txt
+    ```
+* Data Alignment Script:
+    ```bash
+    cd ./datasets/alignment_scripts/
+    python GP_align_DTW.py
+    ```
+* Config: 
+    ```bash
+    ./dp/configs/5_alignment/forward_aligned_config_EnUs_random106k_layer3_dim384_ffn2_head6.yaml
+    ```
+* Train Script:
+    ```bash
+    cd ./experiments/5_alignment
+    sh train_forward_aligned_EnUs_random106k.sh
+    ```

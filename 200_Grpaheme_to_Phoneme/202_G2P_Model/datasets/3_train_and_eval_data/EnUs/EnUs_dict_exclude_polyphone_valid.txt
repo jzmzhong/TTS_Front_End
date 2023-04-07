@@ -6031,7 +6031,7 @@ EnUs naps n ae1 p s
 EnUs vranesevic v r aa2 n ah0 s eh1 v ih0 ch
 EnUs stapley s t ae1 p l iy0
 EnUs mudgett m ah1 jh ih0 t
-EnUs aalsmeer aa1 l s m ih0 r # place, dutch
+EnUs aalsmeer aa1 l s m ih0 r
 EnUs credibility k r eh2 d ah0 b ih1 l ih0 t iy0
 EnUs felines f iy1 l ay2 n z
 EnUs swiveled s w ih1 v ah0 l d
@@ -9454,7 +9454,7 @@ EnUs plants' p l ae1 n t s
 EnUs dillworth d ih1 l w er2 th
 EnUs odour ow1 d er0
 EnUs beachballs b iy1 ch b aa2 l z
-EnUs hiv ey1 ch ay1 v iy1 # abbrev
+EnUs hiv ey1 ch ay1 v iy1
 EnUs precious p r eh1 sh ah0 s
 EnUs louima's l uw0 iy1 m ah0 z
 EnUs pakulski p ah0 k ah1 l s k iy0
