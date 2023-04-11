@@ -78,11 +78,19 @@ class Trainer:
 
         criterion = self.criterion.to(device)
 
-        optimizer = Adam(model.parameters())
-        if 'optimizer' in checkpoint:
-            optimizer.load_state_dict(checkpoint['optimizer'])
-        for g in optimizer.param_groups:
-            g['lr'] = config['training']['learning_rate']
+        if 'learning_rate_encoder_ratio' in config['training']:
+            encoder_lr_ratio = float(config['training']['learning_rate_encoder_ratio'])
+            base_lr = float(config['training']['learning_rate'])
+            optimizer = Adam([{'params': model.encoder_embedding.parameters(), 'lr':  encoder_lr_ratio*base_lr}, \
+                             {'params': model.pos_encoder.parameters(), 'lr':  encoder_lr_ratio*base_lr}, \
+                             {'params': model.transformer.encoder.parameters(), 'lr':  encoder_lr_ratio*base_lr}], \
+                             lr=base_lr)
+        else:
+            optimizer = Adam(model.parameters())
+            if 'optimizer' in checkpoint:
+                optimizer.load_state_dict(checkpoint['optimizer'])
+            for g in optimizer.param_groups:
+                g['lr'] = config['training']['learning_rate']
 
         if config['model']['type'] == "GBERT":
             train_loader = new_dataloader_pretrain(dataset_file=data_dir / 'train_dataset.pkl',
@@ -127,7 +135,7 @@ class Trainer:
             for i, batch in pbar:
                 checkpoint['step'] += 1
                 step = checkpoint['step']
-                self._set_warmup_lr(optimizer=optimizer, step=step,
+                self._set_warmup_lr(model=model, optimizer=optimizer, step=step,
                                     config=config)
                 batch = to_device(batch, device)
                 avg_loss = sum(losses) / len(losses) if len(losses) > 0 else math.inf
@@ -308,6 +316,7 @@ class Trainer:
         torch.save(checkpoint, str(path))
 
     def _set_warmup_lr(self,
+                       model: torch.nn.Module,
                        optimizer: torch.optim,
                        step: int,
                        config: Dict[str, Any]) -> None:
@@ -315,5 +324,13 @@ class Trainer:
         warmup_steps = config['training']['warmup_steps']
         if warmup_steps > 0 and step <= warmup_steps:
             warmup_factor = 1.0 - max(warmup_steps - step, 0) / warmup_steps
-            for g in optimizer.param_groups:
-                g['lr'] = config['training']['learning_rate'] * warmup_factor
+            if 'learning_rate_encoder_ratio' in config['training']:
+                encoder_lr_ratio = float(config['training']['learning_rate_encoder_ratio'])
+                base_lr = float(config['training']['learning_rate'])
+                optimizer = Adam([{'params': model.encoder_embedding.parameters(), 'lr':  encoder_lr_ratio * base_lr * warmup_factor}, \
+                                {'params': model.pos_encoder.parameters(), 'lr':  encoder_lr_ratio * base_lr * warmup_factor}, \
+                                {'params': model.transformer.encoder.parameters(), 'lr':  encoder_lr_ratio * base_lr * warmup_factor}], \
+                                lr=base_lr * warmup_factor)
+            else:
+                for g in optimizer.param_groups:
+                    g['lr'] = config['training']['learning_rate'] * warmup_factor

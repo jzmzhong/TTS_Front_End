@@ -60,15 +60,20 @@ Note: Forward Transformers are used in industrial deployment since they support 
 
 | Model Name                    | Mask Valid Acc. | Note |
 | :---------------------------- | :-------------  | :--- |
-| EnUs_layer6_dim512_ffn4_head8 | 64.87%          | 570k steps |
+| EnUs_layer6_dim512_ffn4_head8 | 65.42%          | 935k steps |
+| EnUs_layer6_dim384_ffn2_head6 | x%          | x steps |
 
 
-### Finetuning
+### Train from Scratch vs Finetune from Pretrained GBERT
 
-| Model Name   | Layers | Dimension | Valid Acc. | Test Acc. |Flops | MACs | Note |
-| :----------- | :----- | :-------- | :--------  | :-------  | :---- | :--- | :---- |
-| autoreg_V2.0 | 6+4    | 512       | x%     | x%    | | | |
-
+| Model Name                 | Layers | Dimension | Pretrained LR | Base LR | Valid Acc. | Test Acc. | Flops | MACs | Note |
+| :------------------------- | :----- | :-------- | :------------ | :-----  | :--------- | :-------- | :---- | :--- | :---- |
+| Scratch_2k                 | 6+4    | 512       |               |         | x%     | x%    | | | |
+| Scratch_5k                 | 6+4    | 512       |               |         | x%     | x%    | | | |
+| Scratch_10k                | 6+4    | 512       | 5e-5          | 5e-5    | 53.91%     | x%    | | | 184k steps |
+| Finetune_10k               | 6+4    | 512       | 5e-5          | 5e-5    | 55.86%     | x%    | | | 176k steps |
+| Finetune_10k_EncoderLR0.1  | 6+4    | 512       | 5e-6          | 5e-5    | x%     | x%    | | | |
+| Finetune_10k_EncoderLR0.01 | 6+4    | 512       | 5e-7          | 5e-5    | x%     | x%    | | | |
 
 ## 3. Move the Char Repeat Operation in Forward Transformer
 
@@ -99,8 +104,8 @@ Trimmed Forward Transformer
 Baseline:
 * Config: 
     ```bash
-    ./dp/configs/3_forward_trimmed/forward_config_EnUs_random106k_layer4_dim512_ffn4_head8.yaml
-    # ./dp/configs/3_forward_trimmed/forward_config_EnUs_random106k_layer3_dim384_ffn2_head6.yaml
+    ./dp/configs/3_forward_trimmed/forward_config_EnUs_random106k_layer4_dim512_ffn4_head8.yaml # Small_Trimmed
+    # ./dp/configs/3_forward_trimmed/forward_config_EnUs_random106k_layer3_dim384_ffn2_head6.yaml # Tiny_Trimmed
     ```
 * Train Script:
     ```bash
@@ -124,8 +129,8 @@ Trimmed:
 
 | Model          | Valid Acc. | Test Acc. | Note   |
 | :------------- | :--------- | :-------  | :----- |
-| Small_Baseline | 71.32%     | %    | |
-| Small_Trimmed  | %     | %    | |
+| Small_Baseline | 71.53%     | 71.63%    | |
+| Small_Trimmed  | 70.71%     | 71.11%    | |
 | Tiny_Baseline  | 69.76%     | 70.13%    | |
 | Tiny_Trimmed   | 70.21%     | 70.26%    | |
 
@@ -223,3 +228,11 @@ The finetuning strategy can also be used to address the disparity among datasets
     cd ./experiments/5_alignment
     sh train_forward_aligned_EnUs_random106k.sh
     ```
+
+### Results
+
+| Model          | Valid Acc. | Test Acc. | Note   |
+| :------------- | :--------- | :-------  | :----- |
+| Tiny_Baseline  | 69.76%     | 70.13%    | From Experiment 3 |
+| Tiny_Trimmed   | 70.21%     | 70.26%    | From Experiment 3 |
+| Tiny_Aligned   | 69.63%     | 70.14%    | |
