@@ -1,6 +1,6 @@
 
 paths:
-  checkpoint_dir: ../../checkpoints/2_GBERT/autoreg_finetune_EnUs_random10k_layer6+4_dim512_ffn4_head8_encoderlr0.01   # Directory to store model checkpoints and tensorboard, will be created if not existing.
+  checkpoint_dir: ../../checkpoints/2_GBERT/autoreg_finetune_EnUs_random10k_layer6+4_dim512_ffn4_head8_encoderlr0.5   # Directory to store model checkpoints and tensorboard, will be created if not existing.
   data_dir: ../../datasets/4_packed/G2P_V1_EnUs_dup1_train10k_finetune                                   # Directory to store processed data, will be created if not existing.
   GBERT_path: ../../checkpoints/2_GBERT/GBERT_EnUs_layer6_dim512_ffn4_head8/model_step_935k.pt
 
@@ -33,7 +33,7 @@ training:
   # The scheduler is reducing the lr on plateau of phoneme error rate (tested every n_generate_steps).
 
   learning_rate: 0.00005             # Learning rate of Adam.
-  learning_rate_encoder_ratio: 0.01  # Learning rate ratio for pretrained layers.
+  learning_rate_encoder_ratio: 0.5   # Learning rate ratio for pretrained layers.
   warmup_steps: 10000                # Linear increase of the lr from zero to the given lr within the given number of steps.
   scheduler_plateau_factor: 0.5      # Factor to multiply learning rate on plateau.
   scheduler_plateau_patience: 5      # Number of text generations with no improvement to tolerate.

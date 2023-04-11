@@ -72,8 +72,8 @@ Note: Forward Transformers are used in industrial deployment since they support 
 | Scratch_5k                 | 6+4    | 512       |               |         | x%     | x%    | | | |
 | Scratch_10k                | 6+4    | 512       | 5e-5          | 5e-5    | 53.91%     | x%    | | | 184k steps |
 | Finetune_10k               | 6+4    | 512       | 5e-5          | 5e-5    | 55.86%     | x%    | | | 176k steps |
+| Finetune_10k_EncoderLR0.5  | 6+4    | 512       | 2.5e-5        | 5e-5    | x%     | x%    | | | |
 | Finetune_10k_EncoderLR0.1  | 6+4    | 512       | 5e-6          | 5e-5    | x%     | x%    | | | |
-| Finetune_10k_EncoderLR0.01 | 6+4    | 512       | 5e-7          | 5e-5    | x%     | x%    | | | |
 
 ## 3. Move the Char Repeat Operation in Forward Transformer
 

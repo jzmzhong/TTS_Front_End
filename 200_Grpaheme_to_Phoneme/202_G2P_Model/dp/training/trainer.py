@@ -81,9 +81,19 @@ class Trainer:
         if 'learning_rate_encoder_ratio' in config['training']:
             encoder_lr_ratio = float(config['training']['learning_rate_encoder_ratio'])
             base_lr = float(config['training']['learning_rate'])
-            optimizer = Adam([{'params': model.encoder_embedding.parameters(), 'lr':  encoder_lr_ratio*base_lr}, \
-                             {'params': model.pos_encoder.parameters(), 'lr':  encoder_lr_ratio*base_lr}, \
-                             {'params': model.transformer.encoder.parameters(), 'lr':  encoder_lr_ratio*base_lr}], \
+            param_group_pretrained, param_group_new = [], []
+            param_group_pretrained_names, param_group_new_names = [], []
+            for param_name, param in model.named_parameters():
+                if param_name.startswith("encoder_embedding.") or param_name.startswith("pos_encoder.") or param_name.startswith("transformer.encoder."):
+                    param_group_pretrained.append(param)
+                    param_group_pretrained_names.append(param_name)
+                else:
+                    param_group_new.append(param)
+                    param_group_new_names.append(param_name)
+            print("Pretrained Layers that have lower LR: " + str(param_group_pretrained_names))
+            print("Newly Randomized Layers that have base LR: " + str(param_group_new_names))
+            optimizer = Adam([{'params': param_group_pretrained, 'lr': encoder_lr_ratio*base_lr}, \
+                             {'params': param_group_new}], \
                              lr=base_lr)
         else:
             optimizer = Adam(model.parameters())
@@ -327,10 +337,8 @@ class Trainer:
             if 'learning_rate_encoder_ratio' in config['training']:
                 encoder_lr_ratio = float(config['training']['learning_rate_encoder_ratio'])
                 base_lr = float(config['training']['learning_rate'])
-                optimizer = Adam([{'params': model.encoder_embedding.parameters(), 'lr':  encoder_lr_ratio * base_lr * warmup_factor}, \
-                                {'params': model.pos_encoder.parameters(), 'lr':  encoder_lr_ratio * base_lr * warmup_factor}, \
-                                {'params': model.transformer.encoder.parameters(), 'lr':  encoder_lr_ratio * base_lr * warmup_factor}], \
-                                lr=base_lr * warmup_factor)
+                optimizer.param_groups[0]['lr'] = base_lr * warmup_factor * encoder_lr_ratio # pretrained layers
+                optimizer.param_groups[1]['lr'] = base_lr * warmup_factor # newly randomized layers
             else:
                 for g in optimizer.param_groups:
                     g['lr'] = config['training']['learning_rate'] * warmup_factor

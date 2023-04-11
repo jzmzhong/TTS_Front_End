@@ -1,0 +1,176 @@
+GBERT(
+  (embedding): Embedding(32, 384)
+  (pos_encoder): PositionalEncoding(
+    (dropout): Dropout(p=0.1, inplace=False)
+  )
+  (encoder): TransformerEncoder(
+    (layers): ModuleList(
+      (0): TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (out_proj): _LinearWithBias(in_features=384, out_features=384, bias=True)
+        )
+        (linear1): Linear(in_features=384, out_features=768, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (linear2): Linear(in_features=768, out_features=384, bias=True)
+        (norm1): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+        (dropout1): Dropout(p=0.1, inplace=False)
+        (dropout2): Dropout(p=0.1, inplace=False)
+      )
+      (1): TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (out_proj): _LinearWithBias(in_features=384, out_features=384, bias=True)
+        )
+        (linear1): Linear(in_features=384, out_features=768, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (linear2): Linear(in_features=768, out_features=384, bias=True)
+        (norm1): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+        (dropout1): Dropout(p=0.1, inplace=False)
+        (dropout2): Dropout(p=0.1, inplace=False)
+      )
+      (2): TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (out_proj): _LinearWithBias(in_features=384, out_features=384, bias=True)
+        )
+        (linear1): Linear(in_features=384, out_features=768, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (linear2): Linear(in_features=768, out_features=384, bias=True)
+        (norm1): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+        (dropout1): Dropout(p=0.1, inplace=False)
+        (dropout2): Dropout(p=0.1, inplace=False)
+      )
+      (3): TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (out_proj): _LinearWithBias(in_features=384, out_features=384, bias=True)
+        )
+        (linear1): Linear(in_features=384, out_features=768, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (linear2): Linear(in_features=768, out_features=384, bias=True)
+        (norm1): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+        (dropout1): Dropout(p=0.1, inplace=False)
+        (dropout2): Dropout(p=0.1, inplace=False)
+      )
+      (4): TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (out_proj): _LinearWithBias(in_features=384, out_features=384, bias=True)
+        )
+        (linear1): Linear(in_features=384, out_features=768, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (linear2): Linear(in_features=768, out_features=384, bias=True)
+        (norm1): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+        (dropout1): Dropout(p=0.1, inplace=False)
+        (dropout2): Dropout(p=0.1, inplace=False)
+      )
+      (5): TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (out_proj): _LinearWithBias(in_features=384, out_features=384, bias=True)
+        )
+        (linear1): Linear(in_features=384, out_features=768, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (linear2): Linear(in_features=768, out_features=384, bias=True)
+        (norm1): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+        (dropout1): Dropout(p=0.1, inplace=False)
+        (dropout2): Dropout(p=0.1, inplace=False)
+      )
+    )
+    (norm): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+  )
+  (fc_out): Linear(in_features=384, out_features=31, bias=True)
+)
+CrossEntropyLoss(
+  (criterion): CrossEntropyLoss()
+)
+Training on device: cuda
+Epoch: 874 | Step 255292 | Train Loss: 0.9953
+Epoch: 875 | Step 255584 | Train Loss: 0.9695
+Epoch: 876 | Step 255876 | Train Loss: 0.9575
+Epoch: 877 | Step 256168 | Train Loss: 0.9404
+Epoch: 878 | Step 256460 | Train Loss: 0.9268
+Epoch: 879 | Step 256752 | Train Loss: 0.9151
+Epoch: 880 | Step 257044 | Train Loss: 0.9058
+Epoch: 881 | Step 257336 | Train Loss: 0.9993
+Epoch: 882 | Step 257628 | Train Loss: 0.9716
+Epoch: 883 | Step 257920 | Train Loss: 0.9533
+Epoch: 884 | Step 258212 | Train Loss: 0.9413
+Epoch: 885 | Step 258504 | Train Loss: 0.9326
+Epoch: 886 | Step 258796 | Train Loss: 0.9171
+Epoch: 887 | Step 259088 | Train Loss: 0.9075
+Epoch: 888 | Step 259380 | Train Loss: 0.8980
+Epoch: 889 | Step 259672 | Train Loss: 0.8890
+Epoch: 890 | Step 259964 | Train Loss: 0.8807
+Epoch: 891 | Step 260000 | Valid Loss: 1.012
+Epoch: 891 | Step 260000 | Mean Mask Error Rate: 0.39865078440832485
+Epoch: 891 | Step 260256 | Train Loss: 1.004
+Epoch: 892 | Step 260548 | Train Loss: 0.9754
+Epoch: 893 | Step 260840 | Train Loss: 0.9565
+Epoch: 894 | Step 261132 | Train Loss: 0.9440
+Epoch: 895 | Step 261424 | Train Loss: 0.9345
+Epoch: 896 | Step 261716 | Train Loss: 0.9193
+Epoch: 897 | Step 262008 | Train Loss: 0.9109
+Epoch: 898 | Step 262300 | Train Loss: 0.8998
+Epoch: 899 | Step 262592 | Train Loss: 0.8905
+Epoch: 900 | Step 262884 | Train Loss: 0.8865
+Epoch: 901 | Step 263176 | Train Loss: 1.001
+Epoch: 902 | Step 263468 | Train Loss: 0.9736
+Epoch: 903 | Step 263760 | Train Loss: 0.9552
+Epoch: 904 | Step 264052 | Train Loss: 0.9419
+Epoch: 905 | Step 264344 | Train Loss: 0.9272
+Epoch: 906 | Step 264636 | Train Loss: 0.9184
+Epoch: 907 | Step 264928 | Train Loss: 0.9135
+Epoch: 908 | Step 265000 | Valid Loss: 0.9326
+Epoch: 908 | Step 265000 | Mean Mask Error Rate: 0.3998278128067344
+Epoch: 908 | Step 265220 | Train Loss: 0.9015
+Epoch: 909 | Step 265512 | Train Loss: 0.8902
+Epoch: 910 | Step 265804 | Train Loss: 0.8817
+Epoch: 911 | Step 266096 | Train Loss: 1.001
+Epoch: 912 | Step 266388 | Train Loss: 0.9734
+Epoch: 913 | Step 266680 | Train Loss: 0.9564
+Epoch: 914 | Step 266972 | Train Loss: 0.9407
+Epoch: 915 | Step 267264 | Train Loss: 0.9268
+Epoch: 916 | Step 267556 | Train Loss: 0.9153
+Epoch: 917 | Step 267848 | Train Loss: 0.9129
+Epoch: 918 | Step 268140 | Train Loss: 0.8989
+Epoch: 919 | Step 268432 | Train Loss: 0.8879
+Epoch: 920 | Step 268724 | Train Loss: 0.8805
+Epoch: 921 | Step 269016 | Train Loss: 0.9997
+Epoch: 922 | Step 269308 | Train Loss: 0.9725
+Epoch: 923 | Step 269600 | Train Loss: 0.9546
+Epoch: 924 | Step 269892 | Train Loss: 0.9405
+Epoch: 925 | Step 270000 | Valid Loss: 0.9215
+Epoch: 925 | Step 270000 | Mean Mask Error Rate: 0.3967292751501439
+Epoch: 925 | Step 270184 | Train Loss: 0.9282
+Epoch: 926 | Step 270476 | Train Loss: 0.9165
+Epoch: 927 | Step 270768 | Train Loss: 0.9086
+Epoch: 928 | Step 271060 | Train Loss: 0.8975
+Epoch: 929 | Step 271352 | Train Loss: 0.8890
+Epoch: 930 | Step 271644 | Train Loss: 0.8829
+Epoch: 931 | Step 271936 | Train Loss: 1.001
+Epoch: 932 | Step 272228 | Train Loss: 0.9726
+Epoch: 933 | Step 272520 | Train Loss: 0.9541
+Epoch: 934 | Step 272812 | Train Loss: 0.9420
+Epoch: 935 | Step 273104 | Train Loss: 0.9314
+Epoch: 936 | Step 273396 | Train Loss: 0.9202
+Epoch: 937 | Step 273688 | Train Loss: 0.9125
+Epoch: 938 | Step 273980 | Train Loss: 0.8985
+Epoch: 939 | Step 274272 | Train Loss: 0.8898
+Epoch: 940 | Step 274564 | Train Loss: 0.8816
+Epoch: 941 | Step 274856 | Train Loss: 0.9996
+Epoch: 942 | Step 275000 | Valid Loss: 0.9703
+Epoch: 942 | Step 275000 | Mean Mask Error Rate: 0.3951862449882713
+Epoch: 942 | Step 275148 | Train Loss: 0.9711
+Epoch: 943 | Step 275440 | Train Loss: 0.9529
+Epoch: 944 | Step 275732 | Train Loss: 0.9402
+Epoch: 945 | Step 276024 | Train Loss: 0.9270
+Epoch: 946 | Step 276316 | Train Loss: 0.9144
+Epoch: 947 | Step 276608 | Train Loss: 0.9065
+Epoch: 948 | Step 276900 | Train Loss: 0.8959
+Epoch: 949 | Step 277192 | Train Loss: 0.8879
+Epoch: 950 | Step 277484 | Train Loss: 0.8810
+Epoch: 951 | Step 277776 | Train Loss: 1.003
+Epoch: 952 | Step 278068 | Train Loss: 0.9731
+Epoch: 953 | Step 278360 | Train Loss: 0.9541
