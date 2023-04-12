@@ -6031,7 +6031,7 @@ naps	n ae1 p s	n ae1 p s	True
 vranesevic	v r aa2 n ah0 s eh1 v ih0 ch	v r ae2 n s eh1 v ih0 k	False
 stapley	s t ae1 p l iy0	s t ae1 p l iy0	True
 mudgett	m ah1 jh ih0 t	m ah1 jh ih0 t	True
-aalsmeer	aa1 l s m ih0 r # place, dutch	aa1 l z ah0 m ih2 r	False
+aalsmeer	aa1 l s m ih0 r	aa1 l z ah0 m ih2 r	False
 credibility	k r eh2 d ah0 b ih1 l ih0 t iy0	k r eh2 d ah0 b ih1 l ih0 t iy0	True
 felines	f iy1 l ay2 n z	f iy1 l ay2 n z	True
 swiveled	s w ih1 v ah0 l d	s w ih1 v ah0 l d	True
@@ -9454,7 +9454,7 @@ plants'	p l ae1 n t s	p l ae1 n t s	True
 dillworth	d ih1 l w er2 th	d ih1 l w er2 th	True
 odour	ow1 d er0	ow1 d er0	True
 beachballs	b iy1 ch b aa2 l z	b iy1 ch b aa2 l z	True
-hiv	ey1 ch ay1 v iy1 # abbrev	hh ih1 v	False
+hiv	ey1 ch ay1 v iy1	hh ih1 v	False
 precious	p r eh1 sh ah0 s	p r iy1 sh ah0 s	False
 louima's	l uw0 iy1 m ah0 z	l uw0 iy1 m ah0 z	True
 pakulski	p ah0 k ah1 l s k iy0	p ah0 k ah1 l s k iy0	True

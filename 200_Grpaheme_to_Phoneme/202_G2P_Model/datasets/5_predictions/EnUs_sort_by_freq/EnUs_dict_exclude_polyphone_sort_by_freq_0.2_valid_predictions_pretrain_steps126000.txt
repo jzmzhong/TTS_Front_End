@@ -182,7 +182,7 @@ garrigan	g ae1 r ih0 g ah0 n	g ae1 r ih0 g ah0 n	True
 forgey	f ao1 r jh iy0	f ao1 r jh iy0	True
 petrak	p eh1 t r ah0 k	p eh1 t r ah0 k	True
 frary	f r eh1 r iy0	f r eh1 r iy0	True
-arlinda	aa2 r l ih1 n d ah0	aa0 r l ih1 n d ah0	False
+arlinda	aa2 r l ih1 n d ah0	aa0 r l iy1 n d ah0	False
 anthes	ae1 n dh ah0 z	ae1 n th iy0 s	False
 outflank	aw1 t f l ae2 ng k	aw1 t f l ae1 ng k	False
 higinbotham	hh ih1 g ih0 n b ah0 th ah0 m	hh ih0 jh ih0 n b ow0 th ae2 m	False
@@ -324,7 +324,7 @@ dasch	d ae1 sh	d ae1 sh	True
 mccart	m ah0 k aa1 r t	m ah0 k aa1 r t	True
 buel	b y uw1 l	b y uw1 ah0 l	False
 lanser	l ae1 n s er0	l ae1 n s er0	True
-tinsman	t ih1 n s m ah0 n	t ih1 n s m ae2 n	False
+tinsman	t ih1 n s m ah0 n	t ih1 n z m ae2 n	False
 hochtief	hh aa1 k t iy2 f	hh aa1 k t ah0 f	False
 dolson	d ow1 l s ah0 n	d ow1 l s ah0 n	True
 zeeb	z iy1 b	z iy1 b	True

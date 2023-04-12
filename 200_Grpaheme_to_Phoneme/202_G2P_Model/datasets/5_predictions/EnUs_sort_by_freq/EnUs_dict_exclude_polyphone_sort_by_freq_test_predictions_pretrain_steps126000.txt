@@ -2,7 +2,7 @@ gettle	g eh1 t ah0 l	g eh1 t ah0 l	True
 netlike	n eh1 t l ay2 k	n eh1 t l ay2 k	True
 unwielding	ah0 n w iy1 l d ih0 ng	ah0 n w iy1 l d ih0 ng	True
 carfora	k aa0 r f ao1 r aa0	k aa0 r f ao1 r ah0	False
-culbro	k ah1 l b r ow0	k ah1 l b r ow0	True
+culbro	k ah1 l b r ow0	k ah1 l b r ow2	False
 danstett	d ae1 n s t eh0 t	d ae1 n s t ih0 t	False
 givebacks	g ih1 v b ae2 k s	g ih1 v b ae2 k s	True
 faughnan	f ao1 n ah0 n	f ao1 n ah0 n	True
@@ -96,7 +96,7 @@ almelund	aa0 l m ah0 l ah1 n d	ae1 l m ah0 l ah0 n d	False
 adapso	ah0 d ae1 p s ow0	aa0 d ae1 p s ow0	False
 carusone	k aa0 r uw0 s ow1 n iy0	k eh1 r ah0 s ow1 n iy0	False
 gazaway	g aa1 z ah0 w ey0	g aa1 z ah0 w ey2	False
-gibeau	zh ih0 b ow1	zh ih0 b ow1	True
+gibeau	zh ih0 b ow1	g ih0 b ow1	False
 engelken	eh1 ng g ih0 l k ah0 n	eh1 ng g ih0 l k ah0 n	True
 brompheril	b r aa1 m f eh0 r ih0 l	b r aa1 m f er0 ah0 l	False
 caleca	k aa0 l eh1 k ah0	k aa0 l ah0 k ah0	False
@@ -138,7 +138,7 @@ wursthaus	w er1 s t hh aw0 s	w er1 s t hh aw2 s	False
 empaneled	ih0 m p ae1 n ah0 l d	ih0 m p ae1 n ah0 l d	True
 mcinturf	m ae1 k ih2 n t er2 f	m ae1 k ih2 n t er2 f	True
 borucki	b er0 ah1 t s k iy0	b er0 ah1 t s k iy0	True
-molaison	m ah0 l ey1 z ah0 n	m aa1 l ey1 z ah0 n	False
+molaison	m ah0 l ey1 z ah0 n	m aa1 l ey1 s ah0 n	False
 shorb	sh ao1 r b	sh ao1 r b	True
 lonrho's	l aa1 n r ow0 z	l ao1 n r hh ow0 z	False
 kiracofe	k ih1 r ah0 k ow2 f	k ih1 r ah0 k ow2 f	True
@@ -245,7 +245,7 @@ jurkiewicz	y er1 k ah0 v ih0 ch	jh er1 k ah0 v ih0 ch	False
 frittering	f r ih1 t er0 ih0 ng	f r ih1 t er0 ih0 ng	True
 kleptocrat	k l eh1 p t ah0 k r ae0 t	k l eh1 p t ah0 k r ae2 t	False
 hosoka	hh ow2 s aa1 k ah0	hh ah0 s ah0 k ah0	False
-graci	g r aa1 ch iy0	g r aa1 s iy0	False
+graci	g r aa1 ch iy0	g r ey1 s iy0	False
 weitman	w ay1 t m ah0 n	w ay1 t m ah0 n	True
 altland	ae1 l t l ah0 n d	ao1 l t l ah0 n d	False
 dehere	d ah0 hh ih1 r iy0	d ih0 hh ih1 r	False
@@ -416,7 +416,7 @@ garrets	g eh1 r ah0 t s	g eh1 r ah0 t s	True
 khasbulatov	k aa2 s b ah0 l aa1 t aa0 f	k ae1 s b y ah0 l ah0 t aa2 v	False
 kenyen	k eh1 n y ah0 n	k eh1 n y ah0 n	True
 mahamud	m ah0 hh aa1 m uh2 d	m ae1 hh ah0 m ah0 d	False
-nidiffer	n ih1 d ih0 f er0	n ih1 d ih0 f er0	True
+nidiffer	n ih1 d ih0 f er0	n ih1 d ah0 f er0	False
 dilella	d ih0 l eh1 l aa2	d ih0 l eh1 l ah0	False
 filtrenelli	f ih2 l t r ah0 n eh1 l iy0	f ih0 l t r eh0 n eh1 l iy0	False
 groman	g r ow1 m ah0 n	g r ow1 m ah0 n	True
@@ -622,7 +622,7 @@ poust	p aw1 s t	p aw1 s t	True
 carlisi	k aa0 r l iy1 s iy0	k aa0 r l iy1 s iy0	True
 scuppernong	s k ah1 p er0 n ao2 ng	s k ah1 p er0 n ao1 ng	False
 reeche	r iy1 ch	r iy1 ch	True
-el-al	eh1 l ae1 l	eh1 l aa1 l	False
+el-al	eh1 l ae1 l	eh1 l ah0 l	False
 gnarl	n aa1 r l	n aa1 r l	True
 humpert	hh ah1 m p er2 t	hh ah1 m p er2 t	True
 moudy	m aw1 d iy0	m aw1 d iy0	True
@@ -654,11 +654,11 @@ maxpharma	m ae0 k s f aa1 r m ah0	m ae1 k s f aa1 r m ah0	False
 buckholtz	b ah1 k hh ow2 l t s	b ah1 k hh ow2 l t s	True
 gaeth	g iy1 th	g iy1 th	True
 serrao	s eh1 r aw0	s er0 aw0	False
-nordeen	n er0 d iy1 n	n ao0 r d iy0 n	False
+nordeen	n er0 d iy1 n	n ao0 r d iy1 n	False
 albunex	ae2 l b y uw1 n eh0 k s	ae1 l b uw0 n eh2 k s	False
 seiberlich	s ay1 b er0 l ih0 k	s ay1 b er0 l ih0 k	True
 griesa	g r iy0 eh1 s ah0	g r iy1 s ah0	False
-accomando	aa0 k ow0 m aa1 n d ow0	aa0 k ow0 m ae1 n d ow0	False
+accomando	aa0 k ow0 m aa1 n d ow0	ae2 k ow0 m ae1 n d ow0	False
 wyan	w ay1 ah0 n	w y ah0 n	False
 finalco	f ih0 n ae1 l k ow0	f iy0 n ae1 l k ow0	False
 twenty-five	t w eh1 n t iy0 f ay2 v	t w eh1 n t iy0 f ay2 v	True
@@ -810,7 +810,7 @@ stief	s t iy1 f	s t iy1 f	True
 starkers	s t aa1 r k er0 z	s t aa1 r k er0 z	True
 rexrodt	r eh1 k s r ow0 d	r eh1 k s r aa0 t	False
 wengerd	w eh1 ng g er0 d	w eh1 ng g er0 d	True
-dashiki	d ah0 sh iy1 k iy0	d ah0 sh iy1 k iy0	True
+dashiki	d ah0 sh iy1 k iy0	d ah0 sh iy1 k iy2	False
 lurleen	l er0 l iy1 n	l er1 l iy1 n	False
 caiola	k ay1 ow0 l ah0	k ah0 iy0 ow1 l ah0	False
 agasp	ah0 g ae1 s p	ae1 g ah0 s p	False
@@ -886,7 +886,7 @@ fullenkamp	f uh1 l ah0 n k ae2 m p	f uh1 l ah0 ng k ae2 m p	False
 gaulke	g ao1 l k	g ao1 l k	True
 facteau	f ah0 k t ow1	f ae0 k t ow1	False
 self-deceiving	s eh2 l f d iy0 s iy1 v ih0 ng	s eh2 l f d ih0 s iy1 v ih0 ng	False
-spectradyne	s p eh1 k t r ah0 d ay2 n	s p eh2 k t r ah0 d ay2 n	False
+spectradyne	s p eh1 k t r ah0 d ay2 n	s p eh2 k t r ey1 d ay2 n	False
 overprotection	ow2 v er0 p r ah0 t eh1 k sh ah0 n	ow2 v er0 p r ah0 t eh1 k sh ah0 n	True
 gonnerman	g aa1 n er0 m ah0 n	g aa1 n er0 m ah0 n	True
 bluntest	b l ah1 n t ah0 s t	b l ah1 n t ah0 s t	True
@@ -961,7 +961,7 @@ lalitesh	l aa1 l ih2 t eh2 sh	l ae1 l iy1 t eh1 sh	False
 fornal	f ao1 r n ah0 l	f ao1 r n ah0 l	True
 lumia	l uw1 m iy0 ah0	l uw1 m iy0 ah0	True
 malara	m aa0 l aa1 r ah0	m aa0 l aa1 r ah0	True
-nikou	n iy1 k uw0	n ih0 k uw0	False
+nikou	n iy1 k uw0	n ih0 k uw1	False
 misallocates	m ih0 s ae1 l ah0 k ey2 t s	m ih0 s ae1 l ah0 k ey2 t s	True
 burgomasters	b er1 g ah0 m ae2 s t er0 z	b er1 g ah0 m ae2 s t er0 z	True
 disano	d ih0 s aa1 n ow0	d ih0 s aa1 n ow0	True
@@ -1084,7 +1084,7 @@ trimetrexate	t r ih0 m eh1 t r ah0 k s ey2 t	t r ay1 m ah0 t r eh1 k s ey2 t	Fal
 gonya	g ow1 n y ah0	g ow1 n y ah0	True
 brzycki	b r ih1 t s k iy0	b er0 z ih1 t s k iy0	False
 kirouac	k ay1 r aw0 ae0 k	k ay1 r uw0 ae0 k	False
-digeronimo	d ih0 jh er0 ow0 n iy1 m ow0	d ih2 jh er0 ao1 n iy1 m ow2	False
+digeronimo	d ih0 jh er0 ow0 n iy1 m ow0	d ih2 jh er0 ao1 n iy2 m ow2	False
 marolf	m ae1 r ow0 l f	m ae1 r ow1 l f	False
 mckanna	m ah0 k ae1 n ah0	m ah0 k ae1 n ah0	True
 cecola	s eh0 k ow1 l ah0	ch ih0 k ah0 l ah0	False
@@ -1099,7 +1099,7 @@ ravelo	r aa0 v eh1 l ow0	r aa0 v eh1 l ow0	True
 bevaqua	b eh0 v aa1 k ah0	b ey0 v aa1 k w ah0	False
 ibmer	ih1 b m er0	ih1 b m er0	True
 irick	ih1 r ih0 k	ay1 r ih0 k	False
-sciuto	s iy0 uw1 t ow0	s k iy0 uw1 t ow0	False
+sciuto	s iy0 uw1 t ow0	s k uw1 t ow0	False
 buttonholed	b ah1 t ah0 n hh ow2 l d	b ah1 t ah0 n hh ow2 l d	True
 robelo	r aa2 b eh1 l ow0	r ow0 b eh1 l ow0	False
 boulalas	b uw1 l ah0 l ah0 s	b uw0 l aa1 l ah0 z	False
@@ -1119,7 +1119,7 @@ counterinsurgencies	k aw2 n t er0 ih0 n s er1 jh ah0 n s iy0 z	k aw2 n t er0 ih0
 lowekamp	l ow1 k ae2 m p	l ow1 k ae2 m p	True
 duchon	d ah1 ch ah0 n	d ah1 ch ah0 n	True
 neukam	n uw1 k ah0 m	n uw1 k ah0 m	True
-stalinize	s t ae1 l ih0 n ay2 z	s t ae1 l ah0 n ay2 z	False
+stalinize	s t ae1 l ih0 n ay2 z	s t ae1 l ih0 n ay2 z	True
 self-aggrandizement	s eh1 l f ae1 g r ah0 n d ay2 z m ah0 n t	s eh2 l f ae2 g r ae1 n d ay2 z m n t	False
 three-hour	th r iy2 aw1 er0	th r iy1 aw0 r	False
 misgovernment	m ih0 s g ah1 v er0 n m ah0 n t	m ih0 s g ah1 v er0 n m ah0 n t	True
@@ -1138,7 +1138,7 @@ overgenerous	ow1 v er0 jh eh2 n er0 ah0 s	ow1 v er0 jh eh1 n er0 ah0 s	False
 strawder	s t r ao1 d er0	s t r ao1 d er0	True
 tamanaha	t aa0 m aa0 n aa1 hh ah0	t ah0 m ae1 n ah0 hh aa2	False
 schlater	sh l ey1 t er0	sh l ey1 t er0	True
-setaro	s eh0 t aa1 r ow0	s ih0 t aa1 r ow0	False
+setaro	s eh0 t aa1 r ow0	s ah0 t aa1 r ow0	False
 manwarren	m ah0 n w ao1 r ah0 n	m ae0 n w ao1 r ah0 n	False
 arakelian	ae0 r ah0 k eh1 l y ah0 n	aa2 r ah0 k iy1 l iy0 ah0 n	False
 st-james	s ey1 n t jh ey1 m z	s ey1 n t jh ey1 m z	True
@@ -1330,7 +1330,7 @@ zwerdling's	z w er1 d l ih0 ng z	z w er1 d l ih0 ng z	True
 kosbie	k aa1 z b iy0	k ao1 z b iy0	False
 ponzetti	p aa0 n z eh1 t iy0	p ow0 n z eh1 t iy0	False
 schepis	sh eh1 p ih0 s	sh eh1 p ih0 s	True
-zelenak	z eh1 l ih0 n ah0 k	z iy1 l eh1 n ah0 k	False
+zelenak	z eh1 l ih0 n ah0 k	z eh1 l eh1 n ah0 k	False
 roesel	r ow1 s ah0 l	r ow1 z ah0 l	False
 hahs	hh aa1 s	hh ae1 s	False
 sackrider	s ae1 k r ay2 d er0	s ae1 k r ay2 d er0	True
@@ -1562,7 +1562,7 @@ lemmerman	l eh1 m er0 m ah0 n	l eh1 m er0 m ah0 n	True
 rumfelt	r ah1 m f eh2 l t	r ah1 m f ih0 l t	False
 sprehe	s p r iy1 hh	s p r iy1	False
 kotlarz	k aa1 t l er0 z	k aa1 t l r z	False
-dipanjan	d ah0 p aa1 n jh ah2 n	d ih0 p ae1 n jh ah0 n	False
+dipanjan	d ah0 p aa1 n jh ah2 n	d ih0 p ae1 n jh aa1 n	False
 earney	er1 n iy0	er1 n iy0	True
 oeien	ow1 iy0 ah0 n	ow1 ay1 n	False
 thronson	th r aa1 n s ah0 n	th r aa1 n s ah0 n	True
@@ -1603,7 +1603,7 @@ knaup	n ao1 p	n ao1 p	True
 ruszkowski	r ah0 sh k ao1 f s k iy0	r ah0 sh k ao1 f s k iy0	True
 huyser	hh ay1 s er0	hh ay1 s er0	True
 leazer	l iy1 z er0	l iy1 z er0	True
-bosshardt	b ao1 s hh aa2 r t	b ao1 sh aa1 r t	False
+bosshardt	b ao1 s hh aa2 r t	b ao1 sh aa0 r t	False
 sarchet	s aa0 r sh eh1 t	s aa0 r sh eh0	False
 begue	b ey1 g	b ey1 g	True
 curtright	k er1 t r ay2 t	k er1 t r ay2 t	True
@@ -1637,7 +1637,7 @@ krasowski	k r ah0 s ao1 f s k iy0	k r ah0 s ao1 f s k iy0	True
 weylin	w ey1 l ih0 n	w ey1 l ih0 n	True
 senzaki	s ey0 n z aa1 k iy0	s eh0 n z aa1 k iy0	False
 zagel	z ey1 g ah0 l	z ey1 g ah0 l	True
-rizor	r ay1 z er0	r ih1 z er0	False
+rizor	r ay1 z er0	r ay1 z er0	True
 neibauer	n ay1 b aw0 er0	n ay1 b aw0 er0	True
 graceffa	g r ah0 s eh1 f ah0	g r ah0 s eh1 f ah0	True
 felkner	f eh1 l k n er0	f eh1 l k n er0	True
@@ -1702,7 +1702,7 @@ parretti	p er0 eh1 t iy0	p aa0 r eh1 t iy0	False
 nolette	n ow2 l eh1 t	n ow0 l eh1 t	False
 saindon	s ey1 n d ah0 n	s ey1 n d ao2 n	False
 hemdale	hh eh1 m d ey2 l	hh eh1 m d ey2 l	True
-non-pluss	n aa0 n p l ah1 s	n aa1 n p l ah1 s	False
+non-pluss	n aa0 n p l ah1 s	n aa0 n p l ah1 s	True
 ameribanc	ah0 m eh1 r ih0 b ae2 ng k	ah0 m eh1 er0 ah0 b ae2 ng k	False
 beauchene	b ow2 sh ey1 n	b ow0 sh iy1 n	False
 varble	v aa1 r b ah0 l	v aa1 r b ah0 l	True
@@ -1949,7 +1949,7 @@ unibancorp	y uw1 n ih0 b ae2 n k ao2 r p	y uw1 n ih0 b ah0 n k ao0 r p	False
 gumina	g uw0 m iy1 n ah0	g y uw1 m ih0 n ah0	False
 helionetic	hh iy2 l iy0 ow0 n eh1 t ih0 k	hh iy2 l iy0 ah0 n eh1 t ih0 k	False
 ganzel	g ae1 n z ah0 l	g ae1 n z ah0 l	True
-rubottom	r ah1 b ah0 t aa0 m	r uw0 b ah0 t ah0 m	False
+rubottom	r ah1 b ah0 t aa0 m	r uw1 b ah0 t ah0 m	False
 groined	g r oy1 n d	g r oy1 n d	True
 oberhelman	ow1 b er0 hh ah0 l m ah0 n	ow1 b er0 hh eh1 l m ah0 n	False
 petteys	p eh1 t iy0 z	p eh1 t iy0 z	True
@@ -1960,7 +1960,7 @@ decapua	d ih0 k aa0 p uw1 ah0	d ih0 k ae1 p uw0 ah0	False
 o'grady	ow0 g r ey1 d iy0	ow0 g r ey1 d iy0	True
 landsbergis	l ae1 n d z b er0 g ah0 s	l ae1 n d z b er0 g ih0 s	False
 pflieger	f l iy1 g er0	f l iy1 g er0	True
-kredietbank	k r eh0 d iy0 t b ae1 ng k	k r eh1 d iy0 t b ae2 ng k	False
+kredietbank	k r eh0 d iy0 t b ae1 ng k	k r eh1 d iy1 t b ae2 ng k	False
 stencel	s t eh1 n s ah0 l	s t eh1 n s ah0 l	True
 vanzile	v aa1 n z ay0 l	v ae1 n z ay1 l	False
 emlynne	ih0 m l ay1 n	ih0 m l ih1 n	False
@@ -2016,7 +2016,7 @@ miyasato	m iy0 y aa0 s aa1 t ow0	m iy0 y aa0 s aa1 t ow0	True
 stauch	s t ao1 ch	s t ao1 ch	True
 tomako	t ow0 m aa1 k ow0	t ow0 m aa1 k ow0	True
 spease	s p iy1 z	s p iy1 z	True
-reesjones	r iy2 s jh ow1 n z	r iy0 s jh ow1 n z	False
+reesjones	r iy2 s jh ow1 n z	r iy0 jh ow1 n z	False
 kocur	k ow1 k er0	k ow1 k er0	True
 cartee	k aa1 r t iy1	k aa0 r t iy1	False
 mothershead	m ah1 dh er0 z hh eh2 d	m ah1 dh er0 hh eh2 d	False
@@ -2197,7 +2197,7 @@ oberly	ow1 b er0 l iy0	ow1 b er0 l iy0	True
 raphaela	r ae1 f ay0 eh1 l ah0	r aa0 f eh1 l ah0	False
 monachino	m ow0 n aa0 k iy1 n ow0	m ow0 n aa0 k iy1 n ow0	True
 hullender	hh uw1 l eh0 n d er0	hh ah1 l eh0 n d er0	False
-heckathorn	hh eh1 k ah0 th er0 n	hh eh1 k ah0 th er0 n	True
+heckathorn	hh eh1 k ah0 th er0 n	hh eh1 k ah0 th ao0 er0 n	False
 gahm	g ae1 m	g ae1 m	True
 alfredson	ae1 l f r ih0 d s ah0 n	ae1 l f r ih0 d s ah0 n	True
 unhorsed	ah0 n hh ao1 r s t	ah0 n hh ao1 r s t	True
@@ -2225,7 +2225,7 @@ outbidding	aw1 t b ih2 d ih0 ng	aw1 t b ih2 d ih0 ng	True
 bel'c	b eh1 l k	b eh1 l k	True
 sprong	s p r ao1 ng	s p r ao1 ng	True
 andriano	aa0 n d r iy0 aa1 n ow0	ae2 n d r iy0 aa1 n ow0	False
-manjaca	m aa0 n jh aa1 k ah0	m ae2 n jh aa1 k ah0	False
+manjaca	m aa0 n jh aa1 k ah0	m aa0 n jh aa1 k ah0	True
 wisecup	w ay1 z k ah2 p	w ay1 z k ah2 p	True
 hemond	hh eh1 m ah0 n d	hh eh1 m ah0 n d	True
 gloam	g l ow1 m	g l ow1 m	True
@@ -2314,7 +2314,7 @@ grettenberger	g r eh1 t ah0 n b er0 g er0	g r eh1 t ah0 n b er0 g er0	True
 kettell	k eh1 t ah0 l	k eh1 t ah0 l	True
 grulke	g r ah1 l k	g r ah1 l k	True
 stangelo	s t aa0 ng g eh1 l ow0	s t ae1 n jh ih0 l ow2	False
-momigliano	m ow0 m ih1 g l iy0 aa1 n ow0	m ow0 m iy0 g l iy0 aa1 n ow0	False
+momigliano	m ow0 m ih1 g l iy0 aa1 n ow0	m ow2 m iy0 g l iy0 aa1 n ow0	False
 bicuspids	b ay0 k ah1 s p ah0 d z	b ay0 k ah1 s p ah0 d z	True
 nowaday	n aw1 ah0 d ey2	n aw1 ah0 d ey2	True
 wadel	w ey1 d ah0 l	w aa0 d ah0 l	False
@@ -2395,7 +2395,7 @@ cerasoli	ch er0 aa0 s ow1 l iy0	ch er0 aa0 s ow1 l iy0	True
 comandeer	k aa0 m ah0 n d iy1 r	k aa2 m ah0 n d ih1 r	False
 texfi	t eh1 k s f iy0	t eh1 k s f iy0	True
 obrinsky	ow0 b r ih1 n s k iy0	ah0 b r ih1 n s k iy0	False
-gauthreaux	g ow0 th r ow1	g ow1 th r ow0	False
+gauthreaux	g ow0 th r ow1	g ow1 th r ow1	False
 wasch	w ao1 sh	w aa1 sh	False
 gascons	g ae1 s k ah0 n z	g ae1 s k ow1 n z	False
 travisano	t r ae2 v ih0 s aa1 n ow0	t r aa0 v iy0 s aa1 n ow0	False
@@ -2446,7 +2446,7 @@ ciments	s ih0 m eh1 n t s	s ay1 m eh1 n t s	False
 reher	r eh1 r	r eh1 hh er0	False
 wincek	w ih1 n s ih0 k	w ih1 n ch ih0 k	False
 metamorphasis	m eh2 t ah0 m ao1 r f ah0 s ah0 s	m eh2 t ah0 m ao1 r f ah0 s ih0 s	False
-gourment	g ao2 r m eh1 n t	g uh1 r m ah0 n t	False
+gourment	g ao2 r m eh1 n t	g uh1 r m ah0 n	False
 hovious	hh ow1 v iy0 ah0 s	hh ow1 v iy0 ah0 s	True
 colglazier	k ow1 l g l ah0 z iy0 er0	k ow1 l g l ah0 z iy0 er0	True
 hoium	hh aa1 iy0 ah0 m	hh oy1 ah0 m	False
@@ -2462,7 +2462,7 @@ kenagy	k eh1 n ah0 jh iy0	k eh1 n ah0 jh iy0	True
 mavroules	m ae0 v r uw1 l z	m ah0 v r uw1 l z	False
 centner	s eh1 n t n er0	s eh1 n t n er0	True
 handlon	hh ae1 n d l ah0 n	hh ae1 n d l ah0 n	True
-ledlow	l eh1 d l ow1	l eh1 d l ow0	False
+ledlow	l eh1 d l ow1	l eh1 d l ow2	False
 friebel	f r iy1 b ah0 l	f r iy1 b ah0 l	True
 underinsure	ah2 n d er0 ih0 n sh ao1 r	ah1 n d er0 ih1 n sh er0	False
 russum	r ah1 s ah0 m	r ah1 s ah0 m	True
@@ -2487,7 +2487,7 @@ panphila	p ae1 n f ih0 l ah0	p ae2 n f ih1 l ah0	False
 weinhardt	w ay1 n hh aa2 r t	w ay1 n hh aa2 r t	True
 balow	b ae1 l ow0	b ae1 l ow1	False
 mcfun	m ah0 k f ah1 n	m ah0 k f ah1 n	True
-bayog	b ey1 aa2 g	b ey1 ah0 g	False
+bayog	b ey1 aa2 g	b ey1 ao2 g	False
 demartin	d ih0 m aa1 r t ih0 n	d ih0 m aa1 r t ih0 n	True
 scialabba	s k ao1 l aa0 b ah2	s ah0 l aa1 b aa0	False
 alleco	ae2 l eh1 k ow0	aa0 l eh1 k ow0	False
@@ -2495,7 +2495,7 @@ wissman	w ih1 s m ah0 n	w ih1 s m ah0 n	True
 zubia	z uw1 b iy0 ah0	z uw1 b iy0 ah0	True
 shopkorn	sh aa1 p k ao2 r n	sh aa1 p k ao2 r n	True
 fraioli	f r ay0 ow1 l iy0	f r ay2 ow1 l iy0	False
-barganier	b aa1 r g ah0 n iy0 er0	b aa1 r g ah0 n ih1 r	False
+barganier	b aa1 r g ah0 n iy0 er0	b aa1 r g ah0 n iy0 r	False
 mooneyhan	m uw1 n iy0 hh ah0 n	m uw1 n iy0 hh ah0 n	True
 collosio	k ah0 l ow1 s iy0 ow0	k ow0 l ow1 s iy0 ow0	False
 saelens	s eh1 l ah0 n z	s ey1 l ah0 n z	False
@@ -2504,7 +2504,7 @@ hersant	hh er1 s ah0 n t	hh er1 s ah0 n t	True
 rustiest	r ah1 s t iy0 ah0 s t	r ah1 s t iy0 ah0 s t	True
 sprowle	s p r aw1 ah0 l	s p r aw1 l	False
 gangwer	g ae1 ng w er0	g ae1 ng w er0	True
-posuvalyuk	p aa2 s uw0 v aa1 l y uh0 k	p ow2 s uw1 v aa1 l y uw1 k	False
+posuvalyuk	p aa2 s uw0 v aa1 l y uh0 k	p ow2 s uw1 v ah0 l y ah0 k	False
 greunke	g r uw1 ng k	g r uw1 ng k	True
 besharov	b eh1 sh er0 aa0 v	b eh1 sh er0 aa0 v	True
 siddens	s ih1 d ah0 n z	s ih1 d ah0 n z	True
@@ -2537,7 +2537,7 @@ carryanne	k ae1 r iy0 ae1 n	k aa0 r iy0 ae1 n	False
 kheel	k iy1 l	k iy1 l	True
 marotte	m er0 ao1 t	m er0 ao1 t	True
 killmon	k ih1 l m ah0 n	k ih1 l m ah0 n	True
-abitz	ae1 b ih0 t s	ah0 b ih1 t s	False
+abitz	ae1 b ih0 t s	ah0 b ih0 t s	False
 hoelting	hh ow1 l t ih0 ng	hh ow1 l t ih0 ng	True
 stalinistic	s t aa2 l ih0 n ih1 s t ih0 k	s t ae2 l ah0 n ih1 s t ih0 k	False
 firebush's	f ay1 r b uh2 sh ih0 z	f ay1 r b uh2 sh ih0 z	True
@@ -2599,7 +2599,7 @@ kliebert	k l iy1 b er0 t	k l iy1 b er0 t	True
 agans	aa1 g aa0 n z	ey1 g ah0 n z	False
 sanker	s ae1 ng k er0	s ae1 ng k er0	True
 squashy	s k w aa1 sh iy0	s k w aa1 sh iy0	True
-springborn	s p r ih1 ng g b er0 n	s p r ih1 ng b ao2 er0 n	False
+springborn	s p r ih1 ng g b er0 n	s p r ih1 ng b ao2 r n	False
 innoculate	ih2 n ao1 k y ah0 l ey2 t	ih2 n aa1 k y ah0 l ey2 t	False
 rackliff	r ae1 k l ih0 f	r ae1 k l ih0 f	True
 stueber	s t uh1 b er0	s t uw1 b er0	False
@@ -2657,7 +2657,7 @@ kohtoro	k ow0 t ao1 r ow0	k ow1 t ao1 r ow0	False
 bossart	b ah0 s aa1 r t	b ah0 s aa1 r t	True
 nolanda	n ah0 l ae1 n d ah0	n ow0 l ae1 n d ah0	False
 dibello	d ih0 b eh1 l ow0	d ih0 b eh1 l ow2	False
-anglicize	ae1 ng l ih0 s ay2 z	ae1 ng g l ih0 s ay2 z	False
+anglicize	ae1 ng l ih0 s ay2 z	ae1 ng g l ah0 s ay2 z	False
 garissa	g ah0 r ih1 s ah0	g aa0 r iy1 s ah0	False
 candellin	k ae1 n d ah0 l ih0 n	k ae1 n d eh1 l ih0 n	False
 popowski	p ah0 p ao1 f s k iy0	p ah0 p ao1 f s k iy0	True
@@ -2665,7 +2665,7 @@ eblin	eh1 b l ih0 n	eh1 b l ih0 n	True
 filigrees	f ih1 l ah0 g r iy2 z	f ih1 l ah0 g r iy2 z	True
 kwasny	k w aa1 z n iy0	k w aa1 z n iy0	True
 broxterman	b r aa1 k s t er0 m ah0 n	b r aa1 k s t er0 m ah0 n	True
-malinoski	m ah0 l ih0 n aw1 s k iy0	m ah0 l ih0 n ao1 s k iy0	False
+malinoski	m ah0 l ih0 n aw1 s k iy0	m ah0 l ih0 n ow1 s k iy0	False
 priroda	p r ah0 r ow1 d ah0	p r ih0 r ow1 d ah0	False
 denapoli	d ih0 n aa1 p ah0 l iy0	d ih0 n ae1 p ah0 l iy0	False
 hatrick	hh ae1 t r ih0 k	hh ae1 t r ih0 k	True
@@ -2674,7 +2674,7 @@ carburete	k aa1 r b y er0 eh2 t	k aa1 r b y er0 iy2 t	False
 boesak	b ow1 z ae0 k	b ow1 s ah0 k	False
 mohtashemi	m ow2 t ah0 sh ey1 m iy0	m ow2 t ah0 sh eh1 m iy0	False
 dacquisto	d ae1 k w ih0 s t ow0	d aa0 k w ih1 s t ow0	False
-dietsche	d iy1 ch	d iy1 ch	True
+dietsche	d iy1 ch	d ay1 ch	False
 noxso	n aa1 k s ow0	n aa1 k s ow0	True
 prognosticative	p r aa2 g n aa1 s t ah0 k ey2 t ih0 v	p r aa0 g n aa1 s t ah0 k ah0 t ih0 v	False
 emilo	eh0 m iy1 l ow0	ey0 m iy1 l ow0	False
@@ -2830,7 +2830,7 @@ diarrheas	d ay2 er0 iy1 ah0 z	d ay2 er0 iy1 ah0 s	False
 drebsky	d r eh1 b s k iy0	d r eh1 b s k iy0	True
 mcmenamy	m ah0 k m eh1 n ah0 m iy0	m ah0 k m eh1 n ah0 m iy0	True
 mssrs	m eh1 s er0 z	m s z s eh2 s aa1 r z	False
-hadria	hh ae1 d r iy0 ah0	hh ey1 d r iy0 ah0	False
+hadria	hh ae1 d r iy0 ah0	hh ae1 d r iy0 ah0	True
 bartlebaugh	b aa1 r t ah0 l b ao0	b aa1 r t ah0 l b ao2	False
 annamese	ae2 n ah0 m iy1 z	ae1 n ah0 m iy2 z	False
 torbeck	t ao1 r b eh0 k	t ao1 r b eh2 k	False
@@ -2843,7 +2843,7 @@ edolf	eh1 d ow0 l f	eh1 d ah0 l f	False
 klausing	k l aw1 s ih0 ng	k l aw1 s ih0 ng	True
 putterer	p ah1 t er0 er0	p ah1 t er0	False
 swailes	s w ey1 l z	s w ey1 l z	True
-emuil	eh1 m y uw0 ih2 l	eh0 m y uw1 l	False
+emuil	eh1 m y uw0 ih2 l	eh0 m y uw1 ah0 l	False
 prew	p r uw1	p r uw1	True
 self-deliverance	s eh2 l f d ih0 l ih1 v er0 ah0 n s	s eh2 l f d ah0 l ih1 v r ah0 n s	False
 coehlo	k ow1 l ow0	k ow2 eh1 l ow0	False
@@ -2918,7 +2918,7 @@ mcwhite	m ah0 k w ay1 t	m ah0 k w ay1 t	True
 micciche	m iy0 ch iy1 k iy0	m ih0 ch ih0 ch iy0	False
 millworker	m ih1 l w ao0 r k er0	m ih1 l w er2 k er0	False
 nabers	n ey1 b er0 z	n ey1 b er0 z	True
-cheves	ch iy1 v z	ch eh1 v z	False
+cheves	ch iy1 v z	ch iy1 v z	True
 mcelvain	m ae1 k ah0 l v ey2 n	m ae1 k ah0 l v ey2 n	True
 hairfield	hh eh1 r f iy2 l d	hh eh1 r f iy2 l d	True
 tannest	t ae1 n ih0 s t	t ae1 n ih0 s t	True
@@ -2941,14 +2941,14 @@ haymore	hh ey1 m ao0 r	hh ey1 m ao0 r	True
 kelker	k eh1 l k er0	k eh1 l k er0	True
 lofaro	l ow0 f aa1 r ow0	l ow0 f aa1 r ow2	False
 unequivocably	ah0 n ih0 k w ih1 v ah0 k ah0 b l iy0	ah2 n ih0 k w ih1 v ah0 k ah0 b l iy0	False
-ambase	ae1 m b ey2 s	ae0 m b ey2 s	False
+ambase	ae1 m b ey2 s	aa0 m b ey2 s	False
 primitivistic	p r ih2 m ih0 t ih0 v ih1 s t ih0 k	p r ih2 m ih0 t ih0 v ih1 s t ih0 k	True
 unmanage	ah0 n m ae1 n ih0 jh	ah0 n m ae1 n ih0 jh	True
 vaslov's	v ae1 s l aa2 v z	v ae1 s l aa0 v z	False
 antolik	ae1 n t ah0 l ih0 k	ae0 n t ow1 l ih0 k	False
 aguirra	ah0 g w ih1 r ah0	aa0 g w ih1 r ah0	False
 goewey	g aa1 uw0 iy0	g aa1 uw0 iy0	True
-prudentrust	p r uw1 d ah0 n t r ah2 s t	p r uw1 d ah0 n t r ah2 s t	True
+prudentrust	p r uw1 d ah0 n t r ah2 s t	p r ah1 d ah0 n t r ah2 s t	False
 fussner	f ah1 s n er0	f ah1 s n er0	True
 follman	f aa1 l m ah0 n	f aa1 l m ah0 n	True
 guilfoil	g ih0 l f oy1 l	g ih1 l f oy0 l	False
@@ -2971,7 +2971,7 @@ reloral	r iy0 l ao1 r ah0 l	r ih0 l ao1 r ah0 l	False
 butsch	b ah1 ch	b uh1 ch	False
 endaka	eh0 n d aa1 k ah0	eh0 n d aa1 k ah0	True
 rachad	r ah0 sh aa1 d	r ah0 ch ah0 d	False
-meyohas	m ey0 ow1 hh aa0 s	m ey0 ow1 hh ah0 z	False
+meyohas	m ey0 ow1 hh aa0 s	m ey2 ow1 hh ah0 z	False
 lockrem	l aa1 k r ih0 m	l aa1 k r eh2 m	False
 reflectone's	r iy0 f l eh1 k t ow2 n z	r ih0 f l eh1 k t ow2 n z	False
 mcnevin	m ah0 k n eh1 v ah0 n	m ah0 k n eh1 v ah0 n	True
@@ -3128,7 +3128,7 @@ verticom	v er1 t ih0 k aa0 m	v er1 t ih0 k aa0 m	True
 teakamp	t iy1 k ae0 m p	t iy1 k ae2 m p	False
 draus	d r ao1 z	d r ao1 s	False
 kerker	k er1 k er0	k er1 k er0	True
-pomography	p ah0 m aa1 g r ah0 f iy0	p ow0 m aa1 g r ah0 f iy2	False
+pomography	p ah0 m aa1 g r ah0 f iy0	p ow0 m aa1 g r ah0 f iy0	False
 bootz	b uw1 t s	b uw1 t s	True
 bielat	b iy1 l ah0 t	b iy1 l ae1 t	False
 dowis	d aw1 ih0 s	d aw1 ih0 s	True
@@ -3390,13 +3390,13 @@ furino	f uh0 r iy1 n ow0	f uh0 r iy1 n ow0	True
 youtz	y aw1 t s	y aw1 t s	True
 racanelli	r aa0 k aa0 n eh1 l iy0	r aa0 k aa0 n eh1 l iy0	True
 remmert	r eh1 m er0 t	r eh1 m er0 t	True
-iacobellis	iy0 aa2 k ow0 b eh1 l ih0 s	ay2 aa2 k ow0 b eh1 l ih0 s	False
+iacobellis	iy0 aa2 k ow0 b eh1 l ih0 s	ay2 aa2 k ow0 b eh1 l ah0 s	False
 horejsi	hh ao0 r ey1 y s iy0	hh ao0 r eh1 s iy0	False
 nikolich	n ih0 k aa1 l ih0 hh	n ih1 k ah0 l ih0 k	False
 izansky	ih0 z ae1 n s k iy0	ih0 z ae0 n s k iy0	False
 biddix	b ih1 d ih0 k s	b ih1 d ih0 k s	True
 pirestani	p ih2 r eh0 s t aa1 n iy0	p ih2 r eh0 s t aa1 n iy0	True
-gunatilake	g uw0 n aa2 t ih2 l aa1 k ey2	g uw0 n ae1 t iy0 l ey2 k	False
+gunatilake	g uw0 n aa2 t ih2 l aa1 k ey2	g uw0 n aa1 t iy0 l ey2 k	False
 shirrell	sh er2 eh1 l	sh ih0 r ah0 l	False
 difilippo	d ih0 f iy0 l iy1 p ow2	d ih0 f ih0 l iy1 p ow2	False
 simison	s ih1 m ih0 s ah0 n	s ih1 m ih0 s ah0 n	True
@@ -3428,7 +3428,7 @@ aldape	aa0 l d aa1 p ey0	ah0 l d ey1 p ey2	False
 prestigiacomo	p r eh0 s t iy1 jh ah0 k ow0 m ow0	p r ih0 s t iy1 jh ah0 k ah0 m ow2	False
 frankenberry	f r ae1 ng k ah0 n b eh2 r iy0	f r ae1 ng k ah0 n b eh2 r iy0	True
 million-dollar	m ih1 l y ah0 n d ao2 l er0	m ih2 l y ah0 n d aa1 l er0	False
-smeby	s m iy1 b iy0	s m iy1 b iy0	True
+smeby	s m iy1 b iy0	s m eh1 b iy0	False
 proch	p r aa1 k	p r aa1 k	True
 bielefeldt	b iy1 l ih0 f ih0 l t	b iy1 l ih0 f ih0 l t	True
 stocke	s t aa1 k	s t aa1 k	True
@@ -3561,7 +3561,7 @@ potteiger	p aa1 t ay0 g er0	p aa1 t ay2 g er0	False
 diona	d iy0 ow1 n ah0	d ay0 ow1 n ah0	False
 seebold	s iy1 b ow2 l d	s iy1 b ow2 l d	True
 alegrett	ae1 l ah0 g r ah0 t	ae1 l ah0 g r eh0 t	False
-alsbrooks	ae1 l z b r uh0 k s	ae1 l s b r uh0 k s	False
+alsbrooks	ae1 l z b r uh0 k s	ae1 l z b r uh0 k s	True
 vanriper	v ae2 n r ay1 p er0	v ae1 n r ay1 p er0	False
 derienzo	d ih0 r iy1 n z ow0	d ih0 r iy1 n z ow0	True
 lammey	l ae1 m iy0	l ae1 m iy0	True
@@ -3573,7 +3573,7 @@ naffziger	n ae1 f z ih0 g er0	n ae1 f z ih0 g er0	True
 nicotera	n iy2 k ow0 t eh1 r aa0	n iy0 k ow0 t eh1 r ah0	False
 ardolph	aa1 r d ow2 l f	aa1 r d ao0 l f	False
 bresette	b r ih0 s eh1 t	b r ih0 s eh1 t	True
-catacosinos	k ah0 t ae2 k ah0 s iy1 n ow0 s	k ae2 t ah0 k ow0 s iy1 n ow0 z	False
+catacosinos	k ah0 t ae2 k ah0 s iy1 n ow0 s	k ae2 t ah0 k ah0 s iy1 n ow0 z	False
 fleek	f l iy1 k	f l iy1 k	True
 esterly	eh1 s t er0 l iy0	eh1 s t er0 l iy0	True
 deedy	d iy1 d iy0	d iy1 d iy0	True
@@ -3694,7 +3694,7 @@ oppens	aa1 p ah0 n z	aa1 p ah0 n z	True
 dismuke	d ih1 s m y uw0 k	d ih1 s m y uw0 k	True
 gelertner	g ah0 l er1 t n er0	g ah0 l er0 t n er0	False
 lahmann	l aa1 m ah0 n	l aa1 m ah0 n	True
-proleukin	p r ow1 l uw0 k ih0 n	p r ah0 l uw1 k ih0 n	False
+proleukin	p r ow1 l uw0 k ih0 n	p r ow1 l uw1 k ih0 n	False
 julina	y uw0 l iy1 n ah0	jh uw0 l iy1 n ah0	False
 bailby	b ey1 l b iy0	b ey1 l b iy0	True
 guillotte	g ih0 l ao1 t	g ih0 l ow1 t	False
@@ -3801,7 +3801,7 @@ schellhase	sh eh1 l hh ah0 s	s k eh1 l hh ey2 s	False
 gilkison	g ih1 l k ih0 s ah0 n	g ih1 l k ih0 s ah0 n	True
 verizons	v eh2 r ay1 z ah0 n z	v eh2 r ay1 z ah0 n z	True
 mckeag	m ah0 k iy1 g	m ah0 k iy1 g	True
-myotrophin	m ay2 ow0 t r ow1 f ih0 n	m ay0 ow0 t r ah0 f ih0 n	False
+myotrophin	m ay2 ow0 t r ow1 f ih0 n	m ay2 ow0 t r ah0 f ih0 n	False
 yellowest	y eh1 l ow0 ih0 s t	y eh1 l ow0 ah0 s t	False
 tittsworth	t ih1 t s w er0 th	t ih1 t s w er2 th	False
 schauf	sh aw1 f	sh ao1 f	False
@@ -3969,7 +3969,7 @@ hineline	hh ih1 n ih0 l ay2 n	hh ay1 n l ay2 n	False
 hinners	hh ih1 n er0 z	hh ih1 n er0 z	True
 karema's	k ah0 r eh1 m ah0 z	k er0 iy1 m ah0 z	False
 cashway	k ae1 sh w ey2	k ae1 sh w ey2	True
-fetherolf	f eh1 th er0 ow0 l f	f eh1 dh er0 ao0 l f	False
+fetherolf	f eh1 th er0 ow0 l f	f eh1 th er0 ao0 l f	False
 mickles	m ih1 k ah0 l z	m ih1 k ah0 l z	True
 troublefield	t r ah1 b ah0 l f iy2 l d	t r ah1 b ah0 l f iy2 l d	True
 nessi	n eh1 s iy0	n eh1 s iy0	True
@@ -4036,7 +4036,7 @@ deppen	d eh1 p ah0 n	d eh1 p ah0 n	True
 shawgo	sh ao1 g ow2	sh ao1 g ow0	False
 saidiner	s ey1 d ih0 n er0	s ey1 d ay2 n er0	False
 kamneva	k ae2 m n ey1 v ah0	k ae0 m n iy1 v ah0	False
-naclerio	n aa0 k l eh1 r iy0 ow2	n aa0 k l eh1 r iy0 ow0	False
+naclerio	n aa0 k l eh1 r iy0 ow2	n ah0 k l eh1 r iy0 ow0	False
 boodles	b uw1 d ah0 l z	b uw1 d ah0 l z	True
 rease	r iy1 s	r iy1 s	True
 uncomplicate	ah0 n k aa1 m p l ah0 k ey2 t	ah0 n k aa1 m p l ah0 k ey2 t	True
@@ -4294,7 +4294,7 @@ stech	s t eh1 k	s t eh1 k	True
 piraino	p ih0 r ey1 n ow0	p ih0 r ey1 n ow0	True
 sigoloff	s ih1 g ah0 l ao0 f	s ih1 g ah0 l ao2 f	False
 retzer	r eh1 t z er0	r eh1 t z er0	True
-mittan	m ih1 t ah0 n	m ih2 t ah0 n	False
+mittan	m ih1 t ah0 n	m ih1 t ah0 n	True
 colino	k ow0 l iy1 n ow0	k ow0 l iy1 n ow0	True
 samatar	s ae1 m ah0 t aa2 r	s ae1 m ah0 t aa2 r	True
 sponsel	s p aa1 n s ah0 l	s p aa1 n s ah0 l	True
@@ -4441,7 +4441,7 @@ self-professed	s eh2 l f p r ah0 f eh1 s t	s eh1 l f p r ah0 f eh1 s t	False
 stehman	s t eh1 m ah0 n	s t eh1 m ah0 n	True
 pantuso	p aa0 n t uw1 s ow0	p ae2 n t uw1 s ow0	False
 vasques	v aa1 s k w eh0 s	v ae1 s k s	False
-leday	l iy1 d ey0	l eh1 d ey0	False
+leday	l iy1 d ey0	l iy1 d ey0	True
 marcmann	m aa1 r k m ah0 n	m aa1 r k m ah0 n	True
 prickleback	p r ih1 k ah0 l b ae2 k	p r ih1 k ah0 l b ae2 k	True
 wojnowski	w oy2 n aw1 s k iy0	w oy2 n ao1 f s k iy0	False
@@ -4470,7 +4470,7 @@ clarrisse	k l ae1 r ih0 s	k l ae1 r ih0 s	True
 hinkelman	hh ih1 ng k ah0 l m ah0 n	hh ih1 ng k ah0 l m ah0 n	True
 rodmund	r aa1 d m ah0 n d	r aa1 d m ah0 n d	True
 austron	ao1 s t r ah0 n	ao1 s t r aa2 n	False
-lanehart	l ey1 n hh aa2 r t	l ae1 n hh aa2 r t	False
+lanehart	l ey1 n hh aa2 r t	l ey1 n hh aa2 r t	True
 reagen	r iy1 g ah0 n	r iy1 g ah0 n	True
 wachob	w ao1 k ah0 b	w ao1 ch ah0 b	False
 staniszewski	s t ah0 n ih0 sh eh1 f s k iy0	s t ah0 n ih0 sh eh1 f s k iy0	True
@@ -4500,7 +4500,7 @@ bartak	b aa1 r t ah0 k	b aa1 r t ah0 k	True
 zippora	z iy0 p ao1 r ah0	z ih0 p ao1 r ah0	False
 reeh	r iy1	r iy1	True
 rhyner	r ay1 n er0	r ay1 n er0	True
-eisenbraun	ay1 z ah0 n b r aw0 n	ay1 z ah0 n b r aw2 n	False
+eisenbraun	ay1 z ah0 n b r aw0 n	ay1 z ah0 n b r aw0 n	True
 pillagers	p ih1 l ih0 jh er0 z	p ih1 l ih0 jh er0 z	True
 weichel	w ay1 k ah0 l	w ay1 k ah0 l	True
 bjorge	b y ao1 r g	b y ao1 r hh ey0	False
@@ -4580,7 +4580,7 @@ self-contained	s eh1 l f k ah0 n t ey1 n d	s eh2 l f k ah0 n t ey1 n d	False
 wolske	w ow1 l s k	w ow1 l s k iy0	False
 demelo	d ih0 m eh1 l ow0	d ih0 m eh1 l ow0	True
 maffucci	m aa0 f uw1 ch iy0	m aa0 f uw1 ch iy0	True
-tiein	t ay1 ih0 n	t iy1 ey1 n	False
+tiein	t ay1 ih0 n	t iy1 ay1 n	False
 vinik	v ih1 n ih0 k	v ih1 n ih0 k	True
 hutzell	hh ah1 t z ah0 l	hh ah1 t z ah0 l	True
 colleville's	k ow1 l v ih0 l z	k aa1 l v ih2 l z	False
@@ -4627,7 +4627,7 @@ faulding	f ao1 l d ih0 ng	f ao1 l d ih0 ng	True
 velagrande's	v eh2 l ah0 g r aa1 n d ey2 z	v eh1 l ah0 g r ae0 n d z	False
 pamacho	p ah0 m aa1 ch ow0	p ah0 m aa1 ch ow0	True
 clothestime	k l ow1 dh z t ay1 m	k l ow1 dh ih0 s t ay2 m	False
-ramaker	r aa1 m ey0 k er0	r aa1 m ey0 k er0	True
+ramaker	r aa1 m ey0 k er0	r ae1 m ey0 k er0	False
 cundill	k ah1 n d ih0 l	k ah1 n d ah0 l	False
 luerssen	l uw1 r s ah0 n	l uh1 r s ah0 n	False
 lefleur	l ih0 f l er1	l ih0 f l er0	False
@@ -4650,7 +4650,7 @@ huto	hh uw1 t ow2	hh uw1 t ow0	False
 gloriane	g l ao2 r iy0 ae1 n	g l ao0 r iy0 ae1 n	False
 roone	r uw1 n	r uw1 n	True
 robustelli	r ow2 b ah0 s t eh1 l iy0	r ow0 b uw0 s t eh1 l iy0	False
-guarnaccia	g aa0 r n ae1 ch iy0 ah0	g aa0 r n aa1 ch ah0	False
+guarnaccia	g aa0 r n ae1 ch iy0 ah0	g w aa0 r n aa1 ch iy0 ah0	False
 mililiter	m ih1 l ih0 l iy2 t er0	m ih1 l ah0 l iy2 t er0	False
 nydam	n ih1 d ah0 m	n ay1 d ah0 m	False
 quora	k w ao1 r ah0	k w ao1 r ah0	True
@@ -4663,7 +4663,7 @@ molzahn	m ow1 l z ah0 n	m ow1 l z ah0 n	True
 stupski	s t ah1 p s k iy2	s t ah1 p s k iy0	False
 buening	b w eh1 n ih0 ng	b uw1 n ih0 ng	False
 overrating	ow2 v er0 r ey1 t ih0 ng	ow2 v er0 r ey1 t ih0 ng	True
-avdel	ae1 v d eh2 l	aa0 v d ey1 l	False
+avdel	ae1 v d eh2 l	ae1 v d ey1 l	False
 paparazzis	p aa2 p aa0 r ao1 z iy2 z	p aa2 p aa0 r ao1 z ih0 z	False
 vannest	v ae0 n iy1 s t	v ae1 n ih0 s t	False
 gucciardo	g uw0 ch aa1 r d ow0	g uw0 ch aa1 r d ow0	True
@@ -4694,7 +4694,7 @@ antonopoulos	ae0 n t ah0 n aa1 p ah0 l ih0 s	ae2 n t ah0 n aa1 p ah0 l ih0 s	Fal
 phosphorite	f aa1 s f er0 ay2 t	f aa1 s f er0 ay2 t	True
 norinko	n ao2 r ih1 ng k ow0	n ao2 r ih1 ng k ow0	True
 fleitas	f l ay1 t ah0 s	f l ay1 t ah0 z	False
-utgoff	ah1 t g ao0 f	ah1 t g ao0 f	True
+utgoff	ah1 t g ao0 f	ah1 t g ao2 f	False
 swelters	s w eh1 l t er0 z	s w eh1 l t er0 z	True
 greenfell's	g r iy1 n f eh2 l z	g r iy1 n f ah0 l z	False
 stillion	s t ih1 l y ah0 n	s t ih1 l y ah0 n	True
@@ -4856,7 +4856,7 @@ postema	p aa0 s t eh1 m ah0	p ow1 s t iy1 m ah0	False
 urioste	y er0 iy0 ow1 s t iy0	y er1 iy0 ao1 s t	False
 desanctis	d eh0 s ae1 ng k t ih0 s	d ey0 s ae1 ng k t ih0 s	False
 perovich	p er1 ah0 v ih0 ch	p er1 ah0 v ih0 ch	True
-aguinaga	aa0 g uw0 iy0 n aa1 g ah0	ah0 g w iy0 n aa1 g ah0	False
+aguinaga	aa0 g uw0 iy0 n aa1 g ah0	aa0 g w iy0 n aa1 g ah0	False
 partenope	p aa1 r t ah0 n ow2 p	p aa1 r t ah0 n ow2 p	True
 agudelo	aa0 g uw0 d ey1 l ow0	aa0 g uw2 d eh1 l ow0	False
 disinflationary	d ih2 s ih0 n f l ey1 sh ah0 n eh2 r iy0	d ih2 s ih0 n f l ey1 sh ah0 n eh2 r iy0	True
@@ -4892,10 +4892,10 @@ colleville	k ow1 l v ih0 l	k aa1 l v ih2 l	False
 greenhaw	g r iy1 n hh ao2	g r iy1 n hh ao2	True
 donaho	d ow0 n aa1 hh ow0	d aa1 n ah0 hh ow2	False
 crossbills	k r ao1 s b ih2 l z	k r ao1 s b ih2 l z	True
-weins	w iy1 n z	w ey1 n z	False
+weins	w iy1 n z	w iy1 n z	True
 mulkern	m ah1 l k er0 n	m ah1 l k er0 n	True
 sutner	s ah1 t n er0	s ah1 t n er0	True
-viramontes	v ih0 r aa0 m ow1 n t eh0 s	v ih0 r ah0 m aa1 n t eh0 z	False
+viramontes	v ih0 r aa0 m ow1 n t eh0 s	v ih0 r ah0 m aa1 n t iy0 z	False
 varisco	v aa0 r iy1 s k ow0	v aa0 r iy1 s k ow0	True
 bermans	b er1 m ah0 n z	b er1 m ah0 n z	True
 burrous	b er1 ah0 s	b uh1 er1 ah0 s	False
@@ -5089,14 +5089,14 @@ montemurro	m aa2 n t eh0 m uh1 r ow0	m aa2 n t ih0 m uh1 r ow0	False
 prognosticates	p r aa2 g n aa1 s t ah0 k ey2 t s	p r aa0 g n aa1 s t ah0 k ey2 t s	False
 oehmen	ow1 m ah0 n	ow1 m eh0 n	False
 feagins	f iy1 jh ih0 n z	f iy1 jh ih0 n z	True
-conchoid	k aa1 n ch oy0 d	k aa1 n ch oy0 d	True
+conchoid	k aa1 n ch oy0 d	k aa1 n ch oy2 d	False
 pizatti	p ih0 z aa1 t iy0	p iy0 z aa1 t iy0	False
 kious	k ay1 ah0 s	k ay1 ah0 s	True
 allographs	ae1 l ah0 g r ae2 f s	ae1 l ah0 g r ae2 f s	True
 judsen	jh ah1 d s ah0 n	jh ah1 d s ah0 n	True
 emerant	ey0 m eh1 r ah0 n t	eh1 m er0 ah0 n t	False
 viglione	v ih0 g l iy0 ow1 n iy2	v iy0 g l iy0 ow1 n iy0	False
-mcmanigal	m ah0 k m ae1 n ah0 g ah0 l	m ah0 k m ae1 n ih0 g ah0 l	False
+mcmanigal	m ah0 k m ae1 n ah0 g ah0 l	m ah0 k m ae1 n ah0 g ah0 l	True
 aucott	ao1 k aa2 t	ow0 k aa1 t	False
 vanmarter	v ae0 n m aa1 r t er0	v ae1 n m aa2 r t er0	False
 lonrho	l aa1 n r ow0	l ao1 n r ow0	False
@@ -5195,7 +5195,7 @@ grannan	g r ae1 n ah0 n	g r ae1 n ah0 n	True
 bracamonte's	b r ae2 k ah0 m aa1 n t iy0 z	b r ae2 k ah0 m aa1 n t iy0 z	True
 chitterchatter	ch ih1 t er0 ch ae1 t er0	ch ih1 t er0 ch ey2 t er0	False
 zorz	z ao1 r z	z ao1 r z	True
-port-angeles	p ao1 r t ae1 n jh ah0 l ih0 s	p ao2 r t ae1 n jh ah0 l ah0 s	False
+port-angeles	p ao1 r t ae1 n jh ah0 l ih0 s	p ao2 r t ae1 n jh ah0 l ah0 z	False
 abdella	ae2 b d eh1 l ah0	ae2 b d eh1 l ah0	True
 zaske	z ey1 s k	z ey1 s k	True
 schilz	sh ih1 l z	sh ih1 l t s	False
@@ -5313,7 +5313,7 @@ sweeton	s w iy1 t ah0 n	s w iy1 t ah0 n	True
 scraggle	s k r ae1 g ah0 l	s k r ae1 g ah0 l	True
 kolle	k aa1 l	k aa1 l	True
 suddath	s ah1 d ah0 th	s ah1 d ah0 th	True
-tempelsman	t eh1 m p ah0 l z m ah0 n	t eh1 m p ih0 l z m ah0 n	False
+tempelsman	t eh1 m p ah0 l z m ah0 n	t eh1 m p ah0 l z m ah0 n	True
 baatz	b aa1 t s	b aa1 t s	True
 cocanougher	k aa1 k ah0 n ah2 f er0	k ow1 k ah0 n ow0 er0	False
 cilcorp	s ih1 l k ao0 r p	s ih1 l k ao0 r p	True
@@ -5547,7 +5547,7 @@ non-inflationary	n aa2 n ih0 n f l ey1 sh ah0 n eh2 r iy0	n aa2 n ih0 n f l ey1 
 remsberg	r eh1 m s b er0 g	r eh1 m z b er0 g	False
 nupeng	n y uw1 p eh0 ng	n uw1 p eh1 ng	False
 saffle	s ae1 f ah0 l	s ae1 f ah0 l	True
-pavek	p ae1 v ih0 k	p aa1 v eh0 k	False
+pavek	p ae1 v ih0 k	p aa1 v ih0 k	False
 waldhorn	w ao1 l d hh ao2 r n	w ao1 l d hh r n	False
 dempewolf	d eh1 m p y uw0 uh0 l f	d eh1 m p w uh2 l f	False
 zavada	z aa0 v aa1 d ah0	z aa0 v aa1 d ah0	True
@@ -5675,7 +5675,7 @@ pordy	p ao1 r d iy0	p ao1 r d iy0	True
 rohrich	r ao1 r ih0 k	r ao1 r ih0 k	True
 dannels	d ae1 n ah0 l z	d ae1 n ah0 l z	True
 steinbauer	s t ay1 n b aw0 er0	s t ay1 n b aw0 er0	True
-banghart	b ae1 ng hh aa2 r t	b ae1 ng hh aa0 r t	False
+banghart	b ae1 ng hh aa2 r t	b ae1 ng hh aa2 r t	True
 buntain	b ah0 n t ey1 n	b ah0 n t ey1 n	True
 rubalcava	r uw0 b aa0 l k aa1 v ah0	r uw0 b aa0 l k aa1 v ah0	True
 shomaker	sh ow1 m ey2 k er0	sh ow1 m ey2 k er0	True
@@ -5704,7 +5704,7 @@ lafountaine	l aa2 f aa0 n t ey1 n	l aa2 f uw0 n t ey2 n	False
 vescinoid	v eh1 s ih0 n oy2 d	v eh1 s ih0 n oy0 d	False
 hauver	hh aw1 v er0	hh aw1 v er0	True
 brizola	b r ih0 z ow1 l ah0	b r ih0 z ow1 l ah0	True
-tournquist	t uw1 r n k w ih0 s t	t uh1 er1 n k w ih0 s t	False
+tournquist	t uw1 r n k w ih0 s t	t uh1 r n k w ih0 s t	False
 demirjian	d ih0 m er1 jh iy0 ah0 n	d ih0 m er1 jh iy0 ah0 n	True
 careplus	k eh1 r p l ah1 s	k eh1 r p l ah0 s	False
 ryave	r ay1 ah0 v	r iy0 aa1 v	False
@@ -5712,7 +5712,7 @@ daddy-o's	d ae1 d iy0 ow0 z	d ae1 d iy0 ow2 z	False
 pluth	p l uw1 th	p l uw1 th	True
 corsiglia	k er0 s iy1 g l iy0 ah0	k r s iy1 g l iy0 ah0	False
 might've	m ay1 t ah0 v	m ay1 t v	False
-colpepper	k ah1 l p eh2 p er0	k aa1 l p eh1 p er0	False
+colpepper	k ah1 l p eh2 p er0	k ow1 l p ih0 p er0	False
 brozek	b r ow1 z eh0 k	b r ow1 z eh0 k	True
 flagmen	f l ae1 g m eh2 n	f l ae1 g m ah0 n	False
 dabchick	d ae1 b ch ih0 k	d ae1 b ch ih0 k	True
@@ -5722,13 +5722,13 @@ misrecognize	m ih0 s r eh1 k ah0 g n ay2 z	m ih0 s r eh1 k ah0 g n ay2 z	True
 bleakney	b l iy1 k n iy0	b l iy1 k n iy0	True
 matzek	m ae1 t z ih0 k	m aa1 t s eh0 k	False
 zanca	z ae1 ng k ah0	z ae1 ng k ah0	True
-mapel	m ae1 p ah0 l	m ey1 p ah0 l	False
+mapel	m ae1 p ah0 l	m ae1 p ah0 l	True
 trudia	t r uw1 d iy0 ah0	t r uw1 d iy0 ah0	True
 balicki	b ah0 l ih1 k iy0	b ah0 l ih1 k iy0	True
 pingleton	p ih1 ng g ah0 l t aa0 n	p ih1 ng g ah0 l t ah0 n	False
 rackliffe	r ae1 k l ih0 f	r ae1 k l ih0 f	True
 whatsapp	w ah2 t s aa1 p	w aa1 t s ae2 p	False
-zorine	z ao0 r iy1 n iy0	z ao0 r iy1 n iy0	True
+zorine	z ao0 r iy1 n iy0	z ao0 r iy2 n iy0	False
 dimaria	d ih0 m aa1 r iy0 aa2	d ih0 m aa1 r iy0 ah0	False
 begnoche	b eh0 g n ow1 k iy0	b eh1 g n ow1 k	False
 tesmer	t eh1 s ah0 m er0	t eh1 z m er0	False
@@ -5768,7 +5768,7 @@ blaiser	b l ey1 z er0	b l ey1 z er0	True
 lobbia	l aa1 b iy0 ah0	l aa1 b iy0 ah0	True
 vitalink	v ay1 t ah0 l ih2 ng k	v ay1 t ah0 l ih0 ng k	False
 amvest	ae1 m v eh0 s t	ae1 m v eh0 s t	True
-kinark	k ih1 n aa0 r k	k ih1 n aa0 r k	True
+kinark	k ih1 n aa0 r k	k ih1 n aa2 r k	False
 betcher	b eh1 ch er0	b eh1 ch er0	True
 misconceiving	m ih0 s k ah0 n s iy1 v ih0 ng	m ih0 s k ah0 n s iy1 v ih0 ng	True
 howdydoody	hh aw1 d iy0 d uw1 d iy0	hh aw1 d iy0 d uw2 d iy0	False
@@ -5906,7 +5906,7 @@ gerger	g er1 g er0	g er1 g er0	True
 mcclune	m ah0 k l uw1 n	m ah0 k l uw1 n	True
 troha	t r ow1 hh ah0	t r ow1 hh aa0	False
 shadden	sh ae1 d ah0 n	sh ae1 d ah0 n	True
-digaetano	d ih0 jh ah0 t aa1 n ow2	d ih2 g t aa1 n ow2	False
+digaetano	d ih0 jh ah0 t aa1 n ow2	d ih2 g ay2 t aa1 n ow2	False
 caesareans	k ey1 s er0 iy2 n z	k ey1 s er0 iy2 n z	True
 hronek	hh r ow1 n ih0 k	hh r ow1 n ih0 k	True
 sozio	s ow1 z iy0 ow0	s ow1 z iy0 ow0	True
@@ -5916,7 +5916,7 @@ vanostrand	v ae0 n aa1 s t r ah0 n d	v ae0 n ah0 s t r ae2 n d	False
 theirself	dh eh2 r s eh1 l f	dh eh2 r s eh1 l f	True
 grebner	g r eh1 b n er0	g r eh1 b n er0	True
 arcidiacono	aa0 r ch iy0 d iy2 aa0 k ow1 n ow2	aa0 r ch ih2 d iy0 ah0 k ow1 n ow0	False
-assira	ah0 s iy1 r ah0	aa0 s ih1 r ah0	False
+assira	ah0 s iy1 r ah0	ah0 s ih1 r ah0	False
 smittle	s m ih1 t ah0 l	s m ih1 t ah0 l	True
 geotek	g iy1 ow0 t eh2 k	jh iy1 ow0 t eh2 k	False
 federoff	f eh1 d er0 ao2 f	f eh1 d er0 ao0 f	False
@@ -5990,14 +5990,14 @@ kosyakov	k ow1 s y aa0 k ao0 v	k ow1 s y aa1 k ao2 v	False
 benevolences	b ah0 n eh1 v ah0 l ah0 n s ih0 z	b ah0 n eh1 v ah0 l ah0 n s ih0 z	True
 heiges	hh ay1 jh ih0 z	hh ay1 jh ih0 z	True
 recore	r eh0 k ao1 r iy0	r ih0 k ao1 r	False
-halliciforn	hh ah0 l ih1 s ih0 f ao0 r n	hh ah0 l ih1 s ah0 f er0 n	False
+halliciforn	hh ah0 l ih1 s ih0 f ao0 r n	hh ah0 l ih1 s ih0 f er0 n	False
 disbro	d ih1 s b r ow0	d ih1 s b r aw0	False
 bowsed	b aw1 z d	b ow1 z t	False
 tushes	t uh1 sh ih0 z	t uh1 sh ih0 z	True
 candlemaker	k ae1 n d ah0 l m ey2 k er0	k ae1 n d ah0 l m ey2 k er0	True
 baybank	b ey1 b ae2 ng k	b ey1 b ae2 ng k	True
 schwarzman	sh w ao1 r t s m ah0 n	sh w ao1 r t s m ah0 n	True
-becor	b eh1 k ao2 r	b iy1 k ao0 r	False
+becor	b eh1 k ao2 r	b iy1 k ao0 er0	False
 d'estaing	d ah0 s t ey1 ng	d ih0 s t ey1 ih0 ng	False
 ayscue	ey1 s k y uw0	ey1 s k y uw2	False
 bilyk	b ih1 l ih0 k	b ih1 l ih0 k	True
@@ -6078,7 +6078,7 @@ kinslow	k ih1 n s l ow2	k ih1 n z l ow0	False
 penne-pasta	p eh2 n ey0 p aa1 s t ah0	p eh2 n p ae1 s t ah0	False
 cartonnage	k aa1 r t ah0 n ah0 jh	k aa1 r t ah0 n ih0 jh	False
 dewitz	d eh1 w ih0 t s	d w ih0 t s	False
-andringa	aa0 n d r iy1 ng g ah0	aa0 n d r ih1 ng g ah0	False
+andringa	aa0 n d r iy1 ng g ah0	ae2 n d r ih1 ng g ah0	False
 lorino	l ao0 r iy1 n ow0	l ao0 r iy1 n ow0	True
 samelle	s ah0 m eh1 l	s ah0 m eh1 l	True
 galban	g ae1 l b ah0 n	g ae1 l b ah0 n	True
@@ -6144,7 +6144,7 @@ counterproposals	k aw1 n t er0 p r ah0 p ow2 z ah0 l z	k aw1 n t er0 p r ah0 p o
 littig	l ih1 t ih0 g	l ih1 t ih0 g	True
 gemina	g eh0 m iy1 n ah0	jh eh1 m ih0 n ah0	False
 underwhelm	ah2 n d er0 w eh1 l m	ah1 n d er0 w eh1 l m	False
-joanou	jh ow1 n uw2	jh ow1 aa0 n uw1	False
+joanou	jh ow1 n uw2	jh ow1 ae1 n uw1	False
 ghadafithe	g ah0 d aa1 f iy0 th	g ae1 d ah0 f ih2 dh	False
 colbaugh	k ow1 l b ao2	k ow1 l b ao0	False
 manweb	m ae1 n w eh2 b	m ae1 n w eh2 b	True
@@ -6267,7 +6267,7 @@ shadowens	sh ae1 d ow0 ah0 n z	sh ae1 d ow0 ah0 n z	True
 siderographers	s ay2 d er0 ao1 g r ah0 f er0 z	s ay2 d er0 aa1 g r ah0 f er0 z	False
 pitstick	p ih1 t s t ih2 k	p ih1 t s t ih2 k	True
 kneeing	n iy1 ih0 ng	n iy1 ih0 ng	True
-karraker	k aa1 r ah0 k er0	k eh1 r ah0 k er0	False
+karraker	k aa1 r ah0 k er0	k ae1 r ah0 k er0	False
 mogopa	m ow0 g ow1 p ah0	m ow0 g ow1 p ah0	True
 snitker	s n ih1 t k er0	s n ih1 t k er0	True
 klebba	k l eh1 b ah0	k l eh1 b ah0	True
@@ -6286,7 +6286,7 @@ lillehamer's	l ih1 l iy0 hh ae2 m er0 z	l ih1 l iy0 hh ey2 m er0 z	False
 gombos	g ow1 m b ow0 z	g aa1 m b ow0 s	False
 portee	p ao1 r t iy1	p ao0 r t iy1	False
 niznik	n ih1 z n ih0 k	n ih1 z n ih0 k	True
-kalmanovitz	k ae2 l m ae1 n ah0 v ih0 t s	k ae2 l m ae1 n ah0 v ih0 t s	True
+kalmanovitz	k ae2 l m ae1 n ah0 v ih0 t s	k ae2 l m aa1 n ah0 v ih0 t s	False
 fanguy	f ah0 ng g w iy1	f ae1 ng g iy0	False
 cheane	ch iy1 n	ch iy1 n	True
 shipps	sh ih1 p s	sh ih1 p s	True
@@ -6314,7 +6314,7 @@ nagymaros	n ae2 jh ih0 m aa1 r ow0 s	n aa0 g iy0 m aa1 r ow0 z	False
 biddinger	b ih1 d ih0 ng er0	b ih1 d ih0 ng er0	True
 negatron	n eh1 g ah0 t r aa0 n	n eh1 g ah0 t r aa2 n	False
 hertzenleben's	hh er1 t ah0 n l ey2 b ah0 n z	hh er1 t s ah0 n ah0 l b ah0 n z	False
-toyoo	t oy0 uw1	t ow1 y uw1	False
+toyoo	t oy0 uw1	t ow0 y uw1	False
 sunau	s uw1 n aw0	s uw1 n aw0	True
 majeske	m ay0 eh1 s k iy0	m ay0 eh1 s k	False
 gulbranson	g ah1 l b r ah0 n s ah0 n	g ah1 l b r ah0 n s ah0 n	True
@@ -6529,7 +6529,7 @@ gynex	jh ih1 n ah0 k s	jh ay1 n eh2 k s	False
 amalea	ae2 m ah0 l iy1 ah0	ah0 m ey1 l y ah0	False
 belabors	b ih0 l ey1 b er0 z	b ih0 l ey1 b er0 z	True
 delbarco	d eh0 l b aa1 r k ow0	d eh2 l b aa1 r k ow0	False
-ehrenkrantz	eh1 r ah0 n k r ae2 n t s	eh1 r ih0 n k r ae2 n t s	False
+ehrenkrantz	eh1 r ah0 n k r ae2 n t s	eh1 r ih0 n k r ah0 n t s	False
 ridable	r ay1 d ah0 b ah0 l	r ay1 d ah0 b ah0 l	True
 mobiliare	m ow1 b ah0 l eh2 r	m ow0 b iy0 l iy0 aa1 r iy0	False
 madelin	m ae1 d ah0 l ih0 n	m ae1 d ih0 l ih0 n	False
@@ -6562,7 +6562,7 @@ zemba	z eh1 m b ah0	z eh1 m b ah0	True
 ensource	eh0 n s ao1 r s	eh0 n s ao1 r s	True
 underseas	ah2 n d er0 s iy1 z	ah2 n d er0 s iy1 z	True
 steinhagen	s t ay1 n hh ae0 g ah0 n	s t ay1 n hh ah0 g ah0 n	False
-mataksas	m ah0 t ae1 k s ah0 s	m ah0 t ae1 k s ah0 z	False
+mataksas	m ah0 t ae1 k s ah0 s	m aa0 t ae1 k s ah0 s	False
 bestrode	b ih0 s t r ow1 d	b ih0 s t r ow2 d	False
 switala	s w ih0 t aa1 l ah0	s w ih1 t aa1 l ah0	False
 reihl	r ay1 l	r ay1 l	True
@@ -6590,7 +6590,7 @@ naldo	n aa1 l d ow0	n aa1 l d ow0	True
 pecksniffian	p eh0 k s n ih1 f iy2 ah0 n	p eh2 k s n ih1 f iy0 ah0 n	False
 ostrogoth	aa1 s t r ah0 g aa2 th	aa1 s t r ah0 g aa2 th	True
 dellavecchia	d eh1 l ah0 v eh2 k iy0 ah0	d eh2 l aa0 v eh1 k iy0 ah0	False
-pokazukha	p ao2 k ah0 z uw1 k aa0	p ow2 k aa0 z uw1 k aa0	False
+pokazukha	p ao2 k ah0 z uw1 k aa0	p ow2 k ah0 z uw1 k aa0	False
 debella	d ih0 b eh1 l ah0	d ih0 b eh1 l ah0	True
 nacke	n ae1 k	n ae1 k	True
 wilshusen	w ih1 l sh uw0 s ah0 n	w ih1 l sh uw1 s ah0 n	False
@@ -6609,7 +6609,7 @@ gobinot	g ow1 b ih0 n aa0 t	g ow1 b ih0 n ah0	False
 eyerly	iy1 er0 l iy0	ay1 er0 l iy0	False
 rueb	r uw1 b	r uw1 b	True
 goodreau	g uh1 d r ow2	g uh1 d r ow1	False
-mongosutu's	m aa2 ng g ow0 s uw1 t uw0 z	m aa2 ng g ah0 s uw1 t uw2 z	False
+mongosutu's	m aa2 ng g ow0 s uw1 t uw0 z	m aa2 ng g ah0 s uw1 t uw0 z	False
 broshears	b r aa1 sh ih0 r z	b r ah0 sh iy0 r z	False
 self-centered	s eh1 l f s eh1 n t er0 d	s eh2 l f s eh1 n t er0 d	False
 ye-yi	y ey1 y iy1	y ey1 y iy0	False
@@ -6649,7 +6649,7 @@ braughton	b r ao1 t ah0 n	b r ao1 t ah0 n	True
 swails	s w ey1 l z	s w ey1 l z	True
 vanvoorst	v ae0 n v uh1 r s t	v ae2 n v uw1 r s t	False
 gifferd	g ih1 f er0 d	g ih1 f er0 d	True
-lamons	l aa1 m ow0 n z	l aa0 m ao1 n z	False
+lamons	l aa1 m ow0 n z	l ah0 m ao1 n z	False
 irredentism	ih2 r ah0 d eh1 n t ih0 z ah0 m	ih2 r ah0 d eh1 n t ih2 z ah0 m	False
 deborde	d ih0 b ao1 r d	d ih0 b ao1 r d	True
 rosol	r ow1 s ao0 l	r ow1 z ah0 l	False
@@ -6714,7 +6714,7 @@ marseca	m aa0 r s eh1 k ah0	m aa0 r s eh1 k ah0	True
 heartthrobs	hh aa1 r t th r aa2 b z	hh aa1 r t th r aa2 b z	True
 modestine	m ow0 d eh0 s t iy1 n iy0	m aa1 d ah0 s t iy1 n	False
 crowkeeper	k r ow1 k iy2 p er0	k r ow1 k iy2 p er0	True
-grivas	g r iy1 v aa0 z	g r iy1 v ah0 z	False
+grivas	g r iy1 v aa0 z	g r iy1 v aa0 z	True
 scalisi	s k aa0 l iy1 s iy0	s k aa0 l iy1 s iy0	True
 breitbach	b r ay1 t b aa2 k	b r ay1 t b aa2 k	True
 barbre	b aa1 r b er0	b aa1 r b r	False
@@ -6750,7 +6750,7 @@ scantiness	s k ae1 n t iy0 n ah0 s	s k ae1 n t iy0 n ih0 s	False
 aydelotte	ey1 d ah0 l aa2 t	ey1 d ah0 l aa2 t	True
 sofamor	s ow1 f ah0 m ao2 r	s ow0 f ey1 m er0	False
 frean	f r iy1 n	f r iy1 n	True
-joscelyne	jh aa1 s ih0 l ay2 n	jh aa1 s l ay0 n	False
+joscelyne	jh aa1 s ih0 l ay2 n	jh aa1 s ih0 l ay0 n	False
 amarillos	ae2 m er0 ih1 l ow0 z	ae2 m er0 ih1 l ow0 z	True
 mambas	m aa1 m b ah0 z	m aa1 m b ah0 z	True
 lewke	l uw1 k iy0	l uw1 k	False
@@ -6759,7 +6759,7 @@ davanzo	d ah0 v ae1 n z ow0	d aa0 v aa1 n z ow0	False
 flanary	f l ae1 n er0 iy0	f l ey1 n eh2 r iy0	False
 synergen's	s ih1 n er0 jh eh2 n z	s ih1 n er0 jh ah0 n z	False
 thermits	th er1 m ih0 t s	th er1 m ih1 t s	False
-nokyo	n ow1 k y ow0	n ow1 k iy0 ow0	False
+nokyo	n ow1 k y ow0	n ow1 k iy0 ow2	False
 zeringue	z eh1 r ih0 ng	z iy1 r ih1 ng	False
 oarlock	ao1 r l aa2 k	ao1 r l aa2 k	True
 belvia	b eh1 l v iy0 ah0	b eh1 l v iy0 ah0	True
@@ -6828,7 +6828,7 @@ biehle	b iy1 hh ah0 l	b iy1 hh ah0 l	True
 knoell	n ow1 l	n ow1 l	True
 dudik	d uw1 d ih0 k	d uw1 d ih0 k	True
 citytrust	s ih1 t iy0 t r ah2 s t	s ih1 t iy0 t r ah1 s t	False
-couvillon	k uw0 v iy0 l ao1 n	k uw1 v ih0 l ow1 n	False
+couvillon	k uw0 v iy0 l ao1 n	k uw1 v ih1 l ah0 n	False
 premark	p r iy0 m aa1 r k	p r iy1 m aa1 r k	False
 gershowitz	g er1 sh ah0 w ih0 t s	g er1 sh ah0 w ih0 t s	True
 karaffa	k ae1 r ah0 f ah0	k aa0 r aa1 f ah0	False
@@ -6846,7 +6846,7 @@ dundore	d ah1 n d er0	d ah1 n d ao2 r	False
 wildasin	w ay1 l d ah0 s ih2 n	w ih1 l d ey2 s ah0 n	False
 arocho	aa0 r ow1 k ow0	aa0 r ow1 ch ow0	False
 bendorf	b eh1 n d ao0 r f	b eh1 n d ao0 r f	True
-gharbonifar	g aa0 r b aa1 n ih0 f aa0 r	g aa1 r b aa1 n ah0 f aa2 er0	False
+gharbonifar	g aa0 r b aa1 n ih0 f aa0 r	g aa2 r b aa1 n ah0 f aa2 er0	False
 anitole	ae1 n ih0 t ow0 l	ae1 n ih0 t ow2 l	False
 autodie	ao1 t ow0 d ay2	ao1 t ah0 d iy0	False
 giaquinto	jh aa1 k w iy0 n t ow0	jh ah0 k w iy1 n t ow2	False
@@ -6919,7 +6919,7 @@ gallemore	g aa0 l eh1 m ao0 r	g aa0 l m ao0 r	False
 schlageter	sh l ae1 g iy0 t er0	sh l ae1 g ah0 t er0	False
 bronfmans	b r aa1 n f m ah0 n z	b r aa1 n f m ah0 n z	True
 marcade	m aa1 r k ey1 d	m aa0 r k ey1 d	False
-jeanmichele	zh aa2 n m ah0 sh eh1 l	jh iy1 n m ih0 sh ah0 l	False
+jeanmichele	zh aa2 n m ah0 sh eh1 l	jh ah0 n m ih0 sh eh2 l	False
 rastetter	r ey1 s t ih0 t er0	r ae0 s t eh1 t er0	False
 koestner	k ow1 s t n er0	k ao1 s t n er0	False
 hemy	hh eh1 m iy0	hh iy1 m iy0	False
@@ -6974,7 +6974,7 @@ luzier	l uw1 z iy0 er0	l uw1 z iy0 er0	True
 day-by-day	d ey1 b ay0 d ey2	d ey1 b iy0 d ey2	False
 starckmann	s t aa1 r k m ah0 n	s t aa1 r k m ah0 n	True
 kagler	k ae1 g l er0	k ey1 g l er0	False
-isoprinosine	ih2 s ah0 p r ih1 n ah0 s iy2 n	ay2 s ah0 p r ah0 n ow0 z ah0 n	False
+isoprinosine	ih2 s ah0 p r ih1 n ah0 s iy2 n	ay2 s ah0 p r ah0 n ah0 z ah0 n	False
 guandjong	g w aa1 n jh ow1 ng	g w aa1 n jh ow2 ng	False
 pezza	p eh1 z ah0	p eh1 z ah0	True
 philantha	f ih0 l ae1 n th ah0	f ah0 l ae1 n th ah0	False
@@ -7013,7 +7013,7 @@ droser	d r ow1 z er0	d r ow1 s er0	False
 rogin	r ow1 g ih0 n	r aa1 jh ih0 n	False
 schimming	sh ih1 m ih0 ng	s k ih1 m ih0 ng	False
 cooperider	k uw1 p er0 ay0 d er0	k uw1 p er0 ay2 d er0	False
-cangialosi	k aa0 n jh ah0 l ow1 s iy0	k ae2 n jh ah0 l ow1 s iy0	False
+cangialosi	k aa0 n jh ah0 l ow1 s iy0	k aa0 n jh ah0 l ow1 s iy0	True
 scoffield	s k ao1 f iy2 l d	s k aa1 f iy2 l d	False
 laurice	l ao1 r ih0 s	l ao1 r iy1 s	False
 abramczyk	aa1 b r ah0 m ch ih0 k	ah0 b r ah0 m ch ih0 k	False
@@ -7041,7 +7041,7 @@ colgin	k ow1 l jh ih0 n	k ow1 l jh ih0 n	True
 kornreich	k ao1 r n r ay0 k	k ao1 r n r ay0 k	True
 surbaugh	s er1 b ao0	s er1 b ao0	True
 hulsizer	hh ah1 l s ay2 z er0	hh ah1 l s ay2 z er0	True
-sanseverino	s aa0 n s eh0 v er0 iy1 n ow0	s ae2 n s eh0 v r iy1 n ow0	False
+sanseverino	s aa0 n s eh0 v er0 iy1 n ow0	s ae2 n s eh0 v er0 iy1 n ow0	False
 metromail	m eh1 t r ow0 m ey2 l	m eh1 t r ah0 m ey2 l	False
 sweazy	s w iy1 z iy0	s w eh1 z iy0	False
 lesner	l eh1 s n er0	l eh1 s n er0	True
@@ -7150,7 +7150,7 @@ breakey	b r ey1 k iy0	b r ey1 k iy0	True
 burkemper	b er1 k ih0 m p er0	b er1 k eh1 m p er0	False
 steffenson	s t eh1 f ih0 n s ah0 n	s t eh1 f ih0 n s ah0 n	True
 murnian	m er1 n iy0 ah0 n	m er1 n iy0 ah0 n	True
-disimone	d ih0 s iy0 m ow1 n iy0	d ih0 s iy0 m ow1 n	False
+disimone	d ih0 s iy0 m ow1 n iy0	d ih0 s iy0 m ow1 n iy0	True
 bucase	b y uw1 k ey2 s	b y uw1 k ey0 s	False
 demory's	d ih0 m er1 iy0 z	d ih0 m er0 iy0 z	False
 huett	hh uw1 t	hh uw1 t	True
@@ -7191,7 +7191,7 @@ zajic	z ae1 jh ih0 k	z ay1 ih0 k	False
 glaab	g l aa1 b	g l aa1 b	True
 arciniega	aa0 r ch iy0 n iy1 g ah0	aa2 r s ih0 n iy0 g ah0	False
 genpharm	jh eh1 n f aa2 r m	jh eh1 n f aa2 r m	True
-farica	f aa0 r iy1 k ah0	f aa1 r ih0 k ah0	False
+farica	f aa0 r iy1 k ah0	f eh1 r ih0 k ah0	False
 sovietologists	s ow2 v iy0 ah0 t aa1 l ah0 jh ih0 s t s	s ow2 v iy0 ah0 t aa1 l ah0 jh ih0 s t s	True
 gemex	jh eh1 m eh0 k s	jh eh1 m eh2 k s	False
 outgunning	aw1 t g ah2 n ih0 ng	aw1 t g ah2 n ih0 ng	True
@@ -7405,7 +7405,7 @@ streiber	s t r ay1 b er0	s t r ay1 b er0	True
 loville	l ow1 v ih0 l	l aa1 v ih0 l	False
 cheimi	ch ey1 m iy0	ch ay1 m iy0	False
 tinajero	t iy0 n aa0 y eh1 r ow0	t ih2 n ah0 jh eh1 r ow0	False
-cerus	s eh1 r ah0 s	s iy1 r ah0 s	False
+cerus	s eh1 r ah0 s	s ay1 r ah0 s	False
 nufer	n uw1 f er0	n uw1 f er0	True
 misperceive	m ih0 s p er0 s iy1 v	m ih0 s p er0 s iy1 v	True
 glacken	g l ae1 k ah0 n	g l ae1 k ah0 n	True
@@ -7452,7 +7452,7 @@ alphametrics	ae1 l f ah0 m eh2 t r ih0 k s	ae2 l f ah0 m eh1 t r ih0 k s	False
 mitering	m ay1 t er0 ih0 ng	m ay1 t er0 ih0 ng	True
 tosto	t ow1 s t ow0	t aa1 s t ow2	False
 lamaur	l ah0 m ao1 r	l ah0 m aw0 r	False
-pacholski	p ah0 hh ow1 l s k iy0	p ah0 k ow1 l s k iy0	False
+pacholski	p ah0 hh ow1 l s k iy0	p ah0 ch ow1 l s k iy0	False
 panthea	p ae1 n th iy0 ah0	p ae1 n th iy0 ah0	True
 haidet	hh ey1 d ih0 t	hh ey1 d eh1 t	False
 mestrallet	m eh1 s t r ah0 l eh2 t	m eh1 s t r ah0 l ah0 t	False
@@ -7611,7 +7611,7 @@ horacia	hh ao0 r aa1 s iy0 ah0	hh ao0 r ey1 sh ah0	False
 glasheen	g l ah0 sh iy1 n	g l ah0 sh iy1 n	True
 damoose	d ah0 m uw1 s	d ah0 m uw1 z	False
 musburger	m ah1 s b er0 g er0	m ah1 s b er0 g er0	True
-adrea	aa1 d r iy0 ah0	ah0 d r iy0 ah0	False
+adrea	aa1 d r iy0 ah0	ah0 d r iy1 ah0	False
 plagens	p l ae1 g ah0 n z	p l ae1 g ah0 n z	True
 gribbles	g r ih1 b ah0 l z	g r ih1 b ah0 l z	True
 zarcone	z aa0 r k ow1 n iy0	z aa0 r k ow1 n iy0	True
@@ -7668,13 +7668,13 @@ mckimmey	m ah0 k ih1 m iy0	m ah0 k ih1 m iy0	True
 campofrio	k ae2 m p ao1 f r iy0 ow0	k aa0 m p ow1 f r iy0 ow0	False
 cislo	ch iy1 s l ow0	s ih1 s l ow2	False
 rackmil	r ae1 k m ih0 l	r ae1 k m ih2 l	False
-mazurowski	m ah0 z er0 ao1 f s k iy0	m aa2 z er0 ao1 f s k iy0	False
+mazurowski	m ah0 z er0 ao1 f s k iy0	m ah0 z er0 ao1 f s k iy0	True
 scinto	s ih1 n t ow0	s ih1 n t ow0	True
 netterville	n eh1 t er0 v ih0 l	n eh1 t er0 v ih0 l	True
 selikoff	s eh1 l ih0 k ao2 f	s eh1 l ih0 k ao0 f	False
 feger	f iy1 g er0	f iy1 g er0	True
 haralda	hh aa0 r aa1 l d ah0	hh aa0 r aa1 l d ah0	True
-koscielniak	k ah0 s ch iy1 l n iy0 ae0 k	k ao2 ch iy0 ah0 l n iy0 ae0 k	False
+koscielniak	k ah0 s ch iy1 l n iy0 ae0 k	k ao2 ch iy0 eh1 l n iy0 ae0 k	False
 oelschlager	ow1 l sh l ey0 g er0	ow1 l sh l ah0 g er0	False
 gibble	jh ih1 b ah0 l	jh ih1 b ah0 l	True
 donehoo	d ow0 n ey1 hh uw0	d aa1 n hh uw2	False
@@ -7749,7 +7749,7 @@ onagers	aa1 n ah0 jh er0 z	ow0 n ah0 jh er0 z	False
 sooted	s uh1 t ih0 d	s uw1 t ih0 d	False
 budick's	b ah1 d ih0 k s	b y uw1 d ih0 k s	False
 centrust	s eh1 n t r ah2 s t	s eh1 n t r ah0 s t	False
-alyea	ae0 l iy1 ah0	ae2 l iy1 ah0	False
+alyea	ae0 l iy1 ah0	aa0 l iy1 ah0	False
 bergling	b er1 g l ih0 ng	b er1 g l ih0 ng	True
 photophoresis	f ow2 t ow0 f er0 iy1 s ih0 s	f ow2 t ow0 f ao1 r iy1 s ah0 s	False
 anthologist	ae0 n th ao1 l ah0 g ih2 s t	ae0 n th aa1 l ah0 jh ah0 s t	False
@@ -7763,7 +7763,7 @@ haubert	hh aw1 b er0 t	hh aw1 b er0 t	True
 quebecoise	k eh1 b eh0 k w aa2	k w eh2 b ih0 k w aa2 z	False
 trobaugh	t r aa1 b ao0	t r ow1 b ao0	False
 mevarach	m eh0 v aa1 r ah0 ch	m eh1 v r ae0 k	False
-pas-de-deux	p aa1 d ah0 d uw1	p ae1 s d ih0 d uw2	False
+pas-de-deux	p aa1 d ah0 d uw1	p ae1 s d ih0 d uw1	False
 pietila	p iy0 t iy1 l ah0	p iy0 t iy1 l ah0	True
 syntech	s ih1 n t eh2 k	s ih1 n t eh2 k	True
 automap	ao1 t ow0 m ae2 p	ao1 t ow0 m ae2 p	True
@@ -7771,7 +7771,7 @@ fialkowski	f iy0 ah0 l k ao1 f s k iy0	f iy0 ah0 l k ao1 f s k iy0	True
 shoplifts	sh aa1 p l ih2 f t s	sh aa1 p l ih2 f t s	True
 buerkle	b y uw1 r k ah0 l	b y uw1 r k ah0 l	True
 finchum	f ih1 n k ah0 m	f ih1 n ch ah0 m	False
-kirchhofer	k er1 k hh ah0 f er0	k er1 k hh ao0 f er0	False
+kirchhofer	k er1 k hh ah0 f er0	k er1 k hh aw0 f er0	False
 revord	r ih0 v ao1 r d	r ih0 v ao1 r d	True
 yontz	y aa1 n t s	y aa1 n t s	True
 koperski	k ah0 p er1 s k iy0	k ah0 p er1 s k iy0	True
@@ -7803,7 +7803,7 @@ marleene	m aa0 r l iy1 n	m aa0 r l iy1 n	True
 graley	g r ae1 l iy0	g r ae1 l iy0	True
 aladeen	ae0 l ah0 d iy1 n	ae1 l ah0 d iy0 n	False
 bardrick	b aa1 r d r ih0 k	b aa1 r d r ih0 k	True
-lanyi	l aa1 n y iy0	l ah0 n y iy0	False
+lanyi	l aa1 n y iy0	l aa1 n y iy0	True
 pirko	p er1 k ow0	p er1 k ow0	True
 deemphasizing	d iy0 eh1 m f ah0 s ay2 z ih0 ng	d iy0 eh1 m f ah0 s ay2 z ih0 ng	True
 shuchman	sh ah1 k m ah0 n	sh ah1 k m ah0 n	True
@@ -7954,7 +7954,7 @@ vanhandel	v ae2 n hh ae1 n d ah0 l	v ae0 n hh ae1 n d ah0 l	False
 unworried	ah0 n w er1 iy0 d	ah0 n w er1 iy0 d	True
 alleva	aa0 l ey1 v ah0	aa0 l ey1 v ah0	True
 welinsk	w eh0 l ih1 n s k	w ih0 l ih1 n s k	False
-jayachandra	jh ay2 ah0 ch aa1 n d r ah0	jh ay2 ah0 k ae1 n d r ah0	False
+jayachandra	jh ay2 ah0 ch aa1 n d r ah0	jh ey2 ah0 k ae1 n d r ah0	False
 ilardi	ih2 l aa1 r d iy0	iy0 l aa1 r d iy2	False
 roadcap	r ow1 d k ae2 p	r ow1 d k ae2 p	True
 faustine	f aw1 s t iy0 n	f ao1 s t iy0 n	False
@@ -7962,7 +7962,7 @@ zabielski	z ah0 b iy1 l s k iy0	z ah0 b iy1 l s k iy0	True
 silfies	s ih1 l f iy0 z	s ih1 l f iy0 z	True
 vanderleest	v ae1 n d er0 ah0 l iy2 s t	v ae1 n d er0 l iy2 s t	False
 finazzo	f iy0 n aa1 z ow0	f iy0 n aa1 z ow0	True
-carrasquel	k eh2 r ah0 s k eh1 l	k eh2 r ae1 s k ah0 l	False
+carrasquel	k eh2 r ah0 s k eh1 l	k eh2 r ae1 s k eh1 l	False
 lenger	l eh1 ng er0	l eh1 ng er0	True
 torell	t ao0 r eh1 l	t ao1 r ah0 l	False
 mizelle	m ih0 z eh1 l	m ih0 z eh1 l	True
@@ -7978,15 +7978,15 @@ shaer	sh ey1 er0	sh eh1 r	False
 skorupski	s k er0 ah1 p s k iy2	s k er0 ah1 p s k iy0	False
 geodyne	jh iy1 ow0 d ay2 n	jh iy1 ah0 d ay2 n	False
 murias	m y uh1 r iy0 ah0 s	m y uh1 r iy0 ah0 z	False
-dudenhoeffer	d ah1 d ih0 n hh ow0 f er0	d ah1 d ih0 n hh ow2 f er0	False
-caillouet	k ey2 l uw1 t	k ay0 l ah0 uw0 eh1 t	False
+dudenhoeffer	d ah1 d ih0 n hh ow0 f er0	d uw1 d ih0 n hh ow2 f er0	False
+caillouet	k ey2 l uw1 t	k eh0 l ah0 uw0 eh1 t	False
 oclair	ow0 k l er1	ow0 k l eh1 r	False
 pruneau	p r ah0 n ow1	p r ah0 n ow1	True
 brzoska	b r ow1 s k ah0	b r z ow1 s k ah0	False
 accountemp	ah0 k aw1 n t eh2 m p	ah0 k aw1 n t eh2 m p	True
 kuker	k y uw1 k er0	k y uw1 k er0	True
 penzer	p eh1 n z er0	p eh1 n z er0	True
-acary	ae1 k er0 iy0	ah0 k er0 iy0	False
+acary	ae1 k er0 iy0	ah0 k r iy0	False
 autobiographer	ao2 t ah0 b ay0 aa1 g r ah0 f er0	ao2 t ah0 b ay0 aa1 g r ah0 f er0	True
 mccolloch	m ah0 k aa1 l ah0 k	m ah0 k ao1 l ah0 k	False
 schimberni	sh ih0 m b er1 n iy0	sh iy0 m b eh1 r n iy0	False
@@ -8053,7 +8053,7 @@ fratangelo	f r aa0 t aa0 ng g eh1 l ow0	f r aa0 t aa0 ng g eh1 l ow0	True
 handrich	hh ae1 n d r ih0 k	hh ae1 n d r ih0 k	True
 presutti	p r eh0 s uw1 t iy0	p r eh0 s uw1 t iy0	True
 unpressurized	ah0 n p r eh1 sh er0 ay0 z d	ah0 n p r eh1 sh er0 ay2 z d	False
-costra	k aa1 s t r ah0	k ao1 s t r aa0	False
+costra	k aa1 s t r ah0	k ao1 s t r ah0	False
 arone	er0 ow1 n	er0 ow1 n	True
 danahy	d ae1 n ah0 hh iy0	d ae1 n ah0 hh iy0	True
 widell	w ih1 d ah0 l	w ih1 d ah0 l	True
@@ -8063,7 +8063,7 @@ devoy	d eh1 v oy0	d ih0 v oy0	False
 melching	m eh1 l ch ih0 ng	m eh1 l ch ih0 ng	True
 chiavetta	k iy0 aa0 v eh1 t ah0	k iy0 aa0 v eh1 t ah0	True
 storfer	s t ao1 r f er0	s t ao1 r f er0	True
-potpourris	p ow2 p uh0 r iy1 z	p aa2 p uh0 r iy1 s	False
+potpourris	p ow2 p uh0 r iy1 z	p aa2 p uh0 r ih0 s	False
 washko	v aa1 sh k ow0	w aa1 sh k ow0	False
 schweder	sh w iy1 d er0	sh w iy1 d er0	True
 one-off	w ah2 n ao1 f	w ah1 n ao1 f	False
@@ -8361,7 +8361,7 @@ methner	m eh1 th n er0	m eh1 dh n er0	False
 stempler's	s t eh1 m p l er0 z	s t eh1 m p l er0 z	True
 desantiago	d ih0 s aa0 n t iy0 aa1 g ow0	d ih0 s aa0 n t iy0 aa1 g ow0	True
 slutzky	s l ah1 t s k iy0	s l ah1 t s k iy0	True
-pizzimenti	p iy0 t s iy0 m eh1 n t iy0	p iy0 t s ih0 m eh1 n t iy0	False
+pizzimenti	p iy0 t s iy0 m eh1 n t iy0	p iy0 t s iy0 m eh1 n t iy0	True
 aliano	aa0 l iy0 aa1 n ow0	aa2 l iy0 aa1 n ow0	False
 kressin	k r eh1 s ih0 n	k r eh1 s ih0 n	True
 sasseen	s ae1 s iy0 n	s ah0 s iy1 n	False
@@ -8394,7 +8394,7 @@ barens	b eh1 r ah0 n z	b eh1 r ah0 n z	True
 hechler	hh eh1 k l er0	hh eh1 k l er0	True
 st-hilaire	s ey1 n t hh ih0 l ey1 r	s ey1 n t hh ah0 l eh1 r	False
 strege	s t r iy1 jh	s t r eh1 jh	False
-mi-vami	m iy0 v ae1 m iy0	m iy2 v aa1 m iy0	False
+mi-vami	m iy0 v ae1 m iy0	m ay1 v aa1 m iy0	False
 cockman	k aa1 k m ah0 n	k aa1 k m ah0 n	True
 dutko	d ah1 t k ow0	d uw1 t k ow0	False
 dershem	d er1 sh ih0 m	d er1 sh ah0 m	False
@@ -8402,7 +8402,7 @@ brzeska	b r eh1 z k aa2	b r z eh1 s k ah0	False
 sze-di	sh ey1 d iy1	sh iy1 d ay1	False
 siese	s iy0 eh1 s	s iy1 z	False
 dulworth	d ah1 l w er0 th	d ah1 l w er2 th	False
-verrastro	v eh2 r ae1 s t r ow0	v eh2 er0 ae1 s t r ow0	False
+verrastro	v eh2 r ae1 s t r ow0	v eh2 er0 aa1 s t r ow0	False
 racioppi	r aa0 ch ow1 p iy0	r aa0 ch ow1 p iy0	True
 klipp	k l ih1 p	k l ih1 p	True
 swanda	s w aa1 n d ah0	s w aa1 n d ah0	True
@@ -8424,7 +8424,7 @@ motsinger	m aa1 t s ih0 n jh er0	m aa1 t s ih0 n jh er0	True
 opalka	ah0 p aa1 l k ah0	ow0 p aa1 l k ah0	False
 zirkelbach	z er1 k ih0 l b aa0 k	z er1 k ih0 l b aa2 k	False
 dockendorf	d aa1 k ih0 n d ao0 r f	d aa1 k ih0 n d ao0 r f	True
-enseco	eh0 n s eh1 k ow0	eh0 n s eh1 k ow0	True
+enseco	eh0 n s eh1 k ow0	ih0 n s ah0 k ow0	False
 zaccagnini	z aa0 k ah0 g n iy1 n iy0	z aa0 k aa0 g n iy1 n iy0	False
 tomasko	t ah0 m aa1 s k ow0	t ow0 m aa1 s k ow0	False
 gretal	g r eh1 t ah0 l	g r eh1 t ah0 l	True
@@ -8446,7 +8446,7 @@ cyhexatin	s ay0 hh eh1 k s ah0 t ih0 n	s ay2 hh eh1 k s ah0 t ah0 n	False
 asahan	ae1 s ah0 hh ae0 n	ae1 s ah0 hh ae0 n	True
 aldwin	ao1 l d w ih0 n	ao1 l d w ih0 n	True
 melendrez	m ey0 l ey1 n d r eh0 z	m ah0 l eh1 n d r eh0 z	False
-vandriel	v ae2 n d r iy1 l	v ae1 n d r iy0 ah0 l	False
+vandriel	v ae2 n d r iy1 l	v ae1 n d r iy0 l	False
 bellar	b eh1 l er0	b eh1 l er0	True
 gaskey	g ae1 s k iy2	g ae1 s k iy0	False
 halmi	hh ao1 l m iy0	hh aa1 l m iy0	False
@@ -8478,7 +8478,7 @@ yerke	y er1 k	y er1 k iy0	False
 lacksadaiscious	l ae2 k s ah0 d ey1 s iy0 ah0 s	l ae2 k s ah0 d ah0 sh ah0 s	False
 seelert	s iy1 l er0 t	s iy1 l er0 t	True
 understaff	ah1 n d er0 s t ae2 f	ah1 n d er0 s t ae2 f	True
-blanquita	b l aa0 n k iy1 t ah0	b l aa0 ng k w iy1 t ah0	False
+blanquita	b l aa0 n k iy1 t ah0	b l aa0 n k w iy1 t ah0	False
 wiltsey	w ih1 l t s iy0	w ih1 l t s iy0	True
 buckskins	b ah1 k s k ih2 n z	b ah1 k s k ih2 n z	True
 cangemi	k aa0 ng g eh1 m iy0	k aa0 ng g eh1 m iy0	True
@@ -8744,7 +8744,7 @@ salce	s ey1 l s	s aa1 l s ey2	False
 gressett	g r eh1 s ih0 t	g r eh1 s ih0 t	True
 twenty-four	t w eh1 n t iy0 f ao2 r	t w eh1 n t iy0 f r	False
 silguero	s iy0 l g eh1 r ow0	s iy0 l g eh1 r ow0	True
-depaolis	d eh0 p aw1 l ih0 s	d ih0 p aw1 l iy0	False
+depaolis	d eh0 p aw1 l ih0 s	d ih0 p aw1 l iy0 s	False
 killmer	k ih1 l m er0	k ih1 l m er0	True
 glemp	g l eh1 m p	g l eh1 m p	True
 cassarino	k aa0 s aa0 r iy1 n ow0	k aa0 s aa0 r iy1 n ow0	True
@@ -8769,7 +8769,7 @@ iwanski	ih2 v ae1 n s k iy2	ih0 w aa1 n s k iy0	False
 guernseys	g er1 n z iy0 z	g er1 n z iy0 z	True
 clutts	k l ah1 t s	k l ah1 t s	True
 superwomen	s uw1 p er0 w ih2 m ih0 n	s uw1 p er0 w uh2 m eh0 n	False
-piacente	p iy0 aa0 ch eh1 n t iy0	p iy0 ah0 ch eh1 n t ey0	False
+piacente	p iy0 aa0 ch eh1 n t iy0	p iy0 ah0 ch eh1 n t iy0	False
 corrick	k ao1 r ih0 k	k ao1 r ih0 k	True
 barkocy	b aa1 r k ah0 s iy0	b aa1 r k ah0 s iy0	True
 heinzelman	hh ay1 n z ah0 l m ah0 n	hh ay1 n z ah0 l m ah0 n	True
@@ -8835,7 +8835,7 @@ vipperman	v ih1 p er0 m ah0 n	v ih1 p er0 m ah0 n	True
 arenella's	aa2 r ah0 n eh1 l ah0 z	aa2 r eh0 n eh1 l ah0 z	False
 armtek	aa1 r m t eh2 k	aa1 r m t eh2 k	True
 bindle	b ih1 n d ah0 l	b ih1 n d ah0 l	True
-matzu	m ae1 t z uw0	m ae1 t s uw1	False
+matzu	m ae1 t z uw0	m ae1 t s uw0	False
 yeamans	y iy1 m ah0 n z	y iy1 m ah0 n z	True
 raneri	r aa0 n eh1 r iy0	r ah0 n eh1 r iy0	False
 nauss	n ao1 s	n ao1 s	True
@@ -8978,7 +8978,7 @@ dewbre	d uw1 b er0	d uw1 b r	False
 narlock	n aa1 r l ah0 k	n aa1 r l aa2 k	False
 hydrocephalic	hh ay2 d r ow0 s eh0 f aa1 l ih0 k	hh ay2 d r ow0 s ah0 f ae1 l ih0 k	False
 fanech's	f ae1 n eh2 k s	f ae1 n ih0 k s	False
-iranamok	ay2 r ah0 n aa1 m aa0 k	ih2 r ah0 n ah0 m aa2 k	False
+iranamok	ay2 r ah0 n aa1 m aa0 k	ih2 r ae1 n ah0 m ah0 k	False
 bralley	b r ae1 l iy0	b r ae1 l iy0	True
 mikles	m ay1 k ah0 l z	m ay1 k ah0 l z	True
 mastergate	m ae1 s t er0 g ey2 t	m ae1 s t er0 g ey2 t	True
@@ -9041,7 +9041,7 @@ wyser	w ay1 z er0	w ay1 z er0	True
 huebel	hh uh1 b ah0 l	hh uh1 b ah0 l	True
 yirng-an	y ih1 r ng aa1 n	y er2 ng ae2 n	False
 o'bannon	ow0 b ae1 n ah0 n	ow0 b ae1 n ah0 n	True
-noreiga	n ao0 r ey1 g ah0	n ao2 r iy1 g ah0	False
+noreiga	n ao0 r ey1 g ah0	n ao2 r ih0 g ah0	False
 stelmack	s t eh1 l m ah0 k	s t eh1 l m ah0 k	True
 doshier	d aa1 sh iy0 er0	d ao2 sh ih1 er0	False
 lehnen	l eh1 n ah0 n	l eh1 n ah0 n	True
@@ -9108,7 +9108,7 @@ giurescu	jh uw2 r eh1 s k uw0	jh uh0 r eh1 s k y	False
 kutzer	k ah1 t z er0	k ah1 t s er0	False
 mcnamer	m ah0 k n ey1 m er0	m ae1 k n ah0 m er0	False
 ethyol	eh1 th ay0 aa0 l	eh1 th y ao2 l	False
-peyot	p ey1 ao0 t	p ih1 y ao2 t	False
+peyot	p ey1 ao0 t	p ih1 y ao1 t	False
 thortec	th ao1 r t eh2 k	th ao1 r t eh2 k	True
 frusen	f r uw1 z ah0 n	f r uw1 z ah0 n	True
 oddler	aa1 d l er0	aa1 d l er0	True
@@ -9203,7 +9203,7 @@ misperceived	m ih0 s p er0 s iy1 v d	m ih0 s p er0 s iy1 v d	True
 soltes	s ow1 l t s	s ow1 l t s	True
 rexnord	r eh1 k s n ao0 r d	r eh1 k s n ao1 r d	False
 fleissner	f l ay1 s n er0	f l ay1 s n er0	True
-polifroni	p aa0 l ah0 f r ow1 n iy0	p ow2 l ih0 f r ow1 n iy0	False
+polifroni	p aa0 l ah0 f r ow1 n iy0	p ow0 l ih0 f r ow1 n iy0	False
 kovaleski	k ah0 v ah0 l eh1 s k iy0	k ah0 v ah0 l eh1 s k iy0	True
 crough	k r aw1	k r ao1 f	False
 darty's	d aa1 r t iy0 z	d aa1 r t iy0 z	True
@@ -9259,7 +9259,7 @@ boulier	b uw1 l iy0 er0	b uw2 l iy0 er0	False
 cullinet	k ah2 l ih0 n eh1 t	k ah1 l ih0 n ah0 t	False
 miletich	m ih1 l ih0 t ih0 k	m ih1 l ih0 t ih0 k	True
 parrishes	p eh1 r ih0 sh ih0 z	p eh1 r ih0 sh ih0 z	True
-balcerowicz	b ae0 l s eh1 r ah0 w ih0 t s	b ae1 l ch er0 ah0 v ih0 ch	False
+balcerowicz	b ae0 l s eh1 r ah0 w ih0 t s	b aa0 l ch er0 ah0 v ih0 ch	False
 muddier	m ah1 d iy0 er0	m ah1 d iy0 er0	True
 gurnards	g er1 n er0 d z	g er0 n aa1 r d z	False
 oathout	ow1 th aw2 t	ow1 th aw2 t	True
@@ -9358,7 +9358,7 @@ spampinato	s p aa0 m p iy0 n aa1 t ow0	s p ae2 m p ih0 n aa1 t ow0	False
 bebeau	b ih0 b ow1	b ih0 b ow1	True
 eurosid	y uw1 r ah0 s ih0 d	y uw2 r aa1 s ih0 d	False
 roarty	r ao1 r t iy0	r ao1 r t iy0	True
-janthina	y aa0 n th iy1 n ah0	jh ae2 n th iy1 n ah0	False
+janthina	y aa0 n th iy1 n ah0	jh ae2 n th iy0 n ah0	False
 tashin	t ae1 sh ih0 n	t ae1 sh ih0 n	True
 mulheren	m ah0 l hh eh1 r ah0 n	m ah1 l hh er0 ah0 n	False
 bostra	b aa1 s t r ah0	b aa1 s t r ah0	True
@@ -9375,7 +9375,7 @@ seabert	s iy1 b er0 t	s iy1 b er0 t	True
 cacace	k ae1 k ah0 s	k aa0 k aa1 s	False
 rosebrook	r ow1 z b r uh2 k	r ow1 z b r uh2 k	True
 simonin	s ih1 m ah0 n ih0 n	s ih1 m ah0 n ih0 n	True
-inmex	ih1 n m eh2 k s	ih1 n m eh0 k s	False
+inmex	ih1 n m eh2 k s	ih1 n m eh2 k s	True
 bedsaul	b eh1 d s ao0 l	b eh1 d s ao0 l	True
 seita	s ey1 t ah0	s iy1 t ah0	False
 dehaas	d eh1 hh aa0 z	d eh1 hh ah0 s	False
@@ -9461,7 +9461,7 @@ loanloss	l ow1 n l ao2 s	l ow1 n l ah0 s	False
 outguessed	aw1 t g eh2 s t	aw1 t g eh2 s t	True
 delora	d eh0 l ao1 r ah0	d eh0 l ao1 r ah0	True
 noninflationary	n aa2 n ih0 n f l ey1 sh ah0 n eh2 r iy0	n aa2 n ih0 n f l ey1 sh ah0 n eh2 r iy0	True
-necrologist	n ah0 k r ao1 l ah0 jh ih0 s t	n ah0 k r aa1 l ah0 jh ah0 s t	False
+necrologist	n ah0 k r ao1 l ah0 jh ih0 s t	n ah0 k r ao1 l ah0 jh ah0 s t	False
 roister	r oy1 s t er0	r oy1 s t er0	True
 fyock	f y aa1 k	f ay1 aa1 k	False
 garofano	g aa0 r ow0 f aa1 n ow0	g aa0 r ow0 f aa1 n ow0	True
@@ -9541,7 +9541,7 @@ penkala	p ih0 ng k aa1 l ah0	p eh0 ng k ah0 l ah0	False
 puristic	p y uh0 r ih1 s t ih0 k	p y uh0 r ih1 s t ih0 k	True
 episcopo	ih0 p ih0 s k ow1 p ow0	eh0 p iy0 s k ow1 p ow0	False
 glymph	g l ih1 m f	g l ih1 m f	True
-kaiseraugst	k ay1 z er0 ao0 g s t	k ey1 s er0 ao2 g s t	False
+kaiseraugst	k ay1 z er0 ao0 g s t	k ay1 s er0 ao2 g s t	False
 plateauing	p l ah0 t ow1 ih0 ng	p l ae0 t ow1 ih0 ng	False
 sabertech	s ey1 b er0 t eh2 k	s ae1 b er0 t eh2 k	False
 kollmeyer	k aa1 l m ay0 er0	k aa1 l m ay0 er0	True
@@ -9587,7 +9587,7 @@ goralski	g er0 aa1 l s k iy0	g r aa1 l s k iy0	False
 hoffecker	hh ao1 f ih0 k er0	hh ao1 f ih0 k er0	True
 moskatel's	m ao2 s k ah0 t eh1 l z	m aa1 s k ah0 t eh2 l z	False
 ketou	k ah0 t uw1	k eh1 t uw0	False
-overdamping	ow1 v er0 d ae2 m p ih0 ng	ow1 v er0 d ae1 m p ih0 ng	False
+overdamping	ow1 v er0 d ae2 m p ih0 ng	ow1 v er0 d ae2 m p ih0 ng	True
 godlove	g aa1 d l ah2 v	g aa1 d l ah2 v	True
 bundys	b ah1 n d iy0 z	b ah1 n d iy0 z	True
 ogrady	ow0 g r ey1 d iy0	aa1 g r ey1 d iy0	False
@@ -9810,7 +9810,7 @@ dibert	d ih1 b er0 t	d ih1 b er0 t	True
 crovls	k r ow1 v ah0 l z	k r aa1 v l z	False
 proglacial	p r ow0 g l ey1 sh ah0 l	p r aa0 g l ey1 sh ah0 l	False
 fosback	f aa1 s b ae2 k	f aa1 s b ae2 k	True
-o'donohue	ow0 d aa1 n ah0 hh y uw0	ow0 d aa1 n ow1 hh w	False
+o'donohue	ow0 d aa1 n ah0 hh y uw0	ow0 d aa1 n ow1 hh uw2	False
 kmetz	k ah0 m eh1 t s	k ey1 m eh1 t s	False
 kohtaro	k ow0 t aa1 r ow0	k ow1 t aa1 r ow0	False
 lorio	l ao1 r iy0 ow0	l ao1 r iy0 ow0	True
@@ -9819,7 +9819,7 @@ capriotti	k aa0 p r iy0 ow1 t iy0	k ae2 p r iy0 ow1 t iy0	False
 apelike	ey1 p l ay2 k	ey1 p l ay2 k	True
 rodge	r aa1 jh	r aa1 jh	True
 matheney	m ae1 th ih0 n iy0	m ae1 th ih0 n iy0	True
-dadisman	d ae1 d ih0 s m ah0 n	d ey1 d ih0 s m ah0 n	False
+dadisman	d ae1 d ih0 s m ah0 n	d ae1 d ih0 s m ah0 n	True
 humi	hh y uw1 m iy0	hh uw1 m iy0	False
 detjen	d eh1 t jh ah0 n	d eh1 t jh ah0 n	True
 schnetzer	sh n eh1 t z er0	sh n eh1 t z er0	True
@@ -9920,7 +9920,7 @@ kanghua	k ae1 ng hh y uw0 ah0	k ae1 ng hh uw0 ah0	False
 gnatcatchers	n ae1 t k ae2 ch er0 z	n ae1 t k ae2 ch er0 z	True
 boock	b uw1 k	b uh1 k	False
 keithly	k iy1 th l iy0	k iy1 th l iy0	True
-parriott	p ae1 r iy0 ah0 t	p eh1 r iy0 ah0 t	False
+parriott	p ae1 r iy0 ah0 t	p ae1 r iy0 ah0 t	True
 rachelvolt	r ah0 sh eh1 l v ao2 l t	r ey1 ch ah0 l v ow2 l t	False
 bildner	b ih1 l d n er0	b ay1 l d n er0	False
 volkers	v ow1 l k er0 z	v ow1 l k er0 z	True
@@ -9937,7 +9937,7 @@ roese	r ow1 s	r ow1 z	False
 macmullen	m ah0 k m ah1 l ah0 n	m ah0 k ah1 l ah0 n	False
 gelardin	g ah0 l aa1 r d ih0 n	g eh1 l aa1 r d ih0 n	False
 misrecognizes	m ih0 s r eh1 k ah0 g n ay2 z ih0 z	m ih0 s r eh1 k ah0 g n ay2 z ih0 z	True
-stufflebean	s t ah1 f ah0 l b iy2 n	s t ah2 f ah0 l b iy2 ah0 n	False
+stufflebean	s t ah1 f ah0 l b iy2 n	s t ah1 f ah0 l b iy2 ah0 n	False
 gilkeson	g ih1 l k ih0 s ah0 n	g ih1 l k ih0 s ah0 n	True
 haupert	hh aw1 p er0 t	hh aw1 p er0 t	True
 grodsky	g r aa1 d s k iy0	g r aa1 d s k iy0	True
@@ -9947,7 +9947,7 @@ blida	b l ay1 d ah0	b l iy1 d ah0	False
 ressa	r eh1 s ah0	r eh1 s ah0	True
 jaisigher	jh ey1 s ah0 g er0	jh ey1 s ay2 er0	False
 preexist	p r iy1 ih0 g z ih1 s t	p r iy1 ah0 g z ih1 s t	False
-maralina	m aa0 r aa0 l iy1 n ah0	m aa0 r ah0 l iy1 n ah2	False
+maralina	m aa0 r aa0 l iy1 n ah0	m aa0 r ah0 l iy1 n ah0	False
 pilkerton	p ih0 l k er1 t ah0 n	p ih1 l k er0 t ah0 n	False
 steamrollered	s t iy1 m r ow2 l er0 d	s t iy1 m r ow2 l er0 d	True
 chipetas	ch ih0 p iy1 t ah0 z	ch ah0 p iy1 t ah0 z	False
@@ -9992,7 +9992,7 @@ falgoust	f aa1 l g uw0 s t	f ao1 l g ah0 s t	False
 non-management	n aa0 n m ae1 n ih0 jh m ah0 n t	n aa2 n m ae1 n ih0 jh m ah0 n t	False
 aufiero	ow0 f ih1 r ow0	ao2 f ih1 r ow0	False
 kooiker	k uw1 ih0 k er0	k uw1 k er0	False
-vesel	v eh1 s ah0 l	v eh1 s ah0 l	True
+vesel	v eh1 s ah0 l	v eh1 z ah0 l	False
 leemon	l iy1 m ah0 n	l iy1 m ah0 n	True
 madelle	m ah0 d eh1 l	m ah0 d eh1 l	True
 mccrillis	m ah0 k r ih1 l ah0 s	m ah0 k r ih1 l ah0 s	True
@@ -10386,7 +10386,7 @@ fathomable	f ae1 dh ah0 m ah0 b ah0 l	f ae1 dh ah0 m ah0 b ah0 l	True
 uyehara	uw0 y ey0 hh aa1 r ah0	ay0 hh aa1 r ah0	False
 fraph's	f r ae1 f s	f r ae1 f s	True
 armested	aa1 r m ih0 s t eh2 d	aa1 r m eh1 s t ih0 d	False
-applequist	ae1 p ah0 l k w ih0 s t	ae1 p l k w ih2 s t	False
+applequist	ae1 p ah0 l k w ih0 s t	ae1 p l iy1 k w ih2 s t	False
 keagle	k iy1 g ah0 l	k iy1 g ah0 l	True
 bacik	b aa1 ch ih0 k	b aa1 s ih0 k	False
 venacuro	v eh0 n ah0 k y uh1 r ow0	v eh0 n ah0 k uh1 r ow0	False
@@ -10611,7 +10611,7 @@ rodenberg	r ow1 d ah0 n b er0 g	r ow1 d ah0 n b er0 g	True
 liscom	l ih1 s k ah0 m	l ih1 s k ah0 m	True
 herda	hh eh1 r d ah0	hh r d ah0	False
 robishaw	r aa1 b ih0 sh ao2	r aa1 b ih0 sh ao2	True
-padro	p aa1 d r ow0	p ae1 d r ow0	False
+padro	p aa1 d r ow0	p ae1 d r ow2	False
 wolgamott	w ow1 l g ah0 m aa0 t	w ow1 l g ah0 m ah0 t	False
 biglin	b ih1 g l ih0 n	b ih1 g l ih0 n	True
 glazener	g l ae1 z iy0 n er0	g l ey1 z iy0 n er0	False
@@ -10627,7 +10627,7 @@ steinmiller	s t ay1 n m ih2 l er0	s t ay1 n m ih2 l er0	True
 claramae	k l aa0 r aa1 m ay0	k l eh1 r ah0 m ey2	False
 rigoni	r iy0 g ow1 n iy0	r iy0 g ow1 n iy0	True
 kinsinger	k ih1 n s ih0 n jh er0	k ih1 n z ih0 ng jh er0	False
-delvalle	d eh2 l v ae1 l iy0	d eh1 l v aa1 l	False
+delvalle	d eh2 l v ae1 l iy0	d eh0 l v aa1 l	False
 radell	r aa0 d ey1 l	r aa0 d ah0 l	False
 bozard	b ah0 z aa1 r d	b ah0 z aa1 r d	True
 benker	b eh1 ng k er0	b eh1 ng k er0	True
@@ -10671,7 +10671,7 @@ asimow	ae1 s ih0 m ow0	ae1 s ah0 m ow2	False
 frausto	f r ao1 s t ow0	f r ao1 s t ow0	True
 dorea	d ao1 r iy0 ah0	d ao1 r iy0 ah0	True
 clarinetists	k l eh2 r ah0 n eh1 t ih0 s t s	k l eh2 r ah0 n eh1 t ih0 s t s	True
-erakat	eh0 r aa1 k ah0 t	eh1 r ah0 k ae0 t	False
+erakat	eh0 r aa1 k ah0 t	eh1 r ah0 k aa2 t	False
 dicecco	d ih0 s eh1 k ow2	d ih0 s eh1 k ow2	True
 adabelle	ae1 d ah0 b ah0 l	ae1 d ah0 b eh1 l	False
 resner	r eh1 s n er0	r eh1 s n er0	True
@@ -10847,7 +10847,7 @@ biers	b iy1 r z	b iy1 r z	True
 goughnour	g aw1 n er0	g ao1 f n er0	False
 saxer	s ae1 k s er0	s ae1 k s er0	True
 shadduck	sh ae1 d ah0 k	sh ae1 d ah0 k	True
-co-opt	k ow0 aa1 p t	k ow0 aa2 p t	False
+co-opt	k ow0 aa1 p t	k ow0 aa1 p t	True
 tovaz	t ow1 v aa2 z	t ow0 v aa0 z	False
 haavelmo	hh aa2 v eh1 l m ow0	hh aa0 v eh1 l m ow0	False
 engholm	eh1 ng hh ow0 l m	eh1 ng hh ow2 l m	False
@@ -10892,7 +10892,7 @@ kamerer	k ae1 m er0 er0	k ae1 m er0	False
 alagappan	aa0 l ah0 g aa1 p ah0 n	ae2 l ah0 g ae1 p ae2 n	False
 marketwide	m aa1 r k ah0 t w ay2 d	m aa1 r k ah0 t w ay2 d	True
 giaconda	jh iy2 ah0 k aa1 n d aa2	jh ah0 k aa1 n d aa2	False
-koetje	k ow1 jh ah0	k ow1 t jh iy0	False
+koetje	k ow1 jh ah0	k ow1 t jh	False
 lodley	l aa1 d l iy0	l aa1 d l iy0	True
 tebuthiuron	t eh2 b ah0 th y uw1 r aa0 n	t ah0 b ah1 th iy0 y er0 ah0 n	False
 boehmke	b ow1 m k iy0	b ow1 m k	False
@@ -10942,7 +10942,7 @@ colarusso	k ow0 l aa0 r uw1 s ow0	k ow0 l er0 uw1 s ow0	False
 deherrera	d ey0 hh eh0 r eh1 r ah0	d ey0 hh eh0 r eh1 r ah0	True
 kruckeberg	k r ah1 k b er0 g	k r ah1 k b er0 g	True
 lugworms	l ah1 g w er0 m z	l ah1 g w er2 m z	False
-montee	m aa1 n t iy0	m aa0 n t ey1	False
+montee	m aa1 n t iy0	m aa0 n t iy1	False
 busbey	b ah1 s b iy0	b ah1 z b iy0	False
 azelia	aa0 z eh1 l iy0 ah0	ah0 z iy1 l iy0 ah0	False
 bessent	b eh1 s ah0 n t	b eh1 s ah0 n t	True
@@ -11089,7 +11089,7 @@ strangulations	s t r ae2 ng g y ah0 l ey1 sh ah0 n z	s t r ae2 ng g y ah0 l ey1 
 uptegrove	ah1 p t ih0 g r ah0 v	uw0 p t eh0 g r ow1 v iy0	False
 dopplerganger	d ao1 p ah0 l g ae2 n g er0	d aa1 p l er0 g ey0 ng er0	False
 leverson	l eh1 v er0 s ah0 n	l eh1 v er0 s ah0 n	True
-berghuis	b er1 g hh uw0 ih0 z	b er1 g uw0 iy0 z	False
+berghuis	b er1 g hh uw0 ih0 z	b er1 g uw0 ih0 z	False
 harlison	hh aa1 r l ih0 s ah0 n	hh aa1 r l ih0 s ah0 n	True
 cravin	k r ey1 v ih0 n	k r ae1 v ih0 n	False
 old-growth	ow2 l d g r ow1 th	ow2 l d g r ow0 th	False
@@ -11156,7 +11156,7 @@ niccolite	n ih1 k ah0 l ay2 t	n ih1 k ah0 l ay2 t	True
 boilerplates	b oy1 l er0 p l ey2 t s	b oy1 l er0 p l ey2 t s	True
 snappiest	s n ae1 p ih0 eh2 s t	s n ae1 p iy0 ah0 s t	False
 kuhnke	k ah1 ng k	k ah1 ng k	True
-perpetuals	p er0 p eh1 ch uw0 ah0 l z	p er0 p eh1 ch uw0 ah0 l z	True
+perpetuals	p er0 p eh1 ch uw0 ah0 l z	p er0 p eh1 ch w ah0 l z	False
 interfirst	ih2 n t er0 f er1 s t	ih2 n t er0 f er1 s t	True
 bedgood	b eh1 d g uh2 d	b eh1 d g uh2 d	True
 cathers	k ae1 dh er0 z	k ae1 dh er0 z	True
@@ -11237,7 +11237,7 @@ jimison	jh ih1 m ih0 s ah0 n	jh ih1 m ih0 s ah0 n	True
 agnico	ae1 g n ih0 k ow2	ae1 g n ih0 k ow0	False
 reinertson	r ay1 n er0 t s ah0 n	r ay1 n er0 t s ah0 n	True
 vonderheide	v aa1 n d er0 hh ay2 d	v aa1 n d er0 hh ay2 d	True
-scharlau	sh aa1 r l aw0	s sh aa1 r l aw0	False
+scharlau	sh aa1 r l aw0	sh aa1 r l aw0	True
 transtechnology	t r ae2 n z t ah0 k n aa1 l ah0 jh iy0	t r ae2 n s t eh2 k n aa1 l ah0 jh iy0	False
 nattie	n ae1 t iy0	n ae1 t iy0	True
 miscount	m ih1 s k aw1 n t	m ih1 s k aw2 n t	False
@@ -11487,7 +11487,7 @@ cashways	k ae1 sh w ey2 z	k ae1 sh w ey2 z	True
 dilophosaurus	d ih0 l aa2 f ah0 s ao1 r ah0 s	d ih2 l ah0 f ah0 s ao1 r ah0 s	False
 fleeger	f l iy1 g er0	f l iy1 g er0	True
 minimills	m ih1 n iy0 m ih1 l z	m ih1 n iy0 m aa2 l z	False
-landreneau	l ae1 n d r ih0 n ow0	l ae1 n d r ih0 n ow2	False
+landreneau	l ae1 n d r ih0 n ow0	l ae1 n d r ih0 n ow1	False
 grandnephew	g r ae1 n d n eh1 f y uw0	g r ae1 n d n eh1 f y uw2	False
 foltene	f ow0 l t iy1 n	f ow0 l t iy2 n	False
 lipsig	l ih1 p s ih0 g	l ih1 p s ih0 g	True
@@ -11552,7 +11552,7 @@ hollabaugh	hh aa1 l ah0 b ao2	hh aa1 l ah0 b ao0	False
 maybin	m ey1 b ih0 n	m ey1 b ih0 n	True
 kempker	k eh1 m p k er0	k eh1 m p k er0	True
 hulburd	hh ah1 l b er0 d	hh ah1 l b er0 d	True
-muehlbauer	m y uw1 l b aw0 er0	m y uw1 l b aw0 er0	True
+muehlbauer	m y uw1 l b aw0 er0	m y uh1 l b aw0 er0	False
 holzworth	hh ow1 l z w er0 th	hh ow1 l z w er0 th	True
 edper	eh1 d p er0	eh1 d p er0	True
 overmatch	ow2 v er0 m ae1 ch	ow1 v er0 m ae2 ch	False
@@ -11624,7 +11624,7 @@ cobey	k ow1 b iy0	k ow1 b iy0	True
 stolarz	s t ow1 l aa0 r z	s t ow1 l aa0 er0 z	False
 venalum	v eh1 n ah0 l ah0 m	v eh1 n ah0 l ah0 m	True
 lybeck	l ay1 b eh2 k	l ay1 b eh2 k	True
-ehrke	eh1 r k	eh1 er1 k iy0	False
+ehrke	eh1 r k	eh1 er1 k	False
 frankum	f r ae1 ng k ah0 m	f r ae1 ng k ah0 m	True
 ruman	r uw1 m ah0 n	r uw1 m ah0 n	True
 zeyno	z ey1 n ow0	z ey1 n ow0	True
@@ -11674,7 +11674,7 @@ dambrosia	d aa0 m b r ow1 s iy0 ah0	d ae0 m b r ow1 zh ah0	False
 brazeal	b r ah0 z iy1 l	b r ey1 z iy0 l	False
 yongchaiyudh	y ao2 ng ch ey0 y uw1 d	y ao1 ng ch ay1 y uw2 d	False
 nothnagel	n aa1 th n ah0 g ah0 l	n aa1 th n ah0 g ah0 l	True
-leppla	l eh1 p l ah0	l eh1 p l aa2	False
+leppla	l eh1 p l ah0	l eh1 p l p	False
 yocham	y aa1 ch ah0 m	y aa1 ch ah0 m	True
 woolums	w uh1 l ah0 m z	w uh1 l ah0 m z	True
 wondra	w aa1 n d r ah0	w ah1 n d r ah0	False
@@ -11705,7 +11705,7 @@ zorana	z ao0 r ae1 n ah0	z ao0 r ae1 n ah0	True
 genovise	jh eh1 n ah0 v iy0 z	jh eh1 n ah0 v ay2 z	False
 fredricksen	f r eh1 d r ih0 k s ah0 n	f r eh1 d r ih0 k s ah0 n	True
 goldbaum	g ow1 l d b aw2 m	g ow1 l d b aw0 m	False
-stenquist	s t eh1 n k w ih2 s t	s t eh1 n k w ih2 s t	True
+stenquist	s t eh1 n k w ih2 s t	s t eh1 ng k w ih2 s t	False
 berlack	b er1 l ae0 k	b er1 l ah0 k	False
 golonka	g ow0 l ow1 ng k ah0	g ah0 l ow1 ng k ah0	False
 auyeung	aw1 y uw2 ng	ow0 y ah0 ng	False
@@ -11922,7 +11922,7 @@ wandler	w aa1 n d l er0	w aa1 n d l er0	True
 dillahunt	d ih1 l ah0 hh ah2 n t	d ih1 l ah0 hh ah0 n t	False
 boschee	b ao1 sh iy0	b ao1 sh iy0	True
 stamant	s t ae1 m ah0 n t	s t ey1 m ah0 n t	False
-mashalu	m ah0 sh ae1 l uw0	m ae1 sh aa1 l uw0	False
+mashalu	m ah0 sh ae1 l uw0	m ae0 sh aa1 l uw0	False
 orabel	ao0 r aa0 b eh1 l	ao1 r ah0 b eh2 l	False
 greis	g r iy1 z	g r iy1 z	True
 gundle	g ah1 n d ah0 l	g ah1 n d ah0 l	True
@@ -11964,7 +11964,7 @@ mehlenbacher	m eh1 l ih0 n b aa0 k er0	m eh1 l ih0 n b aa0 k er0	True
 presplit	p r iy1 s p l ih1 t	p r eh1 s p l ih0 t	False
 schalow	sh ae1 l ow0	sh ae1 l ow0	True
 luvena	l ah1 v ih0 n ah0	l uw0 v ey1 n ah0	False
-twenty-two	t w eh1 n t iy0 t uw2	t w eh1 n t iy0 t w	False
+twenty-two	t w eh1 n t iy0 t uw2	t w eh1 n t iy0 t w ow0	False
 long-island	l ao2 ng ay1 l ah0 n d	l ao1 ng ay1 s l ah0 n d	False
 greason	g r iy1 s ah0 n	g r iy1 s ah0 n	True
 vanveen	v ah0 n v iy1 n	v ae0 n v iy1 n	False
@@ -11980,7 +11980,7 @@ drinkwine	d r ih1 ng k w ay2 n	d r ih1 ng k w ay2 n	True
 hulbard	hh ah1 l b er0 d	hh ah1 l b er0 d	True
 alisky	ah0 l ih1 s k iy0	ah0 l ih1 s k iy0	True
 karber	k aa1 r b er0	k aa1 r b er0	True
-ondracek	aa1 n d r ah0 s eh0 k	aa1 n d r ah0 s eh0 k	True
+ondracek	aa1 n d r ah0 s eh0 k	aa1 n d r ah0 s ih0 k	False
 uhlich	uw1 l ih0 k	uw1 l ih0 k	True
 tandycrafts	t ae1 n d iy0 k r ae2 f t s	t ae1 n d iy0 k r ae2 f t s	True
 alkema	ae1 l k ih0 m ah0	aa0 l k ih0 m ah0	False
@@ -11993,7 +11993,7 @@ bibbee	b ih1 b iy1	b ih1 b iy2	False
 determent	d ih0 t er1 m ah0 n t	d ih0 t er1 m ah0 n t	True
 herronimo's	hh er0 aa1 n ah0 m ow0 z	hh eh0 r aa1 n ih0 m ow0 z	False
 girven	g er1 v ah0 n	g er1 v ah0 n	True
-carava	k ae1 r ah0 v ah0	k aa0 er0 aa1 v aa0	False
+carava	k ae1 r ah0 v ah0	k aa0 er0 aa1 v ah0	False
 zynda	z ih1 n d ah0	z ih1 n d ah0	True
 chaunce	ch ao1 n s	ch ao1 n s	True
 shreffler	sh r eh1 f l er0	sh r eh1 f l er0	True
@@ -12027,7 +12027,7 @@ bewilders	b ih0 w ih1 l d er0 z	b ih0 w ih1 l d er0 z	True
 equiangular	iy2 k w ah0 ae1 ng g y ah0 l er0	iy2 k w iy0 ae1 ng g y ah0 l er0	False
 molinelli	m ow0 l iy0 n eh1 l iy0	m ow0 l ih0 n eh1 l iy0	False
 corpus-christi	k ao1 r p ah0 s k r ih1 s t iy0	k ao2 r p ah0 s k r ih1 s t iy0	False
-gomoll	g aa1 m ah0 l	g ow1 m ah0 l	False
+gomoll	g aa1 m ah0 l	g aa1 m ah0 l	True
 rosty	r ao1 s t iy0	r aa1 s t iy0	False
 neyhart	n ey1 hh aa2 r t	n ey1 hh aa0 r t	False
 synan	s ay1 n ah0 n	s ay1 n ah0 n	True
@@ -12135,7 +12135,7 @@ yellower	y eh1 l ow0 er0	y eh1 l ow0 er0	True
 corinn	k ao1 r ih0 n	k ao1 r ih0 n	True
 lyter	l ay1 t er0	l ay1 t er0	True
 cremeens	k r ih0 m iy1 n z	k r ah0 m iy1 n z	False
-vanslooten	v ae2 n s l uw1 t ah0 n	v ae2 n s l uw1 t ah0 n	True
+vanslooten	v ae2 n s l uw1 t ah0 n	v ae0 n s l uw1 t ah0 n	False
 smink	s m ih1 ng k	s m ih1 ng k	True
 revzin	r eh1 v z ih0 n	r eh1 v z ih0 n	True
 wesselman	w eh1 s ah0 l m ah0 n	w eh1 s ah0 l m ah0 n	True
@@ -12243,7 +12243,7 @@ hakanson	hh ae1 k ah0 n s ah0 n	hh ey1 k ah0 n s ah0 n	False
 telephoniques	t eh2 l ah0 f aa0 n iy1 k s	t eh2 l ah0 f aa1 n ih0 k s	False
 noriegas	n ao2 r iy0 ey1 g ah0 s	n ao2 r iy0 ey1 g ah0 s	True
 kopko	k ow1 p k ow0	k ow1 p k ow0	True
-vandervort	v ae1 n d er0 v ao2 r t	v ae1 n d er0 v ao1 r t	False
+vandervort	v ae1 n d er0 v ao2 r t	v ae1 n d er0 v ao2 r t	True
 no-one's	n ow1 ah0 n z	n ow1 w ah0 n z	False
 phenylthaline	f iy2 n ah0 l th ey1 l iy0 n	f eh1 n ih0 l th ah0 l ih0 n	False
 mikrut	m ih1 k r ah0 t	m ay1 k r ah2 t	False
@@ -12258,9 +12258,9 @@ jonassaint	jh ow2 n ah0 s ey1 n t	jh aa1 n ah0 s ey1 n t	False
 thorsell	th ao1 r s ah0 l	th ao1 r s ah0 l	True
 aftermaths	ae1 f t er0 m ae2 th s	ae1 f t er0 m ae2 th s	True
 kovatch	k aa1 v ah0 ch	k ow1 v aa0 ch	False
-dossantos	d ow0 s aa1 n t ow0 z	d ow0 s ae1 n t ow0 z	False
+dossantos	d ow0 s aa1 n t ow0 z	d ow0 s aa1 n t ow0 z	True
 oblander	aa1 b l ah0 n d er0	aa1 b l ah0 n d er0	True
-masamilla	m aa0 s ah0 m ih1 l aa2	m ae2 s aa0 m ih1 l ah0	False
+masamilla	m aa0 s ah0 m ih1 l aa2	m ae2 s ah0 m ih1 l ah0	False
 mcneece	m ah0 k n iy1 s	m ah0 k n iy1 s	True
 cuajone	k y uw1 ah0 jh ow2 n	k w aa0 jh ow1 n iy0	False
 brickel	b r ih1 k ah0 l	b r ih1 k ah0 l	True
@@ -12496,12 +12496,12 @@ radella	r ah0 d eh1 l ah0	r ah0 d eh1 l ah0	True
 panzica	p ae1 n z ih0 k ah0	p ae1 n z ih0 k ah0	True
 shelnutt	sh eh1 l n ah0 t	sh eh1 l n ah2 t	False
 tesobono	t eh2 s ah0 b ow1 n ow0	t eh2 s ah0 b ow1 n ow0	True
-cianciolo	ch ao1 n ch ow0 l ow0	ch ao1 n ch iy0 ow1 l ow0	False
+cianciolo	ch ao1 n ch ow0 l ow0	ch aa0 n ch iy0 ow1 l ow0	False
 snowberger	s n ow1 b er0 g er0	s n ow1 b er0 g er0	True
 multifoods	m ah1 l t iy0 f uw1 d z	m ah1 l t iy0 f uh2 d z	False
 fiechter	f ih1 k t er0	f iy1 k t er0	False
 broadaway	b r ao1 d ah0 w ey2	b r ao1 d ah0 w ey2	True
-serritella	s eh2 r ih0 t eh1 l ah0	s eh0 r ih0 t eh1 l ah0	False
+serritella	s eh2 r ih0 t eh1 l ah0	s eh2 r ih0 t eh1 l ah0	True
 o'barr	ow0 b aa1 r	ow0 b aa1 r	True
 mancil	m ae1 n s ih0 l	m ae1 n s ih0 l	True
 birkland	b er1 k l ah0 n d	b er1 k l ah0 n d	True
@@ -12642,7 +12642,7 @@ groma	g r aa1 m ah0	g r ow1 m ah0	False
 kakos	k ey1 k ow0 z	k ey1 k ow0 z	True
 gilbertine	jh iy0 l b er0 t iy1 n iy0	g ih1 l b er0 t iy2 n	False
 seabeach	s iy1 b iy2 ch	s iy1 b iy2 ch	True
-derus	d eh1 r ih0 s	d eh1 r ah0 s	False
+derus	d eh1 r ih0 s	d ih1 r ah0 s	False
 sharpy's	sh aa1 r p iy0 z	sh aa1 r p iy0 z	True
 druisilla	d r ih0 s ih1 l ah0	d r uw0 ih0 s ih1 l ah0	False
 vacanti	v ah0 k ae1 n t iy0	v ah0 k ae1 n t iy0	True
@@ -12727,7 +12727,7 @@ chromalloy	k r ow0 m ae1 l oy0	k r ow1 m ah0 l oy2	False
 lannom	l ae1 n ah0 m	l ae1 n ah0 m	True
 jasko	y aa1 s k ow0	y ae1 s k ow0	False
 gumbi's	g ah1 m b iy0 z	g ah1 m b iy0 z	True
-michaelina	m ay2 k ah0 l iy1 n ah0	m ay2 k eh1 l iy1 n ah0	False
+michaelina	m ay2 k ah0 l iy1 n ah0	m ay2 k ah0 l iy1 n ah0	True
 challender	ch ah0 l eh1 n d er0	ch ae1 l ah0 n d er0	False
 eolande	ey2 ow0 l aa1 n d iy0	iy1 l aa1 n d iy0	False
 stutler	s t ah1 t l er0	s t ah1 t l er0	True
@@ -12743,7 +12743,7 @@ rykoff	r ay1 k ao2 f	r ih1 k ao0 f	False
 stangel	s t ey1 ng g ah0 l	s t ae1 ng g ah0 l	False
 bruntjen	b r ah1 n t jh eh2 n	b r ah1 n t jh ah0 n	False
 fatheree	f ae0 th er0 iy1	f aa1 dh er0 iy1	False
-overcrowds	ow2 v er0 k r aw1 d z	ow1 v er0 k r aw1 d z	False
+overcrowds	ow2 v er0 k r aw1 d z	ow2 v er0 k r aw1 d z	True
 northeasterners	n ao0 r th iy1 s t er0 n er0 z	n ao2 r th iy1 s t er0 n er0 z	False
 carrigg	k ae1 r ih0 g	k ae1 r ih0 g	True
 ulshafer	ah1 l sh ah0 f er0	ah1 l sh ah0 f er0	True
@@ -12820,7 +12820,7 @@ gnomic	n ow1 m ih0 k	n aa1 m ih0 k	False
 muckrake	m ah1 k r ey2 k	m ah1 k r ey2 k	True
 prigmore	p r ih1 g m ao0 r	p r ih1 g m ao0 r	True
 sobbingly	s aa1 b ih0 ng l iy0	s aa1 b ih0 ng l iy0	True
-zycad	z ih1 k ae2 d	z ih1 k ae0 d	False
+zycad	z ih1 k ae2 d	z ay1 k ae0 d	False
 avendano	aa0 v eh0 n d aa1 n ow0	aa0 v ah0 n d aa1 n ow0	False
 anscomb	ah0 n s k aa1 m	ae1 n s k ah0 m	False
 macioce	m aa0 ch ow1 ch iy0	m ah0 k iy0 ah0 s	False
@@ -12831,8 +12831,8 @@ vorpahl	v ao1 r p aa0 l	v ao1 r p aa0 l	True
 dromi	d r aa1 m iy0	d r ow1 m iy0	False
 shirlie	sh er1 l iy0	sh er1 l iy0	True
 fibrile	f ay1 b r ih0 l	f ay1 b r ah0 l	False
-spizzirri	s p iy0 t s ih1 r iy0	s p ih0 z ih1 r iy0	False
-ragunathan	r aa0 g uw1 n ah0 th aa0 n	r ae2 g ah1 n ah0 th aa2 n	False
+spizzirri	s p iy0 t s ih1 r iy0	s p iy0 z ih1 r iy0	False
+ragunathan	r aa0 g uw1 n ah0 th aa0 n	r ae2 g uh1 n ah0 th aa2 n	False
 dauster	d aw1 s t er0	d ao1 s t er0	False
 dejongh	d ah0 jh ao1 ng	d ah0 jh ao1 ng	True
 potamkin	p ow1 t ae2 m k ih0 n	p ah0 t ae1 m k ih0 n	False
@@ -12872,7 +12872,7 @@ laminer	l ae1 m ah0 n er0	l ae1 m iy1 n er0	False
 pilotte	p ih0 l ao1 t	p ih0 l ao1 t	True
 janning	jh ae1 n ih0 ng	jh ae1 n ih0 ng	True
 cimorelli	ch iy0 m ao0 r eh1 l iy0	ch iy2 m ao0 r eh1 l iy2	False
-tamke	t ae1 m k iy0	t ae1 m k	False
+tamke	t ae1 m k iy0	t ae1 m k iy0	True
 hanifin	hh ae1 n ih0 f ih0 n	hh ae1 n ih0 f ih0 n	True
 gokey	g ow1 k iy2	g ow1 k iy0	False
 lorick	l ao1 r ih0 k	l ao1 r ih0 k	True
@@ -12924,9 +12924,9 @@ ziegenhorn	z iy1 g ih0 n hh er0 n	z iy1 g ih0 n hh er0 n	True
 measurex	m eh1 z er0 ah0 k s	m eh1 zh er0 eh2 k s	False
 basophilia	b ey2 s ao0 f ih1 l iy2 ah0	b ey2 s ao0 f ih1 l y ah0	False
 systemone	s ih1 s t ah0 m ow2 n	s ih1 s t ah0 m ow2 n	True
-napolitan	n aa0 p ow2 l iy0 t aa1 n	n ah0 p aa1 l ah0 t ah0 n	False
+napolitan	n aa0 p ow2 l iy0 t aa1 n	n ah0 p aa1 l ih0 t ah0 n	False
 smuck	s m ah1 k	s m ah1 k	True
-avice	aa1 v ay0 s	ae1 v ah0 s	False
+avice	aa1 v ay0 s	ah0 v ah0 s	False
 hinzack	hh ih1 n z ae0 k	hh ih1 n z ae2 k	False
 franckowiak	f r ah0 n s k aw1 iy0 ae0 k	f r ae0 ng s k aw1 iy0 ae0 k	False
 lithotripter	l ih1 th ah0 t r ih2 p t er0	l ih1 th ah0 t r ih1 p t er0	False
@@ -13171,7 +13171,7 @@ nucleonic	n uw2 k l iy0 aa1 n ih0 k	n uw2 k l iy0 aa1 n ih0 k	True
 dicocco	d ih0 k ow1 k ow2	d ih0 k ow1 k ow2	True
 prinkey	p r ih1 ng k iy0	p r ih1 ng k iy0	True
 kelberg	k eh1 l b er0 g	k eh1 l b er0 g	True
-poitra	p oy1 t r aa0	p oy0 t r ah0	False
+poitra	p oy1 t r aa0	p oy0 t r aa1	False
 banwart	b ae1 n w ao2 r t	b ae1 n w r t	False
 tokarczyk	t aa1 k er0 ch ih0 k	t ah0 k er0 ch ih0 k	False
 kamentsev	k ah0 m eh1 n t s aa2 v	k ah0 m ih0 n t s eh0 v	False
@@ -13259,7 +13259,7 @@ pipefishes	p ay1 p f ih2 sh ih0 z	p ay1 p f ih2 sh ih0 z	True
 d'etre	d eh1 t r iy0	d eh1 t er0	False
 borsod	b ao2 r s ao1 d	b ao1 r s ah0 d	False
 genrich	g eh1 n r ih0 k	jh eh1 n r ih0 k	False
-emmendorfer	eh1 m ih0 n d ao0 r f er0	eh1 m ih0 n d ao0 r f er0	True
+emmendorfer	eh1 m ih0 n d ao0 r f er0	eh1 m ih0 n d ao2 r f er0	False
 overexpansion	ow2 v er0 ih0 k s p ae1 n sh ah0 n	ow2 v er0 ih0 k s p ae1 n sh ah0 n	True
 nedel	n iy1 d ah0 l	n ey0 d eh1 l	False
 o'connor's	ow0 k aa1 n er0 z	ow0 k aa1 n er0 z	True
@@ -13415,14 +13415,14 @@ angriness	ae1 ng g r iy0 n eh2 s	ae1 ng g r iy0 n ah0 s	False
 galloon	g ah0 l uw1 n	g ah0 l uw1 n	True
 therat	dh eh1 r ae2 t	th eh1 r ah0 t	False
 ferger	f er1 g er0	f er1 g er0	True
-louisianian	l uw0 iy2 z iy0 ae1 n iy0 ah0 n	l uw0 iy2 z iy0 ae1 n iy0 ah0 n	True
+louisianian	l uw0 iy2 z iy0 ae1 n iy0 ah0 n	l uw0 iy2 z iy0 ey1 n iy0 ah0 n	False
 giftrust	g ih1 f t r ah2 s t	g ih1 f t r ah1 s t	False
 psalters	s ao1 l t er0 z	s ao1 l t er0 z	True
 kohlhoff	k ow1 l hh ao2 f	k ow1 l hh ao0 f	False
-soboleski	s ah0 b ah0 l eh1 s k iy0	s ah0 b ah0 l eh1 s k iy2	False
+soboleski	s ah0 b ah0 l eh1 s k iy0	s ah0 b ah0 l eh1 s k iy0	True
 hallgarten	hh ao1 l g aa2 r t ah0 n	hh ao1 l g aa2 r t ah0 n	True
 bovik	b ow1 v ih0 k	b ow1 v ih0 k	True
-lafontant	l aa0 f aa1 n t ah0 n t	l ah0 f aa1 n t ah0 n t	False
+lafontant	l aa0 f aa1 n t ah0 n t	l ae1 f aa1 n t ah0 n t	False
 stellmacher	s t eh1 l m ah0 k er0	s t eh1 l m ah0 k er0	True
 eilan	ay1 l ah0 n	ay1 l ah0 n	True
 lusch	l ah1 sh	l ah1 sh	True
@@ -13434,7 +13434,7 @@ pitswon	p ih1 t s w aa0 n	p ih1 t s w ah0 n	False
 zaitech	z ey1 t eh2 k	z ey1 t eh2 k	True
 audiotronics	ao2 d iy0 ow0 t r aa1 n ih0 k s	ao2 d iy0 ow0 t r aa1 n ih0 k s	True
 jheryl	jh eh1 r ah0 l	jh eh1 r ah0 l	True
-all-purpose	ao1 l p er1 p ah0 s	ao2 l p er1 p ow1 z	False
+all-purpose	ao1 l p er1 p ah0 s	ae1 l p er1 p ow1 z	False
 dreessen	d r iy1 s ah0 n	d r iy1 s ah0 n	True
 kashoggi	k ah0 sh aa1 jh iy0	k ah0 sh aa1 jh iy0	True
 jungbluth	jh ah1 ng b l uw0 th	jh ah1 ng b l uw0 th	True
@@ -13473,10 +13473,10 @@ erena	er0 eh1 n ah0	er0 iy1 n ah0	False
 gyuhama	g y uw2 hh aa1 m ah0	jh y uw1 hh aa1 m ah0	False
 modrak	m aa1 d r ah0 k	m aa1 d r ae0 k	False
 anklebone	ae1 ng k ah0 l b ow2 n	ae1 ng k ah0 l b ow2 n	True
-olayan	ow0 l ay1 ah0 n	ow0 l ay1 ah0 n	True
+olayan	ow0 l ay1 ah0 n	ow0 l ay1 aa2 n	False
 neyens	n ay1 n z	n ey1 ah0 n z	False
 forcum	f ao1 r k ah0 m	f ao1 r k ah0 m	True
-scrapiron	s k r ae1 p ay2 er0 n	s k r ey1 p r ah0 n	False
+scrapiron	s k r ae1 p ay2 er0 n	s k r ey1 p ih1 r ah0 n	False
 tungsrom	t ah1 ng z r ah0 m	t ah1 ng s r ah0 m	False
 grzesiak	g er0 z eh1 s iy0 ae0 k	g r z iy1 s iy0 ae0 k	False
 caftans	k ae1 f t ae2 n z	k ae1 f t ae2 n z	True
@@ -13542,14 +13542,14 @@ kwolek	k w ow1 l eh0 k	k w ow1 l eh2 k	False
 donze	d aa1 n z	d aa1 n z	True
 nesseth	n eh1 s ih0 th	n eh1 s ih0 th	True
 parchmentlike	p aa1 r ch m ah0 n t l ay2 k	p aa1 r ch m ah0 n t l ay2 k	True
-perulac	p eh1 r uw0 l ae0 k	p r ah0 l ae2 k	False
+perulac	p eh1 r uw0 l ae0 k	p eh1 r ah0 l ae2 k	False
 greenwalds	g r iy1 n w ao2 l d z	g r iy1 n w ao2 l d z	True
 pafford	p ae1 f er0 d	p ae1 f er0 d	True
 worldvision	w er1 l d v ih2 zh ah0 n	w er1 l d v ih2 zh ah0 n	True
 puris	p y uh1 r ih0 s	p y uw1 r ih0 s	False
 nadolski	n ah0 d ow1 l s k iy0	n ah0 d ow1 l s k iy0	True
 huckeba	hh ah1 k ih0 b ah0	hh ah1 k ah0 b ah0	False
-l'express	l eh2 k s p r eh1 s	l eh1 k s p r ih0 s	False
+l'express	l eh2 k s p r eh1 s	l eh1 k s p r eh1 s	False
 alizac	ae1 l ih0 z ae0 k	ae1 l ay1 z ae2 k	False
 depass	d ih0 p ae1 s	d ah0 p ae1 s	False
 latendresse	l ae1 t ih0 n d r eh0 s	l ae1 t ah0 n d r ah0 s	False
@@ -13621,7 +13621,7 @@ theola	th iy1 ah0 l ah0	th iy1 ah0 l ah0	True
 viedma	v iy1 d m ah0	v iy1 d m ah0	True
 dimperio	d ih0 m p eh1 r iy0 ow2	d ih0 m p iy1 r iy0 ow2	False
 st-claire	s ey1 n t k l eh1 r	s ey1 n t k l eh1 r	True
-hisle	hh ay1 ah0 l	hh ay1 z ah0 l	False
+hisle	hh ay1 ah0 l	hh ih1 z ah0 l	False
 nevarach	n ah0 v aa1 r ah0 ch	n eh1 v er0 ah0 k	False
 mcsleep	m ah0 k s l iy1 p	m ah0 k s l iy1 p	True
 longerbeam	l ao1 ng g er0 b iy2 m	l ao1 ng g er0 b iy2 m	True
@@ -13828,7 +13828,7 @@ weikle	w iy1 k ah0 l	w iy1 k ah0 l	True
 actava	ae2 k t aa1 v ah0	ae0 k t aa1 v aa0	False
 boback	b ow1 b ae2 k	b ow1 b ae2 k	True
 brietzke	b r iy1 t s k iy0	b r iy1 t s k iy0	True
-dogears	d aa1 g iy0 r z	d ao1 g iy0 er0 z	False
+dogears	d aa1 g iy0 r z	d aa1 g iy0 er0 z	False
 gaulan	g ao1 l ah0 n	g ao1 l ah0 n	True
 erby	er1 b iy0	er1 b iy0	True
 morvant	m ao1 r v ah0 n t	m ao1 r v ah0 n t	True
@@ -13879,7 +13879,7 @@ allophonic	ae2 l ah0 f aa1 n ih0 k	ae2 l ah0 f aa1 n ih0 k	True
 lauman	l aw1 m ah0 n	l aw1 m ah0 n	True
 twarog	t w ao1 r ao0 g	t w ao1 r ao2 g	False
 zulma	z uh1 l m ah0	z ah1 l m ah0	False
-deryle	d eh1 r ah0 l	d eh1 r ah0 l	True
+deryle	d eh1 r ah0 l	d eh1 r ay1 l	False
 zirk	z er1 k	z er1 k	True
 tognino	t aa2 g n iy1 n ow0	t ow0 g n iy1 n ow0	False
 gresko	g r eh1 s k ow0	g r eh1 s k ow0	True
@@ -13933,13 +13933,13 @@ brasel	b r ae1 s ah0 l	b r ae1 z ah0 l	False
 mendivil	m ey0 n d iy0 v iy1 l	m eh1 n d ih0 v ah0 l	False
 stemm	s t eh1 m	s t eh1 m	True
 caladiums	k ah0 l ey1 d iy0 ah0 m z	k ah0 l ey1 d iy0 ah0 m z	True
-heselton	hh ih0 s eh1 l t ah0 n	hh ah0 s eh1 l t ah0 n	False
+heselton	hh ih0 s eh1 l t ah0 n	hh iy0 s eh1 l t ah0 n	False
 repsher	r eh1 p sh er0	r eh1 p sh er0	True
 ocanas	ow0 k ae1 n ah0 z	ow0 k ae1 n ah0 s	False
 pyhrric	p ih1 r ih0 k	p ih1 r ih0 k	True
 outlawry	aw1 t l ao2 r iy0	aw1 t l r iy0	False
 pullam	p uh1 l ah0 m	p uh1 l ah0 m	True
-sarajevan's	s aa2 r ah0 y ey1 v ah0 n z	s aa2 r ah0 jh ey1 v ah0 n z	False
+sarajevan's	s aa2 r ah0 y ey1 v ah0 n z	s aa2 r ah0 zh ey1 v ah0 n z	False
 boyson	b oy1 z ah0 n	b oy1 s ah0 n	False
 wendelken	w eh1 n d ih0 l k ah0 n	w eh2 n d ih0 l k ah0 n	False
 ludke	l ah1 d k iy0	l ah1 d k iy0	True
@@ -14120,7 +14120,7 @@ rierson	r iy1 r s ah0 n	r ih1 r s ah0 n	False
 doten	d ow1 t ah0 n	d ow1 t ah0 n	True
 wolfrey	w uh1 l f r iy0	w uh1 l f r iy0	True
 appropriator	ah0 p r ow1 p r iy0 ey2 t er0	ah0 p r ow1 p r iy0 ey2 t er0	True
-mevarach's	m eh0 v aa1 r ah0 ch ah0 z	m eh1 v r ae0 k ih0 s	False
+mevarach's	m eh0 v aa1 r ah0 ch ah0 z	m eh1 v r ae0 k s	False
 obradovich	ow0 b r ae1 d ah0 v ih0 ch	ah0 b r aa1 d ah0 v ih0 ch	False
 sawicz	s aw1 ih0 t s	s aa1 v ih0 ch	False
 heiple	hh ay1 p ah0 l	hh ay1 p ah0 l	True
@@ -14157,7 +14157,7 @@ denboer	d eh1 n b ow0 er0	d eh1 n b ow0 er0	True
 poshard	p aa1 sh er0 d	p aa1 sh er0 d	True
 lorang	l ao1 r ah0 ng	l ao1 r ah0 ng	True
 burlapped	b er1 l ae2 p t	b er1 l ae2 p t	True
-bracamonte	b r ae2 k ah0 m aa1 n t iy0	b r ae1 k ah0 m aa1 n t iy0	False
+bracamonte	b r ae2 k ah0 m aa1 n t iy0	b r ae2 k ah0 m aa1 n t iy0	True
 gisclair	zh ih0 s k l eh1 r	g ih0 s k l eh1 r	False
 moyl	m oy1 l	m oy1 l	True
 slivinski	s l ih0 v ih1 n s k iy0	s l ih0 v ih1 n s k iy0	True
@@ -14246,7 +14246,7 @@ yasso	y aa1 s ow0	y ae1 s ow0	False
 gourdine	g uh0 r d ay1 n	g ao0 r d iy1 n	False
 schue	sh uw1	sh uw1	True
 youman	y uw1 m ah0 n	y uw1 m ah0 n	True
-hamal	hh ey1 m ah0 l	hh ah0 m aa1 l	False
+hamal	hh ey1 m ah0 l	hh ey1 m aa1 l	False
 kasbrol	k ae1 z b r ao0 l	k ae1 s b r aa0 l	False
 gugliotti	g uw0 g l iy0 ow1 t iy0	g uw0 g l iy0 ow1 t iy0	True
 golinski	g ah0 l ih1 n s k iy0	g ah0 l ih1 n s k iy0	True
@@ -14348,7 +14348,7 @@ maldutis	m aa0 l d uw1 t ih0 s	m aa0 l d uw1 t ih0 s	True
 dersch	d er1 sh	d er1 sh	True
 cragle	k r ey1 g ah0 l	k r ey1 g ah0 l	True
 zosen	z ow1 z ah0 n	z ow1 z ah0 n	True
-marielitos	m eh0 r iy2 eh0 l iy1 t ow0 s	m eh2 r iy0 ah0 l iy1 t ow0 s	False
+marielitos	m eh0 r iy2 eh0 l iy1 t ow0 s	m eh2 r iy0 ah0 l iy1 t ow0 z	False
 cumpton	k ah1 m p t ah0 n	k ah1 m p t ah0 n	True
 schinke	s k ih1 ng k	sh ih1 ng k	False
 emling	eh1 m l ih0 ng	eh1 m l ih0 ng	True
@@ -14463,7 +14463,7 @@ midflight	m ih1 d f l ay2 t	m ih1 d f l ay2 t	True
 binged	b ih1 n jh d	b ih1 ng d	False
 hedwiga	hh eh1 d w ih0 g ah0	hh eh1 d w ih0 g ah0	True
 minehart	m ay1 n hh aa2 r t	m ay1 n hh aa2 r t	True
-number-one	n ah2 m b er0 w ah1 n	n ah1 m b er0 w ao1 n	False
+number-one	n ah2 m b er0 w ah1 n	n ah1 m b er0 w ao2 n	False
 lovecchio	l ah0 v eh1 k iy0 ow0	l ow0 v eh1 k iy0 ow0	False
 eastlick	iy1 s t l ih2 k	iy1 s t l ih0 k	False
 pellum	p eh1 l ah0 m	p eh1 l ah0 m	True
@@ -14502,7 +14502,7 @@ mityunov	m ih1 t y uw0 n aa0 v	m ih2 t y uw0 n aa0 v	False
 chujitsuya	ch uw2 jh iy0 t s uw2 y aa0	ch uw0 jh ih0 t s uw1 ah0	False
 harleman	hh aa1 r ah0 l m ah0 n	hh aa1 r ah0 l m ah0 n	True
 helgerson	hh eh1 l g er0 s ah0 n	hh eh1 l g er0 s ah0 n	True
-kamakau's	k aa2 m ah0 k aa1 uw0 z	k ah0 m aa0 k aw0 z	False
+kamakau's	k aa2 m ah0 k aa1 uw0 z	k aa2 m aa0 k aw0 z	False
 raymark	r ey1 m aa2 r k	r ey1 m aa2 r k	True
 ivaco	ay1 v ah0 k ow2	ay1 v ah0 k ow2	True
 metathorax	m eh2 t ah0 th ao1 r ae2 k s	m ah0 t ae1 th er0 ae2 k s	False
@@ -14717,7 +14717,7 @@ florescue	f l ao1 r ah0 s k y uw0	f l ao0 r eh1 s k y uw2	False
 karriker	k ae1 r ih0 k er0	k ae1 r ih0 k er0	True
 crislip	k r ih1 s l ih0 p	k r ih1 s l ih0 p	True
 bursley	b er1 s l iy0	b er1 s l iy0	True
-staszewski	s t ah0 sh eh1 f s k iy2	s t aa0 sh eh1 f s k iy0	False
+staszewski	s t ah0 sh eh1 f s k iy2	s t ah0 sh eh1 f s k iy0	False
 unfamiliarities	ah2 n f ah0 m ih2 l y eh1 r ah0 t iy0 z	ah2 n f ah0 m ih2 l y eh1 r ih0 t iy0 z	False
 ecolaire	iy1 k ow0 l eh2 r	iy0 k ah0 l eh1 r	False
 abston	ae1 b s t ah0 n	ae1 b s t ah0 n	True
@@ -14806,7 +14806,7 @@ carsick	k aa1 r s ih0 k	k aa1 r s ih0 k	True
 cronkright	k r aa1 ng k r ay2 t	k r aa1 ng k r ay2 t	True
 prevaricates	p r ah0 v eh1 r ah0 k ey0 t s	p r iy0 v eh1 r ah0 k ey2 t s	False
 sohio	s ow0 hh ay1 ow0	s ow0 hh iy1 ow0	False
-laughrey	l ae1 f r iy0	l aa1 r iy0	False
+laughrey	l ae1 f r iy0	l aa1 f r iy0	False
 lorden	l ao1 r d ah0 n	l ao1 r d ah0 n	True
 faiola	f ay1 ow0 l ah0	f ay0 ow1 l ah0	False
 hinderliter	hh ih1 n d er0 l iy0 t er0	hh ih1 n d er0 l ay2 t er0	False
@@ -14839,7 +14839,7 @@ spinfizz	s p ih1 n f ih0 z	s p ih1 n f ih0 z	True
 edgemon	eh1 jh m ah0 n	eh1 jh m ah0 n	True
 crytzer	k r ay1 t z er0	k r ih1 t z er0	False
 senseney	s eh1 n s ih0 n iy0	s eh1 n s ih0 n iy0	True
-alard	ah0 l aa1 r d	ah0 l aa2 r d	False
+alard	ah0 l aa1 r d	ah0 l aa1 r d	True
 philyaw	f ih1 l y aa2	f ih1 l y ao2	False
 outpouch	aw1 t p aw2 ch	aw1 t p ah1 ch	False
 huffmaster	hh ah1 f m ae2 s t er0	hh ah1 f m ae2 s t er0	True
@@ -14856,7 +14856,7 @@ gleckler	g l eh1 k l er0	g l eh1 k l er0	True
 studnicka	s t ah0 d n ih1 s k ah0	s t ah1 d n ih0 k ah0	False
 carpino	k aa0 r p iy1 n ow0	k aa0 r p iy1 n ow0	True
 plybon	p l ih1 b ah0 n	p l ay1 b ah0 n	False
-roulac	r uw1 l ae0 k	r uw1 l ae2 k	False
+roulac	r uw1 l ae0 k	r uw1 l ae1 k	False
 georgakis	jh ao2 r jh aa1 k ah0 s	jh ao1 r g aa0 k ah0 s	False
 vescio	v eh1 s iy0 ow0	v eh1 s iy0 ow0	True
 einon	ay1 n ao0 n	ay1 n ah0 n	False
@@ -14891,7 +14891,7 @@ kobylarz	k ah0 b ih1 l er0 z	k ow1 b ah0 l aa2 r z	False
 heinzmann	hh ay1 n z m ah0 n	hh ay1 n z m ah0 n	True
 democratizes	d ih0 m aa1 k r ah0 t ay2 z ih0 z	d ih0 m aa1 k r ah0 t ay2 z ih0 z	True
 majoros	m aa0 y ao1 r ow0 z	m ay0 jh ao1 r ow0 z	False
-handros	hh ae1 n d r ow0 s	hh ae1 n d r ah0 z	False
+handros	hh ae1 n d r ow0 s	hh ae1 n d r ah0 s	False
 crassweller	k r ae1 s w eh2 l er0	k r ae1 s w eh2 l er0	True
 fetterhoff	f eh1 t er0 hh ao0 f	f eh1 t er0 hh ao2 f	False
 sonnenblick	s ah0 n eh1 n b l ih0 k	s aa1 n ah0 n b l ih0 k	False
@@ -14937,7 +14937,7 @@ lipnick	l ih1 p n ih2 k	l ih1 p n ih0 k	False
 gayhart	g ey1 hh aa2 r t	g ey1 hh aa2 r t	True
 calcote	k aa0 l k ow1 t iy0	k ae1 l k ow2 t	False
 respironic	r eh2 s p er0 aa1 n ih0 k	r eh2 s er0 aa1 n ih0 k	False
-anona	aa0 n ow1 n ah0	ah0 n ow1 n ah0	False
+anona	aa0 n ow1 n ah0	ae2 n ow1 n ah0	False
 menatep	m eh1 n ah0 t eh2 p	m eh1 n ah0 t eh2 p	True
 plantlike	p l ae1 n t l ay2 k	p l ae1 n t l ay2 k	True
 deharbe	d ah0 hh aa1 r b iy0	d ih0 hh aa1 r b	False
@@ -14946,7 +14946,7 @@ chop-suey	ch aa1 p s uw1 iy0	ch aa1 p s uw2 iy0	False
 martion	m aa1 r sh y ah0 n	m aa1 r sh ah0 n	False
 declerque	d ah0 k l er1 k	d ah0 k l er1 k	True
 maack	m aa1 k	m aa1 k	True
-scaturro	s k aa0 t uh1 r ow0	s k aa0 t uh1 r ow0	True
+scaturro	s k aa0 t uh1 r ow0	s k ah0 t uh1 r ow0	False
 kurzawa	k uh0 r z aa1 w ah0	k er0 z aa1 w ah0	False
 filla	f ih1 l ah0	f ih1 l ah0	True
 fitterer	f ih1 t er0 er0	f ih1 t er0	False
@@ -15018,9 +15018,9 @@ badeaux	b ah0 d ow1	b ah0 d ow1	True
 kulish	k y uw1 l ih0 sh	k uw1 l ih0 sh	False
 mcdavitt	m ah0 k d ae1 v ah0 t	m ah0 k d ae1 v ah0 t	True
 pecina	p eh0 ch iy1 n ah0	p eh0 ch iy1 n ah0	True
-vanetten	v ae1 n eh1 t ah0 n	v ae0 n eh1 t ah0 n	False
+vanetten	v ae1 n eh1 t ah0 n	v ah0 n eh1 t ah0 n	False
 giannino	jh iy2 ah0 n iy1 n ow2	jh aa1 n iy1 n ow2	False
-freshour	f r eh1 s aw0 r	f r eh1 z aw2 er0	False
+freshour	f r eh1 s aw0 r	f r eh1 z er0	False
 sitmar	s ih1 t m aa2 r	s ih1 t m aa0 r	False
 catanzarite	k ah0 t ae1 n z er0 ay2 t	k ae1 t ae1 n z r ay2 t	False
 dilapidate	d ah0 l ae1 p ah0 d ey2 t	d ah0 l ae1 p ah0 d ey2 t	True
@@ -15123,7 +15123,7 @@ nadjen	n aa1 jh ah0 n	n ae1 d jh ah0 n	False
 elommal	ih0 l ow1 m ah0 l	eh1 l ah0 m ah0 l	False
 marrazzo	m aa2 r aa1 z ow0	m aa0 r aa1 z ow0	False
 yadon	y ae1 d ah0 n	y ey1 d ah0 n	False
-majchrzak	m ay1 r z ah0 k	m ae1 k er0 z eh0 k	False
+majchrzak	m ay1 r z ah0 k	m ae1 k er0 z ae0 k	False
 cotija	k ow0 t iy1 jh ah0	k ow0 t iy1 y ah0	False
 didemeyer's	d iy1 d ah0 m ay2 er0 z	d ay1 d ih0 m ay0 er0 z	False
 flahive	f l ae1 hh ih0 v	f l ah0 hh ay0 v	False
@@ -15273,7 +15273,7 @@ gelineau	zh eh1 l ih0 n ow0	g eh1 l ih0 n ow2	False
 schlauch	sh l aw1 k	sh l aw1 k	True
 marinez	m aa0 r iy1 n eh0 z	m aa0 r iy1 n eh0 z	True
 tangqui	t ae1 ng k w iy1	t ae1 ng k w iy0	False
-oguin	ow0 g uw1 iy0 n	ow1 g w iy1 n	False
+oguin	ow0 g uw1 iy0 n	ow0 g w iy1 n	False
 serbias	s er1 b iy0 ah0 z	s er1 b iy0 ah0 z	True
 kaufhof	k ao1 f hh ao0 f	k ao1 f hh ao0 f	True
 jacober	jh ey1 k ah0 b er0	jh ae0 k ow1 b er0	False
@@ -15297,7 +15297,7 @@ dudding	d ah1 d ih0 ng	d ah1 d ih0 ng	True
 gigaflops	g ih1 g ah0 f l aa2 p s	g ih1 g ah0 f l aa2 p s	True
 blasing	b l ey1 z ih0 ng	b l ey1 z ih0 ng	True
 muckenfuss	m ah1 k ah0 n f ah2 s	m ah1 k ah0 n f ah2 s	True
-gutfreund	g uh1 t f r eh2 n d	g ah1 t f r aw2 n d	False
+gutfreund	g uh1 t f r eh2 n d	g ah1 t f r aw0 n d	False
 warzecha	w ao0 r z eh1 hh ah0	w ao1 r z eh1 k ah0	False
 blowe	b l ow1	b l ow1	True
 kratzke	k r ae1 t s k iy0	k r ae1 t s k iy0	True
@@ -15403,7 +15403,7 @@ honestok	hh ow1 n ah0 s t ao2 k	hh ow1 n s t ah0 k	False
 eisenhour	ay1 z ah0 n aw0 r	ay1 z ah0 n aw0 r	True
 borunda	b ao0 r uw1 n d ah0	b r ah1 n d ah0	False
 cervantez	s eh0 r v aa1 n t eh0 z	ch er0 v aa1 n t eh0 z	False
-balakumar	b aa2 l ah0 k uw0 m aa1 r	b aa2 l aa0 k uw0 m aa1 r	False
+balakumar	b aa2 l ah0 k uw0 m aa1 r	b aa2 l aa0 k uw1 m aa0 er0	False
 breakfield	b r ey1 k f iy2 l d	b r eh1 k f iy2 l d	False
 hohorst	hh ow1 hh ao2 r s t	hh ow1 hh ao0 r s t	False
 vanleuven	v ae0 n l oy1 v ah0 n	v ae0 n l uw1 v ah0 n	False
@@ -15468,7 +15468,7 @@ extravesated	eh1 k s t r ae2 v ah0 s ey1 t ah0 d	eh2 k s t r ey1 v ah0 s ey2 t i
 eldrida	eh0 l d r iy1 d ah0	eh0 l d r iy1 d ah0	True
 dollens	d aa1 l ah0 n z	d aa1 l ah0 n z	True
 zornow	z ao1 r n aw0	z ao1 r n ow0	False
-overtrain	ow0 v er0 t r ey1 n	ow2 v er0 t r ey1 n	False
+overtrain	ow0 v er0 t r ey1 n	ow0 v er0 t r ey1 n	True
 schucker	sh ah1 k er0	sh ah1 k er0	True
 inikpratt	ih2 n iy1 k p r ae0 t	ih1 n ih0 k p r ae2 t	False
 brodzinski	b r ah0 jh ih1 n s k iy0	b r ah0 jh ih1 n s k iy0	True
@@ -15685,7 +15685,7 @@ wirkkala	v er0 k aa1 l ah0	w er1 k ao2 l ah0	False
 ludites	l uw1 d ay0 t s	l uw1 d ay2 t s	False
 payna	p ey1 n ah0	p ey1 n ah0	True
 felicetti	f eh0 l iy0 ch eh1 t iy0	f eh2 l iy0 ch eh1 t iy0	False
-kuzel	k uw1 z ah0 l	k uw1 z eh0 l	False
+kuzel	k uw1 z ah0 l	k uw1 z eh1 l	False
 sprinkel	s p r ih1 ng k ah0 l	s p r ih1 ng k ah0 l	True
 milanowski	m ih0 l ah0 n ao1 f s k iy0	m ih0 l ah0 n ao1 f s k iy0	True
 garcias	g aa0 r s iy1 ah0 z	g aa2 r s iy1 ah0 s	False
@@ -15704,7 +15704,7 @@ verhoff	v er1 hh ao0 f	v er1 hh ao0 f	True
 lighmtan	l ay1 t m ah0 n	l ay1 m t ah0 n	False
 gilberti	jh iy0 l b eh1 r t iy0	jh iy0 l b eh1 r t iy0	True
 lameta	l ah0 m eh1 t ah0	l aa0 m eh1 t ah0	False
-monteforte	m ow0 n t eh0 f ao1 r t iy0	m aa2 n t f ao1 r t iy0	False
+monteforte	m ow0 n t eh0 f ao1 r t iy0	m aa2 n t ah0 f ao1 r t iy0	False
 ranz	r ae1 n z	r ae1 n z	True
 overrepresent	ow1 v er0 r eh2 p r ah0 z eh1 n t	ow1 v er0 r eh2 p r ah0 z ah0 n t	False
 mcdougals	m ah0 k d uw1 g ah0 l z	m ah0 k d uw1 g ah0 l z	True
@@ -15759,7 +15759,7 @@ jeaney	jh iy1 n iy0	jh iy1 n iy0	True
 kitowski	k ih0 t ao1 f s k iy0	k ih0 t ao1 f s k iy0	True
 shenberger	sh eh1 n b er0 g er0	sh eh1 n b er0 g er0	True
 disinflate	d ih2 s ih0 n f l ey1 t	d ih1 s ih0 n f l ey1 t	False
-vanderlaan	v ae1 n d er0 l aa2 n	v ae1 n d er0 l ah0 n	False
+vanderlaan	v ae1 n d er0 l aa2 n	v ae1 n d er0 l aa1 n	False
 nessel	n eh1 s ah0 l	n eh1 s ah0 l	True
 roskos	r ow1 s k ow0 z	r ow1 s k ow0 z	True
 win-win	w ih2 n w ih1 n	w ih1 n w ih0 n	False
@@ -15771,7 +15771,7 @@ yeutter	y uw1 t er0	y uw1 t er0	True
 percell	p er0 s eh1 l	p er0 s ey1 l	False
 lanese	l aa0 n ey1 z iy0	l aa0 n iy0 z iy0	False
 delatte	d ih0 l ae1 t	d ih0 l ae1 t	True
-davir	d ah0 v ih1 r	d ey1 v ih0 r	False
+davir	d ah0 v ih1 r	d ey1 v ih1 r	False
 beilke	b iy1 l k	b iy1 l k	True
 cortine	k ao0 r t iy1 n	k er0 t iy1 n iy0	False
 lawplan	l ao1 p l ae2 n	l ao1 p l ae2 n	True
@@ -16014,7 +16014,7 @@ toote	t uw1 t	t uw1 t	True
 cefalo	ch eh0 f aa1 l ow0	s ey0 f aa1 l ow0	False
 diffin	d ih1 f ih0 n	d ih1 f ih0 n	True
 schneckloth	sh n eh1 k l ah0 th	sh n eh1 k l ao2 th	False
-rozar	r ow1 z er0	r ah0 z r	False
+rozar	r ow1 z er0	r ow1 z r	False
 kretchman	k r eh1 ch m ah0 n	k r eh1 ch m ah0 n	True
 maidie	m ey1 d iy0	m ey1 d iy0	True
 plessinger	p l eh1 s ih0 ng er0	p l eh1 s ih0 ng jh er0	False
@@ -16030,7 +16030,7 @@ sourby	s aw1 r b iy0	s ao1 r b iy0	False
 madella	m ah0 d eh1 l ah0	m ah0 d eh1 l ah0	True
 dohrman	d ao1 r m ah0 n	d ao1 r m ah0 n	True
 chausse	ch aw1 s	ch aw1 s	True
-rousselet	r uw1 s ah0 l eh0 t	r aw1 s l eh1 t	False
+rousselet	r uw1 s ah0 l eh0 t	r aw1 s l eh2 t	False
 dripps	d r ih1 p s	d r ih1 p s	True
 krabill	k r ae1 b ah0 l	k r ah0 b ih1 l	False
 holste	hh ow1 l s t	hh ow1 l s t	True
@@ -16104,7 +16104,7 @@ dooner	d uw1 n er0	d uw1 n er0	True
 beilman	b ay1 l m ah0 n	b ay1 l m ah0 n	True
 oreskovich	ao0 r eh1 s k ah0 v ih0 ch	ao0 r s k ah0 v ih0 ch	False
 kinsel	k ih1 n s ah0 l	k ih1 n s ah0 l	True
-bareis	b ae1 r ay0 z	b aa0 r ey2 z	False
+bareis	b ae1 r ay0 z	b aa0 r iy1 z	False
 klukas	k l uw1 k ah0 z	k l uw1 k ah0 z	True
 brucato	b r uw0 k aa1 t ow0	b r uw0 k aa1 t ow0	True
 intangibly	ih2 n t ae1 n jh ah0 b l iy0	ih2 n t ae1 n jh ah0 b l iy0	True
@@ -16414,7 +16414,7 @@ paysops	p ey1 s aa2 p s	p ey1 s aa2 p s	True
 dzhambul	jh ae0 m b uw1 l	d z aa0 m b ah0 l	False
 hirtz	hh er1 t s	hh er1 t s	True
 kimmons	k ih1 m ah0 n z	k ih1 m ah0 n z	True
-arencibia	aa0 r eh0 n ch iy1 b iy0 ah0	aa0 r ah0 n s ih1 b iy0 ah0	False
+arencibia	aa0 r eh0 n ch iy1 b iy0 ah0	aa0 r ih0 n s ih1 b iy0 ah0	False
 rentfrow	r eh1 n t f r aw0	r eh1 n t f r ow2	False
 toenjes	t ow1 n jh ih0 z	t ow1 n jh ih0 z	True
 crager	k r ey1 jh er0	k r ey1 jh er0	True
@@ -16454,13 +16454,13 @@ dewinter	d ah0 w ih1 n t er0	d w ih1 n t er0	False
 malvie	m ao1 l v iy0	m ae1 l v iy0	False
 biernacki	b ih0 r n aa1 t s k iy0	b ih0 r n aa1 t s k iy0	True
 decou	d ih0 k uw1	d ah0 k uw1	False
-n-word	eh1 n w er2	eh1 n w er1 d	False
+n-word	eh1 n w er2	eh1 n w er2 d	False
 gerashchenko	g eh2 ah0 sh ey1 ng k ow0	jh eh2 r ae2 sh eh1 ng k ow0	False
 breitkreutz	b r ay1 t k r oy2 t s	b r ay1 t k r uw0 t s	False
 dietzen	d iy1 t z ah0 n	d iy1 t z ah0 n	True
 o'kelley	ow0 k eh1 l iy0	ow0 k eh1 l iy0	True
 pendyala	p eh2 d y aa1 l ah0	p eh0 n d y aa1 l ah0	False
-scogin	s k ow1 g ih0 n	s k ow1 jh ih0 n	False
+scogin	s k ow1 g ih0 n	s k ow1 g ih0 n	True
 gazzola	g aa0 t s ow1 l ah0	g aa0 t s ow1 l ah0	True
 canipe	k aa0 n iy1 p iy0	k ae1 n ah0 p ey2	False
 redic	r eh1 d ih0 k	r eh1 d ih0 k	True
@@ -16603,7 +16603,7 @@ respess	r ey1 s p ih0 s	r ih0 s p eh1 s	False
 pistilli	p iy0 s t iy1 l iy0	p ih0 s t iy1 l iy0	False
 alagem	ae1 l ah0 jh eh0 m	ae1 l ah0 jh eh2 m	False
 landsner	l ae1 n d z n er0	l ae1 n d z n er0	True
-barrentine	b ae1 r ah0 n t ay2 n	b aa1 r eh0 n t iy1 n iy0	False
+barrentine	b ae1 r ah0 n t ay2 n	b aa0 r eh0 n t iy1 n iy0	False
 saberbein's	s ey1 b er0 b ay2 n z	s ae1 b er0 b ay2 n z	False
 lichlyter	l ih1 k l ay0 t er0	l ih1 k l iy0 t er0	False
 ditullio	d ih0 t ah1 l iy0 ow2	d ih0 t uw1 l iy0 ow2	False
@@ -16626,12 +16626,12 @@ jeanpierre	zh ao0 n p iy0 eh1 r	jh eh1 n p iy0 r	False
 grumbine	g r ah1 m b ay2 n	g r ah1 m b ay2 n	True
 amandime	ae1 m ah0 n d ay2 m	ae1 m ae1 n d ay2 m	False
 glissandi	g l ah0 s aa1 n d iy0	g l ih0 s ae1 n d iy0	False
-averyl	ae1 v er0 ih0 l	aa0 v r ah0 l	False
+averyl	ae1 v er0 ih0 l	aa0 v r ey1 l	False
 chattanuga	ch ae2 t ah0 n uw1 g ah0	ch aa2 t ah0 n uw1 g ah0	False
 hayse	hh ey1 z	hh ey1 s	False
 schlake	sh l ey1 k	sh l ey1 k	True
 buccheri	b uw0 k eh1 r iy0	b uw0 k eh1 r iy0	True
-sabta	s ae1 b t ah0	s aa1 b t ah0	False
+sabta	s ae1 b t ah0	s ae1 b t ah0	True
 thrailkill	th r ey1 l k ih2 l	th r ey1 l k ih2 l	True
 lavinder	l ae1 v ih0 n d er0	l ae1 v ih2 n d er0	False
 barbette	b aa0 r b eh1 t	b aa1 r b eh1 t	False
@@ -16690,7 +16690,7 @@ woehl	w ow1 l	w ow1 l	True
 timlen	t ih1 m l ah0 n	t ih1 m l ah0 n	True
 orlosky	ao0 r l ow1 s k iy0	ao0 r l aa1 s k iy0	False
 depalo	d ih0 p aa1 l ow2	d ih0 p aa1 l ow0	False
-sharp-sign	sh aa1 r p s ay1 n	sh aa1 r p s ay1 n	True
+sharp-sign	sh aa1 r p s ay1 n	sh aa1 r p s ay2 n	False
 chechnyan's	ch eh1 ch n iy0 ah0 n z	ch eh1 ch n iy0 ah0 n z	True
 clagg	k l ae1 g	k l ae1 g	True
 cruthirds	k r ah1 th er0 d z	k r ah1 th er2 d z	False
@@ -16723,7 +16723,7 @@ polevanov	p ah0 l eh1 v ah0 n aa0 v	p ow1 l ah0 v ah0 n aa0 v	False
 doutt	d aw1 t	d aw1 t	True
 toufexis	t uw2 f eh1 k s ih0 s	t uw0 f eh1 k s ih0 s	False
 rieg	r iy1 g	r iy1 g	True
-talcs	t ae1 l k s	t ao1 l k s	False
+talcs	t ae1 l k s	t ae1 l k s	True
 stys	s t ih1 s	s t ay1 z	False
 mccur	m ah0 k er1	m ah0 k er1	True
 narum	n er0 ah1 m	n eh1 r ah0 m	False
@@ -16770,7 +16770,7 @@ scrogham	s k r aa1 g hh ah0 m	s k r aa1 g hh ah0 m	True
 ratterman	r ae1 t er0 m ah0 n	r ae1 t er0 m ah0 n	True
 angiomedic	ae2 n jh iy2 ow0 m eh1 d ih0 k	ae2 n jh iy2 ow0 m iy1 d ih0 k	False
 pfeuffer	f y uw1 f er0	f oy1 f er0	False
-kodacolor	k ow1 d ah0 k ah2 l er0	k ow2 d ae1 k ah1 l er0	False
+kodacolor	k ow1 d ah0 k ah2 l er0	k ow2 d aa1 k ah1 l er0	False
 bukar	b y uw1 k aa0 r	b y uw1 k er0	False
 krempa	k r eh1 m p ah0	k r eh1 m p ah0	True
 storment	s t ao1 r m ah0 n t	s t ao1 r m ah0 n t	True
@@ -16926,7 +16926,7 @@ landeros	l ae1 n d er0 ow0 z	l aa0 n d eh1 r ow0 z	False
 maktoums	m ae0 k t uw1 m z	m ae0 k t uw1 m z	True
 cortens'	k ao1 r t eh0 n z	k ao1 r t ah0 n z	False
 trupp	t r ah1 p	t r ah1 p	True
-domanico	d ow0 m aa0 n iy1 k ow0	d ow0 m ae1 n iy0 k ow0	False
+domanico	d ow0 m aa0 n iy1 k ow0	d ow0 m ae1 n iy1 k ow0	False
 keahey	k iy1 hh iy0	k iy1 hh iy0	True
 nonprofessionals	n aa0 n p r ah0 f eh1 sh ah0 n ah0 l z	n aa2 n p r ah0 f eh1 sh ah0 n ah0 l z	False
 kneafsey	n iy1 f s iy0	n iy1 f s iy0	True
@@ -16940,7 +16940,7 @@ souers	s aw1 er0 z	s uw1 er0 z	False
 bustillos	b ah1 s t ay0 l ow0 z	b uw0 s t ih1 l ow0 z	False
 dazzo	d ae1 z ow0	d ae1 z ow0	True
 spargur	s p aa1 r g er0	s p aa1 r g er0	True
-uh-huh	ah1 hh ah1	ah1 hh ah1	True
+uh-huh	ah1 hh ah1	ah1 hh uw1	False
 appert	ae1 p er0 t	ae1 p er0 t	True
 teeples	t iy1 p ah0 l z	t iy1 p ah0 l z	True
 weitkamp	w ay1 t k ae2 m p	w ay1 t k ae2 m p	True
@@ -16977,7 +16977,7 @@ thurstan	th er1 s t ah0 n	th er1 s t ah0 n	True
 ohmer	ow1 m er0	ow1 m er0	True
 hayen	hh ey1 ah0 n	hh ey1 ah0 n	True
 orvin	ao1 r v ih0 n	ao1 r v ih0 n	True
-freia	f r iy1 ah0	f r iy1 ah0	True
+freia	f r iy1 ah0	f r iy1	False
 cheramie	ch eh1 r ah0 m iy2	ch eh1 r ah0 m iy0	False
 praytor	p r ey1 t er0	p r ey1 t er0	True
 lukavica	l uw0 k ah0 v ih1 k ah0	l ah0 k aa1 v ih0 k ah0	False
@@ -17188,7 +17188,7 @@ ballor	b ao1 l er0	b ae1 l er0	False
 monsod	m aa1 n s aa0 d	m aa1 n s ah0 d	False
 rasterops	r ae1 s t er0 aa2 p s	r ae1 s t er0 ah0 p s	False
 borosage	b ao1 r ah0 s ih0 jh	b ao1 er1 ah0 s ih0 jh	False
-vogelpohl	v aa1 g ih0 l p ow0 l	v aa1 g ih0 l p ow2 l	False
+vogelpohl	v aa1 g ih0 l p ow0 l	v aa1 g ah0 l p ow2 l	False
 naftalis	n ae0 f t aa1 l ih0 s	n ah0 f t aa1 l iy0 z	False
 swampers	s w aa1 m p er0 z	s w aa1 m p er0 z	True
 bevalaqua	b eh0 v ah0 l aa1 k ah0	b eh2 v aa0 l aa1 k w ah0	False
@@ -17234,7 +17234,7 @@ pahnos	p aa1 n ow0 s	p aa1 n ow0 s	True
 swopes	s w ow1 p s	s w ow1 p s	True
 teicholz	t ay1 k hh ao2 l t s	t ay1 k ow0 l z	False
 drabbed	d r ae1 b d	d r ae1 b d	True
-salaz	s aa1 l aa0 z	s ao1 l aa0 z	False
+salaz	s aa1 l aa0 z	s ae1 l aa0 z	False
 richarson	r ih1 ch aa2 r s ah0 n	r ih1 ch er0 s ah0 n	False
 menasion	m eh0 n ae1 s iy0 ah0 n	m ah0 n ey1 zh ah0 n	False
 luebbers	l uh1 b er0 z	l uw1 b er0 z	False
@@ -17252,7 +17252,7 @@ stogsdill	s t aa1 g z d ih0 l	s t aa1 g z d ih2 l	False
 schemel	sh eh1 m ah0 l	sh eh1 m ah0 l	True
 merchantsbank	m er1 ch ah0 n t s b ae2 ng k	m er1 ch ae0 n t s b ae2 ng k	False
 sumatomo	s uw2 m ah0 t ow1 m ow0	s uw2 m aa0 t ow1 m ow0	False
-eastdil	iy1 s t d ih2 l	iy1 s t d ih0 l	False
+eastdil	iy1 s t d ih2 l	iy1 s t d ih2 l	True
 brunsvold	b r ah1 n z v ow2 l d	b r ah1 n z v ow2 l d	True
 vanwieren	v ae0 n w ih1 r ah0 n	v ae0 n w ih1 r ah0 n	True
 schellhammer	sh eh1 l hh ah0 m er0	s k eh1 l hh ae2 m er0	False
@@ -17265,10 +17265,10 @@ gombar	g ah0 m b aa1 r	g aa0 m b aa1 r	False
 zappone	z aa0 p ow1 n iy0	z ae0 p ow1 n iy0	False
 botvinick	b ao1 t v ih0 n ih0 k	b aa1 t v ih0 n ih0 k	False
 keas	k iy1 z	k iy1 z	True
-brenizer	b r eh1 n ay0 z er0	b r eh1 n ay2 z er0	False
+brenizer	b r eh1 n ay0 z er0	b r eh1 n ay0 z er0	True
 facciola	f ae2 ch iy0 ow1 l ah0	f aa0 k ch ow1 l ah0	False
 overdependence	ow1 v er0 d ih0 p eh2 n d ah0 n s	ow1 v er0 d ih0 p eh1 n d ah0 n s	False
-interflug	ih1 n t er0 f l ah0 g	ih2 n t er0 f l ah1 g	False
+interflug	ih1 n t er0 f l ah0 g	ih2 n t er0 f l ah2 g	False
 beckworth's	b eh1 k w er2 th s	b eh1 k w er2 th s	True
 syrek	s ih1 r ih0 k	s ay1 r ih0 k	False
 derecktor	d er0 eh1 k t er0	d eh1 r eh1 k t er0	False
@@ -17392,7 +17392,7 @@ guiffre	g ih1 f er0	g iy1 f r ah0	False
 surrett	s ao1 r ih0 t	s er1 ih0 t	False
 lugers	l uw1 g er0 z	l uw1 g er0 z	True
 tornabene	t ao0 r n aa0 b eh1 n ah0	t ao1 r n ah0 b iy2 n	False
-esmine	eh1 z m ah0 n	eh1 z m ay0 n iy0	False
+esmine	eh1 z m ah0 n	eh1 z m ay0 n	False
 voge	v ow1 jh	v ow1 jh	True
 loghry	l aa1 g r iy0	l ow1 r iy0	False
 knappenberger	n ae1 p ah0 n b er0 g er0	n ae1 p ah0 n b er0 g er0	True
@@ -17438,8 +17438,8 @@ sportingly	s p ao1 r t ih0 ng l iy0	s p ao1 r t ih0 ng l iy0	True
 robers	r ow1 b er0 z	r ow1 b er0 z	True
 laibowitz	l ey1 b ah0 w ih0 t s	l ey1 b ah0 w ih0 t s	True
 malesky	m ah0 l eh1 s k iy0	m ah0 l eh1 s k iy0	True
-eddlemon	eh1 d ah0 l m aa0 n	eh1 d ah0 l m ah0 n	False
-drogoul's	d r ow0 g uw1 l z	d r ow1 g uw1 l z	False
+eddlemon	eh1 d ah0 l m aa0 n	eh1 d ah0 l m aa0 n	True
+drogoul's	d r ow0 g uw1 l z	d r aa1 g uw1 l z	False
 canzoneri	k aa0 n z ow0 n eh1 r iy0	k aa0 n z ow0 n eh1 r iy0	True
 mcconn	m ah0 k aa1 n	m ah0 k aa1 n	True
 mastrianni	m aa0 s t r iy0 aa1 n iy0	m aa0 s t r iy0 aa1 n iy0	True
@@ -17459,7 +17459,7 @@ wometco	w ow0 m eh1 t k ow0	w ow0 m eh1 t k ow0	True
 marcile	m aa1 r ch ah0 l	m aa0 r s iy1 l	False
 hilbun	hh ih1 l b ah0 n	hh ih1 l b ah0 n	True
 mcduffy	m ah0 k d ah1 f iy0	m ah0 k d ah1 f iy0	True
-mcelhannon	m ae1 k ah0 l hh ae2 n ah0 n	m ae1 k ah0 l hh ah0 n ah0 n	False
+mcelhannon	m ae1 k ah0 l hh ae2 n ah0 n	m ae1 k ah0 l hh ae1 n ah0 n	False
 mccleave	m ah0 k l iy1 v	m ah0 k l iy1 v	True
 nightlines	n ay1 t l ay2 n z	n ay1 t l ay2 n z	True
 griffy	g r ih1 f iy0	g r ih1 f iy0	True
@@ -17546,7 +17546,7 @@ cutchall	k ah1 ch ah0 l	k ah1 ch ah0 l	True
 cammisa	k ah0 m iy1 s ah0	k ah0 m iy1 s ah0	True
 wemhoff	w eh1 m hh ao2 f	w eh1 m hh ao0 f	False
 niemczyk	n iy1 m ch ih0 k	n iy1 m ch ih0 k	True
-freid	f r iy1 d	f r iy1 d	True
+freid	f r iy1 d	f r ay1 d	False
 containerize	k ah0 n t ey1 n er0 ay2 z	k ah0 n t ey1 n er0 ay2 z	True
 mcelheney	m ae1 k ah0 l hh ey2 n iy0	m ae1 k ah0 l hh iy0 n iy0	False
 ahren	aa1 r ah0 n	aa1 r ih0 n	False
@@ -17656,7 +17656,7 @@ reynoldson	r ey1 n ow0 l d s ah0 n	r eh1 n ah0 l d s ah0 n	False
 hardnett	hh aa1 r d n ih0 t	hh aa1 r d n ih0 t	True
 toystores	t oy1 s t ao2 r z	t oy1 s t ao2 r z	True
 grandberry	g r ae1 n d b eh2 r iy0	g r ae1 n d b eh2 r iy0	True
-buenrostro	b w eh0 n r ow1 s t r ow0	b n r ow0 s t r ow0	False
+buenrostro	b w eh0 n r ow1 s t r ow0	b eh2 n r ow0 s t r ow0	False
 postipankki	p ao2 s t ih0 p ae1 ng k iy0	p ao2 s t ih0 p ae1 ng k iy0	True
 momokawa's	m ow2 m ow0 k aa1 w ah0 z	m ow2 m ah0 k aa1 w ah0 z	False
 freise	f r iy1 s	f r iy1 s	True
@@ -17784,7 +17784,7 @@ sharlow	sh aa1 r l ow0	sh aa1 r l ow0	True
 spatafore	s p ae1 t ah0 f ao2 r	s p ae1 t ah0 f ao2 r	True
 stimpert	s t ih1 m p er0 t	s t ih1 m p er0 t	True
 nemmers	n eh1 m er0 z	n eh1 m er0 z	True
-maruca	m er0 uw1 k ah0	m r uw1 k ah0	False
+maruca	m er0 uw1 k ah0	m aa0 r uw1 k ah0	False
 widrick	w ih1 d r ih0 k	w ih1 d r ih0 k	True
 kinstler	k ih1 n s t l er0	k ih1 n s t l er0	True
 cornblume	k ao1 r n b l uw2 m	k ao1 r n b l uw2 m	True
@@ -17825,7 +17825,7 @@ novotels	n ow1 v ow0 t eh2 l z	n ow1 v ow0 t eh2 l z	True
 mandarino	m aa0 n d aa0 r iy1 n ow0	m aa0 n d aa0 r iy1 n ow0	True
 savikas	s ah0 v iy1 k ah0 s	s ae1 v ih0 k ah0 z	False
 lulue	l uw1 l uw2	l uw1 l uw0	False
-zlomsowitch	z l aa1 m s ow0 ih0 ch	z l aa1 m s ah0 w ih0 ch	False
+zlomsowitch	z l aa1 m s ow0 ih0 ch	z l aa1 m s ah0 w ih2 ch	False
 debernardi	d ih0 b er0 n aa1 r d iy0	d eh0 b er0 n aa1 r d iy0	False
 konkol	k aa1 ng k ao0 l	k aa1 ng k ah0 l	False
 tedmund	t eh1 d m ah0 n d	t eh1 d m ah0 n d	True
@@ -17870,8 +17870,8 @@ sturdhal	s t er1 d aa0 l	s t er1 d ah0 l	False
 chseing	ch ey1 ng	k s ih0 ng	False
 hallauer	hh ae1 l aw0 er0	hh ae1 l aw0 er0	True
 bundespost's	b uh1 n d ih0 s p ow2 s t s	b ah1 n d ih0 s p ow2 s t s	False
-busalacchi	b uw0 s aa0 l aa1 k iy0	b uw0 s aa0 l aa1 k iy0	True
-silajdzic	s ih2 l aa1 jh ih0 k	s ih0 l ae1 jh ih0 k	False
+busalacchi	b uw0 s aa0 l aa1 k iy0	b uw0 s aa0 l aa1 ch iy0	False
+silajdzic	s ih2 l aa1 jh ih0 k	s ih0 l ah0 jh ih0 k	False
 uram	y uw1 r ah0 m	y uh1 r ae0 m	False
 ziesmer	z iy1 s ah0 m er0	z iy1 z m er0	False
 pichette	p ah0 sh eh1 t	p ih0 sh eh1 t	False
@@ -17911,7 +17911,7 @@ therani	t eh2 r aa1 n iy0	th er0 aa1 n iy0	False
 verene	v eh1 r iy0 n	v er0 iy1 n	False
 waisanen	w ay1 s ah0 n ah0 n	w ay1 s ah0 n ah0 n	True
 rosenkrans	r ow1 z ah0 n k r ae2 n z	r ow1 z ah0 n k r ae2 n z	True
-off-limits	ao2 f l ih1 m ih0 t s	ao1 f l ih1 m ih0 t s	False
+off-limits	ao2 f l ih1 m ih0 t s	ao1 f l ih1 m ah0 t s	False
 monoclate	m aa1 n ah0 k l ey2 t	m aa1 n ah0 k l ey2 t	True
 dobrimir	d ah0 b r iy1 m ih0 r	d ow1 b r ah0 m iy0 r	False
 wombacher	w aa1 m b aa2 k er0	w aa1 m b aa2 k er0	True
@@ -18132,7 +18132,7 @@ mcclam	m ah0 k l ae1 m	m ah0 k l ae1 m	True
 sacirbey	s aa1 k er0 b iy0	s ae1 s er0 b iy0	False
 gunty	g ah1 n t iy0	g ah1 n t iy0	True
 nonpacifists	n aa2 n p ae1 s ih0 f ih0 s t s	n aa0 n p ae1 s ah0 f ih0 s t s	False
-latanze	l ah0 t aa1 n z ey2	l aa0 t aa1 n z	False
+latanze	l ah0 t aa1 n z ey2	l aa0 t aa1 n z iy0	False
 burgert	b er1 g er0 t	b er1 g er0 t	True
 daignault	d eh0 g n ow1	d ey1 g n ow1	False
 bankowski	b ah0 ng k ao1 f s k iy0	b ah0 ng k ao1 f s k iy0	True
@@ -18177,7 +18177,7 @@ platek	p l aa1 t eh0 k	p l aa1 t eh2 k	False
 lacosse	l aa0 k ow1 s iy0	l aa0 k ao1 s iy0	False
 dilenschneider	d ay1 l ah0 n sh n ay2 d er0	d ih0 l ih0 n sh n ay0 d er0	False
 teetotaler	t iy2 t ow2 t ey1 l er0	t iy1 t ow2 t ah0 l er0	False
-aprodiva	ae2 p r ao0 d iy1 v ah0	ae2 p r ow0 d iy1 v ah0	False
+aprodiva	ae2 p r ao0 d iy1 v ah0	ey2 p r ow0 d iy1 v ah0	False
 eureca	y uw1 r eh0 k ah0	y uh0 r iy1 k ah0	False
 brienza	b r iy1 n z ah0	b r iy1 n z ah0	True
 pivonka	p ih0 v aa1 ng k ah0	p ih0 v ow1 ng k ah0	False
@@ -18254,7 +18254,7 @@ yeiri	y eh1 r iy0	y eh1 r iy0	True
 dzik	d z ih1 k	d z ih1 k	True
 fadely	f ey1 d l iy0	f ey1 d l iy0	True
 self-replicating	s eh2 l f r eh1 p l ih0 k ey2 t ih0 ng	s eh2 l f r eh1 p l ih0 k ey2 t ih0 ng	True
-gasich	g ey1 z ih0 k	g aa1 s ih0 k	False
+gasich	g ey1 z ih0 k	g ae1 s ih0 k	False
 maluso	m ah0 l uw1 s ow0	m aa0 l uw1 s ow0	False
 isomedix	ay2 s ow0 m eh1 d ih0 k s	ay2 s ah0 m iy1 d ih0 k s	False
 outvotes	aw0 t v ow1 t s	aw0 t v ow1 t s	True
@@ -18303,7 +18303,7 @@ gregus	g r iy1 g ah0 s	g r iy1 g ah0 s	True
 wiechert	w iy1 k er0 t	w iy1 ch er0 t	False
 dansforth	d ae1 n s f ao1 r th	d ae1 n s f er0 th	False
 debenedetto	d ih0 b eh0 n ah0 d eh1 t ow0	d ih0 b ih0 n ah0 d eh1 t ow0	False
-michalec	m ih0 hh aa1 l ih0 k	m ay1 k ah0 l ih0 k	False
+michalec	m ih0 hh aa1 l ih0 k	m ay1 k ah0 l eh0 k	False
 eddinger	eh1 d ih0 ng er0	eh1 d ih0 ng er0	True
 wussler	w ah1 s l er0	w ah1 s l er0	True
 spitzley	s p ih1 t s l iy0	s p ih1 t s l iy0	True
@@ -18339,7 +18339,7 @@ mcgeean's	m ah0 g iy1 ah0 n z	m ah0 g n z	False
 krepps	k r eh1 p s	k r eh1 p s	True
 maue	m aw1 iy0	m aw1 iy0	True
 zabinski	z ah0 b ih1 n s k iy0	z ah0 b ih1 n s k iy0	True
-cywinski	k ih0 v ih1 n s k iy0	s ih0 w ih1 n s k iy0	False
+cywinski	k ih0 v ih1 n s k iy0	k ih0 w ih1 n s k iy0	False
 self-congratulation	s eh2 l f k ah0 n g r ae2 ch ah0 l ey1 sh ah0 n	s eh2 l f k ao0 n g r ey2 ch ah0 l ey2 sh ah0 n	False
 faraha	f aa1 r ah0 hh aa0	f eh1 r ah0 hh aa2	False
 dankner	d ae1 ng k n er0	d ae1 ng k n er0	True
@@ -18388,7 +18388,7 @@ diasa's	d iy0 aa1 s ah0 z	d ay0 ah0 s ah0 z	False
 schoneman	sh ow1 n m ah0 n	sh ow1 n m ah0 n	True
 ninad	n ay1 n ah0 d	n ay1 n ae0 d	False
 disinform	d ih0 s ih0 n f ao1 r m	d ih0 s ih2 n f ao1 r m	False
-melear	m eh1 l er0	m ih0 l iy0 r	False
+melear	m eh1 l er0	m ih0 l ih1 r	False
 plassard	p l ae1 s er0 d	p l ae1 s er0 d	True
 pullano	p uw0 l aa1 n ow0	p uw0 l aa1 n ow0	True
 zenchu	z eh1 n ch uw2	z eh1 n ch uw0	False
@@ -18455,7 +18455,7 @@ coccaro	k ow0 k aa1 r ow0	k ao2 k aa1 r ow0	False
 cenith	s eh1 n ih0 th	s eh1 n ih0 th	True
 mennenga	m ih0 n eh1 ng g ah0	m eh0 n eh1 ng g ah0	False
 storlie	s t ao1 r l iy0	s t ao1 r l iy0	True
-logophilia	l ow2 g ow0 f ih1 l iy2 ah0	l aa2 g ah0 f ih1 l y ah0	False
+logophilia	l ow2 g ow0 f ih1 l iy2 ah0	l aa2 g ah0 f ih1 l iy0 ah0	False
 brackeen	b r ah0 k iy1 n	b r ae0 k iy1 n	False
 haggstrom	hh ae1 g s t r ah0 m	hh ae1 g s t r ah0 m	True
 daniloff	d ae1 n ah0 l ao0 f	d ae1 n iy0 l ao0 f	False
@@ -18547,7 +18547,7 @@ constitutionists	k aa2 n s t ah0 t uw1 sh ah0 n ih0 s t s	k aa2 n s t ih0 t uw1 
 schwemm	sh w eh1 m	sh w eh1 m	True
 pershare	p er0 sh eh1 r	p er0 sh eh1 r	True
 hilgert	hh ih1 l g er0 t	hh ih1 l g er0 t	True
-sosna	s ow1 s n ah0	s ow1 s n ah0	True
+sosna	s ow1 s n ah0	s ao1 s n ah0	False
 hyperchromatic	hh ay2 p er0 k r ow0 m ae1 t ih0 k	hh ay2 p er0 k r ah0 m ae1 t ih0 k	False
 rewatching	r iy0 w aa1 ch ih0 ng	r iy0 w aa1 ch ih0 ng	True
 guillette	g ih0 l eh1 t	g ih0 l eh1 t	True
@@ -18637,7 +18637,7 @@ briskey	b r ih1 s k iy0	b r ih1 s k iy0	True
 kutsch	k ah1 ch	k ah1 ch	True
 buckels	b ah1 k ah0 l z	b ah1 k ah0 l z	True
 canedy	k ah0 n iy1 d iy0	k ae1 n ah0 d iy0	False
-manriquez	m aa0 n r iy1 k w eh0 z	m ah0 n r iy1 k eh0 z	False
+manriquez	m aa0 n r iy1 k w eh0 z	m aa0 n r iy1 k eh0 z	False
 seff	s eh1 f	s eh1 f	True
 dumire	d uw0 m ih1 r ey0	d ah0 m iy1 r ey0	False
 shugrue	sh ah1 g r uw0	sh ah1 g r uw0	True
@@ -18701,7 +18701,7 @@ knickknack	n ih1 k n ae2 k	n ih1 k n ae2 k	True
 cheshier	ch eh1 sh iy0 er0	ch eh1 sh iy0 er0	True
 neitzke	n ay1 t s k iy0	n iy1 t s k iy0	False
 kolsky	k ow1 l s k iy0	k ow1 l s k iy0	True
-ragonese	r aa0 g ow0 n ey1 z iy0	r ae2 g ah0 n iy1 z iy0	False
+ragonese	r aa0 g ow0 n ey1 z iy0	r ae2 g ah0 n iy2 z iy0	False
 halfman	hh ae1 f m ah0 n	hh ae1 f m ah0 n	True
 annunziato	aa0 n uw0 n z iy2 aa1 t ow0	aa0 n uw0 n z iy2 aa1 t ow0	True
 shrublike	sh r ah1 b l ay2 k	sh r ah1 b l ay2 k	True
@@ -18713,7 +18713,7 @@ comarco	k ow0 m aa1 r k ow0	k ow0 m aa1 r k ow0	True
 lampron	l ae1 m p r ah0 n	l ae1 m p r ah0 n	True
 milum	m ih1 l ah0 m	m ay1 l ah0 m	False
 el-greco	eh1 l g r eh1 k ow0	eh0 l g r eh1 k ow2	False
-alejandre	aa0 l ey0 y aa1 n d r ey0	aa0 l ey0 jh aa1 n d r iy0	False
+alejandre	aa0 l ey0 y aa1 n d r ey0	aa0 l ey0 jh ae1 n d r iy0	False
 cirigliano	s er2 iy0 g l iy0 aa1 n ow2	s ih0 er0 iy0 g l iy0 aa1 n ow2	False
 investnet	ih2 n v eh1 s t n eh2 t	ih2 n v eh1 s t n eh2 t	True
 chitlins	ch ih1 t l ih0 n z	ch ih1 t l ih0 n z	True
@@ -18776,7 +18776,7 @@ locadia	l ow0 k ey1 d iy0 ah0	l ow0 k ey1 d iy0 ah0	True
 novacare	n ow1 v ah0 k eh2 r	n aa1 v ah0 k eh2 r	False
 cargal	k aa0 r g ae1 l	k aa1 r g ah0 l	False
 felmlee	f eh1 l m l iy0	f eh1 l m l iy2	False
-oguinn	ow0 g w ih1 n	ow0 g w iy1 n	False
+oguinn	ow0 g w ih1 n	ow0 g w ih1 n	True
 mangen	m ae1 ng ah0 n	m ey1 ng jh ah0 n	False
 crunkleton	k r ah1 ng k ah0 l t aa0 n	k r ah1 ng k ah0 l t ah0 n	False
 klym	k l ih1 m	k l ih1 m	True
@@ -18896,7 +18896,7 @@ choiniere	sh oy1 n iy0 eh0 r	sh oy2 n y eh1 r	False
 cucchiara	k uw0 k iy0 aa1 r ah0	k uw0 k iy0 aa1 r ah0	True
 afroamerican	ae1 f r ow0 ah0 m eh1 r ah0 k ah0 n	ae2 f r ow0 ah0 m eh1 r ih0 k ah0 n	False
 colombari	k aa2 l aa0 m b aa1 r iy0	k aa2 l aa0 m b aa1 r iy0	True
-troendle	t r ow1 n d ah0 l	t r aa1 ah0 n d ah0 l	False
+troendle	t r ow1 n d ah0 l	t r aa1 eh1 n d ah0 l	False
 sitzer	s ih1 t z er0	s ih1 t z er0	True
 elates	ih0 l ey1 t s	ih0 l ey1 t s	True
 birdfeather	b er1 d f eh1 dh er0	b er1 d f eh2 dh er0	False
@@ -18907,7 +18907,7 @@ autofact	ao1 t ow0 f ae2 k t	ao1 t ow0 f ae2 k t	True
 tournedos	t uh1 r n ah0 d ow0	t r n ey1 d ow2 z	False
 marzilli	m aa0 r z iy1 l iy2	m aa0 r z iy1 l iy0	False
 staniar	s t ey1 n iy0 aa0 r	s t ae1 n y er0	False
-klepac	k l eh1 p ah0 k	k l eh1 p ah0 k	True
+klepac	k l eh1 p ah0 k	k l eh1 p ae2 k	False
 mellicent	m ey0 l iy1 s ah0 n t	m eh1 l ih0 s ih0 n t	False
 oared	ao1 r d	ao1 r d	True
 koetting	k ow1 t ih0 ng	k ow1 t ih0 ng	True
@@ -18915,13 +18915,13 @@ broadsided	b r ao1 d s ay2 d ih0 d	b r ao1 d s ay2 d ih0 d	True
 underbid	ah1 n d er0 b ih2 d	ah1 n d er0 b ih1 d	False
 houseraising	hh aw1 s r ey2 z ih0 ng	hh aw1 z er0 ey1 z ih0 ng	False
 firedamp	f ay1 er0 d ae2 m p	f ay1 er0 d ae2 m p	True
-fousek	f aw1 s ih0 k	f aw1 s eh0 k	False
+fousek	f aw1 s ih0 k	f aw1 s ih0 k	True
 holvis'	hh ow1 l v ah0 s	hh aa1 l v ih0 s	False
 carmoy	k aa1 r m oy0	k aa1 r m oy2	False
 mashek	m ae1 sh ih0 k	m ae1 sh eh0 k	False
 scaleatron	s k ey1 l iy0 ah0 t r aa0 n	s k ey1 l iy0 t r ah0 n	False
 bargainer	b aa1 r g ih0 n er0	b aa1 r g ah0 n er0	False
-alislamiyya	ae2 l ah0 s l ah0 m iy1 ah0	ae2 l ih2 s l aa1 m y ah0	False
+alislamiyya	ae2 l ah0 s l ah0 m iy1 ah0	ae2 l ih0 s l aa1 m y ah0	False
 meditz	m eh1 d ih0 t s	m eh1 d ih0 t s	True
 gemcraft's	jh eh1 m k r ae2 f t s	g eh1 m k r ae2 f t s	False
 deramus	d eh1 r ah0 m ih0 s	d er0 ey1 m ah0 s	False
@@ -19053,10 +19053,10 @@ kabral	k ah0 b r aa1 l	k ae1 b r ah0 l	False
 luane	l uw1 ah0 n	l uw0 ey1 n	False
 stines	s t ay1 n z	s t ay1 n z	True
 rosenlund	r ow1 z ah0 n l ah0 n d	r ow1 z ah0 n l ah0 n d	True
-mericantante	m eh0 r iy2 k ah0 n t aa1 n t ey0	m eh2 r ih0 k aa1 n t aa1 n t iy2	False
+mericantante	m eh0 r iy2 k ah0 n t aa1 n t ey0	m eh2 r ih0 k ah0 n t aa1 n t iy0	False
 bangalor	b ae1 ng g ah0 l ao2 r	b ae1 ng g ah0 l er0	False
 oslund	aa1 s l ah0 n d	aa1 s l ah0 n d	True
-labar	l ah0 b aa1 r	l ey1 b aa0 r	False
+labar	l ah0 b aa1 r	l ey1 b aa1 r	False
 gholston	g ow1 l s t ah0 n	g ow1 l s t ah0 n	True
 gutherie	g ah1 th er0 iy0	g ah1 th er0 iy0	True
 delmed	d eh1 l m eh2 d	d eh1 l m d	False
@@ -19353,7 +19353,7 @@ cimaglia	s ih0 m ae1 g l iy0 ah0	ch ih0 m aa1 g l iy0 ah0	False
 delouis	d eh2 l uw0 iy1 z	d eh1 l uw0 ih0 s	False
 thornsbury	th ao1 r n z b eh0 r iy0	th ao1 r n z b eh2 r iy0	False
 la-nina	l ah0 n iy1 n y ah0	l ah0 n iy1 n ah0	False
-nemir	n ah1 m er0	n eh1 m ih1 r	False
+nemir	n ah1 m er0	n ah0 m ih1 r	False
 mazzara	m aa0 t s aa1 r ah0	m aa0 t s aa1 r ah0	True
 lockmiller	l aa1 k m ih2 l er0	l aa1 k m ih2 l er0	True
 hoogovens	hh uw1 g ah0 v ih0 n z	hh uw1 g ow2 v ah0 n z	False
@@ -19500,7 +19500,7 @@ minorite	m ih1 n er0 ay2 t	m ay1 n er0 ay2 t	False
 grassfield's	g r ae1 s f iy2 l d z	g r ae1 s f iy2 l d z	True
 kohne	k ow1 n	k ow1 n	True
 vencill	v eh1 n s ih0 l	v eh1 n s ah0 l	False
-hoelterhoff	hh ow1 l t er0 hh ao2 f	hh ow1 l t er0 hh ao0 f	False
+hoelterhoff	hh ow1 l t er0 hh ao2 f	hh ow1 l t er0 hh ao2 f	True
 bedner	b eh1 d n er0	b eh1 d n er0	True
 schoenwald	sh ow1 n w ao2 l d	sh ow1 n w ao2 l d	True
 keelin	k iy1 l ih0 n	k iy1 l ih0 n	True
@@ -19520,7 +19520,7 @@ lesane	l ey0 s aa1 n ey0	l eh1 s ey2 n	False
 frommelt	f r aa1 m ih0 l t	f r aa1 m ih0 l t	True
 diagnostek	d ay2 ah0 g n aa1 s t eh0 k	d ay2 ah0 g n aa1 s t eh2 k	False
 corron	k er0 ao1 n	k ao1 er0 ah0 n	False
-szuch	sh ah1 ch	sh ah1 k	False
+szuch	sh ah1 ch	sh ah1 ch	True
 tirey	t ay1 r iy0	t ay1 er0 iy0	False
 encinias	ih0 n s iy0 n iy1 ah0 z	eh0 n s ih1 n iy0 ah0 z	False
 hinely	hh ay1 n l iy0	hh ay1 n l iy0	True
@@ -19620,7 +19620,7 @@ fejes	f ih0 zh iy1 z	f iy1 jh z	False
 matabane	m ae1 t ah0 b ey2 n	m ae1 t ah0 b ey2 n	True
 gehris	g eh1 r ih0 s	g eh1 r ih0 s	True
 almazan	aa0 l m aa0 z aa1 n	aa1 l m ah0 z ah0 n	False
-iranscam	ay0 r ae1 n s k ae0 m	ay1 r ae0 n s k ah0 m	False
+iranscam	ay0 r ae1 n s k ae0 m	ay1 r ae1 n s k ah0 m	False
 cadorette	k ae1 d er0 eh0 t	k ae1 d er0 eh1 t	False
 yearby	y er1 b iy0	y ih1 r b iy0	False
 spleisson	s p ey1 s ah0 n	s p l ay1 s ah0 n	False
@@ -19696,7 +19696,7 @@ vandenburgh	v ae1 n d ah0 n b er0 g	v ae1 n d ah0 n b er0 g	True
 sollie	s aa1 l iy0	s aa1 l iy0	True
 hanish	hh ae1 n ih0 sh	hh ae1 n ih0 sh	True
 overholtzer	ow1 v er0 hh ow0 l t z er0	ow1 v er0 hh ow0 l t z er0	True
-ailee	ey1 l iy1	ay0 l iy1	False
+ailee	ey1 l iy1	ey2 l iy1	False
 kathan	k ae1 th ah0 n	k ae1 th ah0 n	True
 pecanins'	p eh1 k ah0 n ih0 n z	p eh1 k ah0 n ih0 n z	True
 kolasinski	k ah0 l ah0 s ih1 n s k iy0	k ah0 l ah0 s ih1 n s k iy0	True
@@ -19769,7 +19769,7 @@ kielar	k iy1 l er0	k iy1 l er0	True
 otiose	ow1 t iy0 ow2 s	ow0 t iy0 ow1 s	False
 komara	k ow0 m aa1 r ah0	k ow0 m aa1 r ah0	True
 graffius	g r ae1 f iy0 ih0 s	g r ae1 f iy0 ah0 s	False
-musolf	m y uw1 s ow2 l f	m uw1 s ao0 l f	False
+musolf	m y uw1 s ow2 l f	m ah1 s ao2 l f	False
 southlife	s aw1 th l ay2 f	s aw1 th l ay2 f	True
 company'll	k ah1 m p ah0 n iy0 ah0 l	k ah1 m p ah0 n iy0 l	False
 vonallmen	v aa1 n ah0 l m eh0 n	v aa1 n ah0 l m ah0 n	False
@@ -19796,7 +19796,7 @@ koshered	k ow1 sh er0 d	k ow1 sh er0 d	True
 seaq	s iy1 k	s iy1 k	True
 itty-bitty	ih2 t iy0 b ih1 t iy0	ih2 t iy0 b ih0 t iy0	False
 vankampen	v ae2 n k ae1 m p ah0 n	v ae0 n k ae1 m p ah0 n	False
-kopit	k aa1 p ih0 t	k aa1 p ah0 t	False
+kopit	k aa1 p ih0 t	k aa1 p ih0 t	True
 matsukawa	m aa2 t s uw2 k aa1 w ah0	m aa0 t s uw0 k aa1 w ah0	False
 rustier	r ah1 s t iy0 er0	r ah1 s t y er0	False
 sotak	s ow1 t ah0 k	s ow1 t ah0 k	True
@@ -19848,7 +19848,7 @@ copycatting	k aa1 p iy0 k ae2 t ih0 ng	k aa1 p iy0 k ae2 t ih0 ng	True
 podraza	p ow0 d r aa1 z ah0	p ow0 d r aa1 z ah0	True
 copelin	k aa1 p ih0 l ih0 n	k ow1 p ih0 l ih0 n	False
 benter	b eh1 n t er0	b eh1 n t er0	True
-newbrough	n uw1 b r aw0	n uw1 b r aw0	True
+newbrough	n uw1 b r aw0	n uw1 b r ow0	False
 fuoss	f uw1 s	f w ow1 s	False
 harnage	hh aa1 r n ih0 jh	hh aa1 r n ih0 jh	True
 bailard	b ey1 l er0 d	b eh0 l er0 d	False
@@ -20080,7 +20080,7 @@ verbeck	v er1 b eh0 k	v er1 b eh2 k	False
 metcom	m eh1 t k aa0 m	m eh1 t k aa2 m	False
 chazov	ch ae1 z aa0 v	ch aa1 z aa0 v	False
 andiron	ae1 n d ay2 er0 n	ae1 n d er0 aa0 n	False
-asiamerica	ey2 s iy0 ah0 m eh1 r ih0 k ah0	ae2 zh ah0 m eh1 r ih0 k ah0	False
+asiamerica	ey2 s iy0 ah0 m eh1 r ih0 k ah0	ey2 zh ah0 m eh1 r ih0 k ah0	False
 karanicki	k eh2 r ah0 n ih1 k iy0	k er0 ah0 n ih1 t s k iy0	False
 shtyrov	sh t iy1 r ao0 v	sh t ay1 r ao2 v	False
 ponzo	p aa1 n z ow2	p aa1 n z ow0	False
@@ -20092,7 +20092,7 @@ airwing	eh1 r w ih0 ng	eh1 r w ih0 ng	True
 kingry	k ih1 ng g er0 iy0	k ih1 ng g r iy0	False
 d'genetta	d iy0 jh ah0 n eh1 t ah0	d jh eh0 n eh1 t ah0	False
 forewomen	f ao1 r w ih0 m eh0 n	f ao1 r w uh2 m ih0 n	False
-calpis	k ae1 l p ih0 s	k ae1 l p ih0 s	True
+calpis	k ae1 l p ih0 s	k ae1 l p ah0 s	False
 jowly	jh aw1 l iy0	jh aw1 l iy0	True
 gyosai	g y ow1 s ey2	jh y ow0 s ay2	False
 amiran	ae1 m ih0 r ah0 n	ae1 m ih0 r ae1 n	False
@@ -20173,7 +20173,7 @@ volksfuersorge	v ow0 l k s f y uw1 r s ao0 r jh	v ow1 l k s f uw2 er0 s ao2 r jh
 matuszewski	m ah0 t ah0 sh eh1 f s k iy0	m ah0 t ah0 sh eh1 f s k iy0	True
 acerra	ah0 s eh1 r ah0	aa0 s eh1 r ah0	False
 litts	l ih1 t s	l ih1 t s	True
-carbonetto	k aa2 r b ow0 n eh1 t ow0	k aa0 r b ow0 n eh1 t ow0	False
+carbonetto	k aa2 r b ow0 n eh1 t ow0	k aa0 r b ah0 n eh1 t ow0	False
 marzolf	m aa1 r z ow2 l f	m aa1 r z ow2 l f	True
 printup	p r ih1 n t ah2 p	p r ih1 n t ah2 p	True
 braaksma	b r aa1 k s m ah0	b r aa1 k s m ah0	True
@@ -20216,7 +20216,7 @@ pinshan	p ih1 n sh ah0 n	p ih1 n sh ah0 n	True
 corpening	k ao1 r p ah0 n ih0 ng	k ao1 r p ah0 n ih0 ng	True
 thornburys	th ao1 r n b eh2 r iy0 z	th ao1 r n b eh2 r iy0 z	True
 sherrit	sh eh1 r ih0 t	sh eh1 r ih0 t	True
-bucek	b uw1 ch eh0 k	b uw1 ch eh2 k	False
+bucek	b uw1 ch eh0 k	b uw1 ch ih0 k	False
 tassinari	t aa0 s iy0 n aa1 r iy2	t aa0 s iy0 n aa1 r iy0	False
 denucci	d ih0 n uw1 ch iy2	d eh0 n uw1 ch iy0	False
 rudeen	r ah1 d iy0 n	r uw0 d iy1 n	False
@@ -20377,7 +20377,7 @@ gouker	g aw1 k er0	g aw1 k er0	True
 mccaghren	m ah0 k ae1 g r ah0 n	m ah0 k ae1 g r ah0 n	True
 debacker	d iy1 b ae0 k er0	d ah0 b ae1 k er0	False
 woitschatzke	w oy2 ch ae1 t s k iy2	w oy1 ch ae2 t s k	False
-hagemeister	hh ae1 g ih0 m ay0 s t er0	hh ey1 jh m ay0 s t er0	False
+hagemeister	hh ae1 g ih0 m ay0 s t er0	hh ae1 jh m ay0 s t er0	False
 schellinger	sh eh1 l ih0 ng er0	s k eh1 l ih0 ng er0	False
 olmeda	ow0 l m ey1 d ah0	ow0 l m ey1 d ah0	True
 zarzecki	z aa0 r z eh1 k iy0	z er0 z eh1 t s k iy0	False
@@ -20678,7 +20678,7 @@ rodebaugh	r aa1 d ih0 b ao0	r ow1 d b aw0	False
 szarek	sh aa1 r eh0 k	sh aa1 r ih0 k	False
 o'deli	ow0 d eh1 l iy0	ow0 d eh1 l iy0	True
 kveton	k v eh1 t ao0 n	k v eh1 t ah0 n	False
-summiteers	s ah2 m ih0 t ih1 r z	s ah0 m ah0 t ih1 r z	False
+summiteers	s ah2 m ih0 t ih1 r z	s ah0 m ah0 t iy1 r z	False
 hagenow	hh ae1 jh ih0 n ow0	hh ae1 g ah0 n ow0	False
 brascade	b r ah0 s k ey1 d	b r ah0 s k ey1 d	True
 achee	ah0 ch iy1	ah0 ch iy1	True
@@ -20779,7 +20779,7 @@ d'andrea	d ae1 n d r iy2 ah0	d ae1 n d r iy0 ah0	False
 wordell	w er1 d ah0 l	w er1 d ah0 l	True
 bobbinger's	b aa1 b ih0 ng er0 z	b aa1 b ih0 ng er0 z	True
 aujourd'hui	ow1 zh ao0 r d w iy1	ow0 jh uh1 r d hh uw1 iy0	False
-kerestes	k eh1 r ih0 s t s	k iy1 r eh1 s t z	False
+kerestes	k eh1 r ih0 s t s	k iy1 r eh1 s t s	False
 bellantoni	b eh0 l aa0 n t ow1 n iy0	b eh0 l aa0 n t ow1 n iy0	True
 sabatine	s aa0 b aa0 t iy1 n iy0	s ae1 b ah0 t ay2 n	False
 passbooks	p ae1 s b uh2 k s	p ae1 s b uh2 k s	True
@@ -20821,7 +20821,7 @@ butorac	b y uw0 t ao1 r ah0 k	b y uw1 t er0 ae2 k	False
 harvison	hh aa1 r v ih0 s ah0 n	hh aa1 r v ih0 s ah0 n	True
 cottongin	k ah0 t aa1 ng jh ih0 n	k aa1 t ao1 ng jh ih0 n	False
 neuroth	n uh1 r ao0 th	n uh1 r aa0 th	False
-giovanniello	jh ow0 v aa2 n iy0 eh1 l ow0	jh ow0 v ae2 n iy0 eh1 l ow0	False
+giovanniello	jh ow0 v aa2 n iy0 eh1 l ow0	jh ow0 v aa0 n iy0 eh1 l ow0	False
 gurria	g er1 iy0 ah0	g er1 iy0 ah0	True
 polino	p ow0 l iy1 n ow0	p ow0 l iy1 n ow0	True
 secomerica	s eh2 k ow0 m eh1 r ih0 k ah0	s eh2 k ah0 m eh1 r ih0 k ah0	False
@@ -20853,7 +20853,7 @@ mchaffie	m ah0 k ae1 f iy0	m ah0 ch ae1 f iy0	False
 consumerists	k ah0 n s uw1 m er0 ih0 s t s	k ah0 n s uw1 m er0 ih0 s t s	True
 retemeyer	r eh1 t ah0 m ay2 r	r eh1 t ih0 m ay0 er0	False
 leatherberry	l eh1 dh er0 b eh2 r iy0	l eh1 dh er0 b eh2 r iy0	True
-flatau	f l ae1 t aw0	f l aa1 t aw0	False
+flatau	f l ae1 t aw0	f l ah0 t aw0	False
 demarais	d eh1 m er0 ey0	d eh2 m er0 ey1	False
 salser	s ey1 l s er0	s ao1 l s er0	False
 spaceports	s p ey1 s p ao2 r t s	s p ey1 s p ao2 r t s	True
@@ -20980,7 +20980,7 @@ bittermann's	b ih1 t er0 m ah0 n z	b ih1 t er0 m ah0 n z	True
 defilippo	d ih0 f iy0 l iy1 p ow0	d ih0 f iy0 l iy1 p ow0	True
 andruskevich	ae2 n d r ah0 s eh1 v ih0 ch	ae0 n d r ah1 s k ih0 v ih0 ch	False
 mutlangen	m ah0 t l ae1 ng g ah0 n	m ah1 t l ah0 ng ah0 n	False
-spokeswomen	s p ow1 k s w ih2 m ah0 n	s p ow1 k s w ih2 m eh0 n	False
+spokeswomen	s p ow1 k s w ih2 m ah0 n	s p ow1 k s w ih2 m ih0 n	False
 hahl	hh aa1 l	hh aa1 l	True
 masden	m ae1 s d ah0 n	m ae1 s d ah0 n	True
 guel	g eh1 l	g eh1 l	True
@@ -21168,7 +21168,7 @@ cowlings'	k aw1 l ih0 ng z	k aw1 l ih0 ng z	True
 nagele	n ae1 g ah0 l	n aa0 g ah0 l iy2	False
 haso	hh aa1 s ow2	hh aa1 s ow0	False
 globcom	g l aa1 b k aa0 m	g l aa1 b k ah2 m	False
-schwebach	sh w eh1 b aa2 k	sh w eh1 b aa2 k	True
+schwebach	sh w eh1 b aa2 k	sh w eh1 b aa0 k	False
 konaga	k ah0 n aa1 g ah0	k ow0 n aa1 g ah0	False
 beladur	b eh2 l ah0 d uh1 r	b eh1 l aa0 d uh1 r	False
 scharp	sh aa1 r p	sh aa1 r p	True
@@ -21254,7 +21254,7 @@ tricil	t r ih1 s ih0 l	t r ih1 s ah0 l	False
 angelillo	aa0 ng g eh0 l ih1 l ow0	aa0 n jh eh0 l ih1 l ow0	False
 ouaga	w aa1 g ah0	uw0 aa1 g ah0	False
 schweighardt	sh w ay1 g hh aa2 r t	sh w ey1 hh aa2 r t	False
-peria	p eh1 r iy0 ah0	p er1 iy0 ah0	False
+peria	p eh1 r iy0 ah0	p r iy0 ah0	False
 shoopman	sh uw1 p m ah0 n	sh uw1 p m ah0 n	True
 vsel	v iy1 s eh2 l	v s eh1 l	False
 jarnigan	jh aa1 r n ih0 g ae0 n	jh aa1 r n ih0 g ae0 n	True
@@ -21263,7 +21263,7 @@ sofian	s ow0 f iy1 ah0 n	s ow0 f iy1 ah0 n	True
 spilotro	s p ih0 l aa1 t r ow0	s p iy0 l ow1 t r ow2	False
 zopfi	z ow1 p f iy0	z aa1 p f iy0	False
 backbite	b ae1 k b ay2 t	b ae1 k b ay2 t	True
-jarislowsky	jh eh2 r ih0 s l aw1 s k iy0	y eh1 r ih0 s l ao1 f s k iy0	False
+jarislowsky	jh eh2 r ih0 s l aw1 s k iy0	y r ih0 s l ao1 f s k iy0	False
 slaugh	s l ao1	s l ao1 f	False
 elich	eh1 l ih0 k	eh1 l ih0 k	True
 hazelbaker	hh ey1 z ah0 l b ey2 k er0	hh ey1 z ah0 l b ey2 k er0	True
@@ -21274,7 +21274,7 @@ mischarges	m ih0 s ch aa1 r jh ih0 z	m ih0 s ch aa1 r jh ih0 z	True
 buttonville	b ah1 t ah0 n v ih2 l	b ah1 t ah0 n v ih2 l	True
 fazenbaker	f ey1 z ah0 n b ey2 k er0	f ey1 z ah0 n b ey2 k er0	True
 vensel	v eh1 n s ah0 l	v eh1 n s ah0 l	True
-kakuei	k ae1 k y uw0 iy0	k aa0 k uw1 ey1 ey2	False
+kakuei	k ae1 k y uw0 iy0	k ae0 k uw1 ey1 ey2	False
 bouler	b aw1 l er0	b aw1 l er0	True
 brumitt	b r uw1 m ih0 t	b r uw1 m ih0 t	True
 bittick	b ih1 t ih0 k	b ih1 t ih0 k	True
@@ -21501,7 +21501,7 @@ wadlington	w aa1 d l ih0 ng t ah0 n	w ao1 d l ih0 ng t ah0 n	False
 oravetz	ao1 r ah0 v ih0 t s	ao1 r ae1 v ih0 t s	False
 severtson	s eh1 v er0 t s ah0 n	s eh1 v er0 t s ah0 n	True
 knotek	n ow1 t ih0 k	n ow1 t eh2 k	False
-ruppenthal	r ah1 p ih0 n th ah0 l	r ah1 p ah0 n th ao2 l	False
+ruppenthal	r ah1 p ih0 n th ah0 l	r ah1 p eh1 n th ao2 l	False
 dealfish	d iy1 l f ih2 sh	d eh1 l f ih2 sh	False
 halamandaris	hh ae2 l ah0 m ae1 n d er0 ih0 s	hh ae2 l ah0 m ae1 n d aa1 r ih0 s	False
 junkier	jh ah1 ng k iy0 er0	jh ah1 ng k iy0 er0	True
@@ -21517,7 +21517,7 @@ gerk	g er1 k	g er1 k	True
 ruchti	r uw1 k t iy0	r uw1 ch t iy0	False
 yangsheng	y aa1 ng sh eh1 ng	y ae1 ng sh eh0 ng	False
 sandhogs	s ae1 n d hh ao2 g z	s ae1 n d hh aa2 g z	False
-kirshfink	k er1 sh f ih0 ng k	k er1 sh f ih0 ng k	True
+kirshfink	k er1 sh f ih0 ng k	k er1 sh f ih2 ng k	False
 murihuro	m uh2 r iy0 hh uh1 r ow0	m uh0 r iy0 hh uh1 r ow0	False
 barich	b ae1 r ih0 k	b ae1 r ih0 k	True
 sestak	s eh1 s t ah0 k	s eh1 s t ah0 k	True
@@ -21529,7 +21529,7 @@ exbroker's	eh1 k s b r ow1 k er0 z	ih0 k s b r ow1 k er0 z	False
 ursola	er0 s ow1 l ah0	er0 s ow1 l ah0	True
 yeargan	y er1 g ah0 n	y ih1 er1 g ah0 n	False
 ladehoff	l ae1 d ah0 hh ao0 f	l ey1 d hh ao0 f	False
-lauderbaugh	l ao0 d er1 b ao0	l ao1 d er0 b aw0	False
+lauderbaugh	l ao0 d er1 b ao0	l aw1 d er0 b aw0	False
 pawnees	p ao1 n iy1 z	p ao1 n iy1 z	True
 extirpates	eh1 k s t er0 p ey2 t s	eh1 k s t er0 p ey2 t s	True
 shatzer	sh ey1 t z er0	sh ey1 t z er0	True
@@ -21596,7 +21596,7 @@ kristoffe	k r ih1 s t ao0 f	k r ih1 s t ao0 f	True
 glockner	g l aa1 k n er0	g l aa1 k n er0	True
 catniss	k ae1 t n ih2 s	k ae1 t n ih0 s	False
 cosio	k ow1 s iy0 ow0	k ow1 s iy0 ow0	True
-dalessandro	d aa0 l eh0 s aa1 n d r ow0	d aa0 l eh0 s ae1 n d r ow2	False
+dalessandro	d aa0 l eh0 s aa1 n d r ow0	d aa0 l eh0 s ae1 n d r ow0	False
 taewoo	t ay1 w uw0	t ey1 w uw2	False
 coughran	k ao1 g r ah0 n	k ao1 g r ah0 n	True
 speedring	s p iy1 d r ih2 ng	s p iy1 d r ih2 ng	True
@@ -21835,7 +21835,7 @@ szczesniak	sh eh1 z n iy0 ae0 k	sh eh1 s n iy0 ae0 k	False
 marineau	m eh1 r ih0 n ow0	m ae1 r ih0 n ow2	False
 nyers	n ay1 r z	n ay1 er0 z	False
 sterilizes	s t eh1 r ah0 l ay2 z ih0 z	s t eh1 r ah0 l ay2 z ih0 z	True
-cosset	k aa1 s ah0 t	k aa1 s ah0 t	True
+cosset	k aa1 s ah0 t	k aa1 s ih0 t	False
 kuriansky	k uh2 r iy0 ae1 n s k iy0	k y uh1 r iy0 ae1 n s k iy0	False
 deardourff	d ih1 r d ao2 r f	d ih1 r d ao2 r f	True
 gruszka	g r ah1 sh k ah0	g r ah1 sh k ah0	True
@@ -21856,7 +21856,7 @@ egley	eh1 g l iy0	eh1 g l iy0	True
 elbrick's	eh1 l b r ih0 k s	eh1 l b r ih2 k s	False
 holshouser	hh ow1 l s hh aw2 s er0	hh ow1 l s hh aw2 s er0	True
 derouen	d er0 w eh1 n	d eh1 r ah0 uw0 ah0 n	False
-petrizzo	p eh0 t r iy1 z ow0	p eh0 t r ih1 z ow0	False
+petrizzo	p eh0 t r iy1 z ow0	p eh0 t r iy1 z ow0	True
 sciclone	s ih2 k l ow1 n iy0	s ih0 k l ow1 n	False
 isoxicam	ih2 s aa1 k s ih0 k ah0 m	ay2 s aa1 k s ih0 k ah0 m	False
 misrecognition	m ih0 s r eh2 k ah0 g n ih1 sh ah0 n	m ih2 s r ah0 k aa0 g n ih1 sh ah0 n	False
@@ -22038,7 +22038,7 @@ milonas	m iy0 l ow1 n aa0 z	m ih0 l ow1 n ah0 z	False
 czekajewski	ch eh2 k ah0 y eh1 w s k iy0	ch eh2 k ay0 eh1 f s k iy0	False
 ensrud	eh1 n z r uw2 d	ih0 n s r ah1 d	False
 lafrenz	l ae1 f r ih0 n s	l ae1 f r eh1 n z	False
-amborn	ah0 m b ao1 r n	ah0 m b ao1 r n	True
+amborn	ah0 m b ao1 r n	ah0 m b ao2 r n	False
 delgaudio	d eh0 l g ao1 d iy0 ow0	d eh2 l g ao1 d iy0 ow0	False
 steinborn	s t ay1 n b ao1 r n	s t ay1 n b r n	False
 chipsoft	ch ih1 p s ao2 f t	ch ih1 p s ao2 f t	True
@@ -22088,7 +22088,7 @@ hoefle	hh ow1 f ah0 l	hh ow1 f ah0 l	True
 filipiak	f ih0 l ih1 p iy0 ae0 k	f ih0 l ih1 p iy0 ae0 k	True
 maluken	m ae2 l uw1 k ih0 n	m ah0 l uw1 k ah0 n	False
 mispronounces	m ih0 s p r ah0 n aw1 n s ih0 z	m ih0 s p r ah0 n aw1 n s ih0 z	True
-fabrizius	f ae2 b r iy1 z iy0 ah0 s	f ah0 b r ah0 z iy0 ih0 s	False
+fabrizius	f ae2 b r iy1 z iy0 ah0 s	f ah0 b r ih1 z iy0 ih0 s	False
 johnta	jh aa1 n t ah0	jh aa1 n t ah0	True
 inscho	ih1 n sh ow0	ih1 n sh ow0	True
 thomure	th aa1 m y uw0 r	th aa1 m uh1 er0	False
@@ -22201,9 +22201,9 @@ schoendorf	sh ow1 n d ao0 r f	sh ow1 n d ao0 r f	True
 delbarco's	d eh0 l b aa1 r k ow0 z	d eh2 l b aa1 r k ow0 z	False
 pilgreen	p ih0 l g r iy1 n	p ih1 l g r iy2 n	False
 resetar	r eh1 s ih0 t er0	r iy0 s ih0 t aa2 r	False
-arenz	aa1 r ey0 n z	aa0 r eh1 n z	False
+arenz	aa1 r ey0 n z	r eh1 n z	False
 gyger	g ay1 g er0	jh ay1 g er0	False
-lefrancois	l eh1 f r ah0 n k w aa0	l eh2 f r aa0 n s w aa2	False
+lefrancois	l eh1 f r ah0 n k w aa0	l eh2 f r aa0 n s w aa1	False
 richoux	r ih0 sh uw1	r ih0 sh uw1	True
 stoia	s t ow1 y aa2	s t ow1 y ah0	False
 smaldone	s m ae1 l d ah0 n	s m ao1 l d ow1 n	False
@@ -22318,7 +22318,7 @@ rhineman's	r ay1 n m ah0 n z	r ay1 n m ah0 n z	True
 haizlip	hh ey1 z l ih0 p	hh ey1 z l ih0 p	True
 velotta	v eh0 l ow1 t ah0	v eh0 l ow1 t ah0	True
 hunke	hh ah1 ng k	hh ah1 ng k	True
-schoenhof	sh ow1 n hh aa2 f	sh ow1 n hh ah0 f	False
+schoenhof	sh ow1 n hh aa2 f	sh ow1 n hh ao2 f	False
 armtek's	aa1 r m t eh2 k s	aa1 r m t eh2 k s	True
 vanhall	v ae2 n hh ao1 l	v ae1 n hh ao2 l	False
 dalessio	d ah0 l eh1 s iy0 ow0	d aa0 l eh1 s iy0 ow0	False
@@ -22388,7 +22388,7 @@ rampell	r ae0 m p eh1 l	r ae1 m p ah0 l	False
 nichter	n ih1 k t er0	n ih1 k t er0	True
 demilio	d ih0 m iy1 l iy0 ow0	d ih0 m iy1 l iy0 ow0	True
 lanzelotti	l ae2 n z ah0 l aa1 t iy0	l aa0 n z eh0 l ow1 t iy0	False
-firstsouth	f er1 s t s aw2 th	f er1 s t s aw2 th	True
+firstsouth	f er1 s t s aw2 th	f er1 s t s aw0 th	False
 kunzelman	k ah1 n z ah0 l m ah0 n	k ah1 n z ah0 l m ah0 n	True
 rabenold	r ae1 b ih0 n ow2 l d	r ae1 b ih0 n ow2 l d	True
 gibes	jh ay1 b z	jh ay1 b z	True
@@ -22461,7 +22461,7 @@ vukelich	v ah0 k eh1 l ih0 hh	v y uw1 k ih0 l ih0 k	False
 myrlene	m ih0 r l iy1 n	m er1 l iy2 n	False
 faal's	f aa1 l z	f aa1 l z	True
 breglio	b r eh1 g l iy0 ow0	b r eh1 g l iy0 ow0	True
-grzyb	g er1 z ih2 b	g er1 z ah0 b	False
+grzyb	g er1 z ih2 b	g r z ah0 b	False
 bocook	b aa1 k uh0 k	b ow1 k uh2 k	False
 penkava	p eh0 ng k aa1 v ah0	p eh0 n k aa1 v ah0	False
 matassa	m aa0 t aa1 s ah0	m aa0 t aa1 s ah0	True
@@ -22482,7 +22482,7 @@ wibbenmeyer	w ih1 b ih0 n m ay2 er0	w ih1 b ih0 n m ay0 er0	False
 hausummi	hh aw0 s uw1 m iy0	hh ao2 s uw1 m iy0	False
 gruba	g r uw1 b ah0	g r uw1 b ah0	True
 castruita	k aa0 s t r uw1 t ah0	k aa0 s t r uw0 iy1 t ah0	False
-maione	m ay1 ow0 n iy0	m ey0 ow1 n	False
+maione	m ay1 ow0 n iy0	m ay0 ow1 n	False
 tasch	t ae1 sh	t ae1 sh	True
 brafford	b r ae1 f er0 d	b r ae1 f er0 d	True
 janella	jh ah0 n eh1 l ah0	jh ah0 n eh1 l ah0	True
@@ -22503,7 +22503,7 @@ polysar's	p aa1 l ih0 s aa0 r z	p aa1 l iy2 s aa2 r z	False
 guerrette	g er0 eh1 t	g er0 eh1 t	True
 undernourish	ah2 n d er0 n er1 ih0 sh	ah2 n d er0 n er1 ih0 sh	True
 dececco	d ih0 ch eh1 k ow0	d ih0 ch eh1 k ow0	True
-likhachov	l ih1 k ah0 ch aa0 v	l ih1 k ah0 k aa0 v	False
+likhachov	l ih1 k ah0 ch aa0 v	l ih1 k ah0 ch aa0 v	True
 leeth	l iy1 th	l iy1 th	True
 kokesh	k aa1 k ih0 sh	k ow0 k eh1 sh	False
 stumbaugh	s t ah1 m b ao2	s t ah1 m b ao2	True
@@ -22514,7 +22514,7 @@ hispanoil	hh ih1 s p ah0 n oy2 l	hh ih1 s p ah0 n oy2 l	True
 kinderman	k ay1 n d er0 m ah0 n	k ay1 n d er0 m ah0 n	True
 postdates	p ow2 s t d ey1 t s	p ow2 s t d ey1 t s	True
 toppins	t aa1 p ih0 n z	t aa1 p ih0 n z	True
-holidaysburg	hh aa1 l ah0 d ey2 z b er0 g	hh aa1 l ah0 d ay1 z b er0 g	False
+holidaysburg	hh aa1 l ah0 d ey2 z b er0 g	hh aa1 l ah0 d ey1 z b er0 g	False
 wergin	w er1 g ih0 n	w er1 jh ih0 n	False
 lohrey	l aa1 r iy0	l ao1 r iy0	False
 rittenour	r ih1 t ah0 n aw0 r	r ih1 t ih0 n er0	False
@@ -22618,7 +22618,7 @@ nienow	n iy1 n ow0	n iy1 n ow0	True
 hasselbach	hh ae1 s ih0 l b aa0 k	hh ae1 s ih0 l b aa0 k	True
 condracky	k aa2 n d r ae1 k iy0	k ah0 n d r ae1 k iy0	False
 battenfield	b ae1 t ah0 n f iy2 l d	b ae1 t ah0 n f iy2 l d	True
-pic-a-pasta	p ih1 k ah0 p aa1 s t ah0	p ih1 k ah0 p ae1 s t ah0	False
+pic-a-pasta	p ih1 k ah0 p aa1 s t ah0	p ih1 k ah0 p ae1 s t aa0	False
 berles	b er1 l z	b er1 l z	True
 lanzer	l ae1 n z er0	l ae1 n z er0	True
 scharrer	sh aa1 r er0	sh aa1 r er0	True
@@ -22798,7 +22798,7 @@ equitex	eh1 k w ah0 t eh2 k s	eh1 k w ah0 t eh2 k s	True
 agematsu	ae1 g ah0 m ae1 t s uw0	ey2 jh ah0 m ae1 t s uw2	False
 bralorne	b r ae1 l ao0 r n	b r ah0 l ao1 r n	False
 prothorax	p r ow0 th ao1 r ae0 k s	p r ow1 th er0 ae0 k s	False
-nonsporting	n aa0 n s p ao1 r t ih0 ng	n aa0 n s p ao1 r t ih0 ng	True
+nonsporting	n aa0 n s p ao1 r t ih0 ng	n aa1 n s p ao1 r t ih0 ng	False
 carriero	k aa0 r ih1 r ow0	k aa0 r ih1 r ow0	True
 shellshocked	sh eh1 l sh aa2 k t	sh eh1 l sh aa2 k t	True
 younkins	y ah1 ng k ih0 n z	y ah1 ng k ih0 n z	True
@@ -22890,7 +22890,7 @@ cellio	ch eh1 l iy0 ow0	ch eh1 l iy0 ow0	True
 gonser	g aa1 n s er0	g aa1 n s er0	True
 lueder	l uh1 d er0	l uh1 d er0	True
 teruko	t eh1 r uw0 k ow0	t eh2 r uw1 k ow0	False
-wasil	w ao1 s ah0 l	v aa1 s ih1 l	False
+wasil	w ao1 s ah0 l	v aa1 s ah0 l	False
 cantrelle	k ah0 n t r eh1 l	k ae0 n t r eh1 l	False
 thermedics	th er0 m eh1 d ih0 k s	th er0 m eh1 d ih0 k s	True
 ulrey	ah1 l r iy0	ah1 l r iy0	True
@@ -22922,7 +22922,7 @@ boshell	b aa1 sh ah0 l	b aa1 sh ah0 l	True
 corten	k ao1 r t eh0 n	k ao1 r t ah0 n	False
 skrocki	s k r aa1 k iy0	s k r aa1 t s k iy0	False
 one-man	w ah1 n m ae1 n	w ah1 n m ey1 n	False
-zucchinis	z uw0 k iy1 n iy0 z	z uw0 k iy1 n iy0 z	True
+zucchinis	z uw0 k iy1 n iy0 z	z uw0 k iy1 n iy0 s	False
 rishell	r ih1 sh ah0 l	r ih1 sh ah0 l	True
 icloud	ay1 k l aw1 d	ih0 k l aw1 d	False
 angert	ey1 ng g er0 t	ae1 ng g er0 t	False
@@ -22948,7 +22948,7 @@ meatpacker	m iy1 t p ae2 k er0	m iy1 t p ae2 k er0	True
 europhiles	y uh1 r ow0 f ay0 l z	y uh1 r ah0 f ay2 l z	False
 pennwalt	p eh1 n w ao2 l t	p eh1 n w ao0 l t	False
 lambsdorff	l ae1 m z d ao0 r f	l ae1 m z d ao2 r f	False
-cutaia	k uw0 t aa1 y ah0	k y uw0 t ay0 y ah0	False
+cutaia	k uw0 t aa1 y ah0	k y uw0 t ay1 y ah0	False
 furgerson	f er1 g er0 s ah0 n	f er1 g er0 s ah0 n	True
 finklea	f ih1 ng k l iy0 ah0	f ih1 ng k l iy0 ah0	True
 blecha	b l eh1 ch ah0	b l eh1 k ah0	False
@@ -22988,7 +22988,7 @@ yuhasz	y ah1 hh ah0 sh	y uw1 hh ah0 sh	False
 oehmens	ow1 m ah0 n z	ow1 m eh0 n z	False
 brisendine	b r ih1 s ih0 n d ay2 n	b r iy0 z eh0 n d iy1 n	False
 berken	b er1 k ah0 n	b er1 k ah0 n	True
-panem	p ey1 n ah0 m	p ae1 n ih0 m	False
+panem	p ey1 n ah0 m	p ae1 n ah0 m	False
 kalbach	k ae1 l b aa2 k	k ae1 l b aa0 k	False
 misconstruing	m ih0 s k ah0 n s t r uw1 ih0 ng	m ih0 s k ah0 n s t r uw1 ih0 ng	True
 overkilling	ow1 v er0 k ih2 l ih0 ng	ow1 v er0 k ih2 l ih0 ng	True
@@ -23089,12 +23089,12 @@ atchinson	ae1 ch ih0 n s ah0 n	ae1 ch ih0 n s ah0 n	True
 aristech	eh1 r ih0 s t eh2 k	eh1 r ih0 s t eh2 k	True
 schwartzchild	sh w ao1 r t s ch ay2 l d	sh w ao1 r t ch ay2 l d	False
 gonsales	g ow1 n s ey0 l z	g aa0 n s aa1 l eh0 s	False
-gettis	g eh1 t ih0 s	g eh1 t ih0 s	True
+gettis	g eh1 t ih0 s	g eh1 t ay2 s	False
 willaims	w ih1 l ah0 m z	w ih1 l ey1 m z	False
 vicorp	v ay1 k ao0 r p	v ih1 k ao2 er0 p	False
 kapfer	k ae1 p f er0	k ae1 p f er0	True
 marquerite	m aa0 r k er0 iy1 t	m aa2 r k er0 iy1 t	False
-wainoco	w ey2 n ow1 k ow0	w ey1 n ow1 k ow0	False
+wainoco	w ey2 n ow1 k ow0	w ey1 n ah0 k ow0	False
 o'dwyer	ow0 d w ay1 r	ow0 d w ay1 er0	False
 bowsing	b aw1 z ih0 ng	b ow1 z ih0 ng	False
 dalpe	d ey1 l p	d ae1 l p iy0	False
@@ -23115,7 +23115,7 @@ mossey	m aa1 s iy0	m aa1 s iy0	True
 eldwin	ih0 l d w ih1 n	eh1 l d w ih0 n	False
 lebowe	l ih0 b ow1	l ah0 b ow1	False
 konzi's	k aa1 n z iy0 z	k aa1 n z iy0 z	True
-ruzich	r ah1 z ih0 hh	r uw1 z ih0 hh	False
+ruzich	r ah1 z ih0 hh	r uw1 z ih0 k	False
 nappier	n ae1 p iy0 er0	n ae1 p iy0 er0	True
 kynard	k ih1 n er0 d	k ih1 n er0 d	True
 delnero	d eh0 l n eh1 r ow0	d eh0 l n eh1 r ow0	True
@@ -23217,7 +23217,7 @@ non-racial	n aa0 n r ey1 sh ah0 l	n aa0 n r ey1 sh ah0 l	True
 dettore	d ih0 t ao1 r iy0	d eh1 t ao0 r iy0	False
 vercher	v er1 k er0	v er1 k er0	True
 zabows	z ey1 b ow0 z	z aa1 b ow0 z	False
-brambila	b r aa0 m b iy1 l ah0	b r aa0 m b iy1 l ah0	True
+brambila	b r aa0 m b iy1 l ah0	b r ae2 m b iy1 l ah0	False
 lahiff	l ae1 hh ih0 f	l ae1 hh iy1 f	False
 sokoloski	s ah0 k ah0 l aw1 s k iy0	s ah0 k ah0 l ao1 s k iy0	False
 kutuzovsky	k uw2 t ah0 z aa1 v s k iy0	k ah0 t uw0 z aa1 v s k iy0	False
@@ -23228,7 +23228,7 @@ stephana	s t eh0 f aa1 n ah0	s t ih0 f ah0 n ah0	False
 layah	l ey1 ah0	l ay1 ah0	False
 four-year	f ao2 r y ih1 r	f ao1 r y ih1 r	False
 rothwells	r ao1 th w eh2 l z	r ao1 th w eh2 l z	True
-slimak	s l ih1 m ah0 k	s l ih1 m ah0 k	True
+slimak	s l ih1 m ah0 k	s l ay1 m ah0 k	False
 superfon	s uw1 p er0 f ih0 n	s uw1 p er0 f aa1 n	False
 benware	b eh1 n w eh0 r	b eh1 n w eh2 r	False
 larusso	l aa0 r uw1 s ow0	l aa0 r uw1 s ow0	True
@@ -23362,7 +23362,7 @@ jandt	jh ae1 n t	jh ae1 n t	True
 xylogic	z ay2 l aa1 jh ih0 k	z ay0 l aa1 jh ih0 k	False
 krichbaum	k r ih1 k b aw0 m	k r ih1 ch b aw2 m	False
 mohamadi	m ah0 hh aa1 m ah0 d iy0	m ow2 hh aa0 m aa1 d iy0	False
-dewaele	d uw1 eh0 l	d uw0 ey1 l	False
+dewaele	d uw1 eh0 l	d uw0 ey1 l ey0	False
 steedley	s t iy1 d l iy0	s t iy1 d l iy0	True
 gaudier	g ao2 d iy0 ey1	g aw1 d iy0 er0	False
 joying	jh oy1 ih0 ng	jh oy1 ih0 ng	True
@@ -23396,7 +23396,7 @@ dapice	d aa1 p ih0 s	d ae1 p ih0 s	False
 moscom	m ao1 s k ah0 m	m aa1 s k ah0 m	False
 houdaille	hh uw1 d ey2 l	hh uw0 d ey2 l	False
 nuzzles	n ah1 z ah0 l z	n ah1 z ah0 l z	True
-pochiluk	p ah0 ch iy1 l uw0 k	p ah0 ch ih0 l uw1 k	False
+pochiluk	p ah0 ch iy1 l uw0 k	p ah0 ch ih0 l uw0 k	False
 kossow	k aa1 s ow0	k aa1 s ow0	True
 theel	th iy1 l	th iy1 l	True
 summitry	s ah1 m ih0 t r iy0	s ah1 m ah0 t r iy0	False
@@ -23465,7 +23465,7 @@ bolenbaugh	b ah0 l eh1 n b ao0	b ow1 l ah0 n b aw0	False
 przybyla	p er2 z ah0 b ih1 l ah0	p r z iy0 b ih1 l ah0	False
 gissendanner	g ih1 s ih0 n d ah0 n er0	g ih0 s ih0 n d ae2 n er0	False
 wolrath	w ow1 l r ae2 th	w ow1 l r ah0 th	False
-multivalve	m ah1 l t iy0 v ae0 l v	m ah1 l t ih0 v ah0 l v	False
+multivalve	m ah1 l t iy0 v ae0 l v	m ah1 l t iy0 v ah0 l v	False
 foraying	f ao1 r ey0 ih0 ng	f ao1 r ey0 ih0 ng	True
 gregston	g r eh1 g s t ah0 n	g r eh1 g s t ah0 n	True
 gentleladies	jh eh1 n t ah0 l ey2 d iy0 z	jh eh1 n t ah0 l ah0 l ah0 d iy0 z	False
@@ -23512,7 +23512,7 @@ cordovez	k ao2 r d ow1 v eh0 z	k ao1 r d ow2 v eh2 z	False
 pulice	p uw1 l ih0 s	p uw1 l ah0 s	False
 budyonnovsk	b uw1 d y ah0 n aa2 v s k	b ah2 d iy0 ah0 n aa0 v s k	False
 kelchner	k eh1 l k n er0	k eh1 l ch n er0	False
-reserveese	r eh2 z er0 v iy1 s	r ih0 z er0 v iy2 z	False
+reserveese	r eh2 z er0 v iy1 s	r ih0 z er0 v iy2 s	False
 northwardly	n ao1 r th w er0 d l iy0	n ao1 r th w er0 d l iy0	True
 czaplicki	ch ah0 p l ih1 t s k iy0	ch ah0 p l ih1 t s k iy0	True
 konwinski	k ah0 n v ih1 n s k iy0	k ah0 n v ih1 n s k iy0	True
@@ -23523,7 +23523,7 @@ dextrathoraphan	d eh0 k s t r ah0 th ao1 r ah0 f ah0 n	d eh2 k s t r ah0 th ao1 
 telltales	t eh1 l t ey2 l z	t eh1 l t ey2 l s	False
 ampato	aa2 m p aa1 t ow0	aa0 m p aa1 t ow0	False
 mangope	m ae0 ng g ow1 p ey2	m ae1 ng g ah0 p	False
-austat	ow1 s t ae0 t	ao1 s t ae2 t	False
+austat	ow1 s t ae0 t	ao1 s t ae0 t	False
 noncumulative	n aa0 n k y uw1 m y ah0 l ah0 t ih0 v	n aa0 n k y uw1 m y ah0 l ah0 t ih0 v	True
 lipshie	l ih1 p sh iy0	l ih1 p sh iy0	True
 raskyn	r ae1 s k ih0 n	r ae1 s k ih0 n	True
@@ -23575,7 +23575,7 @@ tokkin	t aa1 k ih0 n	t aa1 k ih0 n	True
 hafif	hh aa0 f iy1 f	hh ae1 f ih0 f	False
 gaughman	g ao1 m ah0 n	g ao1 m ah0 n	True
 walkowiak	w ao0 k aw1 iy0 ae0 k	v ah0 l k aw1 iy0 ae0 k	False
-guasch	g w ae1 sh	g aa1 sh	False
+guasch	g w ae1 sh	g ao1 sh	False
 drucie	d r ah1 k iy0	d r ah1 k iy0	True
 conahan	k aa1 n ah0 hh ae0 n	k aa1 n ah0 hh ae0 n	True
 greever	g r iy1 v er0	g r iy1 v er0	True
@@ -23676,7 +23676,7 @@ mandigo	m aa0 n d iy1 g ow0	m ae0 n d iy1 g ow0	False
 devaluated	d ih0 v ae1 l y uw0 ey2 t ih0 d	d ih0 v ae1 l y uw0 ey2 t ih0 d	True
 stasik	s t aa1 s ih0 k	s t aa1 s ih0 k	True
 darblay	d aa1 r b l ey0	d aa1 r b l ey0	True
-daughenbaugh	d ao0 eh1 n b ao0	d aw1 ih0 n b ao2	False
+daughenbaugh	d ao0 eh1 n b ao0	d aw1 ih0 n b aw0	False
 deshong	d eh1 sh ao0 ng	d eh1 s ao0 ng	False
 hoevet's	hh ow1 v eh2 t s	hh aa1 v ah0 t s	False
 vanvooren	v ae0 n v uh1 r ah0 n	v ae0 n v uw1 r ah0 n	False
@@ -23741,7 +23741,7 @@ hariz	hh eh1 r ih0 z	hh eh2 r iy0 z	False
 shimmerlik	sh ih1 m er0 l ih0 k	sh ih1 m er0 l ih0 k	True
 buchananism	b y uw0 k ae1 n ah0 n ih2 z ah0 m	b y uw0 k ae1 n ah0 n ih2 z ah0 m	True
 pletz	p l eh1 t s	p l eh1 t s	True
-kibbutzniks	k ih0 b uh1 t s n ih0 k s	k ih2 b uh0 t s n ih0 k s	False
+kibbutzniks	k ih0 b uh1 t s n ih0 k s	k ih2 b uh0 t s n ih0 k z	False
 iretta	ih2 r eh1 t ah0	ih2 r eh1 t ah0	True
 brisbon	b r ih1 z b ah0 n	b r ih1 z b ah0 n	True
 centralists	s eh1 n t r ah0 l ih0 s t s	s eh1 n t r ah0 l ih0 s t s	True
@@ -23766,7 +23766,7 @@ myrmidons	m er1 m ih0 d ih0 n z	m er1 m ih0 d ih0 n z	True
 vanbiesbrouck	v ae2 n b iy1 ah0 s b r uw2 k	v ae1 n b iy0 z b r uh2 k	False
 invitron's	ih1 n v ih0 t r aa0 n z	ih2 n v ih1 t r ah0 n z	False
 argosystem	aa1 r g ow0 s ih2 s t ah0 m	aa1 r g ah0 s ih2 s t ah0 m	False
-lizhi	l ih1 z iy0	l iy1 zh iy0	False
+lizhi	l ih1 z iy0	l iy1 z iy0	False
 schaberg	sh aa1 b er0 g	sh ey1 b er0 g	False
 pamperin	p ae1 m p er0 ih0 n	p ae1 m p er0 ih0 n	True
 fauntroy	f ao1 n t r oy2	f ao1 n t r oy2	True
@@ -23809,7 +23809,7 @@ rainbolt	r ey1 n b ow2 l t	r ey1 n b ow2 l t	True
 fairlow	f eh1 r l ow0	f eh1 r l ow2	False
 salick	s ae1 l ih0 k	s ae1 l ih0 k	True
 berchenall	b er1 k ah0 n aa2 l	b er1 ch ah0 n aa0 l	False
-ameritrust	ah0 m eh1 r ih0 t r ah2 s t	ah0 m eh1 r ih0 t r ah0 s t	False
+ameritrust	ah0 m eh1 r ih0 t r ah2 s t	ah0 m eh1 r ih0 t r ah2 s t	True
 reassumed	r iy0 ah0 s uw1 m d	r iy2 ah0 s uw1 m d	False
 witczak	v ih1 t ch ae0 k	v ih1 ch ae0 k	False
 jokebook	jh ow1 k b uh2 k	jh ow1 k b uh2 k	True
@@ -24036,7 +24036,7 @@ richco	r ih1 k ow0	r ih1 ch k ow0	False
 kalliel	k ae1 l iy0 ah0 l	k ae1 l iy0 l	False
 varricchio	v aa0 r iy1 k iy0 ow0	v aa0 r iy1 k iy0 ow0	True
 tragos	t r ae1 g ow0 z	t r ey1 g ow0 z	False
-oritz	ao1 r ih0 t s	ao2 r ih1 t s	False
+oritz	ao1 r ih0 t s	ao2 r ih0 t s	False
 beakley	b iy1 k l iy0	b iy1 k l iy2	False
 duchesneau	d ah1 sh ih0 s n ow0	d uw1 sh ih0 s n ow2	False
 kirkhart	k er1 k hh aa0 r t	k er1 k hh aa0 r t	True
@@ -24106,7 +24106,7 @@ o'conner's	ow0 k aa1 n er0 z	ow0 k aa1 n er0 z	True
 dioguardi	d iy0 ow0 g aa1 r d iy2	d iy2 ow0 g aa1 r d iy0	False
 alphabetizes	ae1 l f ah0 b ah0 t ay2 z ih0 z	ae1 l f ah0 b ah0 t ay2 z ih0 z	True
 milligal	m ih1 l ih0 g ah0 l	m ih1 l ih0 g ah0 l	True
-schillaci	s k iy0 l aa1 ch iy0	s k iy0 l aa1 ch iy0	True
+schillaci	s k iy0 l aa1 ch iy0	k iy0 l aa1 ch iy0	False
 bazzle	b ae1 z ah0 l	b ae1 z ah0 l	True
 fidora	f ah0 d ao1 r ah0	f iy0 d ao1 r ah0	False
 tinnin	t ih1 n ih0 n	t ih1 n ih0 n	True
@@ -24154,7 +24154,7 @@ erbes	er1 b z	er1 b z	True
 purile	p y uw1 r ah0 l	p y uh1 r ah0 l	False
 chatz	ch ae1 t s	ch ae1 t s	True
 maradonna	m aa2 r ah0 d ow1 n ah2	m aa2 r ah0 d aa1 n ah0	False
-colao	k ow1 l aw0	k ow1 l aw1	False
+colao	k ow1 l aw0	k ow1 l aw0	True
 cominsky	k ah0 m ih1 n s k iy0	k ah0 m ih1 n s k iy0	True
 hehman	hh eh1 m ah0 n	hh eh1 m ah0 n	True
 redler	r eh1 d l er0	r eh1 d l er0	True
@@ -24226,7 +24226,7 @@ bettcher	b eh1 t ch er0	b eh1 t ch er0	True
 eiserman	ay1 z er0 m ah0 n	ay1 z er0 m ah0 n	True
 cybertrend	s ay1 b er0 t r eh0 n d	s ay1 b er0 t r eh2 n d	False
 boik	b oy1 k	b oy1 k	True
-scozzafava	s k ow0 t s aa0 f aa1 v ah0	s k ow0 z aa0 f aa1 v ah0	False
+scozzafava	s k ow0 t s aa0 f aa1 v ah0	s k ow0 z ah0 f aa1 v ah0	False
 sulton	s ah1 l t ah0 n	s ah1 l t ah0 n	True
 klipfel	k l ih1 p f ah0 l	k l ih1 p f ah0 l	True
 ulsh	ah1 l sh	ah1 l sh	True
@@ -24235,7 +24235,7 @@ penja's	p eh1 n jh ah0 z	p eh1 n jh ah0 z	True
 sprogus's	s p r ow1 g ah0 s ih0 z	s p r ow1 g ah0 s ih0 z	True
 poznikov	p aa1 z n ih0 k aa2 v	p aa1 z n ih0 k ao2 v	False
 silkey	s ih1 l k iy0	s ih1 l k iy0	True
-archibeque	aa1 r sh ih0 b iy0 k	aa2 r ch ah0 b eh1 k uw2	False
+archibeque	aa1 r sh ih0 b iy0 k	aa1 r ch ah0 b eh1 k uw2	False
 wertenberger	w er1 t ah0 n b er0 g er0	w er1 t ah0 n b er0 g er0	True
 gabrys	g ae1 b er0 iy0 z	g ae1 b r iy0 z	False
 tylan	t ay1 l ah0 n	t ay1 l ah0 n	True
@@ -24249,7 +24249,7 @@ vadala	v aa0 d aa1 l ah0	v aa0 d aa1 l ah0	True
 defibaugh	d eh1 f ih0 b ao2	d eh1 f ah0 b ao0	False
 mendillo	m eh2 n d ih1 l ow0	m eh0 n d ih1 l ow0	False
 sindt	s ih1 n t	s ih1 n t	True
-hudzik	hh ah1 d z ih0 k	hh ah1 jh ih0 k	False
+hudzik	hh ah1 d z ih0 k	hh ah1 d jh ih0 k	False
 sohns	s aa1 n z	s aa1 n z	True
 cwiklinski	k w ih0 k l ih1 n s k iy0	k w ih0 k l ih1 n s k iy0	True
 hartong	hh aa1 r t ao0 ng	hh aa1 r t ao2 ng	False
@@ -24263,7 +24263,7 @@ gaier	g ey1 er0	g ey1 er0	True
 bransom	b r ae1 n s ah0 m	b r ae1 n s ah0 m	True
 beezley	b iy1 z l iy0	b iy1 z l iy2	False
 mongiello	m ow0 n jh eh1 l ow0	m ow0 ng g iy0 eh1 l ow0	False
-palmateer	p ae1 l m ah0 t ih0 r	p ae2 l m ah0 t ih1 r	False
+palmateer	p ae1 l m ah0 t ih0 r	p ae1 l m ah0 t ih1 r	False
 cernuda	s er0 n uw1 d ah0	ch er0 n uw1 d ah0	False
 claiborn	k l ey1 b er0 n	k l ey1 b er0 n	True
 thielsch	th iy1 l sh	th iy1 l sh	True
@@ -24277,7 +24277,7 @@ colaw	k ow1 l ao1	k ow1 l ao0	False
 tsemel	t s eh1 m ah0 l	t s eh1 m ah0 l	True
 drachenberg	d r ae1 k ah0 n b er0 g	d r ae1 k ah0 n b er0 g	True
 gordji	g ao1 r jh iy0	g ao1 r jh iy0	True
-digiovanna	d ih2 jh ow0 v aa1 n aa2	d ih2 jh ow0 v aa1 n aa2	True
+digiovanna	d ih2 jh ow0 v aa1 n aa2	d ih2 jh ow0 v aa1 n ah0	False
 mulcare	m ah1 l k er0	m ah1 l k eh2 r	False
 copartners	k ow1 p aa2 r t n er0 z	k aa1 p aa0 r t n er0 z	False
 lenarz	l ey1 n aa0 r z	l eh1 n er0 z	False
@@ -24437,7 +24437,7 @@ roggow	r aa1 g ow0	r aa1 g ow2	False
 acierno	aa0 s ih1 r n ow0	aa0 s ih1 r n ow0	True
 novogrod	n ow1 v ow0 g r ae2 d	n aa1 v ah0 g r aa2 d	False
 heehaw	hh iy1 hh aw2	hh iy1 hh ao2	False
-parboiling	p aa1 r b oy2 l ih0 ng	p aa1 r b oy2 l ih0 ng	True
+parboiling	p aa1 r b oy2 l ih0 ng	p aa1 r b oy1 l ih0 ng	False
 accuray	ae1 k y er0 ey2	ae1 k y er0 ey2	True
 dison	d ih1 s ah0 n	d ih0 s ah0 n	False
 salables	s ey1 l ah0 b ah0 l z	s ey1 l ah0 b ah0 l z	True
@@ -24461,7 +24461,7 @@ wilinski	v ih0 l ih1 n s k iy0	w ih0 l ih1 n s k iy0	False
 kazmierski	k ah0 z m ih1 r s k iy0	k ah0 z m ih1 r s k iy0	True
 castpart	k ae1 s t p aa2 r t	k ae1 s t p aa2 r t	True
 hemmeter	hh eh1 m ih0 t er0	hh eh1 m ah0 t er0	False
-selvey	s eh1 l v iy0	s eh1 l v ey1	False
+selvey	s eh1 l v iy0	s eh1 l v iy0	True
 crapps	k r ae1 p s	k r ae1 p s	True
 cyrenius	s ah0 r iy1 n iy0 ah0 s	s ay0 r iy1 n iy0 ah0 s	False
 parrent	p aa1 r ah0 n t	p aa1 r ah0 n t	True
@@ -24484,7 +24484,7 @@ mccrossen	m ah0 k r ao1 s ah0 n	m ah0 k r ao1 s ah0 n	True
 mundorf	m ah1 n d ao0 r f	m ah1 n d ao0 r f	True
 seneff	s eh1 n ah0 f	s eh1 n ih0 f	False
 jees	jh iy1 z	jh iy1 z	True
-pannill's	p ae1 n ih0 l z	p ah0 n ih1 l z	False
+pannill's	p ae1 n ih0 l z	p ah0 n ah0 l z	False
 balzarini	b aa0 l z aa0 r iy1 n iy0	b aa0 l z aa0 r iy1 n iy0	True
 discontentedness	d ih2 s k ah0 n t eh1 n t ih0 d n ah0 s	d ih2 s k ah0 n t eh1 n t ih0 d n ih0 s	False
 melquist	m eh1 l k w ih2 s t	m eh1 l k w ih0 s t	False
@@ -24539,7 +24539,7 @@ duvaliers	d uw0 v ey1 l y er0 z	d uw0 v ae1 l y r z	False
 reelecting	r iy0 ih0 l eh1 k t ih0 ng	r iy0 ih0 l eh1 k t ih0 ng	True
 steppel	s t eh1 p ah0 l	s t eh1 p ah0 l	True
 dittus	d ih1 t ah0 s	d ih1 t ah0 s	True
-shyjan	sh ay1 jh ae2 n	sh ay1 jh aa2 n	False
+shyjan	sh ay1 jh ae2 n	sh ay1 jh ah0 n	False
 skimpier	s k ih1 m p iy0 er0	s k ih1 m p iy0 er0	True
 maulsby	m ao1 l s b iy0	m ao1 l s b iy0	True
 bistodeau	b ih1 s t ah0 d ow0	b ih1 s t ah0 d ow0	True
@@ -24650,7 +24650,7 @@ magten	m ae1 g t eh1 n	m ae1 g t ah0 n	False
 levendusky	l ih0 v ih0 n d ah1 s k iy0	l ih0 v ih0 n d ah1 s k iy0	True
 woehler	w ow1 l er0	w ow1 l er0	True
 kathline	k ae1 th l ay2 n	k ae1 th l ay2 n	True
-lobue	l ow1 b w eh0	l aa1 b y uw1	False
+lobue	l ow1 b w eh0	l aa1 b y uw2	False
 cihak	s ih1 hh ah0 k	ch iy1 hh ae2 k	False
 falor	f ae1 l er0	f ey1 l er0	False
 meinhart	m ay1 n hh aa2 r t	m ay1 n hh aa2 r t	True
@@ -24676,7 +24676,7 @@ dannunzio	d aa0 n uw1 n z iy0 ow0	d aa0 n ah1 n z iy0 ow0	False
 sandness	s ae1 n d n ah0 s	s ae1 n d n ah0 s	True
 stefl	s t eh1 f ah0 l	s t eh1 f ah0 l	True
 deinstitutionalize	d iy2 ih2 n s t ih0 t uw2 sh ah0 n ah0 l ay2 z	d iy2 ih2 n s t ih0 t uw1 sh ah0 n ah0 l ah0 z ah0	False
-unbend	ah2 n b eh1 n d	ah0 n b eh1 n d	False
+unbend	ah2 n b eh1 n d	ah2 n b eh1 n d	True
 trullinger	t r ah1 l ih0 ng er0	t r ah1 l ih0 ng er0	True
 maultsby	m ao1 l t s b iy0	m ao1 l t s b iy0	True
 houdeshell	hh uw1 d ih0 sh ah0 l	hh aw1 d ih0 sh eh2 l	False
@@ -24744,9 +24744,9 @@ issueless	ih1 sh uw0 l ah0 s	ih1 sh uw0 l ah0 s	True
 dovidio	d ow0 v iy1 d iy0 ow0	d ow0 v ih1 d iy0 ow0	False
 gastelli	g ah0 s t eh1 l iy0	g aa0 s t eh1 l iy0	False
 tervo	t eh1 r v ow0	t er1 v ow2	False
-biser	b ay1 z er0	b ay1 z er0	True
+biser	b ay1 z er0	b ay1 s er0	False
 operan	aa1 p er0 ah0 n	aa1 p er0 ah0 n	True
-nandonet	n ae1 n d ow0 n eh0 t	n ae0 n d ah0 n eh2 t	False
+nandonet	n ae1 n d ow0 n eh0 t	n ae1 n d ah0 n eh2 t	False
 catapano	k aa0 t aa0 p aa1 n ow0	k aa0 t aa0 p aa1 n ow0	True
 vanskiver	v ae2 n s k ay1 v er0	v ae1 n s k ih0 v er0	False
 pikula	p ih0 k uw1 l ah0	p ih0 k uw1 l ah0	True
@@ -24909,14 +24909,14 @@ kruszynski	k r ah0 sh ih1 n s k iy0	k r ah0 sh ih1 n s k iy0	True
 huddie	hh ah1 d iy0	hh ah1 d iy0	True
 lousiness	l aw1 z iy0 n ah0 s	l aw1 z iy0 n ah0 s	True
 loppnow	l aa1 p n aw0	l aa1 p n ow0	False
-tetramerous	t eh2 t r ae1 m er0 ah0 s	t eh2 t r ae1 m er0 ah0 s	True
+tetramerous	t eh2 t r ae1 m er0 ah0 s	t ih0 t r ae1 m er0 ah0 s	False
 boltzmanns	b ow1 l t s m ah0 n z	b ow1 l t s m ah0 n z	True
 claybrooks	k l ey1 b r uh2 k s	k l ey1 b r uh2 k s	True
 geigle	g ay1 g ah0 l	g iy1 g ah0 l	False
 radabaugh	r ae1 d ah0 b ao0	r ae1 d ah0 b ao0	True
 opdahl	aa1 p d aa2 l	aa1 p d aa2 l	True
 ellithorpe	eh1 l ih0 th er0 p	eh1 l ih0 th ao2 r p	False
-santistevan	s aa2 n t iy0 s t ey0 v aa1 n	s ae2 n t ih0 s t iy0 v ah0 n	False
+santistevan	s aa2 n t iy0 s t ey0 v aa1 n	s ae2 n t ih0 s t eh1 v ah0 n	False
 omary	ah0 m eh1 r iy0	ow0 m er2 iy0	False
 vociferated	v ah0 s ih1 f er0 ey0 t ih0 d	v ow0 s ih1 f er0 ey2 t ih0 d	False
 shadur	sh ae1 d er0	sh ae1 d r	False
@@ -24937,7 +24937,7 @@ beidleman	b ay1 d ah0 l m ah0 n	b ay1 d ah0 l m ah0 n	True
 shorkey	sh ao1 r k iy0	sh ao1 r k iy0	True
 eiermann	ay1 r m ah0 n	ay1 r m ah0 n	True
 staup	s t ao1 p	s t ao1 p	True
-sajdak	s ay1 d ah0 k	s ae1 d ae2 k	False
+sajdak	s ay1 d ah0 k	s ae1 d ae0 k	False
 voorheis	v uh1 r hh ay0 z	v uh1 r hh ay0 s	False
 siebels	s iy1 b ah0 l z	s iy1 b ah0 l z	True
 cupo	k y uw1 p ow0	k uw1 p ow0	False
@@ -24977,7 +24977,7 @@ kolokoff	k aa1 l ah0 k ao2 f	k aa1 l ah0 k ao2 f	True
 sparano	s p er0 ae1 n ow0	s p aa0 r aa1 n ow0	False
 plaia	p l aa1 y ah0	p l ay1 ah0	False
 bogucki	b ah0 g ah1 t s k iy0	b ah0 g ah1 t s k iy0	True
-overdrew	ow1 v er0 d r uw2	ow1 v er0 d r uw1	False
+overdrew	ow1 v er0 d r uw2	ow1 v er0 d r uw2	True
 esqueda	eh0 s k w ey1 d ah0	ey0 s k w ey1 d ah0	False
 seagroves	s iy1 g r ow2 v z	s iy1 g r ow2 v z	True
 arbitrager	aa1 r b ih0 t r aa2 zh er0	aa1 r b ih0 t r aa2 zh er0	True
@@ -25003,7 +25003,7 @@ manwiller	m ae1 n w ih2 l er0	m ae1 n w ih2 l er0	True
 rutts	r ah1 t s	r ah1 t s	True
 helinski	hh ih0 l ih1 n s k iy0	hh ih0 l ih1 n s k iy0	True
 weatherperson	w eh1 th er0 p er2 s ah0 n	w eh1 dh er0 p er2 s ah0 n	False
-wicat	w ih1 k ae0 t	w ih1 k ah0 t	False
+wicat	w ih1 k ae0 t	w ih1 k ae0 t	True
 arrick	ae1 r ih0 k	ae1 r ih0 k	True
 hinderman	hh ay1 n d er0 m ah0 n	hh ay1 n d er0 m ah0 n	True
 lurette	l er0 eh1 t	l uh0 r eh1 t	False
@@ -25043,7 +25043,7 @@ pinkstaff	p ih1 ng k s t ae2 f	p ih1 ng k s t ae2 f	True
 petrowski	p ih0 t r ao1 f s k iy0	p ih0 t r ao1 f s k iy0	True
 huml	hh ah1 m ah0 l	hh ah1 m l	False
 gockley	g aa1 k l iy0	g aa1 k l iy0	True
-ditomasso	d ih0 t ow0 m aa1 s ow2	d ih0 t ow0 m aa1 s ow2	True
+ditomasso	d ih0 t ow0 m aa1 s ow2	d ih0 t ow0 m aa1 s ow0	False
 lovallo	l ow0 v aa1 l ow0	l ow0 v aa1 l ow0	True
 speich	s p ay1 k	s p ay1 k	True
 gravell	g r ae1 v ah0 l	g r ae1 v ah0 l	True
@@ -25104,7 +25104,7 @@ saint-saens	s ey1 n t s aa1 n z	s ey1 n t s ey1 n z	False
 tigrean	t ih0 g r iy1 n	t ay0 g r iy1 n	False
 birdfinder	b er1 d f ay2 n d er0	b er1 d f ay2 n d er0	True
 molpus	m ao1 l p ah0 s	m ow1 l p ah0 s	False
-baetz	b iy1 t s	b eh1 t s	False
+baetz	b iy1 t s	b iy1 t s	True
 flashdances	f l ae1 sh d ae2 n s ih0 z	f l ae1 sh d ae2 n s ih0 z	True
 newill	n iy0 w ih1 l	n uw1 ih1 l	False
 hoshaw	hh aa1 sh ao0	hh aa1 sh ao0	True
@@ -25113,7 +25113,7 @@ cuthrell	k ah1 th r ah0 l	k ah1 th r ah0 l	True
 alanco	ah0 l ae1 n k ow0	ah0 l ae1 ng k ow0	False
 aquirre	ae1 k w er0	ah0 k w er1	False
 mroczkowski	m r ah0 ch k ao1 f s k iy0	m r ah0 ch k ao1 f s k iy0	True
-vandezande	v ae1 n d ah0 z ih0 n d	v ae2 n d ey0 z ae1 n d	False
+vandezande	v ae1 n d ah0 z ih0 n d	v ae2 n d ah0 z ae1 n d	False
 baalbeq	b aa1 l b eh0 k	b aa1 l b eh0 k	True
 maksoud	m ae0 k s uw1 d	m ae1 k s uw1 d	False
 rickels	r ih1 k ah0 l z	r ih1 k ah0 l z	True
@@ -25337,7 +25337,7 @@ bacigalupo	b aa0 ch iy0 g aa0 l uw1 p ow0	b ae2 ch ih2 g ah0 l uw1 p ow0	False
 jankiewicz	y ae1 n k ah0 v ih0 ch	y ae1 ng k ih0 v ih0 t s	False
 beanblossom	b iy1 n b l ah0 s ah0 m	b iy1 n b l ao2 s ah0 m	False
 wiebusch	w iy1 b ah0 sh	w iy1 b uh2 sh	False
-duzan	d uw1 z ah0 n	d uw0 z ah0 n	False
+duzan	d uw1 z ah0 n	d uw0 z ae1 n	False
 grosshans	g r aa1 sh ah0 n z	g r aa1 sh ah0 n z	True
 reichler	r ay1 k l er0	r ay1 k l er0	True
 landviewite	l ae1 n d v y uw0 ay0 t	l ae1 n d v y uw2 ay2 t	False

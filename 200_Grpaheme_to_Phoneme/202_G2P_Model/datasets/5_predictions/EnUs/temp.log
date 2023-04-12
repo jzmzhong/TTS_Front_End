@@ -1,31 +1,16 @@
-../datasets/3_train_and_eval_data/EnUs/EnUs_dict_exclude_polyphone_test.txt
-pretrain
-../datasets/3_train_and_eval_data/EnUs/EnUs_dict_exclude_polyphone_test.txt
-baseline
-../datasets/3_train_and_eval_data/EnUs/EnUs_dict_exclude_polyphone_test.txt
-baseline
-Steps: 188000
-Correct Predictions: 8240
-Wrong Predictions: 3510
-Word Accuracy: 70.12765957446808%
-trimmed
-Steps: 206000
-Correct Predictions: 8256
-Wrong Predictions: 3494
-Word Accuracy: 70.26382978723404%
+Experiment 3
+
 ../datasets/3_train_and_eval_data/EnUs/EnUs_dict_exclude_polyphone_valid.txt
-baseline
+tiny
 Steps: 188000
 Correct Predictions: 8197
 Wrong Predictions: 3553
 Word Accuracy: 69.76170212765958%
-trimmed
+tiny_trimmed
 Steps: 206000
-Correct Predictions: 8250
-Wrong Predictions: 3500
-Word Accuracy: 70.2127659574468%
-
-../datasets/3_train_and_eval_data/EnUs/EnUs_dict_exclude_polyphone_valid.txt
+Correct Predictions: 8254
+Wrong Predictions: 3496
+Word Accuracy: 70.2468085106383%
 small
 Steps: 180000
 Correct Predictions: 8405
@@ -33,10 +18,21 @@ Wrong Predictions: 3345
 Word Accuracy: 71.53191489361703%
 small_trimmed
 Steps: 206000
-Correct Predictions: 8308
-Wrong Predictions: 3442
-Word Accuracy: 70.70638297872341%
+Correct Predictions: 8307
+Wrong Predictions: 3443
+Word Accuracy: 70.69787234042553%
+
 ../datasets/3_train_and_eval_data/EnUs/EnUs_dict_exclude_polyphone_test.txt
+tiny
+Steps: 188000
+Correct Predictions: 8240
+Wrong Predictions: 3510
+Word Accuracy: 70.12765957446808%
+tiny_trimmed
+Steps: 206000
+Correct Predictions: 8253
+Wrong Predictions: 3497
+Word Accuracy: 70.23829787234042%
 small
 Steps: 180000
 Correct Predictions: 8417
@@ -44,9 +40,18 @@ Wrong Predictions: 3333
 Word Accuracy: 71.63404255319149%
 small_trimmed
 Steps: 206000
-Correct Predictions: 8356
-Wrong Predictions: 3394
-Word Accuracy: 71.11489361702128%
+Correct Predictions: 8354
+Wrong Predictions: 3396
+Word Accuracy: 71.09787234042552%
+
+Experiment 5
+
+../datasets/3_train_and_eval_data/EnUs/EnUs_dict_exclude_polyphone_valid.txt
+aligned
+Steps: 146000
+Correct Predictions: 8182
+Wrong Predictions: 3568
+Word Accuracy: 69.63404255319149%
 
 ../datasets/3_train_and_eval_data/EnUs/EnUs_dict_exclude_polyphone_test.txt
 aligned
@@ -54,9 +59,3 @@ Steps: 146000
 Correct Predictions: 8241
 Wrong Predictions: 3509
 Word Accuracy: 70.13617021276596%
-../datasets/3_train_and_eval_data/EnUs/EnUs_dict_exclude_polyphone_valid.txt
-aligned
-Steps: 146000
-Correct Predictions: 8182
-Wrong Predictions: 3568
-Word Accuracy: 69.63404255319149%

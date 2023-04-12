@@ -10281,7 +10281,7 @@ harmonics	hh aa0 r m aa1 n ih0 k s	hh aa0 r m aa1 n ih0 k s	True
 remiss	r iy0 m ih1 s	r iy0 m ih1 s	True
 hieroglyph	hh ay2 r ow0 g l ih1 f	hh ay2 r ow0 g l ih1 f	True
 enlarger	ih0 n l aa1 r g er0	ih0 n l aa1 r g er0	True
-aalburg	ae1 l b er0 g # place, dutch	aa1 l b er0 g	False
+aalburg	ae1 l b er0 g	aa1 l b er0 g	False
 meath	m iy1 th	m iy1 th	True
 clampitt	k l ah0 m p ih1 t	k l ae1 m p ih0 t	False
 boas	b ow1 ah0 z	b ow1 z	False
@@ -10922,7 +10922,7 @@ terpstra	t eh1 r p s t r aa2	t er1 p s t r ah0	False
 emera	eh0 m eh1 r ah0	eh1 m r ah0	False
 wedgeworth	w eh1 jh w er2 th	w eh1 jh w er2 th	True
 vipperman	v ih1 p er0 m ah0 n	v ih1 p er0 m ah0 n	True
-aalto	aa1 l t ow2 # name, finnish	aa1 l t ow0	False
+aalto	aa1 l t ow2	aa1 l t ow0	False
 cowboys	k aw1 b oy2 z	k aw1 b oy2 z	True
 bearable	b eh1 r ah0 b ah0 l	b eh1 r ah0 b ah0 l	True
 stolze	s t ow1 l z	s t ow1 l z	True

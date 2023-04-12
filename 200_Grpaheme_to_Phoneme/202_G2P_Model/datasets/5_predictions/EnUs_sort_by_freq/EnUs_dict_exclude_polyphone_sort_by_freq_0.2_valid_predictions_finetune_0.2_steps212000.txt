@@ -204,7 +204,7 @@ heming	hh eh1 m ih0 ng	hh iy1 m ih0 ng	False
 cardarelli	k aa0 r d aa0 r eh1 l iy0	k aa0 r d aa0 r eh1 l iy0	True
 mispricing	m ih0 s p r ay1 s ih0 ng	m ih0 s p r ay1 s ih0 ng	True
 morganti	m ao0 r g aa1 n t iy0	m ao0 r g aa1 n t iy0	True
-chellis	ch eh1 l ih0 s	sh eh1 l ih0 s	False
+chellis	ch eh1 l ih0 s	sh eh1 l ih0	False
 mcneish	m ah0 k n iy1 sh	m ah0 k n iy1 sh	True
 nondefense	n aa0 n d ih0 f eh1 n s	n aa0 n d ih0 f eh1 n s	True
 jeanerette	jh iy2 n r eh1 t	jh iy1 n er0 eh2 t	False
@@ -1439,7 +1439,7 @@ gangplank	g ae1 ng p l ae2 ng k	g ae1 ng p l ae2 ng k	True
 gilyard	zh ah0 l y aa1 r d	g ah0 l y aa1 r d	False
 reischauer	r ay1 sh aw0 r	r ay1 sh aw0 er0	False
 winningham	w ih1 n ih0 ng hh ae2 m	w ih1 n ih0 ng hh ae2 m	True
-voelkel	v ow1 l k ah0 l	v ow1 l k eh0 l	False
+voelkel	v ow1 l k ah0 l	v ow1 l k ah0 l	True
 inmon	ih1 n m ah0 n	ih1 n m ah0 n	True
 gawronski	g aa0 v r aa1 n s k iy0	g aa0 v r aa1 n s k iy0	True
 losada	l ow0 s aa1 d ah0	l ow0 s aa1 d ah0	True
@@ -1715,7 +1715,7 @@ robinia	r ow0 b iy1 n iy0 ah0	r ah0 b iy1 n iy0 ah0	False
 eastpac's	iy1 s t p ae2 k s	iy1 s t p ae2 k s	True
 typings	t ay1 p ih0 ng z	t ay1 p ih0 ng z	True
 esthetically	eh0 s th eh1 t ih0 k l iy0	eh0 s th eh1 t ih0 k l iy0	True
-allnutt	ah0 l n ah1 t	ao1 l n ah0 t	False
+allnutt	ah0 l n ah1 t	ao1 l n ah2 t	False
 kokes	k ow1 k s	k ow1 k s	True
 delagrange	d eh0 l aa1 g r aa0 n jh	d eh1 l ah0 g r ey0 n jh	False
 fenderson	f eh1 n d er0 s ah0 n	f eh1 n d er0 s ah0 n	True

@@ -127,7 +127,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-# /dp/checkpoints/
-# /dp/datasets/
 
+./checkpoints/
 .DS_Store

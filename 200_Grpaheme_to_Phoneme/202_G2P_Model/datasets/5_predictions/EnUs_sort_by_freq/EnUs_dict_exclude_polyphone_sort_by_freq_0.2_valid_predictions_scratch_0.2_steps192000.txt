@@ -29,7 +29,7 @@ hilgendorf	hh ih1 l g ih0 n d ao0 r f	hh ih1 l g ih0 n d ao2 r f	False
 zamorano	z aa0 m ao0 r aa1 n ow0	z aa0 m ao0 r aa1 n ow0	True
 leontyne	l iy1 aa0 n t ay0 n	l eh1 n t ay2 n	False
 koble	k ow1 b ah0 l	k ow1 b ah0 l	True
-chesbro	k eh1 s b r ow0	k eh1 s b r ow0	True
+chesbro	k eh1 s b r ow0	ch eh1 s b r ow0	False
 meritt	m eh1 r ih0 t	m eh1 r ih0 t	True
 garling	g aa1 r l ih0 ng	g aa1 r l ih0 ng	True
 medivac	m eh1 d ih0 v ae2 k	m eh1 d ih0 v ah0 k	False
@@ -319,7 +319,7 @@ perfetti	p er0 f eh1 t iy0	p er0 f eh1 t iy0	True
 begelman	b ey1 g ah0 l m ah0 n	b iy1 g ah0 l m ah0 n	False
 weltman	w eh1 l t m ah0 n	w eh1 l t m ah0 n	True
 stradling	s t r ae1 d l ih0 ng	s t r ae1 d l ih0 ng	True
-giambra	jh aa1 m b r ah0	jh aa1 m b r ah0 aa2	False
+giambra	jh aa1 m b r ah0	jh aa1 m b r ah0	True
 dasch	d ae1 sh	d ae1 sh	True
 mccart	m ah0 k aa1 r t	m ah0 k aa1 r t	True
 buel	b y uw1 l	b uw1 l	False
@@ -1348,7 +1348,7 @@ witbeck	w ih1 t b eh2 k	w ih1 t b eh2 k	True
 fennessy	f eh1 n ih0 s iy0	f eh1 n ih0 s iy0	True
 schlink	sh l ih1 ng k	sh l ih1 ng k	True
 arnault	aa2 r n ow1	aa1 r n ao1	False
-altizer	ae1 l t ay0 z er0	ae1 l t ay2 zh er0	False
+altizer	ae1 l t ay0 z er0	aa1 l t ay2 zh er0	False
 congest	k ah0 n jh eh1 s t	k aa1 ng g ih0 s t	False
 naina	n ay1 n aa0	n ey1 n ah0	False
 andriessen	ae2 n d r iy1 s ah0 n	ae1 n d r iy0 s ah0 n	False
@@ -1777,7 +1777,7 @@ arraignments	er0 ey1 n m ah0 n t s	aa2 er0 ey1 n m ah0 n t s	False
 kagarlitsky	k ae2 g er0 l ih1 t s k iy1	k ah0 g aa1 r l ih1 t s k iy0	False
 vandenburg	v ae1 n d ah0 n b er0 g	v ae1 n d ah0 n b er0 g	True
 kibbey	k ih1 b iy0	k ih1 b iy0	True
-boilard	b oy0 l aa1 r d	b oy1 l aa1 er0 d	False
+boilard	b oy0 l aa1 r d	b oy1 l aa1 r d	False
 casso	k ae1 s ow0	k ae1 s ow0	True
 pollett	p aa1 l ih0 t	p aa1 l ih0 t	True
 sifts	s ih1 f t s	s ih1 f t s	True
