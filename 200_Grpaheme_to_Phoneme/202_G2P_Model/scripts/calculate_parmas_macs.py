@@ -38,9 +38,9 @@ for MODEL in MODELS:
     phonemes = torch.randint(1, 100, (1, 15))
     inputs = {'text': text, 'text_len': text_len, 'start_index': start_index, 'phonemes': phonemes}
 
-    # get flops & params
+    # get macs & params
     # print(sum([v.numel() for k, v in model.state_dict().items()]))
-    flops, params = profile(model, inputs=(inputs,))
-    flops, params = clever_format([flops, params], "%.3f")
+    macs, params = profile(model, inputs=(inputs,))
+    macs, params = clever_format([macs, params], "%.3f")
     print(params)
-    print(flops)
+    print(macs)

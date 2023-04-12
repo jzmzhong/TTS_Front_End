@@ -92,15 +92,33 @@ class Trainer:
                     param_group_new_names.append(param_name)
             print("Pretrained Layers that have lower LR: " + str(param_group_pretrained_names))
             print("Newly Randomized Layers that have base LR: " + str(param_group_new_names))
-            optimizer = Adam([{'params': param_group_pretrained, 'lr': encoder_lr_ratio*base_lr}, \
-                             {'params': param_group_new}], \
-                             lr=base_lr)
+
+            # Using two separate optimizers are preferred.
+
+            # optimizer = Adam([{'params': param_group_pretrained, 'lr': encoder_lr_ratio*base_lr}, \
+            #                  {'params': param_group_new}], \
+            #                  lr=base_lr)
+
+            optimizer_pretrained = Adam(param_group_pretrained)
+            if 'optimizer_pretrained' in checkpoint:
+                optimizer_pretrained.load_state_dict(checkpoint['optimizer_pretrained'])
+            for g in optimizer_pretrained.param_groups:
+                g['lr'] = encoder_lr_ratio*base_lr
+            
+            optimizer = Adam(param_group_new)
+            if 'optimizer' in checkpoint:
+                optimizer.load_state_dict(checkpoint['optimizer'])
+            for g in optimizer.param_groups:
+                g['lr'] = base_lr
+            
         else:
             optimizer = Adam(model.parameters())
             if 'optimizer' in checkpoint:
                 optimizer.load_state_dict(checkpoint['optimizer'])
             for g in optimizer.param_groups:
                 g['lr'] = config['training']['learning_rate']
+            
+            optimizer_pretrained = None
 
         if config['model']['type'] == "GBERT":
             train_loader = new_dataloader_pretrain(dataset_file=data_dir / 'train_dataset.pkl',
@@ -129,13 +147,18 @@ class Trainer:
                 checkpoint['phoneme_dict'] = phoneme_dict
 
         val_batches = sorted([b for b in val_loader], key=lambda x: -x['text_len'][0])
-
+        
+        if optimizer_pretrained is not None:
+            scheduler_pretrained = ReduceLROnPlateau(optimizer_pretrained,
+                                        factor=config['training']['scheduler_plateau_factor'],
+                                        patience=config['training']['scheduler_plateau_patience'],
+                                        mode='min')
         scheduler = ReduceLROnPlateau(optimizer,
-                                      factor=config['training']['scheduler_plateau_factor'],
-                                      patience=config['training']['scheduler_plateau_patience'],
-                                      mode='min')
+                                    factor=config['training']['scheduler_plateau_factor'],
+                                    patience=config['training']['scheduler_plateau_patience'],
+                                    mode='min')
         losses = []
-        best_per = math.inf
+        best_result = math.inf
         if 'step' not in checkpoint:
             checkpoint['step'] = 0
         start_epoch = checkpoint['step'] // len(train_loader)
@@ -145,7 +168,11 @@ class Trainer:
             for i, batch in pbar:
                 checkpoint['step'] += 1
                 step = checkpoint['step']
-                self._set_warmup_lr(model=model, optimizer=optimizer, step=step,
+                if optimizer_pretrained is not None:
+                    self._set_warmup_diff_lr(model=model, optimizers=[optimizer, optimizer_pretrained], step=step,
+                                        config=config)
+                else:
+                    self._set_warmup_lr(model=model, optimizer=optimizer, step=step,
                                     config=config)
                 batch = to_device(batch, device)
                 avg_loss = sum(losses) / len(losses) if len(losses) > 0 else math.inf
@@ -156,9 +183,13 @@ class Trainer:
 
                 if not (torch.isnan(loss) or torch.isinf(loss)):
                     optimizer.zero_grad()
+                    if optimizer_pretrained is not None:
+                        optimizer_pretrained.zero_grad()
                     loss.backward()
                     torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
                     optimizer.step()
+                    if optimizer_pretrained is not None:
+                        optimizer_pretrained.step()
                     losses.append(loss.item())
 
                 self.writer.add_scalar('Loss/train', loss.item(), global_step=step)
@@ -166,6 +197,9 @@ class Trainer:
                                        global_step=step)
                 self.writer.add_scalar('Params/learning_rate', [g['lr'] for g in optimizer.param_groups][0],
                                        global_step=step)
+                if optimizer_pretrained is not None:
+                    self.writer.add_scalar('Params/learning_rate_pretrained', [g['lr'] for g in optimizer_pretrained.param_groups][0],
+                                        global_step=step)
 
                 if step % config['training']['validate_steps'] == 0:
                     val_loss = self._validate(model, val_batches)
@@ -187,30 +221,36 @@ class Trainer:
                     if config['model']['type'] == "GBERT":
                         mean_mer = eval_result['mean_mer']
                         print(f'Epoch: {epoch} | Step {step} | Mean Mask Error Rate: {mean_mer}')
-                        if eval_result['mean_mer'] is not None and eval_result['mean_mer'] < best_per:
-                            self._save_model(model=model, optimizer=optimizer, checkpoint=checkpoint,
+                        if eval_result['mean_mer'] is not None and eval_result['mean_mer'] < best_result:
+                            self._save_model(model=model, optimizer=optimizer, optimizer_pretrained=None, checkpoint=checkpoint,
                                             path=self.checkpoint_dir / f'best_model.pt')
-                            self._save_model(model=model, optimizer=None, checkpoint=checkpoint,
+                            self._save_model(model=model, optimizer=None, optimizer_pretrained=None, checkpoint=checkpoint,
                                             path=self.checkpoint_dir / f'best_model_no_optim.pt')
-                            scheduler.step(eval_result['mean_mer'])
+                            best_result = eval_result['mean_mer']
+                            print(f'Achieving better result (mean_mer): {best_result:#.4}')
+                        scheduler.step(eval_result['mean_mer'])
                     else:
                         mean_per, mean_wer = eval_result['mean_per'], eval_result['mean_wer']
                         print(f'Epoch: {epoch} | Step {step} | Mean PER: {mean_per} | Mean WER: {mean_wer}')
-                        if eval_result['mean_per'] is not None and eval_result['mean_per'] < best_per:
-                            self._save_model(model=model, optimizer=optimizer, checkpoint=checkpoint,
+                        if eval_result['mean_per'] is not None and eval_result['mean_per'] < best_result:
+                            self._save_model(model=model, optimizer=optimizer, optimizer_pretrained=optimizer_pretrained, checkpoint=checkpoint,
                                             path=self.checkpoint_dir / f'best_model.pt')
-                            self._save_model(model=model, optimizer=None, checkpoint=checkpoint,
+                            self._save_model(model=model, optimizer=None, optimizer_pretrained=None, checkpoint=checkpoint,
                                             path=self.checkpoint_dir / f'best_model_no_optim.pt')
-                            scheduler.step(eval_result['mean_per'])
+                            best_result = eval_result['mean_per']
+                            print(f'Achieving better result (mean_per): {best_result:#.4}')
+                        scheduler.step(eval_result['mean_per'])
+                        if optimizer_pretrained is not None:
+                            scheduler_pretrained.step(eval_result['mean_per'])
 
                 if step % config['training']['checkpoint_steps'] == 0:
                     step = step // 1000
-                    self._save_model(model=model, optimizer=optimizer, checkpoint=checkpoint,
+                    self._save_model(model=model, optimizer=optimizer, optimizer_pretrained=optimizer_pretrained, checkpoint=checkpoint,
                                      path=self.checkpoint_dir / f'model_step_{step}k.pt')
 
             losses = []
             print(f'Epoch: {epoch} | Step {step} | Train Loss: {avg_loss:#.4}')
-            self._save_model(model=model, optimizer=optimizer, checkpoint=checkpoint,
+            self._save_model(model=model, optimizer=optimizer, optimizer_pretrained=optimizer_pretrained, checkpoint=checkpoint,
                              path=self.checkpoint_dir / 'latest_model.pt')
             # randomly re-mask
             if config['model']['type'] == "GBERT" and epoch % config['training']['randomly_remask_epochs'] == 0:
@@ -316,11 +356,16 @@ class Trainer:
     def _save_model(self,
                     model: torch.nn.Module,
                     optimizer: torch.optim,
+                    optimizer_pretrained: torch.optim,
                     checkpoint: Dict[str, Any],
                     path: Path) -> None:
         checkpoint['model'] = model.state_dict()
         if optimizer is not None:
             checkpoint['optimizer'] = optimizer.state_dict()
+        else:
+            checkpoint['optimizer'] = None
+        if optimizer_pretrained is not None:
+            checkpoint['optimizer_pretrained'] = optimizer_pretrained.state_dict()
         else:
             checkpoint['optimizer'] = None
         torch.save(checkpoint, str(path))
@@ -342,3 +387,27 @@ class Trainer:
             else:
                 for g in optimizer.param_groups:
                     g['lr'] = config['training']['learning_rate'] * warmup_factor
+    
+    def _set_warmup_diff_lr(self,
+                       model: torch.nn.Module,
+                       optimizers: List,
+                       step: int,
+                       config: Dict[str, Any]) -> None:
+
+        warmup_steps = config['training']['warmup_steps']
+        if warmup_steps > 0 and step <= warmup_steps:
+            warmup_factor = 1.0 - max(warmup_steps - step, 0) / warmup_steps
+            
+            assert 'learning_rate_encoder_ratio' in config['training']
+            assert len(optimizers) == 2
+
+            encoder_lr_ratio = float(config['training']['learning_rate_encoder_ratio'])
+            base_lr = float(config['training']['learning_rate'])
+            
+            # optimizer.param_groups[0]['lr'] = base_lr * warmup_factor * encoder_lr_ratio # pretrained layers
+            # optimizer.param_groups[1]['lr'] = base_lr * warmup_factor # newly randomized layers
+            
+            for g in optimizers[0].param_groups:
+                g['lr'] = base_lr * warmup_factor
+            for g in optimizers[1].param_groups:
+                g['lr'] = base_lr * warmup_factor * encoder_lr_ratio

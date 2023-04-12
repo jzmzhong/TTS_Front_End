@@ -8,6 +8,20 @@
 | :------- | :--------- | :----- | :----- | :----- |
 | EnUs     | [CMU Dict](https://github.com/cmusphinx/cmudict) | 94,001 | 11,750 | 11,750 |
 
+### 1.2 Baseline Model Architecture
+
+Autoregressive Transformer, 4/6 Encoders + 4 Decoders,
+Dimension: 512, FFN Ratio: 4, Attention Dimension: 64,
+LR Scheduler: Plateau (factor 0.5, patience 1W steps, initial LR 5e-5), Optimizer: Adam
+
+### 1.3 Scripts & Configs
+
+### 1.4 Results
+
+| Model Name   | Layers | Dimension | Valid Acc. | Test Acc. | Note |
+| :----------- | :----- | :-------- | :--------- | :-------- | :---- |
+| Baseline_6+4 | 6+4    | 512       | x%     | x%    | |
+| Baseline_4+4 | 4+4    | 512       | x%     | x%    | |
 
 ## 2. Grapheme BERT ([GBERT](https://github.com/ldong1111/GraphemeBERT))
 
@@ -49,6 +63,14 @@
 | Finetune_10k_EncoderLR0.1  | 6+4    | 512       | 5e-6          | 5e-5    | x%     | x%    | |
 <!-- | Scratch_2k                 | 6+4    | 512       |               |         | x%     | x%    | |
 | Scratch_5k                 | 6+4    | 512       |               |         | x%     | x%    | | -->
+
+### 2.5 Conclusions
+
+### 2.6 Future Work
+
+* (1) Incorporating GBERT using BERT-fusing method for offline best performance.
+* (2) Use distilled GBERT / selected layers of GBERT to initialize some encoder layers in forward transformer which can be used for industrial deployment. (Combining Experiment 2 & 3)
+* (3) Investigate the performance of GBERT finetuning on real OOVs. (Combining Experiment 2 & 4)
 
 ## 3. Move the Char Repeat Operation in Forward Transformer
 
@@ -98,24 +120,24 @@ Major Changes:
 
 ### 3.5 Results
 
-| Model          | Layers | Dimension | Char Repeat | Valid Acc. | Test Acc.  | Params\*   | Flops(Average)\*  | Flops(Extreme)\* | Note       |
-| :------------- | :----- | :-------- | :---------- | :--------- | :--------- | :--------- | :---------------- | :--------------- | :--------- |
-| Small_Baseline | 4      | 512       | 3           | **71.53%** | **71.63%** | 8.445M     | 194.210MFlops     | 523.522MFlops    | 180k steps |
-| Small_Trimmed  | 4      | 512       | 1 -> 3      | 70.70%     | 71.10%     | 8.446M     | 106.172MFlops     | 185.766MFlops    | 206k steps |
-| Tiny_Baseline  | 3      | 384       | 3           | 69.76%     | 70.13%     | **1.806M** | 41.581MFlops      | 112.088MFlops    | 188k steps |
-| Tiny_Trimmed   | 3      | 384       | 1 -> 3      | 70.25%     | 70.24%     | **1.807M** | **25.141MFlops**  | **39.773MFlops** | 206k steps |
+| Model          | Layers | Dimension | Char Repeat | Valid Acc. | Test Acc.  | Params\*   | MACs(Average)\*  | MACs(Extreme)\* | Note       |
+| :------------- | :----- | :-------- | :---------- | :--------- | :--------- | :--------- | :--------------- | :-------------- | :--------- |
+| Small_Baseline | 4      | 512       | 3           | **71.53%** | **71.63%** | 8.445M     | 194.210MMACs     | 523.522MMACs    | 180k steps |
+| Small_Trimmed  | 4      | 512       | 1 -> 3      | 70.70%     | 71.10%     | 8.446M     | 106.172MMACs     | 185.766MMACs    | 206k steps |
+| Tiny_Baseline  | 3      | 384       | 3           | 69.76%     | 70.13%     | **1.806M** | 41.581MMACs      | 112.088MMACs    | 188k steps |
+| Tiny_Trimmed   | 3      | 384       | 1 -> 3      | 70.25%     | 70.24%     | **1.807M** | **25.141MMACs**  | **39.773MMACs** | 206k steps |
 
-Notes on \*: The Calculation of Params and Flops:
+Notes on \*: The Calculation of Params and MACs:
 * The calculation is done by using [thop](https://github.com/Lyken17/pytorch-OpCounter).
-* For Flops calculation, in the average scenario, OOVs of 7 characters long are used as inputs;
+* For MACs calculation, in the average scenario, OOVs of 7 characters long are used as inputs;
 * in the extreme scenario, OOVs of 20 characters long are used as inputs. 
 
 ### 3.6 Conclusions
 
 * By moving the char repeat operation in the forward transformer to just before the last encoder layer, the model is optimized to be faster with comparable word accuracy rate. 
-* In average scenario, the small model is theoretically 45.33% faster and the tiny model is theoretically 39.54% faster;
-* in extreme scenario, both the small model and the tiny model are theoretically 64.52% faster.
-* For word accuracy rate, the small model suffers 0.53% drop and the tiny model gains 0.11% after char repeat optimization, which is within error margins.
+* (1) In average scenario, the small model is theoretically 45.33% faster and the tiny model is theoretically 39.54% faster;
+* (2) In extreme scenario, both the small model and the tiny model are theoretically 64.52% faster.
+* (3) For word accuracy rate, the small model suffers 0.53% drop and the tiny model gains 0.11% after char repeat optimization, which is within error margins.
 
 ### 3.7 Future Work
 
@@ -137,8 +159,8 @@ For the 117,501 words in [CMU Dict](https://github.com/cmusphinx/cmudict) that d
 | Stage        | Train  | Valid | Test   | Note   |
 | :----------- | :----- | :---- | :----- | :----- |
 | Pretrain     | 82,934 | 9,214 | 25,353 | Training : Validation = 90% to 10%. |
-| Finetune_0.2 | 16,586 | 1,842 | 25,353 | Finetune top 20% frequency pretrain data. |
-| Finetune_0.1 | 8,293  | 921   | 25,353 | Finetune top 10% frequency pretrain data. |
+| Finetune_0.2 | 16,586 | 1,842 | 25,353 | Finetune bottom 20% frequency pretrain data. |
+| Finetune_0.1 | 8,293  | 921   | 25,353 | Finetune bottom 10% frequency pretrain data. |
 | Scratch_0.2  | 16,586 | 1,842 | 25,353 | Exactly same data as finetune_0.2. |
 
 ### 4.3 Methodology
@@ -176,12 +198,22 @@ The model architecture and configuration follow the "Tiny_Trimmed" model in Expe
 
 ### 4.6 Conclusions
 
+* (1) Comparing Finetune vs Pretrain:
 * Finetuning can lead to better word accuracy rate on both low frequency validation data and testing data. Finetuning the lowest 20% frequency words can lead to a slight improvement of word accuracy rate by 1.52% on testing data.
 * Catastrophic forgetting has occured as the word accuracy rate on high frequency words has dropped after finetuning.
 
+* (2) Comparing Finetune vs Scratch:
+* Pretraining on a large enough dataset is crucial.
+
+* (3) Comparing Valid Acc. and Test Acc.:
+* Words that have lower frequency are harder for the model to learn its G2P relations. The data itself may be inconsistent.
+
 ### 4.7 Future Work
 
-* Change the finetuning data: The finetuning strategy can also be used to address the disparity among datasets with different annotators. Most dictionaries are developed based on purchased / open-source dictionaries by adding new entries. These new entries are more similar to the OOVs that would be passed into G2P models and pronunciations closer to the annotation standard of newly added entries are preferred.
+* (1) Change the finetuning data:
+* The finetuning strategy can also be used to address the disparity among datasets with different annotators. Most dictionaries are developed based on purchased / open-source dictionaries by adding new entries. These new entries are more similar to the OOVs that would be passed into G2P models and pronunciations closer to the annotation standard of newly added entries are preferred.
+
+* (2) Better finetuning strategy:
 * Mix a small portion of high frequency words in finetuning low frequency words to avoid catastrophic forgetting.
 
 ## 5. Explicit Alignment
