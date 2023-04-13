@@ -367,7 +367,7 @@ class Trainer:
         if optimizer_pretrained is not None:
             checkpoint['optimizer_pretrained'] = optimizer_pretrained.state_dict()
         else:
-            checkpoint['optimizer'] = None
+            checkpoint['optimizer_pretrained'] = None
         torch.save(checkpoint, str(path))
 
     def _set_warmup_lr(self,

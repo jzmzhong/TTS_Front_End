@@ -34,8 +34,8 @@ training:
   # Hyperparams for learning rate and scheduler.
   # The scheduler is reducing the lr on plateau of phoneme error rate (tested every n_generate_steps).
 
-  learning_rate: 0.00025              # Learning rate of Adam.
-  warmup_steps: 0                # Linear increase of the lr from zero to the given lr within the given number of steps.
+  learning_rate: 0.0005              # Learning rate of Adam.
+  warmup_steps: 10000                # Linear increase of the lr from zero to the given lr within the given number of steps.
   scheduler_plateau_factor: 0.5      # Factor to multiply learning rate on plateau.
   scheduler_plateau_patience: 5      # Number of text generations with no improvement to tolerate.
   batch_size: 1024                   # Training batch size.

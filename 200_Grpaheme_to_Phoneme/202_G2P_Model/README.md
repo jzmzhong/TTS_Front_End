@@ -10,18 +10,52 @@
 
 ### 1.2 Baseline Model Architecture
 
-Autoregressive Transformer, 4/6 Encoders + 4 Decoders,
+Autoregressive Transformer, 4/6 Encoder Layers + 4 Decoder Layers,
 Dimension: 512, FFN Ratio: 4, Attention Dimension: 64,
-LR Scheduler: Plateau (factor 0.5, patience 1W steps, initial LR 5e-5), Optimizer: Adam
+LR Scheduler: Plateau (factor 0.5, patience 1W steps, initial LR 1e-4), Optimizer: Adam
+
+<center>
+
+![Baseline Autoregressive Transformer](./assets/autoreg_transformer.png)
+
+Baseline Autoregressive Transformer
+
+</center>
 
 ### 1.3 Scripts & Configs
 
+* Config: 
+    ```bash
+    ./dp/configs/1_baseline/autoreg_config_EnUs_layer6+4_dim512_ffn4_head8.yaml # Baseline_6+4
+    ./dp/configs/1_baseline/autoreg_config_EnUs_layer4+4_dim512_ffn4_head8.yaml # Baseline_4+4
+    ```
+* Train Script:
+    ```bash
+    cd ./experiments/1_baseline
+    sh train_autoreg_EnUs_layer6+4.sh # Baseline_6+4
+    sh train_autoreg_EnUs_layer4+4.sh # Baseline_4+4
+    ```
+
 ### 1.4 Results
 
-| Model Name   | Layers | Dimension | Valid Acc. | Test Acc. | Note |
-| :----------- | :----- | :-------- | :--------- | :-------- | :---- |
-| Baseline_6+4 | 6+4    | 512       | x%     | x%    | |
-| Baseline_4+4 | 4+4    | 512       | x%     | x%    | |
+| Model Name   | Layers | Dimension | Valid Acc. | Test Acc. | Params\*   | MACs(Average)\*  | MACs(Extreme)\* | Note      |
+| :----------- | :----- | :-------- | :--------- | :-------- | :--------- | :--------------- | :-------------- | :-------- |
+| Baseline_6+4 | 6+4    | 512       | 72.43%     | x%        | 21.061M    | 181.103MMacs     | 454.904MMacs    | 108ksteps |
+| Baseline_4+4 | 4+4    | 512       | x%         | x%        | 16.857M    | 143.280MMacs     | 362.449MMacs    | |
+
+Notes on \*: The Calculation of Params and MACs:
+* The calculation is done by using [thop](https://github.com/Lyken17/pytorch-OpCounter).
+* For MACs calculation, in the average scenario, OOVs of 7 characters long are used as inputs, estimated decoder predictor steps are 7 to predict a 7 phonemes long output;
+* in the extreme scenario, OOVs of 20 characters long are used as inputs, estimated decoder predictor steps are 20 to predict a 20 phonemes long output.
+
+### 1.5 Discussions
+
+In ["Transfomer based Grapheme-to-Phoneme Conversion"](https://arxiv.org/pdf/2004.06338), the authors use 4+4 Layers with 256 Dimension, achieving a WER of 22.1%, ~5% lower than our best model. The results are not comparable due to: 1) whether stress information is included (69 phonemes vs 39 phonemes), 2) the size of training data (94k vs 107k).
+
+### 1.6 Future Work
+
+* (1) Adopt Beam Search decoding strategy.
+* (2) Adopt Multi-Task Learning to separate the prediction of phonemes and stresses.
 
 ## 2. Grapheme BERT ([GBERT](https://github.com/ldong1111/GraphemeBERT))
 
@@ -30,28 +64,28 @@ LR Scheduler: Plateau (factor 0.5, patience 1W steps, initial LR 5e-5), Optimize
 | task     | language | source                                                                                                              | train   | valid  | test   | note |
 | :------- | :------- | :------------------------------------------------------------------------------------------------------------------ | :------ | :----- | :----- | :--- |
 | pretrain | EnUs     | [Google Web Trillion Word Corpus](https://www.kaggle.com/datasets/rtatman/english-word-frequency?resource=download) | 300,000 | 33,333 | 0      | |
-| G2P      | EnUs     | [CMU Dict](https://github.com/cmusphinx/cmudict)                                                                    | 10,000  | 11,750 | 11,750 | Valid and test data are the same as taht in experiment 1; train data is random 10k from that in experiment 1.|
+| G2P      | EnUs     | [CMU Dict](https://github.com/cmusphinx/cmudict)                                                                    | 10,000  | 11,750 | 11,750 | Valid and test data are the same as that in experiment 1; train data is random 10k from that in experiment 1.|
 
 ### 2.2 Scripts & Configs
 
 * Config: 
     ```bash
-    ./dp/configs/2_GBERT/GBERT_config_EnUs_layer6_dim512_ffn4_head8.yaml # pretrain
-    ./dp/configs/2_GBERT/GBERT_config_EnUs_layer6_dim384_ffn2_head6.yaml # pretrain
+    ./dp/configs/2_GBERT/GBERT_config_EnUs_layer6_dim512_ffn4_head8.yaml # Pretrain_layer6_dim512_ffn4_head8
+    ./dp/configs/2_GBERT/GBERT_config_EnUs_layer6_dim384_ffn2_head6.yaml # Pretrain_layer6_dim384_ffn2_head6
     ```
 * Train Script:
     ```bash
     cd ./experiments/2_GBERT
-    sh train_GBERT_EnUs_layer6_dim512_ffn4_head8.sh # pretrain
-    sh train_GBERT_EnUs_layer6_dim384_ffn2_head6.sh # pretrain
+    sh train_GBERT_EnUs_layer6_dim512_ffn4_head8.sh # Pretrain_layer6_dim512_ffn4_head8
+    sh train_GBERT_EnUs_layer6_dim384_ffn2_head6.sh # Pretrain_layer6_dim384_ffn2_head6
     ```
 
 ### 2.3 Results - Pretrain
 
-| Model Name                    | Mask Valid Acc. | Note       |
-| :---------------------------- | :-------------- | :--------- |
-| EnUs_layer6_dim512_ffn4_head8 | 65.42%          | 935k steps |
-| EnUs_layer6_dim384_ffn2_head6 | 62.76%          | 430k steps |
+| Model Name                        | Mask Valid Acc. | Note       |
+| :-------------------------------- | :-------------- | :--------- |
+| Pretrain_layer6_dim512_ffn4_head8 | 65.42%          | 935k steps |
+| Pretrain_layer6_dim384_ffn2_head6 | 63.91%          | 620k steps |
 
 ### 2.4 Results - G2P, Train from Scratch vs Finetune from Pretrained GBERT
 
@@ -59,7 +93,7 @@ LR Scheduler: Plateau (factor 0.5, patience 1W steps, initial LR 5e-5), Optimize
 | :------------------------- | :----- | :-------- | :------------ | :-----  | :--------- | :-------- | :---- |
 | Scratch_10k                | 6+4    | 512       | 5e-5          | 5e-5    | 53.91%     | x%    | 184k steps |
 | Finetune_10k               | 6+4    | 512       | 5e-5          | 5e-5    | **55.86%** | x%    | 176k steps |
-| Finetune_10k_EncoderLR0.5  | 6+4    | 512       | 2.5e-5        | 5e-5    | 55.11%     | x%    | 158k steps |
+| Finetune_10k_EncoderLR0.5  | 6+4    | 512       | 2.5e-5        | 5e-5    | 55.18%     | x%    | 212k steps |
 | Finetune_10k_EncoderLR0.1  | 6+4    | 512       | 5e-6          | 5e-5    | x%     | x%    | |
 <!-- | Scratch_2k                 | 6+4    | 512       |               |         | x%     | x%    | |
 | Scratch_5k                 | 6+4    | 512       |               |         | x%     | x%    | | -->
@@ -141,8 +175,8 @@ Notes on \*: The Calculation of Params and MACs:
 
 ### 3.7 Future Work
 
-* Use pretrained GBERT to initialize encoder layers before the char repeat operation to see if word accuracy rate can be increased.
-* Use distillation to improve the word accuracy rate of tiny models.
+* (1) Use pretrained GBERT to initialize encoder layers before the char repeat operation to see if word accuracy rate can be increased.
+* (2) Use distillation to improve the word accuracy rate of tiny models.
 
 ## 4. Finetuning Low-freq Words for OOVs
 
