@@ -40,8 +40,8 @@ Baseline Autoregressive Transformer
 
 | Model Name   | Layers | Dimension | Valid Acc. | Test Acc. | Params\*   | MACs(Average)\*  | MACs(Extreme)\* | Note      |
 | :----------- | :----- | :-------- | :--------- | :-------- | :--------- | :--------------- | :-------------- | :-------- |
-| Baseline_6+4 | 6+4    | 512       | 72.43%     | x%        | 21.061M    | 181.103MMacs     | 454.904MMacs    | 108ksteps |
-| Baseline_4+4 | 4+4    | 512       | x%         | x%        | 16.857M    | 143.280MMacs     | 362.449MMacs    | |
+| Baseline_6+4 | 6+4    | 512       | 72.42%     | 72.93%    | 21.061M    | 181.103MMacs     | 454.904MMacs    | 130ksteps |
+| Baseline_4+4 | 4+4    | 512       | 72.30%     | 72.64%    | 16.857M    | 143.280MMacs     | 362.449MMacs    | 124ksteps |
 
 Notes on \*: The Calculation of Params and MACs:
 * The calculation is done by using [thop](https://github.com/Lyken17/pytorch-OpCounter).
@@ -85,7 +85,7 @@ In ["Transfomer based Grapheme-to-Phoneme Conversion"](https://arxiv.org/pdf/200
 | Model Name                        | Mask Valid Acc. | Note       |
 | :-------------------------------- | :-------------- | :--------- |
 | Pretrain_layer6_dim512_ffn4_head8 | 65.42%          | 935k steps |
-| Pretrain_layer6_dim384_ffn2_head6 | 63.91%          | 620k steps |
+| Pretrain_layer6_dim384_ffn2_head6 | 64.78%          | 845k steps |
 
 ### 2.4 Results - G2P, Train from Scratch vs Finetune from Pretrained GBERT
 
@@ -94,17 +94,15 @@ In ["Transfomer based Grapheme-to-Phoneme Conversion"](https://arxiv.org/pdf/200
 | Scratch_10k                | 6+4    | 512       | 5e-5          | 5e-5    | 53.91%     | x%    | 184k steps |
 | Finetune_10k               | 6+4    | 512       | 5e-5          | 5e-5    | **55.86%** | x%    | 176k steps |
 | Finetune_10k_EncoderLR0.5  | 6+4    | 512       | 2.5e-5        | 5e-5    | 55.18%     | x%    | 212k steps |
-| Finetune_10k_EncoderLR0.1  | 6+4    | 512       | 5e-6          | 5e-5    | x%     | x%    | |
-<!-- | Scratch_2k                 | 6+4    | 512       |               |         | x%     | x%    | |
-| Scratch_5k                 | 6+4    | 512       |               |         | x%     | x%    | | -->
+<!-- | Finetune_10k_EncoderLR0.1  | 6+4    | 512       | 5e-6          | 5e-5    | x%     | x%    | | -->
+<!-- | Scratch_2k                 | 6+4    | 512       |               |         | x%     | x%    | | -->
+<!-- | Scratch_5k                 | 6+4    | 512       |               |         | x%     | x%    | | -->
 
 ### 2.5 Conclusions
 
 ### 2.6 Future Work
 
 * (1) Incorporating GBERT using BERT-fusing method for offline best performance.
-* (2) Use distilled GBERT / selected layers of GBERT to initialize some encoder layers in forward transformer which can be used for industrial deployment. (Combining Experiment 2 & 3)
-* (3) Investigate the performance of GBERT finetuning on real OOVs. (Combining Experiment 2 & 4)
 
 ## 3. Move the Char Repeat Operation in Forward Transformer
 
@@ -159,7 +157,7 @@ Major Changes:
 | Small_Baseline | 4      | 512       | 3           | **71.53%** | **71.63%** | 8.445M     | 194.210MMACs     | 523.522MMACs    | 180k steps |
 | Small_Trimmed  | 4      | 512       | 1 -> 3      | 70.70%     | 71.10%     | 8.446M     | 106.172MMACs     | 185.766MMACs    | 206k steps |
 | Tiny_Baseline  | 3      | 384       | 3           | 69.76%     | 70.13%     | **1.806M** | 41.581MMACs      | 112.088MMACs    | 188k steps |
-| Tiny_Trimmed   | 3      | 384       | 1 -> 3      | 70.25%     | 70.24%     | **1.807M** | **25.141MMACs**  | **39.773MMACs** | 206k steps |
+| Tiny_Trimmed   | 3      | 384       | 1 -> 3      | 70.25%     | 70.24%     | **1.807M** | **25.141MMACs**  | **65.077MMACs** | 206k steps |
 
 Notes on \*: The Calculation of Params and MACs:
 * The calculation is done by using [thop](https://github.com/Lyken17/pytorch-OpCounter).
@@ -170,12 +168,13 @@ Notes on \*: The Calculation of Params and MACs:
 
 * By moving the char repeat operation in the forward transformer to just before the last encoder layer, the model is optimized to be faster with comparable word accuracy rate. 
 * (1) In average scenario, the small model is theoretically 45.33% faster and the tiny model is theoretically 39.54% faster;
-* (2) In extreme scenario, both the small model and the tiny model are theoretically 64.52% faster.
+* (2) In extreme scenario, the small model is theoretically 64.52% faster and the tiny model is theoretically 41.94% faster.
 * (3) For word accuracy rate, the small model suffers 0.53% drop and the tiny model gains 0.11% after char repeat optimization, which is within error margins.
+* (4) The Tiny_Trimmed model, i.e. the smallest forward transformer model, compared with the Baseline_6+4 model in Experiment, i.e. the largest autoregressive transformer model, suffers a 2.7% word accuracy rate drop from 72.93% to 70.24% while the model is theoretically 86.12% faster in avergae scenario and 85.69% faster in extreme scenario (in real deployment, the improvement in inference speed is larger due to the parrellel inference characteristic of forward transformer).
 
 ### 3.7 Future Work
 
-* (1) Use pretrained GBERT to initialize encoder layers before the char repeat operation to see if word accuracy rate can be increased.
+* (1) Use pretrained GBERT to initialize encoder layers before the char repeat operation to see if word accuracy rate can be increased. (Combining Experiment 2 & 3)
 * (2) Use distillation to improve the word accuracy rate of tiny models.
 
 ## 4. Finetuning Low-freq Words for OOVs
@@ -192,22 +191,27 @@ For the 117,501 words in [CMU Dict](https://github.com/cmusphinx/cmudict) that d
 
 | Stage        | Train  | Valid | Test   | Note   |
 | :----------- | :----- | :---- | :----- | :----- |
-| Pretrain     | 82,934 | 9,214 | 25,353 | Training : Validation = 90% to 10%. |
+| Base         | 82,934 | 9,214 | 25,353 | Training : Validation = 90% to 10%. |
 | Finetune_0.2 | 16,586 | 1,842 | 25,353 | Finetune bottom 20% frequency pretrain data. |
 | Finetune_0.1 | 8,293  | 921   | 25,353 | Finetune bottom 10% frequency pretrain data. |
-| Scratch_0.2  | 16,586 | 1,842 | 25,353 | Exactly same data as finetune_0.2. |
 
 ### 4.3 Methodology
 
-Finetune_0.2 and Finetune_0.1 are initialized by Pretrain.
+The model architecture and configuration follow the "Tiny_Trimmed" model in Experiment 3.
+
+Four models are trained for comparison:
+
+1\) The "Base" model is trained on the "Base";
+
+2\) & 3\) the "Finetune_0.2" and "Finetune_0.1" models are initialized by the "Base" model and trained on the "Finetune_0.2" and "Finetune_0.1" datasets respectively;
+
+4\) the "Scratch_0.2" model is trained directly on the "Finetune_0.2" dataset with random initialization.
 
 ### 4.4 Scripts & Configs
 
-The model architecture and configuration follow the "Tiny_Trimmed" model in Experiment 3.
-
 * Config: 
     ```bash
-    ./dp/configs/4_finetune_OOV/forward_trimmed_config_EnUs_pretrain_random92k_layer3_dim384_ffn2_head6.yaml # Pretrain
+    ./dp/configs/4_finetune_OOV/forward_trimmed_config_EnUs_pretrain_random92k_layer3_dim384_ffn2_head6.yaml # Base
     ./dp/configs/4_finetune_OOV/forward_trimmed_config_EnUs_finetune_sortbyfreq18k_layer3_dim384_ffn2_head6.yaml # Finetune_0.2
     ./dp/configs/4_finetune_OOV/forward_trimmed_config_EnUs_finetune_sortbyfreq9k_layer3_dim384_ffn2_head6.yaml # Finetune_0.1
     ./dp/configs/4_finetune_OOV/forward_trimmed_config_EnUs_scratch_sortbyfreq18k_layer3_dim384_ffn2_head6.yaml # Scratch_0.2
@@ -215,7 +219,7 @@ The model architecture and configuration follow the "Tiny_Trimmed" model in Expe
 * Train Script:
     ```bash
     cd ./experiments/4_finetune_OOV
-    sh train_forward_trimmed_EnUs_pretrain_random92k.sh # Pretrain
+    sh train_forward_trimmed_EnUs_pretrain_random92k.sh # Base
     sh train_forward_trimmed_EnUs_finetune_sortbyfreq18k.sh # Finetune_0.2
     sh train_forward_trimmed_EnUs_finetune_sortbyfreq9k.sh # Finetune_0.1
     sh train_forward_trimmed_EnUs_scratch_sortbyfreq18k.sh # Scratch_0.2
@@ -223,32 +227,36 @@ The model architecture and configuration follow the "Tiny_Trimmed" model in Expe
 
 ### 4.5 Results
 
-| Stage        | Valid Acc. | Valid (20%) Acc. | Valid (10%) Acc.  | Test Acc.     | Note       |
+| Model        | Valid Acc. | Valid (20%) Acc. | Valid (10%) Acc.  | Test Acc.     | Note       |
 | :----------- | :--------- | :--------------  | :---------------- | :------------ | :--------- |
-| Pretrain     | **73.17%** | 66.02%           | 63.63%            | 52.45%        | 126k steps |
+| Base         | **73.17%** | 66.02%           | 63.63%            | 52.45%        | 126k steps |
 | Finetune_0.2 | 71.83%     | **67.81%**       | **65.36%**        | **53.97%**    | 212k steps |
 | Finetune_0.1 | 72.30%     | 66.99%           | **65.36%**        | 53.20%        | 134k steps |
 | Scratch_0.2  | 53.39%     | 58.90%           | 58.31%            | 46.82%        | 192k steps |
 
 ### 4.6 Conclusions
 
-* (1) Comparing Finetune vs Pretrain:
+* (1) Comparing Finetune vs Pretrain
 * Finetuning can lead to better word accuracy rate on both low frequency validation data and testing data. Finetuning the lowest 20% frequency words can lead to a slight improvement of word accuracy rate by 1.52% on testing data.
 * Catastrophic forgetting has occured as the word accuracy rate on high frequency words has dropped after finetuning.
 
-* (2) Comparing Finetune vs Scratch:
+* (2) Comparing Finetune vs Scratch
 * Pretraining on a large enough dataset is crucial.
 
-* (3) Comparing Valid Acc. and Test Acc.:
+* (3) Comparing Valid Acc. and Test Acc.
 * Words that have lower frequency are harder for the model to learn its G2P relations. The data itself may be inconsistent.
 
 ### 4.7 Future Work
 
-* (1) Change the finetuning data:
+* (1) Employ GBERT
+* Investigate the performance of GBERT finetuning on real OOVs. (Combining Experiment 2 & 4)
+
+* (2) Change the finetuning data
 * The finetuning strategy can also be used to address the disparity among datasets with different annotators. Most dictionaries are developed based on purchased / open-source dictionaries by adding new entries. These new entries are more similar to the OOVs that would be passed into G2P models and pronunciations closer to the annotation standard of newly added entries are preferred.
 
-* (2) Better finetuning strategy:
+* (3) Better finetuning strategy
 * Mix a small portion of high frequency words in finetuning low frequency words to avoid catastrophic forgetting.
+
 
 ## 5. Explicit Alignment
 
@@ -281,3 +289,42 @@ The model architecture and configuration follow the "Tiny_Trimmed" model in Expe
 | Tiny_Baseline  | 69.76%     | 70.13%    | From Experiment 3 |
 | Tiny_Trimmed   | 70.25%     | 70.24%    | From Experiment 3 |
 | Tiny_Aligned   | 69.63%     | 70.14%    | |
+
+
+## 6. Combination of Different Strategies: GBERT, Trimmed Forward Transformer, Finetuning OOV
+
+### 6.1 Data Composition
+
+| Stage            | Train   | Valid  | Test   | Note   |
+| :--------------- | :------ | :----- | :----- | :----- |
+| GBERT            | 300,000 | 33,333 | 25,353 | From Experiment 2 |
+| G2P_Base         | 82,934  | 9,214  | 25,353 | From Experiment 4 |
+| G2P_Finetune_0.2 | 16,586  | 1,842  | 25,353 | From Experiment 4 |
+
+### 6.2 Methodology
+
+The model architecture and configuration follow the "Tiny_Trimmed" model in Experiment 3 & 4.
+
+Four models are trained for comparison:
+
+1\) The "Tiny_Trimmed_Base" model is trained with random initialization on the "G2P_Base" data (the same as the "Base" Model in Experiment 4);
+
+2\) the "Tiny_Trimmed_Finetune" model is trained with initializing from the "Tiny_Trimmed_Base" model on the "G2P_finetune_0.2" data (the same as the "Finetune_0.2" Model in Experiment 4);
+
+3\) the "GBERT_Tiny_Trimmed_Base" model is trained with **initializing from the first and last layer of GBERT model** ("Pretrain_layer6_dim384_ffn2_head6" model in Experiment 2) on the "G2P_Base" data;
+
+4\) the "GBERT_Tiny_Trimmed_Finetune" model is trained with initializing from the "GBERT_Tiny_Trimmed_Base" model on the "G2P_finetune_0.2" data.
+
+### 6.3 Scripts & Configs
+
+
+### 6.4 Results
+
+| Model                       | Encoders | Valid Acc. | Valid (20%) Acc. | Test Acc.     | Note       |
+| :-------------------------- | :------- | :--------- | :--------------  | :------------ | :--------- |
+| Tiny_Trimmed_Base           | 2+1      | **73.17%** | 66.02%           | 63.63%        | 126k steps |
+| Tiny_Trimmed_Finetune       | 2+1      | 71.83%     | **67.81%**       | **65.36%**    | 212k steps |
+| GBERT_Tiny_Trimmed_Base     | 2+1      | | | | |
+| GBERT_Tiny_Trimmed_Finetune | 2+1      | | | | |
+| GBERT_Trimmed_Base          | 6+1      | | | | |
+| GBERT_Trimmed_Finetune      | 6+1      | | | | |
