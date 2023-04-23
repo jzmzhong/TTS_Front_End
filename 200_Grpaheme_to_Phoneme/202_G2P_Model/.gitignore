@@ -128,5 +128,6 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-./checkpoints/
+./checkpoints
 .DS_Store
+.log

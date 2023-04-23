@@ -114,7 +114,11 @@ class Trainer:
         else:
             optimizer = Adam(model.parameters())
             if 'optimizer' in checkpoint:
-                optimizer.load_state_dict(checkpoint['optimizer'])
+                try:
+                    optimizer.load_state_dict(checkpoint['optimizer'])
+                except:
+                    print("Optimizer not initialized!")
+                    pass
             for g in optimizer.param_groups:
                 g['lr'] = config['training']['learning_rate']
             

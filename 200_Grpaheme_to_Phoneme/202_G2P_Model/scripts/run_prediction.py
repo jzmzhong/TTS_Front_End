@@ -7,21 +7,25 @@ from tqdm import tqdm
 
 if __name__ == '__main__':
     
-    # # Experiment 3 & 5
-    # # model_names = ["tiny", "tiny_trimmed", "small", "small_trimmed"]
-    # # checkpoints_paths = ["../checkpoints/3_forward_trimmed/forward_EnUs_random106k_layer3_dim384_ffn2_head6/model_step_188k.pt",
-    # #                      "../checkpoints/3_forward_trimmed/forward_trimmed_EnUs_random106k_layer3_dim384_ffn2_head6/model_step_206k.pt",
-    # #                      "../checkpoints/3_forward_trimmed/forward_EnUs_random106k_layer4_dim512_ffn4_head8/model_step_180k.pt",
-    # #                      "../checkpoints/3_forward_trimmed/forward_trimmed_EnUs_random106k_layer4_dim512_ffn4_head8/model_step_206k.pt"]
+    # # Experiment 1 & 3 & 5
+    model_names = ["baseline_6+4", "baseline_4+4"]
+    checkpoints_paths = ["../checkpoints/1_baseline/autoreg_EnUs_layer6+4_dim512_ffn4_head8/model_step_130k.pt",
+                         "../checkpoints/1_baseline/autoreg_EnUs_layer4+4_dim512_ffn4_head8/model_step_124k.pt"]
+
+    # model_names = ["tiny", "tiny_trimmed", "small", "small_trimmed"]
+    # checkpoints_paths = ["../checkpoints/3_forward_trimmed/forward_EnUs_random106k_layer3_dim384_ffn2_head6/model_step_188k.pt",
+    #                      "../checkpoints/3_forward_trimmed/forward_trimmed_EnUs_random106k_layer3_dim384_ffn2_head6/model_step_206k.pt",
+    #                      "../checkpoints/3_forward_trimmed/forward_EnUs_random106k_layer4_dim512_ffn4_head8/model_step_180k.pt",
+    #                      "../checkpoints/3_forward_trimmed/forward_trimmed_EnUs_random106k_layer4_dim512_ffn4_head8/model_step_206k.pt"]
     # model_names = ["aligned"]
     # checkpoints_paths = ["../checkpoints/5_alignment/forward_aligned_EnUs_random106k_layer3_dim384_ffn2_head6/model_step_146k.pt"]
     
-    # # test_path = "../datasets/3_train_and_eval_data/EnUs/EnUs_dict_exclude_polyphone_valid.txt"
-    # # result_paths = ["../datasets/5_predictions/EnUs/EnUs_dict_exclude_polyphone_valid_predictions_{}.txt".format(model_name) for model_name in model_names]
+    test_path = "../datasets/3_train_and_eval_data/EnUs/EnUs_dict_exclude_polyphone_valid.txt"
+    result_paths = ["../datasets/5_predictions/EnUs/EnUs_dict_exclude_polyphone_valid_predictions_{}.txt".format(model_name) for model_name in model_names]
     # test_path = "../datasets/3_train_and_eval_data/EnUs/EnUs_dict_exclude_polyphone_test.txt"
     # result_paths = ["../datasets/5_predictions/EnUs/EnUs_dict_exclude_polyphone_test_predictions_{}.txt".format(model_name) for model_name in model_names]
     
-    # log_path = "../datasets/5_predictions/EnUs/temp.log"
+    log_path = "../datasets/5_predictions/EnUs/temp.log"
     
     # # Experiment 4
     # model_names = ["pretrain", "finetune_0.2", "finetune_0.1", "scratch_0.2"]

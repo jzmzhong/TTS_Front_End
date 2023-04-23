@@ -1,6 +1,6 @@
 
 paths:
-  checkpoint_dir: ../../checkpoints/forward_trimmed_EnUs_finetune_sortbyfreq9k_layer3_dim384_ffn2_head6  # Directory to store model checkpoints and tensorboard, will be created if not existing.
+  checkpoint_dir: ../../checkpoints/4_finetune_OOV/forward_trimmed_EnUs_finetune_sortbyfreq9k_layer3_dim384_ffn2_head6  # Directory to store model checkpoints and tensorboard, will be created if not existing.
   data_dir: ../../datasets/4_packed/G2P_V2_EnUs_dup1_sortbyfreq9k                               # Directory to store processed data, will be created if not existing.
 
 preprocessing:

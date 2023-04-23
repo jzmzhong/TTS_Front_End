@@ -10,12 +10,13 @@ sys.path.append("../")
 from dp.model.model import load_checkpoint
 from dp.model.predictor import Predictor
 
-MODELS = ["1_baseline/autoreg_EnUs_layer4+4_dim512_ffn4_head8",
-        #   "1_baseline/autoreg_EnUs_layer6+4_dim512_ffn4_head8",
+MODELS = [
+          # "1_baseline/autoreg_EnUs_layer4+4_dim512_ffn4_head8",
+          # "1_baseline/autoreg_EnUs_layer6+4_dim512_ffn4_head8",
           # "3_forward_trimmed/forward_EnUs_random106k_layer4_dim512_ffn4_head8",
           # "3_forward_trimmed/forward_EnUs_random106k_layer3_dim384_ffn2_head6",
           # "3_forward_trimmed/forward_trimmed_EnUs_random106k_layer4_dim512_ffn4_head8",
-          # "3_forward_trimmed/forward_trimmed_EnUs_random106k_layer3_dim384_ffn2_head6",
+          "3_forward_trimmed/forward_trimmed_EnUs_random106k_layer3_dim384_ffn2_head6",
           ]
 
 for MODEL in MODELS:
