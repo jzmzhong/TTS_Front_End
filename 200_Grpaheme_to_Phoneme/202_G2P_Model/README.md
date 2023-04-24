@@ -82,18 +82,19 @@ In ["Transfomer based Grapheme-to-Phoneme Conversion"](https://arxiv.org/pdf/200
 
 ### 2.3 Results - Pretrain
 
-| Model Name                        | Mask Valid Acc. | Note       |
-| :-------------------------------- | :-------------- | :--------- |
-| Pretrain_layer6_dim512_ffn4_head8 | 65.42%          | 935k steps |
-| Pretrain_layer6_dim384_ffn2_head6 | 64.78%          | 845k steps |
+| Model Name                                 | Mask Valid Acc. | Note       |
+| :----------------------------------------- | :-------------- | :--------- |
+| Pretrain_layer6_dim512_ffn4_head8          | 65.42%          | 935k steps |
+| Pretrain_layer6_dim384_ffn2_head6          | 64.78%          | 845k steps, reserved for future usages |
+| PretrainDistilled_layer2_dim384_ffn2_head6 | xx.xx%          | xk steps, distilled from "Pretrain_layer6_dim512_ffn4_head8", reserved for future usages |
 
 ### 2.4 Results - G2P, Train from Scratch vs Finetune from Pretrained GBERT
 
 | Model Name                 | Layers | Dimension | Pretrained LR | Base LR | Valid Acc. | Test Acc. | Note |
 | :------------------------- | :----- | :-------- | :------------ | :-----  | :--------- | :-------- | :---- |
 | Scratch_10k                | 6+4    | 512       | 5e-5          | 5e-5    | 53.91%     | x%    | 184k steps |
-| Finetune_10k               | 6+4    | 512       | 5e-5          | 5e-5    | **55.86%** | x%    | 176k steps |
-| Finetune_10k_EncoderLR0.5  | 6+4    | 512       | 2.5e-5        | 5e-5    | 55.18%     | x%    | 212k steps |
+| Finetune_10k               | 6+4    | 512       | 5e-5          | 5e-5    | **55.86%** | x%    | 176k steps, initialized from Pretrain_layer6_dim512_ffn4_head8 |
+| Finetune_10k_EncoderLR0.5  | 6+4    | 512       | 2.5e-5        | 5e-5    | 55.18%     | x%    | 212k steps, initialized from Pretrain_layer6_dim512_ffn4_head8 |
 <!-- | Finetune_10k_EncoderLR0.1  | 6+4    | 512       | 5e-6          | 5e-5    | x%     | x%    | | -->
 <!-- | Scratch_2k                 | 6+4    | 512       |               |         | x%     | x%    | | -->
 <!-- | Scratch_5k                 | 6+4    | 512       |               |         | x%     | x%    | | -->
@@ -320,11 +321,27 @@ Four models are trained for comparison:
 
 ### 6.4 Results
 
-| Model                       | Encoders | Valid Acc. | Valid (20%) Acc. | Test Acc.     | Note       |
-| :-------------------------- | :------- | :--------- | :--------------  | :------------ | :--------- |
-| Tiny_Trimmed_Base           | 2+1      | **73.17%** | 66.02%           | 63.63%        | 126k steps |
-| Tiny_Trimmed_Finetune       | 2+1      | 71.83%     | **67.81%**       | **65.36%**    | 212k steps |
-| GBERT_Tiny_Trimmed_Base     | 2+1      | | | | |
-| GBERT_Tiny_Trimmed_Finetune | 2+1      | | | | |
-| GBERT_Trimmed_Base          | 6+1      | | | | |
-| GBERT_Trimmed_Finetune      | 6+1      | | | | |
+| Model                        | Encoders | Valid Acc. | Valid (20%) Acc. | Test Acc.     | Note       |
+| :--------------------------- | :------- | :--------- | :--------------  | :------------ | :--------- |
+| Tiny_Trimmed_Base            | 2+1      | **73.17%** | 66.02%           | 63.63%        | 126k steps |
+| Tiny_Trimmed_Finetune        | 2+1      | 71.83%     | **67.81%**       | **65.36%**    | 212k steps |
+| GBERT_Tiny_Trimmed_Base      | 2+1      | 72.56%     | 65.20%           | 51.79%        | 112k steps |
+| GBERT_Tiny_Trimmed_Finetune  | 2+1      | 69.26%     | 66.50%           | 52.66%        | 218k steps |
+
+Problem: Adding GBERT makes accuracy drop on both validation and testing.
+
+1\) Initializing from the first and last layer of GBERT model is problematic.
+
+2\) GBERT data is too little for generalization over the test set which does not include any word in the pretraining data.
+
+
+Ablation Experiments
+
+Use large enough encoder and initialize from the entire GBERT
+
+| Model                        | Encoders | Valid Acc. | Valid (20%) Acc. | Test Acc.     | Note       |
+| Large_Trimmed_Base           | 6+1      | | | | |
+| Large_Trimmed_Finetune       | 6+1      | | | | |
+| GBERT_Large_Trimmed_Base     | 6+1      | | | | 218k |
+| GBERT_Large_Trimmed_Finetune | 6+1      | | | | |
+

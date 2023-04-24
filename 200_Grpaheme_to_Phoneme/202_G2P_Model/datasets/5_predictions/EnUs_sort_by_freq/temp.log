@@ -87,3 +87,41 @@ Steps: 192000
 Correct Predictions: 11870
 Wrong Predictions: 13483
 Word Accuracy: 46.818916893464284%
+
+Experiment 6
+
+../datasets/3_train_and_eval_data/EnUs_sort_by_freq/EnUs_dict_exclude_polyphone_random_valid.txt
+GBERT_Tiny_Trimmed_Base
+Steps: 112000
+Correct Predictions: 6686
+Wrong Predictions: 2528
+Word Accuracy: 72.56349034078576%
+GBERT_Tiny_Trimmed_Finetune
+Steps: 218000
+Correct Predictions: 6382
+Wrong Predictions: 2832
+Word Accuracy: 69.26416322986759%
+
+../datasets/3_train_and_eval_data/EnUs_sort_by_freq/EnUs_dict_exclude_polyphone_sort_by_freq_finetune_0.2_valid.txt
+GBERT_Tiny_Trimmed_Base
+Steps: 112000
+Correct Predictions: 1201
+Wrong Predictions: 641
+Word Accuracy: 65.20086862106406%
+GBERT_Tiny_Trimmed_Finetune
+Steps: 218000
+Correct Predictions: 1225
+Wrong Predictions: 617
+Word Accuracy: 66.50380021715526%
+
+../datasets/3_train_and_eval_data/EnUs_sort_by_freq/EnUs_dict_exclude_polyphone_sort_by_freq_test.txt
+GBERT_Tiny_Trimmed_Base
+Steps: 112000
+Correct Predictions: 13130
+Wrong Predictions: 12223
+Word Accuracy: 51.78874294955232%
+GBERT_Tiny_Trimmed_Finetune
+Steps: 218000
+Correct Predictions: 13351
+Wrong Predictions: 12002
+Word Accuracy: 52.66043466256459%

@@ -1,8 +1,7 @@
 
 paths:
-  checkpoint_dir: ../../checkpoints/6_combination/forward_trimmed_GBERT_EnUs_base_random92k_layer7_dim384_ffn2_head6  # Directory to store model checkpoints and tensorboard, will be created if not existing.
-  data_dir: ../../datasets/4_packed/G2P_V2_EnUs_dup1_random92k_GBERT_finetune                                   # Directory to store processed data, will be created if not existing.
-  # GBERT_path: ../../checkpoints/2_GBERT/GBERT_EnUs_layer6_dim384_ffn2_head6/model_step_845k.pt
+  checkpoint_dir: ../../checkpoints/6_combination/forward_trimmed_GBERT_EnUs_finetune_sortbyfreq18k_layer3_dim384_ffn2_head6  # Directory to store model checkpoints and tensorboard, will be created if not existing.
+  data_dir: ../../datasets/4_packed/G2P_V2_EnUs_dup1_sortbyfreq18k_GBERT_finetune                                   # Directory to store processed data, will be created if not existing.
 
 preprocessing:
   languages: ['EnUs']    # All languages in the dataset.
@@ -18,28 +17,27 @@ preprocessing:
 
 
 model:
-  type: 'transformer_trimmed_GBERT_finetune'    # Whether to use a forward transformer or autoregressive transformer model.
-                                               # Choices: ['transformer', 'transformer_trimmed', 'autoreg_transformer', \
-                                               # 'GBERT', 'autoreg_transformer_GBERT_finetune', transformer_trimmed_GBERT_fintune]
-  char_repeats: 3                              # Number of grapheme character repeats to allow for mapping to longer phoneme sequences.
+  type: 'transformer_trimmed'    # Whether to use a forward transformer or autoregressive transformer model.
+                                 # Choices: ['transformer', 'transformer_trimmed', 'autoreg_transformer', \
+                                 # 'GBERT', 'autoreg_transformer_GBERT_finetune', transformer_trimmed_GBERT_fintune]
+  char_repeats: 3                # Number of grapheme character repeats to allow for mapping to longer phoneme sequences.
   d_model: 384
   d_fft: 768
-  layers: 7
+  layers: 3
   dropout: 0.1
   heads: 6
-  initialization_mapping: {'0':'0', '1':'1', '2':'2', '3':'3', '4':'4', '5':'5'}
 
 training:
 
   # Hyperparams for learning rate and scheduler.
   # The scheduler is reducing the lr on plateau of phoneme error rate (tested every n_generate_steps).
 
-  learning_rate: 0.00000390625       # Learning rate of Adam.
-  warmup_steps: 0                # Linear increase of the lr from zero to the given lr within the given number of steps.
+  learning_rate: 0.0001              # Learning rate of Adam.
+  warmup_steps: 0                    # Linear increase of the lr from zero to the given lr within the given number of steps.
   scheduler_plateau_factor: 0.5      # Factor to multiply learning rate on plateau.
   scheduler_plateau_patience: 5      # Number of text generations with no improvement to tolerate.
-  batch_size: 512                    # Training batch size.
-  batch_size_val: 64                 # Validation batch size.
+  batch_size: 128                    # Training batch size.
+  batch_size_val: 16                 # Validation batch size.
   epochs: 2000                       # Number of epochs to train.
   generate_steps: 2000               # Interval of training steps to generate sample outputs. Also, at this step the phoneme and word
                                      # error rates are calculated for the scheduler.
