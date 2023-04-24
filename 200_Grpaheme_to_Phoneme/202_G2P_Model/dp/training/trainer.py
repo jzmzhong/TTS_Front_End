@@ -346,7 +346,7 @@ class Trainer:
                                     result['wer'], global_step=step)
 
         for lang, samples in lang_samples.items():
-            samples = [(''.join(w), ''.join(p), ''.join(t)) for w, p, t in samples]
+            samples = [(''.join(w), ' '.join(p), ' '.join(t)) for w, p, t in samples]
             word_counts = Counter([word for word, _, _ in samples])
             samples_dedup = [(w, p, t) for w, p, t in samples if word_counts[w] == 1]
             log_texts = dict()

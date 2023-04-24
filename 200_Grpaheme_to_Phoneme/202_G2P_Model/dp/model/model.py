@@ -579,49 +579,52 @@ def create_model(model_type: ModelType, config: Dict[str, Any]) -> Model:
         raise ValueError(f'Unsupported model type: {model_type}. '
                          f'Supported types: {[t.value for t in ModelType]}')
     
-    # Load GBERT to Encoder of Autoregressive G2P Model
-    if model_type in [ModelType.AUTOREG_TRANSFORMER_GBERT_FINETUNE]:
-        GBERT_checkpoint = torch.load(config['paths']['GBERT_path'])
-        print(f"Loading GBERT from: {config['paths']['GBERT_path']}")
-        # import pdb; pdb.set_trace()
-        GBERT_checkpoint_processed = {}
-        for k, v in GBERT_checkpoint['model'].items():
-            if k.startswith("embedding."): # load encoder embedding
-                GBERT_checkpoint_processed["encoder_" + k] = v
-            elif k.startswith("encoder."): # load encoder
-                GBERT_checkpoint_processed["transformer." + k] = v
-            elif k.startswith("fc_out."): # ignore FC in GBERT
-                continue
-            else:
-                GBERT_checkpoint_processed[k] = v
-        model.load_state_dict(GBERT_checkpoint_processed, strict=False)
-        model.eval()
-    # Load GBERT to Encoder of Forward Trimmed G2P Model
-    elif model_type in [ModelType.TRANSFORMER_TRIMMED_GBERT_FINETUNE]:
-        GBERT_checkpoint = torch.load(config['paths']['GBERT_path'])
-        print(f"Loading GBERT from: {config['paths']['GBERT_path']}")
-        # import pdb; pdb.set_trace()
-        GBERT_checkpoint_processed = {}
-        for k, v in GBERT_checkpoint['model'].items():
-            if k.startswith("encoder.layers."): # load encoder model.encoder_1.layers[0] encoder.layers.0
-                src_layer = k.split(".")[2]
-                if src_layer in config['model']['initialization_mapping']:
-                    trg_layer = config['model']['initialization_mapping'][src_layer]
-                else:
+    try:
+        # Load GBERT to Encoder of Autoregressive G2P Model
+        if model_type in [ModelType.AUTOREG_TRANSFORMER_GBERT_FINETUNE]:
+            GBERT_checkpoint = torch.load(config['paths']['GBERT_path'])
+            print(f"Loading GBERT from: {config['paths']['GBERT_path']}")
+            # import pdb; pdb.set_trace()
+            GBERT_checkpoint_processed = {}
+            for k, v in GBERT_checkpoint['model'].items():
+                if k.startswith("embedding."): # load encoder embedding
+                    GBERT_checkpoint_processed["encoder_" + k] = v
+                elif k.startswith("encoder."): # load encoder
+                    GBERT_checkpoint_processed["transformer." + k] = v
+                elif k.startswith("fc_out."): # ignore FC in GBERT
                     continue
-                GBERT_checkpoint_processed[k.replace("encoder.layers."+src_layer, "encoder_1.layers."+trg_layer)] = v
-            elif k.startswith("encoder.norm."):
-                GBERT_checkpoint_processed[k.replace("encoder.norm.", "encoder_1.norm.")] = v
-            elif k.startswith("pos_encoder."): # load positional encoding
-                GBERT_checkpoint_processed[k.replace("pos_encoder.", "pos_encoder_1.")] = v
-            elif k.startswith("fc_out."): # ignore FC in GBERT
-                continue
-            else:
-                GBERT_checkpoint_processed[k] = v
-        # switch to strict=True in debugging to see which layers are not initializedß
-        model.load_state_dict(GBERT_checkpoint_processed, strict=False)
-        model.eval()
-
+                else:
+                    GBERT_checkpoint_processed[k] = v
+            model.load_state_dict(GBERT_checkpoint_processed, strict=False)
+            model.eval()
+        # Load GBERT to Encoder of Forward Trimmed G2P Model
+        elif model_type in [ModelType.TRANSFORMER_TRIMMED_GBERT_FINETUNE]:
+            GBERT_checkpoint = torch.load(config['paths']['GBERT_path'])
+            print(f"Loading GBERT from: {config['paths']['GBERT_path']}")
+            # import pdb; pdb.set_trace()
+            GBERT_checkpoint_processed = {}
+            for k, v in GBERT_checkpoint['model'].items():
+                if k.startswith("encoder.layers."): # load encoder model.encoder_1.layers[0] encoder.layers.0
+                    src_layer = k.split(".")[2]
+                    if src_layer in config['model']['initialization_mapping']:
+                        trg_layer = config['model']['initialization_mapping'][src_layer]
+                    else:
+                        continue
+                    GBERT_checkpoint_processed[k.replace("encoder.layers."+src_layer, "encoder_1.layers."+trg_layer)] = v
+                elif k.startswith("encoder.norm."):
+                    GBERT_checkpoint_processed[k.replace("encoder.norm.", "encoder_1.norm.")] = v
+                elif k.startswith("pos_encoder."): # load positional encoding
+                    GBERT_checkpoint_processed[k.replace("pos_encoder.", "pos_encoder_1.")] = v
+                elif k.startswith("fc_out."): # ignore FC in GBERT
+                    continue
+                else:
+                    GBERT_checkpoint_processed[k] = v
+            # switch to strict=True in debugging to see which layers are not initializedß
+            model.load_state_dict(GBERT_checkpoint_processed, strict=False)
+            model.eval()
+    except:
+        print("GBERT not loaded!")
+    
     print(model)
     return model
 
