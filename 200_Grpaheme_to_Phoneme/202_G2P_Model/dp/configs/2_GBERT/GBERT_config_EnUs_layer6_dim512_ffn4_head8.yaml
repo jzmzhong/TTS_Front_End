@@ -1,7 +1,7 @@
 
 paths:
   checkpoint_dir: ../../checkpoints/2_GBERT/GBERT_EnUs_layer6_dim512_ffn4_head8   # Directory to store model checkpoints and tensorboard, will be created if not existing.
-  data_dir: ../../datasets/4_packed/GBERT_V2_EnUs_dup1               # Directory to store processed data, will be created if not existing.
+  data_dir: ../../datasets/4_packed/GBERT_V1_EnUs_dup1               # Directory to store processed data, will be created if not existing.
 
 preprocessing:
   languages: ['EnUs']    # All languages in the dataset.
