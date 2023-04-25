@@ -337,11 +337,21 @@ Problem: Adding GBERT makes accuracy drop on both validation and testing.
 
 Ablation Experiments
 
-Use large enough encoder and initialize from the entire GBERT
+Use large enough encoder and initialize from the entire GBERT.
 
 | Model                        | Encoders | Valid Acc. | Valid (20%) Acc. | Test Acc.     | Note       |
-| Large_Trimmed_Base           | 6+1      | | | | |
+| :--------------------------- | :------- | :--------- | :--------------  | :------------ | :--------- |
+| Large_Trimmed_Base           | 6+1      | | | | 208k |
 | Large_Trimmed_Finetune       | 6+1      | | | | |
 | GBERT_Large_Trimmed_Base     | 6+1      | | | | 218k |
 | GBERT_Large_Trimmed_Finetune | 6+1      | | | | |
+
+Remain using the tiny trimmed model and initialize from a tiny GBERT with only two encoder layers.
+
+| Model                            | Encoders | Valid Acc. | Valid (20%) Acc. | Test Acc.     | Note       |
+| :------------------------------- | :------- | :--------- | :--------------  | :------------ | :--------- |
+| Tiny_GBERT_Tiny_Trimmed_Base     | 2+1      | | | | |
+| Tiny_GBERT_Tiny_Trimmed_Finetune | 2+1      | | | | |
+
+Retrain the GBERT with new data.
 
